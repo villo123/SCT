@@ -1,0 +1,60 @@
+  	input[type = "text"]{
+  	  border: 2px outset #999;
+
+  	}
+  	input[type = "password"]{
+  		border: 2px outset #999;
+
+  	}
+  	span{
+  		font-weight: bold;
+  		 font-family: 'Times New Roman'; 
+  		font-weight: lighter; font-size: 20px;
+  	}
+
+  	input#botone
+  	{
+  		background-color: #8a8d8f;
+  		border: 0px;
+  		padding:5px 15px;
+  		font-family: 'Times New Roman', serif; 
+  		font-weight: lighter; font-size: 15px;
+  	}
+
+  	  input#botonc
+  	{
+  		background-color: #8a8d8f;
+  		border: 0px;
+  		padding:5px 15px;
+  		font-family: 'Times New Roman', serif; 
+  		font-weight: lighter; font-size: 15px;
+  	}
+
+  	#tablalogin
+  	{
+  		/*border: 2px solid #8a8d8f;*/
+  		border-collapse: collapse;
+  		width: 300px;
+  		height: 180px;
+      position: absolute;
+      margin-left:457px;
+      top: 150px;
+  	}
+
+    #imagen{
+      float:left;
+    }
+
+    #sistema{
+      float:left;
+      margin-left:200px;
+
+    }
+
+    #backfoto{
+      background:url("../ima/back.png");
+      background-repeat: no-repeat;
+      background-position: -250px 180px;
+      filter: alpha(opacity=40);
+    }
+
