@@ -322,12 +322,12 @@
 			Fecha de atención:
 		</td>
 		<td>
-			<input type="text" name="fechaatencion" id="atencion" value="mm-dd-yyyy" /> 
+			<input type="text" name="fechaatencion" id="atencion" value="mm/dd/yyyy" /> 
 			<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Inicial" id="lanzadoratencion">
 			<script type="text/javascript"> 
    					Calendar.setup({ 
     				inputField     :    "atencion",     // id del campo de texto 
-     				ifFormat     :     "%m-%d-%Y",     // formato de la fecha que se escriba en el campo de texto 
+     				ifFormat     :     "%m/%d/%Y",     // formato de la fecha que se escriba en el campo de texto 
      				button     :    "lanzadoratencion"     // el id del botón que lanzará el calendario 
 				}); 
  			</script>

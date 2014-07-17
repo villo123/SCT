@@ -65,10 +65,8 @@ public class DBConexion {
 		return st;
 	}
 	
-	/*public static void main(String[] sct){
+	public static void main(String[] sct){
 		new DBConexion();
-		//String user = "dulce";
-		//String pass = "123456";
-		//validar(user,pass);
-	}*/
+
+	}
 }
