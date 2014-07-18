@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.sct.incidencias.Conexion.DBConexion;
 import com.sct.incidencias.catalogos.*;
 
-import java.sql.Date;
+import java.util.Date;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DateFormat;
@@ -412,24 +413,24 @@ public class InsertarFormulario extends HttpServlet {
 			catate.setAPaterno(ap);
 			catate.setAMaterno(am);
 		}
-		String FAtencion = request.getParameter("fechaatencion");//Pendinte
-		SimpleDateFormat format = new SimpleDateFormat("MM-dd-yyyy");
-        java.util.Date parsed;
-		try {
-			parsed = format.parse(FAtencion);  
-			java.sql.Date sql = new java.sql.Date(parsed.getTime());
-			inc.setFAtencion(sql);
-		} catch (ParseException e1) {
-			e1.printStackTrace();
-		}
-		System.out.println(inc.getFAtencion());
+		String FAtencion = request.getParameter("fechaatencion");
+		
+		/*SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
+		java.sql.Date fecha=java.sql.Date.valueOf(FAtencion);
+		inc.setFAtencion(fecha);
+		System.out.println(formater.format(inc.getFAtencion()));
+
 		DBConexion db = new DBConexion();
 		try {
-			@SuppressWarnings("unused")
-			ResultSet rs = db.getSt().executeQuery("INSERT INTO PUB.INCIDENCIA (FAtencion) VALUES ("+inc.getFAtencion()+")");
+			PreparedStatement ps = db.getCt().prepareStatement("INSERT INTO PUB.INCIDENCIA (FAtencion) VALUES (?)");
+			ps.setDate(1,(java.sql.Date) inc.getFAtencion());
+			ps.executeUpdate();
+			System.out.println("Se efectuo correctamente el Insert");
+			db.getCt().close();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
+			System.out.println("No se hizo insert");
+		}*/
 		
 		String HAtencion = request.getParameter("timepickeratencion");//Pendiente
 

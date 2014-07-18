@@ -26,13 +26,12 @@ public class DBConexion {
 			System.out.println("No se pudo conectar a la base de datos");
 		}
 	}
+	
 	public static boolean validar(String CuentaUsuario,String Contrasena){
 		boolean status = false;
-		
 		try{
             Class.forName("com.ddtek.jdbc.openedge.OpenEdgeDriver");
             ct = DriverManager.getConnection("jdbc:datadirect:openedge://localhost:30060;schemaDefault=PUB;databaseName=incidencias.db;user=sysprogress;password=sysprogress");
-            //PreparedStatement ps = ct.prepareStatement("SELECT ildUsuarioUtic,NomusuarioUtic,CATUsuarioUTIC.APaterno,CATUsuarioUTIC.AMaterno,CATUsuarioUTIC.Email,CATUsuarioUTIC.ClaveEmpleado,CATUsuarioUTIC.CuentaUsuario,CATUsuarioUTIC.Contrasena FROM PUB.CATUsuarioUTIC WHERE CuentaUsuario =? AND Contrasena=?");
             PreparedStatement ps = ct.prepareStatement("SELECT CATUsuarioUTIC.CuentaUsuario,CATUsuarioUTIC.Contrasena FROM PUB.CATUsuarioUTIC WHERE CuentaUsuario =? AND Contrasena=?");
             ps.setString(1, CuentaUsuario);
             ps.setString(2, Contrasena);
@@ -44,17 +43,8 @@ public class DBConexion {
             }*/
             rs = ps.executeQuery();
             status = rs.next();
-           /* while(rs.next()){
-            	usuarioutic = new CATUsuarioUTIC();
-            	usuarioutic.setidUsuarioUtic(Integer.parseInt(rs.getString(1)));
-            	usuarioutic.setNomusuarioUtic(rs.getString(2));
-            	usuarioutic.setAPaterno(rs.getString(3));
-            	usuarioutic.setAMaterno(rs.getString(4));
-            	usuarioutic.setEmail(rs.getString(5));
-            	usuarioutic.setClaveEmpleado(Integer.parseInt(rs.getString(6)));
-            	usuarioutic.setCuentaUsuario(rs.getString(7));
-            	usuarioutic.setContrasena(rs.getString(8));
-            }*/
+            ct.close();
+
 		}catch(Exception e){
 			System.out.println(e);
 		}
@@ -65,10 +55,12 @@ public class DBConexion {
 		return st;
 	}
 	
-	/*public static void main(String[] sct){
+	public Connection getCt(){
+		return ct;
+	}
+	
+	public static void main(String[] sct){
 		new DBConexion();
-		//String user = "dulce";
-		//String pass = "123456";
-		//validar(user,pass);
-	}*/
+
+	}
 }
