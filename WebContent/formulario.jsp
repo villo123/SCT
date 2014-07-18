@@ -95,7 +95,7 @@
 		</td>
 		<td>
 			<select name="unidadresponsable">
-				<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.DescUR,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
+				<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdm,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
 						while(rsu.next())
 						{
 					%>
@@ -111,7 +111,7 @@
 		</td>
 		<td>
 			<select name="departamento">
-				<% ResultSet rsd = dba.getSt().executeQuery("SELECT CATDepartamento.NombreDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento");
+				<% ResultSet rsd = dba.getSt().executeQuery("SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento");
 						while(rsd.next())
 						{
 					%>
@@ -127,7 +127,7 @@
 		</td>
 		<td>
 			<select name="modulo">
-				<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.NombreModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
+				<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
 						while(rsm.next())
 						{
 					%>
@@ -143,7 +143,7 @@
 		</td>
 		<td>
 			<select name="proceso">
-				<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.Proceso,CATProceso.Proceso FROM PUB.CATProceso");
+				<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.ildProceso,CATProceso.Proceso FROM PUB.CATProceso");
 						while(rsp.next())
 						{
 					%>
@@ -159,7 +159,7 @@
 		</td>
 		<td>
 			<select name="tipodeincidencias">
-				<% ResultSet rsi = dba.getSt().executeQuery("SELECT CATTipoDeIncidente.NombreIncidente,CATTipoDeIncidente.NombreIncidente FROM PUB.CATTipoDeIncidente");
+				<% ResultSet rsi = dba.getSt().executeQuery("SELECT CATTipoDeIncidente.ildIncidente,CATTipoDeIncidente.NombreIncidente FROM PUB.CATTipoDeIncidente");
 						while(rsi.next())
 						{
 					%>
@@ -175,7 +175,7 @@
 		</td>
 		<td>
 			<select name="tipodesolucion">
-				<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.NombreSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
+				<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.ildTipoDeSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
 						while(rss.next())
 						{
 					%>
@@ -275,11 +275,11 @@
 		</td>
 		<td>
 			<select name="usuariocat">
-				<% ResultSet rsuc = dba.getSt().executeQuery("SELECT CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAT.AMaterno,CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAT.AMaterno FROM PUB.CATUsuarioCAT");
+				<% ResultSet rsuc = dba.getSt().executeQuery("SELECT CATUsuarioCAT.ildUsuarioCat,CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAT.AMaterno FROM PUB.CATUsuarioCAT");
 						while(rsuc.next())
 						{
 					%>
-						<option value="<%=rsuc.getString(1) + " " + rsuc.getString(2)+ " " + rsuc.getString(3)%>"><%=rsuc.getString(4)+ " " + rsuc.getString(5) + " " + rsuc.getString(6)%></option>
+						<option value="<%=rsuc.getString(1)%>"><%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%></option>
 					<%}
 						%>
 			</select>
@@ -307,11 +307,11 @@
 		</td>
 		<td>
 			<select name="atendio">
-				<% ResultSet rsa = dba.getSt().executeQuery("SELECT CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno,CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno FROM PUB.CATAtendio");
+				<% ResultSet rsa = dba.getSt().executeQuery("SELECT CATAtendio.ildAtendio,CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno FROM PUB.CATAtendio");
 						while(rsa.next())
 						{
 					%>
-						<option value="<%=rsa.getString(1) + " " + rsa.getString(2)+ " " + rsa.getString(3)%>"><%=rsa.getString(4)+ " " + rsa.getString(5) + " " + rsa.getString(6)%></option>
+						<option value="<%=rsa.getString(1)%>"><%=rsa.getString(2)+ " " + rsa.getString(3) + " " + rsa.getString(4)%></option>
 					<%}
 						%>
 			</select>

@@ -415,7 +415,7 @@ public class InsertarFormulario extends HttpServlet {
 		}
 		String FAtencion = request.getParameter("fechaatencion");
 		
-		SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
+		/*SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
 		java.sql.Date fecha=java.sql.Date.valueOf(FAtencion);
 		inc.setFAtencion(fecha);
 		System.out.println(formater.format(inc.getFAtencion()));
@@ -430,7 +430,7 @@ public class InsertarFormulario extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("No se hizo insert");
-		}
+		}*/
 		
 		String HAtencion = request.getParameter("timepickeratencion");//Pendiente
 
