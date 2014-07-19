@@ -2,49 +2,27 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Registro de Incidencia</title>
-
-<style type="text/css"> 
-	td.t {
-			background-color: #007a33;
-			padding: 10px; 
-	}
-	td {
-	 	padding: 10px;
-	}
-	caption{
-		font-size: 40px;
-	}
-	.btnimageningresar{
-	border-style: none;
-	border-color: inherit;
-	border-width: 0;
-	background: url('ima/nuevo.gif') no-repeat 0 0;
-	cursor: pointer;
-    width: 121px;
-    height: 33px;
-	text-align: left;
-}
-	 </style>
-	 <script language="javascript">
-	 	function abrirformulario() {
-			abrir = open("formulario.jsp");
-		}
-	 </script>
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Registro de Insidencia</title>
+		<link rel="stylesheet" type="text/css" href="css/vista.css"/>
+		<script language="javascript">
+			function abrirformulario() {
+				abrir = open("formulario.jsp");
+			}
+		</script>
+	</head>
 <body>
-<img src="ima/logo.png" alt="SCT" width="260" height="84"><p>
-<h1 align="center">Registro de Incidencia</h1>
-<br>
-		<!--<input class="btnimageningresar" type="submit" name="enviar" value="" />-->
-        <button class="btnimageningresar" onclick="abrirformulario();"></button>
-        <button>Editar</button>
-        <button>Guarda</button>
-        <button>Buscar</button>
-        <button>Cancelar</button>
-		   <br>    
+		<div id="contentvista"></div>
+		<div id="middlevista">
+			<img src="ima/logo.png" alt="SCT" width="260" height="84">
+			<h1 align="center">Registro de Incidencia</h1>
+			<button id="btn" onclick="abrirformulario();">Nuevo</button>
+			<button id="btn">Editar</button>
+			<button id="btn">Guarda</button>
+			<button id="btn">Buscar</button>
+			<button id="btn">Cancelar</button>
+		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
 	
@@ -169,6 +147,8 @@
                  <td></td>
              </tr>
         </table>
-    HOLA, <%=session.getAttribute("login") %>     
+    HOLA, <%=session.getAttribute("login") %>  
+    </div>
+		<div id="downvista"></div>   
 </body>
 </html>

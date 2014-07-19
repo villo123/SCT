@@ -1,0 +1,104 @@
+td.t {
+    margin-top: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+	width:60px;
+    font-size:x-small;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+    background:#007a33;
+    color: #FFFFFF;
+    border: 1px inset #6699CC;
+    padding: .1em 1em;
+}
+
+#close{
+	width:100%;
+	height:2%;
+}
+
+td {
+	padding: 10px;
+	font-size:small;
+	font-family:Arial,Helvetica,sans-serif;
+	background:white;
+}
+
+h1{
+	font-family:Arial,Helvetica,sans-serif;
+	font-weight:normal;
+	margin:0;
+	padding:10px;
+}
+
+caption{
+	font-size: 40px;
+}
+
+.btnimageningresar{
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	background: url('ima/nuevo.gif') no-repeat 0 0;
+	cursor: pointer;
+	width: 121px;
+	height: 33px;
+	text-align: left;
+}
+
+#contentvista{
+	width:100%;
+	height:20%;
+	background:white;
+}
+
+#middlevista{
+	overflow:auto;
+	width:100%;
+	-webkit-box-shadow:0 10px 6px -6px #777;
+	-moz-box-shadow:0 10px 6px -6px #777;
+	box-shadow:0 10px 6px -6px #777;
+}
+
+#downvista{
+	width:100%;
+	height:20%;
+	bottom:0px;
+	background:white;
+}
+
+body{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:small;
+	height:100%;
+	margin:0;
+	background:#CCC;
+	background:-webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
+	background:-moz-linear-gradient(top,  #EEE,  #CCC);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#EEEEEE', EndColorStr='#CCCCCC');
+}
+
+html{
+	height:100%;
+	width:100%;
+	background:#CCC;
+}
+
+
+#btn{
+    margin-top: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+	width:auto;
+    font-size:x-small;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+    background:green;
+    color: #FFFFFF;
+    border: 1px inset #6699CC;
+    padding: .1em 1em;
+}
+
+#btn:hover{
+    background:#66CC33;
+}
