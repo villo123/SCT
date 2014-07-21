@@ -8,33 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="shortcut icon" type="image/x-icon" href="ima/favicon.ico">
 <link rel="icon" type="image/x-icon" href="ima/favicon.ico">
-
-
-<script type="text/javascript">
-		function carga(){
-			document.getElementById("usuario").focus();
-		}
-		function valideDatos(){
-			var usuario = document.getElementById("usuario");
-			var password = document.getElementById("password");
-			
-			if((usuario.value == "" || usuario.value == '' || usuario.value == null) && (password.value == "" || password.value == '' || password.value == null)){
-						alert("Ingresa tu usuario y tu password");
-						usuario.focus();
-						return false;
-				}else if(usuario.value == "" || usuario.value == '' || usuario.value == null){
-						alert("Ingresa tu usuario");
-						usuario.focus();
-						return false;
-				}else if(password.value == "" || password.value == '' || password.value == null){
-						alert("Ingresa tu contraseña");
-						password.focus();
-						return false;
-			    }else{
-			    	return true;
-			    }
-		}
-	</script>	
+<script type="text/javascript" src="js/master.js"></script>
   <!--<style type="text/css">
 
   	/*.myButton {

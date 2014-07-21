@@ -6,11 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<title>Registro de Insidencia</title>
 		<link rel="stylesheet" type="text/css" href="css/vista.css"/>
-		<script language="javascript">
-			function abrirformulario() {
-				abrir = open("formulario.jsp");
-			}
-		</script>
+		<script type="text/javascript" src="js/master.js"></script>
 	</head>
 <body>
 		<div id="contentvista"></div>
