@@ -59,9 +59,7 @@
                     <select id="maptxt" name="unidadresponsable">
                     	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdm,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
 							while(rsu.next()){%>
-								<option value="<%=rsu.getString(1)%>">
-									<%=rsu.getString(2)%>
-								</option>
+								<option value="<%=rsu.getString(1)%>"><%=rsu.getString(2)%></option>
 							<%}%>
 					</select><br />
 
@@ -69,9 +67,7 @@
                     <select name="departamento" id="esptxt">
 						<% ResultSet rsd = dba.getSt().executeQuery("SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento");
 							while(rsd.next()){%>
-								<option value="<%=rsd.getString(1)%>">
-									<%=rsd.getString(2)%>
-								</option>
+								<option value="<%=rsd.getString(1)%>"><%=rsd.getString(2)%></option>
 							<%}%>
 					</select><br/>
                     
@@ -79,9 +75,7 @@
 					<select id="dateString" class="nactxt" name="modulo">
 						<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
 							while(rsm.next()){%>
-								<option value="<%=rsm.getString(1)%>">
-									<%=rsm.getString(2)%>
-								</option>
+								<option value="<%=rsm.getString(1)%>"><%=rsm.getString(2)%></option>
 							<%}%>
 					</select><br />
                     
@@ -89,9 +83,8 @@
 					<select name="proceso" id="processtxt">
 						<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.ildProceso,CATProceso.Proceso FROM PUB.CATProceso");
 							while(rsp.next()){%>
-								<option value="<%=rsp.getString(1)%>">	
-									<%=rsp.getString(2)%>
-								</option><%}%>
+								<option value="<%=rsp.getString(1)%>"><%=rsp.getString(2)%></option>
+								<%}%>
 					</select><br />
 					
 					<label id="tipoinlabel">Tipo de insidencias:</label>
@@ -109,22 +102,23 @@
 							while(rss.next()){%>
 								<option value="<%=rss.getString(1)%>">
 									<%=rss.getString(2)%>
-								</option><%}%>
+								</option><%}
+								%>
 					</select><br />
 					
 					<label id="aprovylabel">Aprobación:</label>
 					<select  type="text" name="aprobacion" id="aprovytxt">
-						<option value="si">SI</option>
-						<option value="no">NO</option>
+						<option value="SI">SI</option>
+						<option value="NO">NO</option>
 					</select><br />
 					
 				<label id="fechanlabel">Fecha de aprobación:</label>
-				<input id="fechantxt" type="text" name="fechaaprobacion" value="dd/mm/yyyy" >
-					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Inicial" id="fechanim" id="lanzadoraprobacion">
+				<input id="aprobacion" type="text" name="fechaaprobacion" value="yyyy-mm-dd" >
+					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Aprobacion" id="lanzadoraprobacion">
                     <script type="text/javascript"> 
 						Calendar.setup({ 
 						inputField     :    "aprobacion",     // id del campo de texto 
-						ifFormat     :     "%d/%m/%Y",     // formato de la fecha que se escriba en el campo de texto 
+						ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
 						button     :    "lanzadoraprobacion"     // el id del botón que lanzará el calendario 
 					}); 
 					</script><br />
@@ -136,8 +130,11 @@
 				
 				<label id="estatuslabel">Estatus:</label>
 				<select id="estatustxt" name="estatus">
-					<option value="Pendiente">Pendiente</option>
-					<option value="Resuelto">Resuelto</option>
+					<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
+							while(rse.next()){%>
+								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>
+								<%}
+									%>
 				</select><br />
 				
 				<label id="prioridadlabel">Prioridad:</label>	
@@ -149,13 +146,13 @@
 				
 				<label id="fechamlabel">Fecha enviada </label>   
 				<label id="fechamilabel">por la mesa:</label>  		
-					<input type="text" id="fechamtxt"  name="fechamesa"  value="dd/mm/yyyy" />
-					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Inicial" id="fechamim"/>
+					<input type="text" id="mesa"  name="fechamesa"  value="yyyy-mm-dd" />
+					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Mesa" id="lanzadormesa"/>
                     <script type="text/javascript"> 
 						Calendar.setup({ 
-						inputField     :    "aprobacion",     // id del campo de texto 
-						ifFormat     :     "%d/%m/%Y",     // formato de la fecha que se escriba en el campo de texto 
-						button     :    "lanzadoraprobacion"     // el id del botón que lanzará el calendario 
+						inputField     :    "mesa",     // id del campo de texto 
+						ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
+						button     :    "lanzadormesa"     // el id del botón que lanzará el calendario 
 					}); 
 					</script><br />
 					
@@ -167,8 +164,7 @@
 					<select id="catxt" name="usuariocat">
 						<% ResultSet rsuc = dba.getSt().executeQuery("SELECT CATUsuarioCAT.ildUsuarioCat,CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAT.AMaterno FROM PUB.CATUsuarioCAT");
 							while(rsuc.next()){%>
-								<option value="<%=rsuc.getString(1)%>">
-									<%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%>
+								<option value="<%=rsuc.getString(1)%>"><%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%>
 								</option><%}%>
 					</select><br />
 					
@@ -176,7 +172,7 @@
                     <input id="liatxt" type="text" value="" size="30" name="emailcat"/><br/>
                     
 					<label id="ocsilabel">CISCO:</label>
-                    <input id="ocsitxt" type="text"value="" size="30" name="Ciscocat"/><br/>
+                    <input id="ocsitxt" type="text"value="" size="30" name="ciscocat"/><br/>
                     
 					<label id="atenlabel">Atendido:</label>
 					<select name="atendio" id="atentxt">
@@ -188,13 +184,13 @@
 					</select>
 					
 					<label id="fechantlabel">Fecha de atención:</label>
-					<input type="text" name="fechaatencion" id="fechanttxt" value="dd/mm/yyyy" id="lanzadoratencion"/>
-					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Inicial" id="fechatnim"/>
+					<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd"/>
+					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion"/>
                     <script type="text/javascript"> 
 						Calendar.setup({ 
-							inputField     :    "aprobacion",     // id del campo de texto 
-							ifFormat     :     "%d/%m/%Y",     // formato de la fecha que se escriba en el campo de texto 
-							button     :    "lanzadoraprobacion"     // el id del botón que lanzará el calendario 
+							inputField     :    "atencion",     // id del campo de texto 
+							ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
+							button     :    "lanzadoratencion"     // el id del botón que lanzará el calendario 
 						}); 
 					</script><br />
 					

@@ -13,8 +13,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Brayan/Documents/SCT/Incidencias/WebContent/WEB-INF/lib/base.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Brayan/Documents/SCT/Incidencias/WebContent/WEB-INF/lib/openedge.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Brayan/Documents/SCT/Incidencias/WebContent/WEB-INF/lib/util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/WebContent/WEB-INF/lib/base.jar"/>
+	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/WebContent/WEB-INF/lib/openedge.jar"/>
+	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/WebContent/WEB-INF/lib/util.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

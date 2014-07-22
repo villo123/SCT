@@ -1,32 +1,32 @@
 html{
-	height:100%;
-	background:#CCC;
+    height:100%;
+    background:#CCC;
 }
 body{
-	font-family:Arial,Helvetica,sans-serif;
-	height:100%;
-	margin:0;
-	background:#CCC;
-	background:-webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-	background:-moz-linear-gradient(top,  #EEE,  #CCC);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#EEEEEE', EndColorStr='#CCCCCC');
+    font-family:Arial,Helvetica,sans-serif;
+    height:100%;
+    margin:0;
+    background:#CCC;
+    background:-webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
+    background:-moz-linear-gradient(top,  #EEE,  #CCC);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#EEEEEE', EndColorStr='#CCCCCC');
 }
 label,text{
     font-size: small;
 }
 a,a:visited{
-	color:green;
-	text-decoration:none;
+    color:green;
+    text-decoration:none;
 }
 h1{
-	font-size:16px; 
-	color:#B5FF00;
-	font-weight:normal;
-	margin:0;
+    font-size:16px; 
+    color:#B5FF00;
+    font-weight:normal;
+    margin:0;
 }
 .title{
-	height:100px;
-	width:100px;
+    height:100px;
+    width:100px;
 }
 .panel{
 position:absolute;
@@ -412,7 +412,7 @@ height:1100px;
     text-decoration: none;
 }
 
-#fechantxt{
+#aprobacion{
     position:absolute;
     left:150px;
     top:410px;
@@ -422,8 +422,8 @@ height:1100px;
     text-decoration: none;
 }
 
-#fechanim{
-	position:absolute;
+#lanzadoraprobacion{
+    position:absolute;
     left:300px;
     top:410px;
     font-size:11px;
@@ -532,8 +532,18 @@ height:1100px;
     text-decoration: none;
 }
 
-#fechamim{
-	position:absolute;
+/*#lanzadormesa{
+    position:absolute;
+    left:300px;
+    top:590;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}*/
+
+#lanzadormesa{
+    position:absolute;
     left:300px;
     top:590px;
     font-size:11px;
@@ -542,7 +552,7 @@ height:1100px;
     text-decoration: none;
 }
 
-#fechamtxt{
+#mesa{
     position:absolute;
     left:150px;
     top:590px;
@@ -692,7 +702,7 @@ height:1100px;
     text-decoration: none;
 }
 
-#fechanttxt{
+#atencion{
     position:absolute;
     left:150px;
     top:769px;
@@ -702,8 +712,8 @@ height:1100px;
     text-decoration: none;
 }
 
-#fechatnim{
-	position:absolute;
+#lanzadoratencion{
+    position:absolute;
     left:300px;
     top:769px;
     font-size:11px;
@@ -735,12 +745,12 @@ height:1100px;
 #submit{
     margin-top: 5px;
     margin-right: 5px;
-	left:100px;
+    left:100px;
     top:990px;
     position: absolute;
     float: left;
     text-decoration: none;
-	width:60px;
+    width:60px;
     font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;
@@ -757,12 +767,12 @@ height:1100px;
 #cancel{
     margin-top: 5px;
     margin-right: 5px;
-	left:200px;
+    left:200px;
     top:990px;
     position: absolute;
     float: left;
     text-decoration: none;
-	width:60px;
+    width:60px;
     font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;

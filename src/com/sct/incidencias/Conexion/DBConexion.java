@@ -61,6 +61,5 @@ public class DBConexion {
 	
 	public static void main(String[] sct){
 		new DBConexion();
-
 	}
 }

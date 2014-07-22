@@ -43,38 +43,44 @@ public class InsertarFormulario extends HttpServlet {
 
 	
 		CATUnidadResponsable catunr = new CATUnidadResponsable();
+		
 		String nombreresponsable = request.getParameter("nombreur");
 		catunr.setNombreResponsable(nombreresponsable);
+		
 		String responsableAPaterno= request.getParameter("APur");
 		catunr.setAPaterno(responsableAPaterno);
+		
 		String responsableAMaterno = request.getParameter("AMur");
 		catunr.setAMaterno(responsableAMaterno);
+		
 		String responsableCisco = request.getParameter("ciscour");
 		catunr.setCisco(Integer.parseInt(responsableCisco));
+		
 		String responsableEmail = request.getParameter("emailur");
 		catunr.setEmail(responsableEmail);
-		String unidadrespoDescUR = request.getParameter("unidadresponsable");
-		catunr.setDescUR(unidadrespoDescUR);
+		
+		String unidadrespoildUnidadAdm = request.getParameter("unidadresponsable");
+		catunr.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
 
 		CATDepartamento catdep = new CATDepartamento();
-		String NombreDepartamento = request.getParameter("departamento");
-		catdep.setNombreDepartamento(NombreDepartamento);
+		String ildDepartamento = request.getParameter("departamento");
+		catdep.setildDepartamento(Integer.parseInt(ildDepartamento));
 
 		CATModulo catmod = new CATModulo();
-		String NombreModulo = request.getParameter("modulo");
-		catmod.setNombreModulo(NombreModulo);
+		String ildModulo = request.getParameter("modulo");
+		catmod.setildModulo(Integer.parseInt(ildModulo));
 		
 		CATProceso catpro = new CATProceso();
-		String Proceso = request.getParameter("proceso");
-		catpro.setProceso(Proceso);
+		String ildProceso = request.getParameter("proceso");
+		catpro.setildProceso(Integer.parseInt(ildProceso));
 
 		CATTipoDeIncidente cattipin = new CATTipoDeIncidente();
-		String NombreIncidente = request.getParameter("tipodeincidencias");
-		cattipin.setNombreIncidente(NombreIncidente);
+		String ildIncidente = request.getParameter("tipodeincidencias");
+		cattipin.setildIncidente(Integer.parseInt(ildIncidente));
 		
 		CATTipoDeSolucion cattipsol = new CATTipoDeSolucion();
-		String NombreSolucion = request.getParameter("tipodesolucion");
-		cattipsol.setNombreSolucion(NombreSolucion);
+		String ildTipoDeSolucion = request.getParameter("tipodesolucion");
+		cattipsol.setildTipoDeSolucion(Integer.parseInt(ildTipoDeSolucion));
 		
 		
 		String Aprobado = request.getParameter("aprobacion");
@@ -82,32 +88,35 @@ public class InsertarFormulario extends HttpServlet {
 		
 
 		String FechaAprobacion = request.getParameter("fechaaprobacion");//PENDIENTE
-		/*SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-		try{
-			String date = formatter.format(FechaAprobacion);
-			Date date2 = formatter.parse(date);
-			inc.setFechaAprobacion(date2);
-		}catch(ParseException e){
-			e.printStackTrace();
-		}
-		System.out.println(inc.getFechaAprobacion());*/
+		//SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
+		java.sql.Date fechaaprobacion=java.sql.Date.valueOf(FechaAprobacion);
+		inc.setFechaAprobacion(fechaaprobacion);
 	
 		String DescripcionIncidencia = request.getParameter("descripcionincidencia");
 		inc.setDescripcionIncidencia(DescripcionIncidencia);
 		
 		CATEstatus cates = new CATEstatus();
-		String NombreEstatus = request.getParameter("estatus");
-		cates.setNombreEstatus(NombreEstatus);
+		String ildEstatus = request.getParameter("estatus");
+		cates.setildEstatus(Integer.parseInt(ildEstatus));
 		
 		String Prioridad = request.getParameter("prioridad");
 		inc.setPrioridad(Prioridad);
+		
+		
 		String FELab = request.getParameter("fechamesa");//Pendiente
+		java.sql.Date fechamesa =java.sql.Date.valueOf(FELab);
+		inc.setFELab(fechamesa);
+		
+		
 		String HELab = request.getParameter("timepickermesa");//pendiente
+		java.sql.Time horamesa = java.sql.Time.valueOf(HELab+":00");
+		inc.setHELab(horamesa);
 
 		CATUsuarioCAT caturcat = new CATUsuarioCAT();
-		String NombreUsuarioCAT = request.getParameter("usuariocat");//separar strings
+		String UsuarioCAT = request.getParameter("usuariocat");//separar strings
+		caturcat.setildUsuarioCat(Integer.parseInt(UsuarioCAT));
 		
-		if(NombreUsuarioCAT.equals("Michel Báez Aguirre")){
+		/*if(NombreUsuarioCAT.equals("Michel Báez Aguirre")){
 			NombreUsuarioCAT = "Michel Báez Aguirre";
 			String nombre = "";
 			String ap = "";
@@ -252,18 +261,22 @@ public class InsertarFormulario extends HttpServlet {
 			caturcat.setNombreUsuario(nombre);
 			caturcat.setAPaterno(ap);
 			caturcat.setAMaterno(am);
-		}
+		}*/
 			/*System.out.println(caturcat.getNombreUsuario());
 			System.out.println(caturcat.getAPaterno());
 			System.out.println(caturcat.getAMaterno());*/
 
 		String EmailCAT = request.getParameter("emailcat");
 		caturcat.setEmail(EmailCAT);
-		String CiscoCAT = request.getParameter("Ciscocat");
+		
+		String CiscoCAT = request.getParameter("ciscocat");
 		caturcat.setCisco(Integer.parseInt(CiscoCAT));
 
+		
 		CATAtendio catate = new CATAtendio();
-		String NombreAtendio = request.getParameter("atendio");//separar strings
+		String atendio = request.getParameter("atendio");
+		catate.setildAtendio(Integer.parseInt(atendio));
+		/*String NombreAtendio = request.getParameter("atendio");//separar strings
 		if(NombreAtendio.equals("Abraham Martinez Alejo")){
 			NombreAtendio = "Abraham Martinez Alejo";
 			String nombre = "";
@@ -412,15 +425,16 @@ public class InsertarFormulario extends HttpServlet {
 			catate.setNombreAtendio(nombre);
 			catate.setAPaterno(ap);
 			catate.setAMaterno(am);
-		}
+		}*/
 		String FAtencion = request.getParameter("fechaatencion");
+		java.sql.Date fechaatencion =java.sql.Date.valueOf(FAtencion);
+		inc.setFAtencion(fechaatencion);
 		
-		/*SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
-		java.sql.Date fecha=java.sql.Date.valueOf(FAtencion);
-		inc.setFAtencion(fecha);
-		System.out.println(formater.format(inc.getFAtencion()));
+		//SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
+		//java.sql.Date fecha=java.sql.Date.valueOf(FAtencion);
+		//inc.setFAtencion(fecha);
 
-		DBConexion db = new DBConexion();
+		/*DBConexion db = new DBConexion();
 		try {
 			PreparedStatement ps = db.getCt().prepareStatement("INSERT INTO PUB.INCIDENCIA (FAtencion) VALUES (?)");
 			ps.setDate(1,(java.sql.Date) inc.getFAtencion());
@@ -433,38 +447,40 @@ public class InsertarFormulario extends HttpServlet {
 		}*/
 		
 		String HAtencion = request.getParameter("timepickeratencion");//Pendiente
+		java.sql.Time horatencion = java.sql.Time.valueOf(HAtencion+":00");
+		inc.setHAtencion(horatencion);
 
 		//Archivo
 		
 		String RespuestaUtic = request.getParameter("respuesta");
 		inc.setRespuestaUtic(RespuestaUtic);
 		
-		/*System.out.println(folio);
-		System.out.println(nombreresponsable);
-		System.out.println(responsableAPaterno);
-		System.out.println(responsableAMaterno);
-		System.out.println(responsableCisco);
-		System.out.println(responsableEmail);
-		System.out.println(unidadrespoDescUR);
-		System.out.println(NombreDepartamento);
-		System.out.println(NombreModulo);
-		System.out.println(Proceso);
-		System.out.println(NombreIncidente);
-		System.out.println(NombreSolucion);
-		System.out.println(Aprobado);
-		System.out.println(FechaAprobacion);
-		System.out.println(DescripcionIncidencia);
-		System.out.println(NombreEstatus);
-		System.out.println(Prioridad);
-		System.out.println(FELab);
-		System.out.println(HELab);
-		System.out.println(NombreUsuarioCAT);
-		System.out.println(EmailCAT);
-		System.out.println(CiscoCAT);
-		System.out.println(NombreAtendio);
-		System.out.println(FAtencion);
-		System.out.println(HAtencion);
-		System.out.println(RespuestaUtic);*/
+		/*System.out.println("Folio: " + inc.getFolio());
+		System.out.println("Nombre Usuario Responsable: " + catunr.getNombreResponsable());
+		System.out.println("Apellido Paterno Usuario Responsable: " + catunr.getAPaterno());
+		System.out.println("Apellido Materno Usuario Responsable: " + catunr.getAMaterno());
+		System.out.println("Cisco de Usuario Responsable: " + catunr.getCisco());
+		System.out.println("Email Usuario Responsable: " + catunr.getEmail());
+		System.out.println("Unidad Responsable (ID): " + catunr.getildUnidadAdm());
+		System.out.println("Departamento (ID): " + catdep.getildDepartamento());
+		System.out.println("Modulo (ID): " + catmod.getildModulo());
+		System.out.println("Proceso (ID): " + catpro.getildProceso());
+		System.out.println("Tipo de Incidente (ID): " + cattipin.getildIncidente());
+		System.out.println("Tipo de Solucion (ID): " + cattipsol.getildTipoDeSolucion());
+		System.out.println("Aprobado: " + inc.getAprobado());
+		System.out.println("Fecha de Aprobacion: "  + inc.getFechaAprobacion());
+		System.out.println("Descripcion Incidencia: " + inc.getDescripcionIncidencia());
+		System.out.println("Estatus: " + cates.getildEstatus());
+		System.out.println("Prioridad " + inc.getPrioridad());
+		System.out.println("Fecha enviada por la mesa: " + inc.getFELab());
+		System.out.println("Hora enviada por la mesa: " + inc.getHELab());
+		System.out.println("Nombre usuario Cat (ID): " + caturcat.getildUsuarioCat());
+		System.out.println("Email Cat: " + caturcat.getEmail());
+		System.out.println("Cisco Cat: " +  caturcat.getCisco());
+		System.out.println("Nombre Atendio (ID): " +  catate.getildAtendio());
+		System.out.println("Fecha Atencion: " + inc.getFAtencion());
+		System.out.println("Hora de Atencion: " + inc.getHAtencion());
+		System.out.println("Respuesta Utic: " + inc.getRespuestaUtic());*/
 		
 		
 		//inc.setFolio(Integer.parseInt(folio));
