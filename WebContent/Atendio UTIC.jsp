@@ -42,7 +42,7 @@
 				<button id="btn" onclick="();">Guarda</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button>
-            <form action="./general/user_submit.htm" name="LoginForm" method="post"  onSubmit="return validarPasswd()">
+            <form action="FillTable" name="Fill" method="post"/>
 				<table border="2px" style="border-collapse: collapse;"> 
 					<tbody>
 						<tr>
@@ -83,6 +83,16 @@
 						</tr>
 					</tbody>
 				</table>
+					<label id="idatendiolabel">ID:</label>
+					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" />
+					<label id="nameatendiolabel">Nombre:</label>
+					<input type="text" value="" id="nameatendiotxt" name="nameatendio" value="" size="30" />
+					<label id="apellidopatatendiolabel">Apellido Paterno:</label>
+					<input type="text" value="" id="apellidopatatendiotxt" name="apellidopatatendio" value="" size="30" />
+					<label id="apellidomatatendiolabel">Apellido Materno:</label>
+					<input type="text" value="" id="apellidomatatendiotxt" name="apellidomatatendio" value="" size="30" />
+					<label id="deptoatendiolabel">Departamento:</label>
+					<input type="text" value="" id="deptoatendiotxt" name="deptoatendio" value="" size="30" />
 			</div>
 		</div>	
 	</body>    
