@@ -5,35 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
 <link rel="shortcut icon" type="image/x-icon" href="ima/favicon.ico">
 <link rel="icon" type="image/x-icon" href="ima/favicon.ico">
 <script type="text/javascript" src="js/master.js"></script>
-  <!--<style type="text/css">
-
-  	/*.myButton {
-		background-color:#44c767;
-		display:inline-block;
-		cursor:pointer;
-		color:#ffffff;
-		font-family:Arial;
-		font-size:19px;
-		font-weight:bold;
-		padding:17px 15px;
-		text-decoration:none;
-	}
-	.myButton:hover {
-		background-color:#5cbf2a;
-	}
-	.myButton:active {
-		position:relative;
-		top:1px;
-	}*/
-  </style>-->
 </head>
 	<body onload="carga();" id="backfoto">
+	<div class="panel">
 	<div id="imagen"><img src="ima/logo.png" width="260" height="84"></div>
-	<div id="sistema"><h1>Sistema de Incidencia</h1></div>
+	<div class="container">
+	<center><h1>Sistema de Incidencia</h1></center>
 		<form action="Login" method="POST" onsubmit="return valideDatos();">
 			<table align="center" id="tablalogin">
 				<tr>
@@ -54,14 +36,16 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<input type="submit" name="aceptar" value="Aceptar" id="botone">
+						<input type="submit" name="aceptar" value="Aceptar" id="btn">
 						<!--<a href="#" class="myButton" onsubmit="">Enviar</a>-->
 					</td>
 					<td>
-						<input type="button" name="cancelar" value="Cancelar" id="botonc">
+						<input type="button" name="cancelar" value="Cancelar" id="btn">
 					</td>
 				</tr>
 			</table>	
 		</form>
+		</div>
+		</div>
 	</body>
 </html>
