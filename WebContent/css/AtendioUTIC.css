@@ -1,3 +1,51 @@
+html{
+    height:100%;
+    background:#CCC;
+}
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    height:100%;
+    margin:0;
+    background:#CCC;
+    background:-webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
+    background:-moz-linear-gradient(top,  #EEE,  #CCC);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#EEEEEE', EndColorStr='#CCCCCC');
+}
+label,text{
+    font-size: small;
+}
+a,a:visited{
+    color:green;
+    text-decoration:none;
+}
+h1{
+    font-size:16px; 
+    color:black;
+    font-weight:normal;
+    margin:0;
+}
+.title{
+    height:100px;
+    width:100px;
+}
+.panel{
+position:absolute;
+margin-left:-433px;
+left:50%;
+background-color:white; 
+width:827px;
+min-height:100%;
+padding:10px 20px;
+text-align:left;
+-moz-box-shadow: 0px 0px 3px #000;
+box-shadow: 0px 0px 3px #000;
+-webkit-box-shadow: 0px 0px 3px #000;
+}
+.container{
+width:100%;
+height:auto;
+}
+
 td.t {
     margin-top: 5px;
     margin-right: 5px;
@@ -51,4 +99,121 @@ html{
 	height:100%;
 	width:100%;
 	background:#CCC;
+}
+
+#idatendiotxt{
+	position:relative;
+    left:87px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#idatendiolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#nameatendiotxt{
+	position:relative;
+    left:56px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#nameatendiolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#apellidopatatendiotxt{
+	position:relative;
+    left:10px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#apellidopatatendiolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#apellidomatatendiotxt{
+	position:relative;
+    left:8px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#apellidomatatendiolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#deptoatendiotxt{
+	position:relative;
+    left:22px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+	
+}
+
+#deptoatendiolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#btn{
+    text-decoration: none;
+    width:60px;
+    font-size:xx-small;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+    background:green;
+    color: #FFFFFF;
+    border: 1px inset #6699CC;
+    padding: .1em 1em;
+}
+
+#btn:hover{
+    background:#66CC33;
 }

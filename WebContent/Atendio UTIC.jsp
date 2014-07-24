@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>	
-		<title>Formulario Alta</title>
+		<title>Atendió UTIC</title>
 		<!--Meta content-->
 		<meta charset="ISO-8859-1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!--Style content-->
-    	<link rel="stylesheet" type="text/css" href="css/master-style.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/AtendioUTIC.css" />
 		<link rel="stykesheet" type="text/css" href="css/button.css">
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
@@ -42,9 +41,12 @@
 				<button id="btn" onclick="();">Guarda</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button>
+				<br /> <br />
             <form action="FillTable" name="Fill" method="post"/>
 				<table border="2px" style="border-collapse: collapse;"> 
 					<tbody>
+					
+					
 						<tr>
 							<td class="t" style="color:#FFFFFF;">ID</td>
 							<td class="t" style="color:#FFFFFF;">Nombre</td>
@@ -56,6 +58,7 @@
 							<td></td>
 							<td></td>
 							<td></td>
+							
 							<td></td>
 							<td></td>
 						</tr>
@@ -83,16 +86,17 @@
 						</tr>
 					</tbody>
 				</table>
+				<br /><br />
 					<label id="idatendiolabel">ID:</label>
-					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" />
+					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
 					<label id="nameatendiolabel">Nombre:</label>
-					<input type="text" value="" id="nameatendiotxt" name="nameatendio" value="" size="30" />
+					<input type="text" value="" id="nameatendiotxt" name="nameatendio" value="" size="30" /><br /><br />
 					<label id="apellidopatatendiolabel">Apellido Paterno:</label>
-					<input type="text" value="" id="apellidopatatendiotxt" name="apellidopatatendio" value="" size="30" />
+					<input type="text" value="" id="apellidopatatendiotxt" name="apellidopatatendio" value="" size="30" /><br /><br />
 					<label id="apellidomatatendiolabel">Apellido Materno:</label>
-					<input type="text" value="" id="apellidomatatendiotxt" name="apellidomatatendio" value="" size="30" />
+					<input type="text" value="" id="apellidomatatendiotxt" name="apellidomatatendio" value="" size="30" /><br /><br />
 					<label id="deptoatendiolabel">Departamento:</label>
-					<input type="text" value="" id="deptoatendiotxt" name="deptoatendio" value="" size="30" />
+					<input type="text" value="" id="deptoatendiotxt" name="deptoatendio" value="" size="30" /><br /><br />
 			</div>
 		</div>	
 	</body>    
