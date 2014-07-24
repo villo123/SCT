@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Catalogo de Proceso</title>
+<title>Catalogo Tipo de Inicidencia</title>
 <img src="ima/logo.png" alt="SCT"><p>
 <style type="text/css"> 
 	td.t {
@@ -15,7 +17,7 @@
 	caption{
 		font-size: 40px;
 	}
-		.btnimageneditar
+	.btnimageneditar
 	{
 	border-style: none;
 	border-color: inherit;
@@ -69,45 +71,47 @@
 	 </style>
 </head>
 <body>
-<h1><center>Catalogo De Proceso</center></h1>
-<br>
-       <input class="btnimageneditar" type="button" name="Editar" value="" /> 
+	   <input class="btnimageneditar" type="button" name="Editar" value="" /> 
        <input class="btnimagenguardar" type="button" name="Guardar" value="" /> 
        <input class="btnimagennuevo" type="button" name="Nuevo" value="" /> 
        <input class="btnimagenbuscar" type="button" name="Buscar" value="" /> 
        <input class="btnimagencancelar" type="button" name="Cancelar" value="" />
-		   <br>    
+<br>    
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
 	
              <tr>
                  <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Procesos de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Tipo de La Incidencia</td>
               	 </tr>
              <tr>
              	 <td></td>
                  <td></td>
+                 
                  
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
+                 
               
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
+                 
                                  
              </tr>
               <tr>
              	 <td></td>
                  <td></td>
+                 
                                  
              </tr>
         </table>
-          <tr>
+        <tr>
 		<td>
 			Folio 
 		</td>
@@ -116,12 +120,11 @@
 		</td>
 		<tr>
 		<td>
-			Proceso de la Incidencia 
+			Tipo de la Incidencia 
 		</td>
 		<td>
 			<input type="text" value="" id="tp2" name="timepicker" />
 		</td>
 	</tr>
-               
 </body>
 </html>

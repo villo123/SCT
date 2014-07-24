@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Catalogo Estatus</title>
-<img src="ima/logo.png" alt="SCT"><p>
+<title>Catalogo Prioridad</title>
+
 <style type="text/css"> 
 	td.t {
 			background-color: #63666a;
@@ -66,10 +68,12 @@
     height: 33px;
 	text-align: left;
 }
+	
 	 </style>
 </head>
 <body>
-<h1><center>Catalogo Estatus</center></h1>
+<img src="ima/logo.png" alt="SCT"><p>
+<h1><center>Catalogo Prioridad</center></h1>
 <br>
        <input class="btnimageneditar" type="button" name="Editar" value="" /> 
        <input class="btnimagenguardar" type="button" name="Guardar" value="" /> 
@@ -82,35 +86,36 @@
 	
              <tr>
                  <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Estatus de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Prioridad de La Incidencia</td>
               	 </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                 
                  
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
-                               
+                 
+              
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                 
                                  
              </tr>
               <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                 
                                  
              </tr>
         </table>
                
 </body>
 </html>
+
