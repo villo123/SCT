@@ -612,7 +612,7 @@ height:1100px;
     text-decoration: none;
 }
 
-#lialabel{
+/*#lialabel{
     position:absolute;
     padding-left:0px;
     padding-top:295px;
@@ -620,9 +620,9 @@ height:1100px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
     text-decoration: none;
-}
+}*/
 
-#liatxt{
+/*#liatxt{
     position:absolute;
     left:150px;
     top:680px;
@@ -630,9 +630,9 @@ height:1100px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
     text-decoration: none;
-}
+}*/
 
-#ocsilabel{
+/*#ocsilabel{
     position:absolute;
     padding-left:0px;
     padding-top:309px;
@@ -640,9 +640,9 @@ height:1100px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
     text-decoration: none;
-}
+}*/
 
-#ocsitxt{
+/*#ocsitxt{
     position:absolute;
     left:150px;
     top:710px;
@@ -650,12 +650,12 @@ height:1100px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
     text-decoration: none;
-}
+}*/
 
 #atenlabel{
     position:absolute;
     padding-left:0px;
-    padding-top:320px;
+    padding-top:296px;
     font-size: 11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -665,7 +665,7 @@ height:1100px;
 #atenalabel{
     position:absolute;
     padding-left:0px;
-    padding-top:362px;
+    padding-top:346px;
     font-size: 11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -675,7 +675,7 @@ height:1100px;
 #atenatxt{
     position:absolute;
     left:150px;
-    top:800px;
+    top:748px;
     font-size:11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -685,7 +685,7 @@ height:1100px;
 #atentxt{
     position:absolute;
     left:150px;
-    top:740px;
+    top:680px;
     font-size:11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -695,7 +695,7 @@ height:1100px;
 #fechantlabel{
     position:absolute;
     padding-left:0px;
-    padding-top:350px;
+    padding-top:328px;
     font-size: 11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -705,7 +705,7 @@ height:1100px;
 #atencion{
     position:absolute;
     left:150px;
-    top:769px;
+    top:710px;
     font-size:11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -715,7 +715,7 @@ height:1100px;
 #lanzadoratencion{
     position:absolute;
     left:300px;
-    top:769px;
+    top:710px;
     font-size:11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -725,7 +725,7 @@ height:1100px;
 #atachylabel{
     position:absolute;
     padding-left:0px;
-    padding-top:420px;
+    padding-top:363px;
     font-size: 11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -735,7 +735,7 @@ height:1100px;
 #atachytxt{
     position:absolute;
     left:150px;
-    top:845px;
+    top:790px;
     font-size:11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;
@@ -746,7 +746,7 @@ height:1100px;
     margin-top: 5px;
     margin-right: 5px;
     left:100px;
-    top:990px;
+    top:900px;
     position: absolute;
     float: left;
     text-decoration: none;
@@ -768,7 +768,7 @@ height:1100px;
     margin-top: 5px;
     margin-right: 5px;
     left:200px;
-    top:990px;
+    top:900px;
     position: absolute;
     float: left;
     text-decoration: none;

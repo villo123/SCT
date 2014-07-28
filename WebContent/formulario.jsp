@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
    <%@ page import="com.sct.incidencias.catalogos.CATUsuarioUTIC"%>
    <%@ page import="com.sct.incidencias.Conexion.DBConexion" %>
    <%DBConexion dba = new DBConexion();
@@ -8,6 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+	
 		<link rel="stylesheet" type="text/css" href="css/master-style.css"/> 
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
@@ -107,10 +107,10 @@
 					</select><br />
 					
 					<label id="aprovylabel">Aprobación:</label>
-					<select  type="text" name="aprobacion" id="aprovytxt">
+					<select type="text" name="aprobacion" id="aprovytxt">
 						<option value="SI">SI</option>
 						<option value="NO">NO</option>
-					</select><br />
+					</select><br/>
 					
 				<label id="fechanlabel">Fecha de aprobación:</label>
 				<input id="aprobacion" type="text" name="fechaaprobacion" value="yyyy-mm-dd" >
@@ -168,11 +168,6 @@
 								</option><%}%>
 					</select><br />
 					
-					<label id="lialabel">E-mail:</label>
-                    <input id="liatxt" type="text" value="" size="30" name="emailcat"/><br/>
-                    
-					<label id="ocsilabel">CISCO:</label>
-                    <input id="ocsitxt" type="text"value="" size="30" name="ciscocat"/><br/>
                     
 					<label id="atenlabel">Atendido:</label>
 					<select name="atendio" id="atentxt">
@@ -207,10 +202,3 @@
 		</div>	
 	</body>    
 </html>
-
-
-
-
-
-
-
