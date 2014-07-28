@@ -5,83 +5,23 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Catalogo Estatus</title>
-<img src="ima/logo.png" alt="SCT"><p>
-<style type="text/css"> 
-	td.t {
-			background-color: #63666a;
-			padding: 10px; 
-	}
-	td {
-	 	padding: 10px;
-	}
-	caption{
-		font-size: 40px;
-	}
-	.btnimageneditar
-	{
-	border-style: none;
-	border-color: inherit;
-	border-width: 0;
-	background: url('ima/e1.jpg') no-repeat 0 0;
-	cursor: pointer;
-    height: 33px;
-	text-align: left;
-}
-	.btnimagenguardar
-	{
-	border-style: none;
-	border-color: inherit;
-	border-width: 0;
-	background: url('ima/g1.jpg') no-repeat 0 0;
-	cursor: pointer;
-    height: 33px;
-	text-align: left;
-}
-	.btnimagennuevo
-	{
-	border-style: none;
-	border-color: inherit;
-	border-width: 0;
-	background: url('ima/n1.jpg') no-repeat 0 0;
-	cursor: pointer;
- 
-    height: 33px;
-	text-align: left;
-}
-	.btnimagenbuscar
-	{
-	border-style: none;
-	border-color: inherit;
-	border-width: 0;
-	background: url('ima/b1.jpg') no-repeat 0 0;
-	cursor: pointer;
-    height: 33px;
-	text-align: left;
-}
-	.btnimagencancelar
-	{
-	border-style: none;
-	border-color: inherit;
-	border-width: 0;
-	background: url('ima/c1.jpg') no-repeat 0 0;
-	cursor: pointer;
-    height: 33px;
-	text-align: left;
-}
-	 </style>
+		<link rel="stylesheet" type="text/css" href="css/OperadorUTIC.css" />
+	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
 <body>
-<h1><center>Catalogo Estatus</center></h1>
-<br>
-        <input class="btnimageneditar" type="button" name="Editar" value="" /> 
-       <input class="btnimagenguardar" type="button" name="Guardar" value="" /> 
-       <input class="btnimagennuevo" type="button" name="Nuevo" value="" /> 
-       <input class="btnimagenbuscar" type="button" name="Buscar" value="" /> 
-       <input class="btnimagencancelar" type="button" name="Cancelar" value="" />
-		   <br>    
+		<div class="panel">
+			<div class="title">
+				<img src="ima/logo.png" width="260" height="84" />
+			</div>
+			<div class="container">
+				<h1><center>Catalogo Estatus</center></h1>
+				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="();">Editar</button>
+				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="seacker();">Buscar</button>
+				<button id="btn" onclick="cancelar();">Cancelar</button>
+				<br /> <br /> 
 		 <table border="2px" style="border-collapse: collapse;"> 
-             	
-	
              <tr>
                  <td class="t" style="color:#FFFFFF;">Usuario</td>
                  <td class="t" style="color:#FFFFFF;">Numero de Empleado</td>
@@ -138,70 +78,25 @@
                                
              </tr>
         </table>
-        <tr>
-		<td>
-			Usuarios
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-		</tr>
-		<tr>
-		<td>
-			Numero de Empleado
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-		</tr>
-		<tr>
-		<td>
-			Nombre
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Apellido Paterno
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Apellido Materno
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Departamento
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-	</tr>
-	<tr>
-		<td>
-			E-mail
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-		</tr>
-		<tr>
-		<td>
-			Unidad
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-		</tr>
-               
-</body>
+        	<br />
+			<label>Usuarios:</label>
+			<input type="text" value="" id="UsuarioOpt" name="timepicker" size="30" /><br /><br />
+			<label>Numero de Empleado:</label>
+			<input type="text" value="" id="NumeroOpt" name="timepicker" size="30" /><br /><br />
+			<label>Nombre:</label>
+			<input type="text" value="" id="NombreOpt" name="timepicker" size="30" /><br /><br />
+			<label>Apellido Paterno:</label>
+			<input type="text" value="" id="ApellidoPatOpt" name="timepicker" size="30" /><br /><br />
+			<label>Apellido Materno:</label>
+			<input type="text" value="" id="ApellidoMatOpt" name="timepicker" size="30" /><br /><br />
+			<label>Departamento:</label>
+			<input type="text" value="" id="DeptoOpt" name="timepicker" size="30" /><br /><br />
+			<label>E-mail:</label>
+			<input type="text" value="" id="EmailOpt" name="timepicker" size="30" /><br /><br />
+			<label>Unidad:</label>
+			<input type="text" value="" id="UnidadOpt" name="timepicker" size="30" /><br /><br />
+
+			</div>
+  		</div>
+	</body>
 </html>
