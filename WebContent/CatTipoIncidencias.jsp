@@ -17,7 +17,7 @@
 				<button id="btn" onclick="();">Editar</button>
 				<button id="btn" onclick="();">Guarda</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
-				<button id="btn" onclick="cancelar();">Cancelar</button>
+				<button id="btn" onclick="cancelar();">Cancelar</button><br />
 <br>    
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
@@ -52,22 +52,11 @@
                  
                                  
              </tr>
-        </table>
-        <tr>
-		<td>
-			Folio 
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-		<tr>
-		<td>
-			Tipo de la Incidencia 
-		</td>
-		<td>
-			<input type="text" value="" id="tp2" name="timepicker" />
-		</td>
-	</tr>
+        </table><br /><br />
+			<label>Folio:</label> 
+			<input type="text" value="" id="FolioInc" name="timepicker" size="30"/><br /><br />
+			<label>Tipo de la Incidencia:</label>
+			<input type="text" value="" id="TipoInc" name="timepicker" size="30"/>
 			</div>
 		</div>
 	</body>
