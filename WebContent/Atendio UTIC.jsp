@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!--Style content-->
 		<link rel="stylesheet" type="text/css" href="css/AtendioUTIC.css" />
-		<link rel="stykesheet" type="text/css" href="css/button.css">
+		<link rel="stykesheet" type="text/css" href="css/button.css" />
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link rel="stylesheet" type="text/css"href="css/calendario.css" />
 		<!--Script content-->

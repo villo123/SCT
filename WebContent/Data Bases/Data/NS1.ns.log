@@ -1,0 +1,528 @@
+======================================================================
+[14/03/03@10:18:03.984-0600] P-001112 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/03@10:18:03.987-0600] P-001112 T-main 1 --- --- Logging level set to = 2
+[14/03/03@10:18:03.987-0600] P-001112 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/03@10:18:04.007-0600] P-001112 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/03@10:18:04.008-0600] P-001112 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/03@10:22:18.777-0600] P-002996 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/03@10:22:18.784-0600] P-002996 T-main 1 --- --- Logging level set to = 2
+[14/03/03@10:22:18.785-0600] P-002996 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/03@10:22:18.892-0600] P-002996 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/03@10:22:18.893-0600] P-002996 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/10@11:16:08.666-0600] P-004460 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/10@11:16:08.671-0600] P-004460 T-main 1 --- --- Logging level set to = 2
+[14/03/10@11:16:08.672-0600] P-004460 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/10@11:16:08.699-0600] P-004460 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/10@11:16:08.699-0600] P-004460 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/10@21:48:13.942-0600] P-004540 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/10@21:48:13.945-0600] P-004540 T-main 1 --- --- Logging level set to = 2
+[14/03/10@21:48:13.945-0600] P-004540 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/10@21:48:14.063-0600] P-004540 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/10@21:48:14.063-0600] P-004540 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/14@13:34:08.680-0600] P-003740 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/14@13:34:08.687-0600] P-003740 T-main 1 --- --- Logging level set to = 2
+[14/03/14@13:34:08.687-0600] P-003740 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/14@13:34:08.722-0600] P-003740 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/14@13:34:08.722-0600] P-003740 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/21@10:12:58.690-0600] P-002756 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/21@10:12:58.693-0600] P-002756 T-main 1 --- --- Logging level set to = 2
+[14/03/21@10:12:58.694-0600] P-002756 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/21@10:12:58.715-0600] P-002756 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/21@10:12:58.715-0600] P-002756 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/21@19:45:45.999-0600] P-004376 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/21@19:45:46.002-0600] P-004376 T-main 1 --- --- Logging level set to = 2
+[14/03/21@19:45:46.003-0600] P-004376 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/21@19:45:46.022-0600] P-004376 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/21@19:45:46.022-0600] P-004376 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/22@11:09:57.167-0600] P-005592 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/22@11:09:57.170-0600] P-005592 T-main 1 --- --- Logging level set to = 2
+[14/03/22@11:09:57.170-0600] P-005592 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/22@11:09:57.203-0600] P-005592 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/22@11:09:57.203-0600] P-005592 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/22@13:31:39.608-0600] P-005468 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/22@13:31:39.611-0600] P-005468 T-main 1 --- --- Logging level set to = 2
+[14/03/22@13:31:39.611-0600] P-005468 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/22@13:31:39.648-0600] P-005468 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/22@13:31:39.648-0600] P-005468 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/22@18:50:10.931-0600] P-005404 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/22@18:50:10.935-0600] P-005404 T-main 1 --- --- Logging level set to = 2
+[14/03/22@18:50:10.935-0600] P-005404 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/22@18:50:10.957-0600] P-005404 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/22@18:50:10.958-0600] P-005404 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/22@20:40:51.942-0600] P-005424 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/22@20:40:51.949-0600] P-005424 T-main 1 --- --- Logging level set to = 2
+[14/03/22@20:40:51.949-0600] P-005424 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/22@20:40:52.222-0600] P-005424 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/22@20:40:52.223-0600] P-005424 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/22@22:59:43.844-0600] P-003936 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/22@22:59:43.848-0600] P-003936 T-main 1 --- --- Logging level set to = 2
+[14/03/22@22:59:43.848-0600] P-003936 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/22@22:59:43.869-0600] P-003936 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/22@22:59:43.869-0600] P-003936 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/24@21:12:27.127-0600] P-005144 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/24@21:12:27.130-0600] P-005144 T-main 1 --- --- Logging level set to = 2
+[14/03/24@21:12:27.131-0600] P-005144 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/24@21:12:27.175-0600] P-005144 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/24@21:12:27.175-0600] P-005144 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/25@13:00:56.633-0600] P-003632 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/25@13:00:56.638-0600] P-003632 T-main 1 --- --- Logging level set to = 2
+[14/03/25@13:00:56.638-0600] P-003632 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/25@13:00:56.661-0600] P-003632 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/25@13:00:56.662-0600] P-003632 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/25@18:24:39.341-0600] P-001560 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/25@18:24:39.344-0600] P-001560 T-main 1 --- --- Logging level set to = 2
+[14/03/25@18:24:39.344-0600] P-001560 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/25@18:24:39.365-0600] P-001560 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/25@18:24:39.365-0600] P-001560 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/03/26@13:42:56.279-0600] P-004440 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/03/26@13:42:56.282-0600] P-004440 T-main 1 --- --- Logging level set to = 2
+[14/03/26@13:42:56.282-0600] P-004440 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/03/26@13:42:56.306-0600] P-004440 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/03/26@13:42:56.306-0600] P-004440 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/01@10:48:54.192-0600] P-003528 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/01@10:48:54.196-0600] P-003528 T-main 1 --- --- Logging level set to = 2
+[14/04/01@10:48:54.197-0600] P-003528 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/01@10:48:54.225-0600] P-003528 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/01@10:48:54.225-0600] P-003528 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/02@11:16:32.027-0600] P-005092 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/02@11:16:32.031-0600] P-005092 T-main 1 --- --- Logging level set to = 2
+[14/04/02@11:16:32.032-0600] P-005092 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/02@11:16:32.051-0600] P-005092 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/02@11:16:32.051-0600] P-005092 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/02@14:27:10.651-0600] P-001992 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/02@14:27:10.654-0600] P-001992 T-main 1 --- --- Logging level set to = 2
+[14/04/02@14:27:10.655-0600] P-001992 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/02@14:27:10.672-0600] P-001992 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/02@14:27:10.675-0600] P-001992 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/02@22:24:50.212-0600] P-001088 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/02@22:24:50.215-0600] P-001088 T-main 1 --- --- Logging level set to = 2
+[14/04/02@22:24:50.215-0600] P-001088 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/02@22:24:50.236-0600] P-001088 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/02@22:24:50.236-0600] P-001088 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/03@15:27:35.754-0600] P-003920 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/03@15:27:35.758-0600] P-003920 T-main 1 --- --- Logging level set to = 2
+[14/04/03@15:27:35.758-0600] P-003920 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/03@15:27:35.781-0600] P-003920 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/03@15:27:35.781-0600] P-003920 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/04@10:19:46.717-0600] P-003624 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/04@10:19:46.723-0600] P-003624 T-main 1 --- --- Logging level set to = 2
+[14/04/04@10:19:46.723-0600] P-003624 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/04@10:19:46.742-0600] P-003624 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/04@10:19:46.743-0600] P-003624 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/04@10:30:35.946-0600] P-003904 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/04@10:30:35.951-0600] P-003904 T-main 1 --- --- Logging level set to = 2
+[14/04/04@10:30:35.951-0600] P-003904 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/04@10:30:35.971-0600] P-003904 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/04@10:30:35.971-0600] P-003904 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/04@11:20:29.786-0600] P-004956 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/04@11:20:29.793-0600] P-004956 T-main 1 --- --- Logging level set to = 2
+[14/04/04@11:20:29.794-0600] P-004956 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/04@11:20:29.839-0600] P-004956 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/04@11:20:29.840-0600] P-004956 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/08@11:27:34.257-0500] P-003708 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/08@11:27:34.260-0500] P-003708 T-main 1 --- --- Logging level set to = 2
+[14/04/08@11:27:34.260-0500] P-003708 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/08@11:27:34.283-0500] P-003708 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/08@11:27:34.283-0500] P-003708 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/10@09:08:29.843-0500] P-005024 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/10@09:08:29.847-0500] P-005024 T-main 1 --- --- Logging level set to = 2
+[14/04/10@09:08:29.847-0500] P-005024 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/10@09:08:29.908-0500] P-005024 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/10@09:08:29.909-0500] P-005024 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/13@14:32:37.373-0500] P-004224 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/13@14:32:37.376-0500] P-004224 T-main 1 --- --- Logging level set to = 2
+[14/04/13@14:32:37.376-0500] P-004224 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/13@14:32:37.438-0500] P-004224 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/13@14:32:37.438-0500] P-004224 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/16@05:47:44.481-0500] P-004844 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/16@05:47:44.484-0500] P-004844 T-main 1 --- --- Logging level set to = 2
+[14/04/16@05:47:44.484-0500] P-004844 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/16@05:47:44.507-0500] P-004844 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/16@05:47:44.507-0500] P-004844 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/16@13:45:16.385-0500] P-002808 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/16@13:45:16.388-0500] P-002808 T-main 1 --- --- Logging level set to = 2
+[14/04/16@13:45:16.388-0500] P-002808 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/16@13:45:16.412-0500] P-002808 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/16@13:45:16.412-0500] P-002808 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/16@13:50:47.577-0500] P-003960 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/16@13:50:47.580-0500] P-003960 T-main 1 --- --- Logging level set to = 2
+[14/04/16@13:50:47.580-0500] P-003960 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/16@13:50:47.604-0500] P-003960 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/16@13:50:47.604-0500] P-003960 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/16@13:57:36.564-0500] P-004532 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/16@13:57:36.567-0500] P-004532 T-main 1 --- --- Logging level set to = 2
+[14/04/16@13:57:36.567-0500] P-004532 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/16@13:57:36.590-0500] P-004532 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/16@13:57:36.590-0500] P-004532 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/16@14:06:59.969-0500] P-003784 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/16@14:06:59.972-0500] P-003784 T-main 1 --- --- Logging level set to = 2
+[14/04/16@14:06:59.972-0500] P-003784 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/16@14:06:59.994-0500] P-003784 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/16@14:06:59.994-0500] P-003784 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/29@18:31:33.162-0500] P-004948 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/29@18:31:33.165-0500] P-004948 T-main 1 --- --- Logging level set to = 2
+[14/04/29@18:31:33.165-0500] P-004948 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/29@18:31:33.189-0500] P-004948 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/29@18:31:33.189-0500] P-004948 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/30@10:34:15.915-0500] P-004932 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/30@10:34:15.921-0500] P-004932 T-main 1 --- --- Logging level set to = 2
+[14/04/30@10:34:15.921-0500] P-004932 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/30@10:34:15.946-0500] P-004932 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/30@10:34:15.946-0500] P-004932 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/04/30@18:57:25.687-0500] P-004772 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/04/30@18:57:25.690-0500] P-004772 T-main 1 --- --- Logging level set to = 2
+[14/04/30@18:57:25.690-0500] P-004772 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/04/30@18:57:25.712-0500] P-004772 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/04/30@18:57:25.712-0500] P-004772 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/02@22:10:31.251-0500] P-004720 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/02@22:10:31.254-0500] P-004720 T-main 1 --- --- Logging level set to = 2
+[14/05/02@22:10:31.254-0500] P-004720 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/02@22:10:31.274-0500] P-004720 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/02@22:10:31.274-0500] P-004720 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/06@10:21:44.607-0500] P-004724 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/06@10:21:44.611-0500] P-004724 T-main 1 --- --- Logging level set to = 2
+[14/05/06@10:21:44.611-0500] P-004724 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/06@10:21:44.635-0500] P-004724 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/06@10:21:44.635-0500] P-004724 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/06@10:35:52.289-0500] P-004672 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/06@10:35:52.292-0500] P-004672 T-main 1 --- --- Logging level set to = 2
+[14/05/06@10:35:52.293-0500] P-004672 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/06@10:35:52.314-0500] P-004672 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/06@10:35:52.314-0500] P-004672 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/06@10:54:42.455-0500] P-004556 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/06@10:54:42.458-0500] P-004556 T-main 1 --- --- Logging level set to = 2
+[14/05/06@10:54:42.458-0500] P-004556 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/06@10:54:42.480-0500] P-004556 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/06@10:54:42.480-0500] P-004556 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/06@11:13:55.509-0500] P-004652 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/06@11:13:55.513-0500] P-004652 T-main 1 --- --- Logging level set to = 2
+[14/05/06@11:13:55.513-0500] P-004652 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/06@11:13:55.563-0500] P-004652 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/06@11:13:55.564-0500] P-004652 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/06@22:17:05.267-0500] P-004808 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/06@22:17:05.270-0500] P-004808 T-main 1 --- --- Logging level set to = 2
+[14/05/06@22:17:05.271-0500] P-004808 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/06@22:17:05.410-0500] P-004808 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/06@22:17:05.410-0500] P-004808 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/06@22:37:28.537-0500] P-003532 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/06@22:37:28.541-0500] P-003532 T-main 1 --- --- Logging level set to = 2
+[14/05/06@22:37:28.541-0500] P-003532 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/06@22:37:28.564-0500] P-003532 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/06@22:37:28.564-0500] P-003532 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/08@10:19:23.122-0500] P-004828 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/08@10:19:23.125-0500] P-004828 T-main 1 --- --- Logging level set to = 2
+[14/05/08@10:19:23.126-0500] P-004828 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/08@10:19:23.149-0500] P-004828 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/08@10:19:23.149-0500] P-004828 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/08@20:10:39.582-0500] P-003532 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/08@20:10:39.589-0500] P-003532 T-main 1 --- --- Logging level set to = 2
+[14/05/08@20:10:39.589-0500] P-003532 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/08@20:10:39.624-0500] P-003532 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/08@20:10:39.624-0500] P-003532 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/08@23:59:01.946-0500] P-004972 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/08@23:59:01.949-0500] P-004972 T-main 1 --- --- Logging level set to = 2
+[14/05/08@23:59:01.949-0500] P-004972 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/08@23:59:01.971-0500] P-004972 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/08@23:59:01.972-0500] P-004972 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/09@00:05:35.233-0500] P-004308 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/09@00:05:35.236-0500] P-004308 T-main 1 --- --- Logging level set to = 2
+[14/05/09@00:05:35.237-0500] P-004308 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/09@00:05:35.260-0500] P-004308 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/09@00:05:35.260-0500] P-004308 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/12@10:47:29.647-0500] P-004968 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/12@10:47:29.650-0500] P-004968 T-main 1 --- --- Logging level set to = 2
+[14/05/12@10:47:29.650-0500] P-004968 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/12@10:47:29.670-0500] P-004968 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/12@10:47:29.671-0500] P-004968 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/12@20:19:55.982-0500] P-004832 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/12@20:19:55.985-0500] P-004832 T-main 1 --- --- Logging level set to = 2
+[14/05/12@20:19:55.985-0500] P-004832 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/12@20:19:56.019-0500] P-004832 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/12@20:19:56.019-0500] P-004832 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/13@22:50:43.293-0500] P-001480 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/13@22:50:43.297-0500] P-001480 T-main 1 --- --- Logging level set to = 2
+[14/05/13@22:50:43.297-0500] P-001480 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/13@22:50:43.456-0500] P-001480 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/13@22:50:43.456-0500] P-001480 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/13@23:32:49.355-0500] P-004712 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/13@23:32:49.358-0500] P-004712 T-main 1 --- --- Logging level set to = 2
+[14/05/13@23:32:49.358-0500] P-004712 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/13@23:32:49.380-0500] P-004712 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/13@23:32:49.381-0500] P-004712 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/14@10:31:06.352-0500] P-003260 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/14@10:31:06.355-0500] P-003260 T-main 1 --- --- Logging level set to = 2
+[14/05/14@10:31:06.355-0500] P-003260 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/14@10:31:06.378-0500] P-003260 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/14@10:31:06.378-0500] P-003260 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/14@10:53:11.020-0500] P-003668 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/14@10:53:11.023-0500] P-003668 T-main 1 --- --- Logging level set to = 2
+[14/05/14@10:53:11.023-0500] P-003668 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/14@10:53:11.043-0500] P-003668 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/14@10:53:11.043-0500] P-003668 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/14@10:59:27.350-0500] P-004776 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/14@10:59:27.353-0500] P-004776 T-main 1 --- --- Logging level set to = 2
+[14/05/14@10:59:27.353-0500] P-004776 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/14@10:59:27.375-0500] P-004776 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/14@10:59:27.375-0500] P-004776 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/14@17:38:58.065-0500] P-004768 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/14@17:38:58.073-0500] P-004768 T-main 1 --- --- Logging level set to = 2
+[14/05/14@17:38:58.073-0500] P-004768 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/14@17:38:58.110-0500] P-004768 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/14@17:38:58.111-0500] P-004768 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/15@10:28:21.175-0500] P-002456 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/15@10:28:21.178-0500] P-002456 T-main 1 --- --- Logging level set to = 2
+[14/05/15@10:28:21.179-0500] P-002456 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/15@10:28:21.207-0500] P-002456 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/15@10:28:21.207-0500] P-002456 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/15@11:43:33.856-0500] P-003932 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/15@11:43:33.859-0500] P-003932 T-main 1 --- --- Logging level set to = 2
+[14/05/15@11:43:33.860-0500] P-003932 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/15@11:43:33.892-0500] P-003932 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/15@11:43:33.892-0500] P-003932 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/17@00:40:02.068-0500] P-004680 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/17@00:40:02.072-0500] P-004680 T-main 1 --- --- Logging level set to = 2
+[14/05/17@00:40:02.072-0500] P-004680 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/17@00:40:02.132-0500] P-004680 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/17@00:40:02.133-0500] P-004680 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/20@22:57:53.535-0500] P-003500 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/20@22:57:53.538-0500] P-003500 T-main 1 --- --- Logging level set to = 2
+[14/05/20@22:57:53.538-0500] P-003500 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/20@22:57:53.578-0500] P-003500 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/20@22:57:53.581-0500] P-003500 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/05/23@10:15:36.336-0500] P-003408 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/05/23@10:15:36.340-0500] P-003408 T-main 1 --- --- Logging level set to = 2
+[14/05/23@10:15:36.340-0500] P-003408 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/05/23@10:15:36.423-0500] P-003408 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/05/23@10:15:36.424-0500] P-003408 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/04@22:53:19.224-0500] P-003808 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/04@22:53:19.227-0500] P-003808 T-main 1 --- --- Logging level set to = 2
+[14/06/04@22:53:19.227-0500] P-003808 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/04@22:53:19.250-0500] P-003808 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/04@22:53:19.251-0500] P-003808 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/09@20:37:58.201-0500] P-003132 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/09@20:37:58.204-0500] P-003132 T-main 1 --- --- Logging level set to = 2
+[14/06/09@20:37:58.204-0500] P-003132 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/09@20:37:58.226-0500] P-003132 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/09@20:37:58.227-0500] P-003132 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/10@10:34:10.426-0500] P-004608 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/10@10:34:10.429-0500] P-004608 T-main 1 --- --- Logging level set to = 2
+[14/06/10@10:34:10.429-0500] P-004608 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/10@10:34:10.454-0500] P-004608 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/10@10:34:10.454-0500] P-004608 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/11@00:27:30.496-0500] P-005036 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/11@00:27:30.499-0500] P-005036 T-main 1 --- --- Logging level set to = 2
+[14/06/11@00:27:30.500-0500] P-005036 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/11@00:27:30.530-0500] P-005036 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/11@00:27:30.531-0500] P-005036 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/11@23:14:21.491-0500] P-004668 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/11@23:14:21.497-0500] P-004668 T-main 1 --- --- Logging level set to = 2
+[14/06/11@23:14:21.498-0500] P-004668 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/11@23:14:21.532-0500] P-004668 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/11@23:14:21.532-0500] P-004668 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/20@19:42:49.969-0500] P-005188 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/20@19:42:49.976-0500] P-005188 T-main 1 --- --- Logging level set to = 2
+[14/06/20@19:42:49.977-0500] P-005188 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/20@19:42:50.341-0500] P-005188 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/20@19:42:50.342-0500] P-005188 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/22@23:04:59.838-0500] P-004748 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/22@23:04:59.841-0500] P-004748 T-main 1 --- --- Logging level set to = 2
+[14/06/22@23:04:59.841-0500] P-004748 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/22@23:04:59.883-0500] P-004748 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/22@23:04:59.883-0500] P-004748 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/25@19:34:21.482-0500] P-004588 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/25@19:34:21.486-0500] P-004588 T-main 1 --- --- Logging level set to = 2
+[14/06/25@19:34:21.486-0500] P-004588 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/25@19:34:21.506-0500] P-004588 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/25@19:34:21.507-0500] P-004588 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/25@20:14:12.481-0500] P-004924 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/25@20:14:12.485-0500] P-004924 T-main 1 --- --- Logging level set to = 2
+[14/06/25@20:14:12.485-0500] P-004924 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/25@20:14:12.505-0500] P-004924 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/25@20:14:12.505-0500] P-004924 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/25@20:45:05.921-0500] P-004572 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/25@20:45:05.924-0500] P-004572 T-main 1 --- --- Logging level set to = 2
+[14/06/25@20:45:05.924-0500] P-004572 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/25@20:45:05.945-0500] P-004572 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/25@20:45:05.946-0500] P-004572 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/26@00:05:40.649-0500] P-004676 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/26@00:05:40.661-0500] P-004676 T-main 1 --- --- Logging level set to = 2
+[14/06/26@00:05:40.662-0500] P-004676 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/26@00:05:40.685-0500] P-004676 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/26@00:05:40.685-0500] P-004676 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/27@16:25:11.874-0500] P-003364 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/27@16:25:11.880-0500] P-003364 T-main 1 --- --- Logging level set to = 2
+[14/06/27@16:25:11.880-0500] P-003364 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/27@16:25:11.981-0500] P-003364 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/27@16:25:11.981-0500] P-003364 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/29@23:34:00.521-0500] P-004560 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/29@23:34:00.525-0500] P-004560 T-main 1 --- --- Logging level set to = 2
+[14/06/29@23:34:00.525-0500] P-004560 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/29@23:34:00.554-0500] P-004560 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/29@23:34:00.555-0500] P-004560 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/06/30@01:55:45.464-0500] P-004252 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/06/30@01:55:45.472-0500] P-004252 T-main 1 --- --- Logging level set to = 2
+[14/06/30@01:55:45.473-0500] P-004252 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/06/30@01:55:45.584-0500] P-004252 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/06/30@01:55:45.585-0500] P-004252 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@13:04:06.559-0500] P-004764 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@13:04:06.563-0500] P-004764 T-main 1 --- --- Logging level set to = 2
+[14/07/03@13:04:06.563-0500] P-004764 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@13:04:06.583-0500] P-004764 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@13:04:06.583-0500] P-004764 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@13:41:04.465-0500] P-003128 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@13:41:04.468-0500] P-003128 T-main 1 --- --- Logging level set to = 2
+[14/07/03@13:41:04.468-0500] P-003128 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@13:41:04.488-0500] P-003128 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@13:41:04.489-0500] P-003128 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@13:59:30.093-0500] P-004264 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@13:59:30.096-0500] P-004264 T-main 1 --- --- Logging level set to = 2
+[14/07/03@13:59:30.097-0500] P-004264 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@13:59:30.120-0500] P-004264 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@13:59:30.120-0500] P-004264 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@14:35:41.774-0500] P-004444 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@14:35:41.777-0500] P-004444 T-main 1 --- --- Logging level set to = 2
+[14/07/03@14:35:41.778-0500] P-004444 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@14:35:41.822-0500] P-004444 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@14:35:41.822-0500] P-004444 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@15:11:50.467-0500] P-002520 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@15:11:50.471-0500] P-002520 T-main 1 --- --- Logging level set to = 2
+[14/07/03@15:11:50.471-0500] P-002520 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@15:11:50.503-0500] P-002520 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@15:11:50.504-0500] P-002520 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@17:57:45.271-0500] P-003604 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@17:57:45.274-0500] P-003604 T-main 1 --- --- Logging level set to = 2
+[14/07/03@17:57:45.274-0500] P-003604 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@17:57:45.354-0500] P-003604 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@17:57:45.355-0500] P-003604 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@18:03:13.948-0500] P-003944 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@18:03:13.952-0500] P-003944 T-main 1 --- --- Logging level set to = 2
+[14/07/03@18:03:13.952-0500] P-003944 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@18:03:13.997-0500] P-003944 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@18:03:14.000-0500] P-003944 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@19:54:33.250-0500] P-003948 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@19:54:33.265-0500] P-003948 T-main 1 --- --- Logging level set to = 2
+[14/07/03@19:54:33.265-0500] P-003948 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@19:54:33.321-0500] P-003948 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@19:54:33.321-0500] P-003948 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@19:58:48.943-0500] P-003780 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@19:58:48.950-0500] P-003780 T-main 1 --- --- Logging level set to = 2
+[14/07/03@19:58:48.951-0500] P-003780 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@19:58:49.007-0500] P-003780 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@19:58:49.007-0500] P-003780 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@20:44:10.485-0500] P-003672 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@20:44:10.488-0500] P-003672 T-main 1 --- --- Logging level set to = 2
+[14/07/03@20:44:10.488-0500] P-003672 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@20:44:10.509-0500] P-003672 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@20:44:10.510-0500] P-003672 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@20:48:50.018-0500] P-003968 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@20:48:50.025-0500] P-003968 T-main 1 --- --- Logging level set to = 2
+[14/07/03@20:48:50.025-0500] P-003968 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@20:48:50.066-0500] P-003968 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@20:48:50.067-0500] P-003968 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@22:15:16.075-0500] P-003500 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@22:15:16.082-0500] P-003500 T-main 1 --- --- Logging level set to = 2
+[14/07/03@22:15:16.083-0500] P-003500 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@22:15:16.113-0500] P-003500 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@22:15:16.113-0500] P-003500 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/03@22:25:05.165-0500] P-003368 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/03@22:25:05.168-0500] P-003368 T-main 1 --- --- Logging level set to = 2
+[14/07/03@22:25:05.168-0500] P-003368 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/03@22:25:05.190-0500] P-003368 T-main 2 NS NSPlumbing Inicializando el NameServer NS1 rmi://HP:20931/NS1 Puerto = 5162 TimeOut = 30. (8196)
+[14/07/03@22:25:05.191-0500] P-003368 T-main 2 NS NSPlumbing Balanceo de Cargas deshabilitado para el NameServer NS1. (8200)
+======================================================================
+[14/07/04@11:10:59.954+0200] P-004328 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/04@11:10:59.961+0200] P-004328 T-main 1 --- --- Logging level set to = 2
+[14/07/04@11:10:59.961+0200] P-004328 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/04@11:11:00.005+0200] P-004328 T-main 2 NS NSPlumbing Comenzando NameServer NS1 rmi://LAPTOP-HP:20931/NS1 Puerto = 5162 Tiempo Excedido = 30. (8196)
+[14/07/04@11:11:00.006+0200] P-004328 T-main 2 NS NSPlumbing Deshabilitado Balanceo de Carga para NameServer NS1. (8200)
+======================================================================
+[14/07/04@11:24:50.049+0200] P-001796 T-main 1 --- --- C:\OpenEdge\WRK\NS1.ns.log opened.
+[14/07/04@11:24:50.052+0200] P-001796 T-main 1 --- --- Logging level set to = 2
+[14/07/04@11:24:50.052+0200] P-001796 T-main 1 --- --- Log entry types activated: NSPlumbing,
+[14/07/04@11:24:50.074+0200] P-001796 T-main 2 NS NSPlumbing Comenzando NameServer NS1 rmi://LAPTOP-HP:20931/NS1 Puerto = 5162 Tiempo Excedido = 30. (8196)
+[14/07/04@11:24:50.074+0200] P-001796 T-main 2 NS NSPlumbing Deshabilitado Balanceo de Carga para NameServer NS1. (8200)
