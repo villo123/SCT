@@ -11,8 +11,8 @@ public class CATUnidadResponsable implements Serializable{
 	private String NombreResponsable;
 	private String APaterno;
 	private String AMaterno;
-	private int Cisco;
-	private String Email;
+	private int CiscoUr;
+	private String EmailUr;
 	private String Puesto;
 	
 	public int getildUnidadAdm(){
@@ -55,23 +55,23 @@ public class CATUnidadResponsable implements Serializable{
 		this.AMaterno = AMaterno;
 	}
 	
-	public int setCisco(){
-		return Cisco;
+	public int getCiscoUr(){
+		return CiscoUr;
 	}
 	
-	public void setCisco(int Cisco){
-		this.Cisco = Cisco;
+	public void setCiscoUr(int CiscoUr){
+		this.CiscoUr = CiscoUr;
 	}
 	
-	public String getEmail(){
-		return Email;
+	public String getEmailUr(){
+		return EmailUr;
 	}
 	
-	public void setEmail(String Email){
-		this.Email = Email;
+	public void setEmailUr(String EmailUr){
+		this.EmailUr = EmailUr;
 	}
 	
-	public String getPuesto(){
+	public String getPuestoUr(){
 		return Puesto;
 	}
 	

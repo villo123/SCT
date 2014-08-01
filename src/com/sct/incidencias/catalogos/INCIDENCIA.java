@@ -8,7 +8,7 @@ public class INCIDENCIA implements Serializable{
 	private static final long serialVersionUID = 6022324092708159996L;
 	
 	private int ildIncidencia;
-	private int Folio;
+	private String Folio;
 	private Date FELab; //ver con tipo de  dato fecha
 	private Date HELab; //ver tipo de dato hora
 	private Date FAtencion;//ver con tipo de  dato fecha
@@ -28,11 +28,11 @@ public class INCIDENCIA implements Serializable{
 		this.ildIncidencia = ildIncidencia;
 	}
 	
-	public int getFolio(){
+	public String getFolio(){
 		return Folio;
 	}
 	
-	public void setFolio(int Folio){
+	public void setFolio(String Folio){
 		this.Folio = Folio;
 	}
 	
