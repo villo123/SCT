@@ -16,7 +16,7 @@
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br />
 		 <table border="2px" style="border-collapse: collapse;"> 
