@@ -16,31 +16,31 @@
 			
 				<label id="Foliolabel">Folio:</label>
 				<input type="Text" name="camposelector" id="Foliotxt" size="30" />
-				<input type="button" id="btnFolio" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnUnit" value="Seleccionar" />
 				
 				<label id="Unitlabel">Por Unidad Administrativa:</label>
 				<input type="Text" name="camposelector" id="Unittxt" size="30" />
-				<input type="button" id="btnUnit" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnUnit" value="Seleccionar" />
 				
 				<label id="Estatuslabel">Estatus Incidencia:</label>
 				<input type="Text" name="camposelector" id="Estatustxt" size="30" />
-				<input type="button" id="btnEstatus" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnEstatus" value="Seleccionar" />
 				
-				<label id="Tipolabel">Tipo de Solucion:</label>
+				<label id="Tipolabel">Tipo de Solución:</label>
 		 		<input type="Text" name="camposelector" id="Tipotxt" size="30" />
-				<input type="button" id="btnTipo" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnTipo" value="Seleccionar" />
 				
 				<label id="Modulolabel">Modulo:</label>
 				<input type="Text" name="camposelector" id="Modulotxt" size="30" />
-				<input type="button" id="btnModulo" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnModulo" value="Seleccionar" />
 				
 				<label id="Sublabel">Submodulo:</label>
 				<input type="Text" name="camposelector" id="Subtxt" size="30" />
-				<input type="button" id="btnSub" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnSub" value="Seleccionar" />
 				
 				<label id="Sistlabel">Sistema:</label>
 		 		<input type="Text" name="camposelector" id="Sisttxt" size="30" />
-				<input type="button" id="btnSist" value="Ver qué elementos seleccionas" />
+				<input type="button" id="btnSist" value="Seleccionar" />
 				
 				<input type="button" name="enviar" value="Filtrar" id="btnSubmit" />
 				

@@ -15,7 +15,7 @@
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />
 <br>    
@@ -26,13 +26,7 @@
                  <td class="t" style="color:#FFFFFF;">Folio</td>
                  <td class="t" style="color:#FFFFFF;">Tipo de La Incidencia</td>
               	 </tr>
-             <tr>
-             	 <td></td>
-                 <td></td>
-                 
-                 
-              
-             </tr>
+        
              <tr>
              	 <td></td>
                  <td></td>
