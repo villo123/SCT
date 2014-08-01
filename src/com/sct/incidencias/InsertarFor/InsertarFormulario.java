@@ -273,11 +273,11 @@ public class InsertarFormulario extends HttpServlet {
 			System.out.println(caturcat.getAPaterno());
 			System.out.println(caturcat.getAMaterno());*/
 
-		String EmailCAT = request.getParameter("emailcat");
+		/*String EmailCAT = request.getParameter("emailcat");
 		caturcat.setEmailCat(EmailCAT);
 		
 		String CiscoCAT = request.getParameter("ciscocat");
-		caturcat.setCiscoCat(Integer.parseInt(CiscoCAT));
+		caturcat.setCiscoCat(Integer.parseInt(CiscoCAT));*/
 
 		
 		CATAtendio catate = new CATAtendio();
@@ -500,7 +500,14 @@ public class InsertarFormulario extends HttpServlet {
 			ct = DriverManager.getConnection(databaseURL);
 			st = ct.createStatement();
 			System.out.println("Conexion exitosa");
-            PreparedStatement ps = ct.prepareStatement("INSERT INTO PUB.Incidencia (ildIncidencia, "
+            PreparedStatement ps = ct.prepareStatement("INSERT INTO PUB.Incidencia (ildIncidencia,"
+            		+ "ildAtendio,"
+            		+ "ildDepartamento,"
+            		+ "ildEstatus,"
+            		+ "ildIncidente,"
+            		+ "ildTipoDeSolucion,"
+            		+ "ildUnidadAdmin,"
+            		+ "ildUsuarioCat, "
             		+ "Folio, "
             		+ "Aprobado,"
             		+ "FechaAprobacion,"
@@ -508,58 +515,66 @@ public class InsertarFormulario extends HttpServlet {
             		+ "Prioridad,"
             		+ "FELab,"
             		+ "HELab,"
-            		+ "FechaAprobacion,"
+            		+ "FAtencion,"
             		+ "HAtencion,"
-            		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?)");// AND ildDepartamento = (?) AND ildModulo = (?) AND ildProceso = (?) AND ildIncidente = (?) AND ildTipoDeSolucion = (?) AND ildEstatus = (?) AND ildUsuarioCat = (?) AND ildAtendio = (?)");
+            		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");//WHERE ildUnidadAdmin = (?) AND ildDepartamento = (?) AND ildModulo = (?) AND ildProceso = (?) AND ildIncidente = (?) AND ildTipoDeSolucion = (?) AND ildEstatus = (?) AND ildUsuarioCat = (?) AND ildAtendio = (?)");
             
             ps.setString(1, Integer.toString(catunr.getildUnidadAdm()));
-            ps.setString(2, inc.getFolio());
-            ps.setString(3, inc.getAprobado());
-            ps.setDate(4, (java.sql.Date)inc.getFechaAprobacion());
-            ps.setString(5, inc.getDescripcionIncidencia());
-            ps.setString(6,inc.getPrioridad());
-            ps.setDate(7, (java.sql.Date)inc.getFELab());
-            ps.setTime(8, (java.sql.Time)inc.getHELab());
-            ps.setDate(9, (java.sql.Date)inc.getFAtencion());
-            ps.setTime(10,(java.sql.Time) inc.getHAtencion());
-            ps.setString(11, inc.getRespuestaUtic());
-           /* ps.setInt(12, catunr.getildUnidadAdm());
-            ps.setInt(13, catdep.getildDepartamento());
-            ps.setInt(14, catmod.getildModulo());
-            ps.setInt(15, catpro.getildModulo());
-            ps.setInt(16,cattipin.getildIncidente());
-            ps.setInt(17, cattipsol.getildTipoDeSolucion());
-            ps.setInt(18, cates.getildEstatus());
-            ps.setInt(19, caturcat.getildUsuarioCat());
-            ps.setInt(20, catate.getildAtendio());*/
+            ps.setString(2, Integer.toString(catate.getildAtendio()));
+            ps.setString(3, Integer.toString(catdep.getildDepartamento()));
+            ps.setString(4, Integer.toString(cates.getildEstatus()));
+            ps.setString(5,Integer.toString(cattipin.getildIncidente()));
+            ps.setString(6,Integer.toString(cattipsol.getildTipoDeSolucion()));
+            ps.setString(7,Integer.toString(catunr.getildUnidadAdm()));
+            ps.setString(8, Integer.toString(caturcat.getildUsuarioCat()));
+            ps.setString(9, inc.getFolio());
+            ps.setString(10, inc.getAprobado());
+            ps.setDate(11, (java.sql.Date)inc.getFechaAprobacion());
+            ps.setString(12, inc.getDescripcionIncidencia());
+            ps.setString(13,inc.getPrioridad());
+            ps.setDate(14, (java.sql.Date)inc.getFELab());
+            ps.setTime(15, (java.sql.Time)inc.getHELab());
+            ps.setDate(16, (java.sql.Date)inc.getFAtencion());
+            ps.setTime(17,(java.sql.Time) inc.getHAtencion());
+            ps.setString(18, inc.getRespuestaUtic());
+           /* ps.setString(12, Integer.toString(catunr.getildUnidadAdm()));
+            ps.setString(13, Integer.toString(catdep.getildDepartamento()));
+            ps.setString(14, Integer.toString(catmod.getildModulo()));
+            ps.setString(15, Integer.toString(catpro.getildModulo()));
+            ps.setString(16, Integer.toString(cattipin.getildIncidente()));
+            ps.setString(17, Integer.toString(cattipsol.getildTipoDeSolucion()));
+            ps.setString(18, Integer.toString(cates.getildEstatus()));
+            ps.setString(19, Integer.toString(caturcat.getildUsuarioCat()));
+            ps.setString(20, Integer.toString(catate.getildAtendio()));*/
             
             
             
-            PreparedStatement ps2 = ct.prepareStatement("INSERT INTO PUB.CATUnidadResponsable (APaterno,"
+            PreparedStatement ps2 = ct.prepareStatement("INSERT INTO PUB.CATUnidadResponsable (NombreResponsable,APaterno,"
 													            +"AMaterno,"
 													            +"CiscoUr,"
-													            +"EmailUr) VALUES (?,?,?,?) WHERE ildUnidadAdmin = (?)");
-            ps2.setString(1, catunr.getAPaterno());
-            ps2.setString(2, catunr.getAMaterno());
-            ps2.setInt(3, catunr.getCiscoUr());
-            ps2.setString(4, catunr.getEmailUr());
-            ps2.setInt(5,catunr.getildUnidadAdm());
+													            +"EmailUr) VALUES (?,?,?,?,?)");// WHERE ildUnidadAdmin = (?)");
+            ps2.setString(1, catunr.getNombreResponsable());
+            ps2.setString(2, catunr.getAPaterno());
+            ps2.setString(3, catunr.getAMaterno());
+            ps2.setString(4, Integer.toString(catunr.getCiscoUr()));
+            ps2.setString(5, catunr.getEmailUr());
+           // ps2.setString(5, Integer.toString(catunr.getildUnidadAdm()));
             
-            PreparedStatement ps3 = ct.prepareStatement("INSERT INTO PUB.CATEstatus (NombreEstatus)"
-            												+ " VALUES (?) WHERE ildEstatus = (?)");
+            //PreparedStatement ps3 = ct.prepareStatement("INSERT INTO PUB.CATEstatus (NombreEstatus)"
+            				//								+ " VALUES (?)");//WHERE ildEstatus = (?)");
             
-            ps3.setString(1,cates.getNombreEstatus());
-            ps3.setInt(2, cates.getildEstatus());
+           // ps3.setString(1,cates.getNombreEstatus());
+           // ps3.setString(2, Integer.toString(cates.getildEstatus()));
             
-            PreparedStatement ps4 = ct.prepareStatement("INSERT INTO PUB.CATUsuarioCAT (CiscoCat,"
-            												+ "EmailCat) VALUES (?,?) WHERE ildUsuarioCat = (?)");
-            ps4.setInt(1, caturcat.getCiscoCat());
-            ps4.setString(2, caturcat.getEmailCat());
-            ps4.setInt(3, caturcat.getildUsuarioCat());
+          /* PreparedStatement ps4 = ct.prepareStatement("INSERT INTO PUB.CATUsuarioCAT (CiscoCat,"
+            												+ "EmailCat) VALUES (?,?)");// WHERE ildUsuarioCat = (?)");
+            ps4.setString(1, Integer.toString(caturcat.getCiscoCat()));
+            ps4.setString(2, caturcat.getEmailCat());*/
+           // ps4.setString(3, Integer.toString(caturcat.getildUsuarioCat()));
             
-            PreparedStatement ps5 = ct.prepareStatement("SELECT ildUsuarioUtic FROM PUB.Incidencia "
+           /* PreparedStatement ps5 = ct.prepareStatement("SELECT ildUsuarioUtic FROM PUB.Incidencia "
             											+ "WHERE"
-            											+ " ildUnidadAdmin = (?) "
+            											+ "ildUnidadAdmin = (?) "
             											+ "AND ildDepartamento = (?) "
             											+ "AND ildModulo = (?) "
             											+ "AND ildProceso = (?) "
@@ -577,9 +592,9 @@ public class InsertarFormulario extends HttpServlet {
             ps5.setInt(6, cattipsol.getildTipoDeSolucion());
             ps5.setInt(7, cates.getildEstatus());
             ps5.setInt(8, caturcat.getildUsuarioCat());
-            ps5.setInt(9, catate.getildAtendio());
+            ps5.setInt(9, catate.getildAtendio());*/
             
-            ps.executeUpdate();ps2.executeUpdate();ps3.executeUpdate();ps4.executeUpdate();ps5.executeUpdate();
+            ps.executeUpdate();ps2.executeUpdate();//ps3.executeUpdate();//ps4.executeUpdate();//ps5.executeQuery();
           //ct.close();
 			System.out.println("Insercion correcta");
 			ct.close();
@@ -591,15 +606,9 @@ public class InsertarFormulario extends HttpServlet {
 			System.out.println("ClassnotFoundException");
 			e.printStackTrace();
 		}
-	
-		
-		
 		
 		RequestDispatcher rd = request.getRequestDispatcher("formulario.jsp");
 		rd.forward(request, response);
-
-
-
 	}
 
 }

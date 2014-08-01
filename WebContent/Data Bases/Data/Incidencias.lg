@@ -2251,3 +2251,799 @@
 [2014/07/28@10:36:11.071-0500] P-4896       T-4844  I ABL      : (708)   Iden. usuario es sysprogress. 
 [2014/07/28@10:36:11.113-0500] P-4896       T-4844  I ABL      : (12699) Base de Datos Incidencias Opciones:  
 [2014/07/28@11:36:31.391-0500] P-4896       T-4844  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Mon Jul 28 11:48:21 2014
+[2014/07/28@11:48:21.070-0500] P-4820       T-4864  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/28@11:48:21.136-0500] P-4820       T-4864  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/28@11:48:21.320-0500] P-4820       T-4864  I ABL      : (7161)  Fase rehacer física completa en bloque 68 desplazamiento 1782 actualización 0. 
+[2014/07/28@11:48:21.322-0500] P-4820       T-4864  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/28@11:48:21.449-0500] P-4820       T-4864  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/28@12:25:33.274-0500] P-4820       T-4864  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Mon Jul 28 12:25:45 2014
+[2014/07/28@12:25:45.455-0500] P-5460       T-200   I BROKER  0: (333)   Inicio de sesión Multi-usuario. 
+[2014/07/28@12:25:45.457-0500] P-5460       T-200   I BROKER  0: (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/28@12:25:45.460-0500] P-5460       T-200   I BROKER  0: (7161)  Fase rehacer física completa en bloque 68 desplazamiento 5553 actualización 0. 
+[2014/07/28@12:25:45.460-0500] P-5460       T-200   I BROKER  0: (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/28@12:25:45.463-0500] P-5460       T-200   I BROKER  0: (4393)  Este servidor tiene licencia para conexiones locales solamente. 
+[2014/07/28@12:25:45.472-0500] P-5460       T-200   I BROKER  0: (5644)  Iniciado para 30060 usando tcp IPV4 address 127.0.0.1, pid 5460. 
+[2014/07/28@12:25:45.472-0500] P-5460       T-200   I BROKER  0: (4234)  Versión de Progress OpenEdge 10.2A build 1185 sobre WINNT . 
+[2014/07/28@12:25:45.472-0500] P-5460       T-200   I BROKER  0: (4281)  Servidor iniciado por Villo en CON:. 
+[2014/07/28@12:25:45.472-0500] P-5460       T-200   I BROKER  0: (6574)  Arrancado usando pid: 5460. 
+[2014/07/28@12:25:45.472-0500] P-5460       T-200   I BROKER  0: (4235)  Nombre Físico de la Base de Datos (-db): C:\ProgressDB\Incidencias\incidencias. 
+[2014/07/28@12:25:45.472-0500] P-5460       T-200   I BROKER  0: (4236)  Tipo de la base de datos (-dt): PROGRESS. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4237)  Acceso forzado (-F): Not Enabled. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4238)  E/S Directa (-directio): Not Enabled. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (-----) LRU mechanism enabled.
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4239)  Número de buffers de la base de datos (-B): 3000. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (9422)  Número máximo de buffers privados por usuarios (-Bpmax): 64. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4240)  Tamaño de memoria compartida en exceso (-Mxs): 19. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (10014) El segmento de memoria compartida no está bloqueado en memoria. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4241)  Tamaño actual de la tabla de bloqueos (locks) (-L): 8192. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (13953) Número de área máximo (-maxArea): 32000. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4242)  Entradas en la tabla de Hash (-hash): 887. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4243)  Intentos de Spin Lock Actuales (-spin): 0. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (6526)  Número de Conjuntos de Semáforos (-semsets) 3. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (13924) Tamaño máximo del segmento de memoria compartida (-shmsegsize) 128 Mb. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4244)  Recuperación a fallas (-i): Enabled. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (6573)  Database Blocksize (-blocksize): 4096. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4245)  Retraso del limpiado de Before-Image (-Mf): 3. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4247)  Archivo de E/S Before-Image (-r -R): Reliable. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4249)  Intervalo de truncamiento del archivo Before-Image (-G): 0. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4250)  Tamaño del cluster del Before-Image: 524288. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4251)  Tamaño de bloque en Before-Image: 8192. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4252)  Número de buffers del Before-Image (-bibufs): 20. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (-----) Record free chain search depth factor 5 (-recspacesearchdepth)
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (9238)  Tamaño del Umbral del Archivo de BI (-bithold): 0.0   Bytes. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (6552)  Umbral de Estancamiento del archivo de BI (-bistall): Deshabilitado. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4254)  Estancamiento de After-Image (-aistall): Not Enabled. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4255)  Tamaño del bloque del After-Image: 8192. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4256)  Número de buffers de After-Image (-aibufs): 20. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (8527)  Tamaño del cache del objeto de almacenamiento (-omsize): 1024 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4257)  Número Máximo de Clientes por Servidor (-Ma): 1. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4258)  Número Máximo de Servidores (-Mn): 5. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4259)  Número Mínimo de Clientes por Servidor (-Mi): 1. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4260)  Número máximo de usuarios (-n): 6. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4261)  Nombre del Host (-H): Villo. 
+[2014/07/28@12:25:45.473-0500] P-5460       T-200   I BROKER  0: (4262)  Nombre de Servicio (-S): 30060. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (14268) Versión de TCP/IP (-ipver) : IPV4 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (4263)  Tipo de Red (-N): tcp. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (4264)  Set de caracteres (-cpinternal): ISO8859-1. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (4282)  Archivo de parámetros: Not Enabled. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (5648)  Número mínimo de Puerto para auto-servidores (-minport): 3000. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (5649)  Número máximo de puerto para Auto Servidores (-maxport): 5000. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (8865)  Este broker soporta grupos de servidores de 4GL y SQL. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (9336)  Se crea la memoria compartida con segment_id: 32964608 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12813) Cursores de índice permitidos (-c): 24. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12814) Retraso en grupo (-groupdelay): 10. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12815) Tamaño de tabla de hash para tabla de bloqueo (-lkhash): 1237 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12816) Puerto Máximo (-maxport): 5000 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12817) Puerto Minimo (-minport): 3000 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12818) Tamaño del Buffer de Mensajes (-Mm): 1024 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (12823) Conjuntos de semáforos (-semsets): 3 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (13870) Database Service Manager – Tamaño de la cola de IPC (-pica) : 64.0  KBytes. 
+[2014/07/28@12:25:45.474-0500] P-5460       T-200   I BROKER  0: (13896) Límite de salto de bloqueo TXE Commit (-TXESkipLimit): 10000. 
+[2014/07/28@12:25:45.475-0500] P-5460       T-200   I BROKER  0: (10471) Las conexiones de la base de datos han sido habilitadas. 
+[2014/07/28@12:26:39.667-0500] P-5504       T-5184  I SQLSRV2 1: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3000 for address 127.0.0.1, pid 5504 (0x00001580).
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/28@12:26:39.674-0500] P-5504       T-5184  I SQLSRV2 1: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/28@12:26:40.441-0500] P-5504       T-1244  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/28@12:26:40.444-0500] P-5504       T-1244  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/28@12:26:40.732-0500] P-5960       T-3476  I SQLSRV2 2: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3001 for address 127.0.0.1, pid 5960 (0x00001748).
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/28@12:26:40.739-0500] P-5960       T-3476  I SQLSRV2 2: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/28@12:26:41.538-0500] P-5960       T-4112  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/28@12:26:41.540-0500] P-5960       T-4112  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/28@12:29:12.302-0500] P-3096       T-5724  I SRV     3: (5646)  Iniciado en el puerto 3002 usando tcp IPV4 address 127.0.0.1, pid 3096. 
+[2014/07/28@12:29:13.260-0500] P-3096       T-5724  I SRV     3: (742)   Conectando num-usua 7, id-usua Villo client type ABL , en Villo using TCP/IP IPV4 address 127.0.0.1. 
+[2014/07/28@12:29:13.262-0500] P-3096       T-5724  I SRV     3: (708)   Iden. usuario es sysprogress. 
+[2014/07/28@12:29:13.289-0500] P-3096       T-5724  I SRV     3: (14658) El mensaje anterior se envió a nombre del usuario 7, la identificación del proceso del servidor 3096, identificación del proceso del servidor del broker 5460. (5512) 
+[2014/07/28@12:29:13.319-0500] P-3096       T-5724  I SRV     3: (12699) Base de Datos Incidencias Opciones:  
+[2014/07/28@12:29:13.319-0500] P-3096       T-5724  I SRV     3: (14658) El mensaje anterior se envió a nombre del usuario 7, la identificación del proceso del servidor 3096, identificación del proceso del servidor del broker 5460. (5512) 
+[2014/07/28@12:32:15.791-0500] P-5504       T-1244  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/28@12:32:15.864-0500] P-5504       T-5704  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/28@12:32:15.865-0500] P-5504       T-5704  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/28@12:32:16.063-0500] P-5988       T-6020  I SQLSRV2 4: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3003 for address 127.0.0.1, pid 5988 (0x00001764).
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/28@12:32:16.071-0500] P-5988       T-6020  I SQLSRV2 4: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/28@12:32:16.881-0500] P-5988       T-5852  I SRV     4: (8873)  Login usernum 6, remote SQL client. 
+[2014/07/28@12:32:16.883-0500] P-5988       T-5852  I SRV     4: (7129)  Usr 6 asignó nombre a sysprogress. 
+[2014/07/28@12:32:36.811-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:32:36.820-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:32:59.618-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:32:59.621-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:34:26.638-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:34:26.640-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:35:03.362-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:35:03.366-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:41:16.542-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:41:16.545-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:41:23.568-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:41:23.576-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:42:35.413-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:42:35.416-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:43:00.442-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:43:00.446-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:43:02.959-0500] P-5960       T-4112  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/28@12:43:02.960-0500] P-5988       T-5852  I SRV     4: (453)   Logout de sysprogress en  . 
+[2014/07/28@12:43:02.960-0500] P-5504       T-5704  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/28@12:43:44.631-0500] P-5504       T-5792  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/28@12:43:44.631-0500] P-5504       T-5792  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/28@12:43:44.656-0500] P-5960       T-5928  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/28@12:43:44.656-0500] P-5960       T-5928  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/28@12:44:58.744-0500] P-5988       T-5828  I SRV     4: (8873)  Login usernum 6, remote SQL client. 
+[2014/07/28@12:44:58.744-0500] P-5988       T-5828  I SRV     4: (7129)  Usr 6 asignó nombre a sysprogress. 
+[2014/07/28@12:44:58.749-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:46:16.630-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:46:16.632-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:47:31.388-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:47:31.391-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:47:48.161-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:47:48.164-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:48:47.132-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:48:47.134-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:02.944-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:02.946-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:03.679-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:03.682-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:09.480-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:09.482-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:26.825-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:49:26.827-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:50:11.979-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:50:11.982-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:50:44.619-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:50:44.621-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:51:13.160-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:51:13.162-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:52:14.849-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:52:14.851-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:01.949-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:01.954-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:13.780-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:13.782-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:34.104-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:34.107-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:48.460-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:54:48.462-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:55:02.573-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:55:02.576-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:55:14.542-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:55:14.545-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:55:54.192-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:55:54.194-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:56:08.290-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:56:08.293-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:56:55.934-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:56:55.937-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:57:08.098-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@12:57:08.100-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@13:07:55.982-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@13:07:55.985-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@13:08:29.917-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@13:08:29.920-0500] P-5460       T-200   I BROKER  0: (8839)  No hay servidores de SQL disponibles.  Tráte otra véz más tarde. 
+[2014/07/28@13:10:48.519-0500] P-5504       T-5792  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/28@13:10:48.520-0500] P-5960       T-5928  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/28@13:10:48.522-0500] P-5988       T-5828  I SRV     4: (453)   Logout de sysprogress en  . 
+[2014/07/28@13:40:07.970-0500] P-5504       T-5268  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/28@13:40:07.970-0500] P-5504       T-5268  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/28@13:40:07.996-0500] P-5960       T-5924  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/28@13:40:07.996-0500] P-5960       T-5924  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/28@13:43:22.570-0500] P-3096       T-5724  I SRV     3: (739)   Desconectandose num-usuario 7, id-usuario sysprogress, en Villo 
+[2014/07/28@13:47:37.512-0500] P-5808       T-5336  I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
+[2014/07/28@13:47:37.539-0500] P-3096       T-5724  I SRV     3: (2520)  Detenido. 
+[2014/07/28@13:47:37.620-0500] P-5460       T-200   I BROKER  0: (2248)  Inicia Terminación normal 
+[2014/07/28@13:47:43.004-0500] P-5504       T-5268  I SQLREMC 9: (-----) Disconnected due to shutdown of primary database: C:\ProgressDB\Incidencias\incidencias
+[2014/07/28@13:47:43.004-0500] P-5504       T-5268  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/28@13:47:43.118-0500] P-5960       T-5924  I SQLREMC 8: (-----) Disconnected due to shutdown of primary database: C:\ProgressDB\Incidencias\incidencias
+[2014/07/28@13:47:43.118-0500] P-5960       T-5924  I SRV     2: (2252)  Inicia retroceso de transacción. 
+[2014/07/28@13:47:43.118-0500] P-5960       T-5924  I SRV     2: (2253)  Retroceso de transacción completo. 
+[2014/07/28@13:47:43.118-0500] P-5960       T-5924  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/28@13:47:44.651-0500] P-5460       T-200   I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Tue Jul 29 10:46:16 2014
+[2014/07/29@10:46:16.524-0500] P-4816       T-5180  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/29@10:46:16.530-0500] P-4816       T-5180  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@10:46:16.552-0500] P-4816       T-5180  I ABL      : (7161)  Fase rehacer física completa en bloque 68 desplazamiento 5613 actualización 0. 
+[2014/07/29@10:46:16.552-0500] P-4816       T-5180  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@10:46:16.558-0500] P-4816       T-5180  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/29@11:47:39.741-0500] P-4816       T-5180  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Tue Jul 29 11:48:03 2014
+[2014/07/29@11:48:03.346-0500] P-3332       T-1280  I BROKER  0: (333)   Inicio de sesión Multi-usuario. 
+[2014/07/29@11:48:03.347-0500] P-3332       T-1280  I BROKER  0: (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@11:48:03.379-0500] P-3332       T-1280  I BROKER  0: (7161)  Fase rehacer física completa en bloque 71 desplazamiento 290 actualización 0. 
+[2014/07/29@11:48:03.379-0500] P-3332       T-1280  I BROKER  0: (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@11:48:03.381-0500] P-3332       T-1280  I BROKER  0: (4393)  Este servidor tiene licencia para conexiones locales solamente. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (5644)  Iniciado para 30060 usando tcp IPV4 address 127.0.0.1, pid 3332. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4234)  Versión de Progress OpenEdge 10.2A build 1185 sobre WINNT . 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4281)  Servidor iniciado por Villo en CON:. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (6574)  Arrancado usando pid: 3332. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4235)  Nombre Físico de la Base de Datos (-db): C:\ProgressDB\Incidencias\incidencias. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4236)  Tipo de la base de datos (-dt): PROGRESS. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4237)  Acceso forzado (-F): Not Enabled. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4238)  E/S Directa (-directio): Not Enabled. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (-----) LRU mechanism enabled.
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (4239)  Número de buffers de la base de datos (-B): 3000. 
+[2014/07/29@11:48:03.389-0500] P-3332       T-1280  I BROKER  0: (9422)  Número máximo de buffers privados por usuarios (-Bpmax): 64. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4240)  Tamaño de memoria compartida en exceso (-Mxs): 19. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (10014) El segmento de memoria compartida no está bloqueado en memoria. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4241)  Tamaño actual de la tabla de bloqueos (locks) (-L): 8192. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (13953) Número de área máximo (-maxArea): 32000. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4242)  Entradas en la tabla de Hash (-hash): 887. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4243)  Intentos de Spin Lock Actuales (-spin): 0. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (6526)  Número de Conjuntos de Semáforos (-semsets) 3. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (13924) Tamaño máximo del segmento de memoria compartida (-shmsegsize) 128 Mb. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4244)  Recuperación a fallas (-i): Enabled. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (6573)  Database Blocksize (-blocksize): 4096. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4245)  Retraso del limpiado de Before-Image (-Mf): 3. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4247)  Archivo de E/S Before-Image (-r -R): Reliable. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4249)  Intervalo de truncamiento del archivo Before-Image (-G): 0. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4250)  Tamaño del cluster del Before-Image: 524288. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4251)  Tamaño de bloque en Before-Image: 8192. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4252)  Número de buffers del Before-Image (-bibufs): 20. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (-----) Record free chain search depth factor 5 (-recspacesearchdepth)
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (9238)  Tamaño del Umbral del Archivo de BI (-bithold): 0.0   Bytes. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (6552)  Umbral de Estancamiento del archivo de BI (-bistall): Deshabilitado. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4254)  Estancamiento de After-Image (-aistall): Not Enabled. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4255)  Tamaño del bloque del After-Image: 8192. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4256)  Número de buffers de After-Image (-aibufs): 20. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (8527)  Tamaño del cache del objeto de almacenamiento (-omsize): 1024 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4257)  Número Máximo de Clientes por Servidor (-Ma): 1. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4258)  Número Máximo de Servidores (-Mn): 5. 
+[2014/07/29@11:48:03.390-0500] P-3332       T-1280  I BROKER  0: (4259)  Número Mínimo de Clientes por Servidor (-Mi): 1. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (4260)  Número máximo de usuarios (-n): 6. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (4261)  Nombre del Host (-H): Villo. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (4262)  Nombre de Servicio (-S): 30060. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (14268) Versión de TCP/IP (-ipver) : IPV4 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (4263)  Tipo de Red (-N): tcp. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (4264)  Set de caracteres (-cpinternal): ISO8859-1. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (4282)  Archivo de parámetros: Not Enabled. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (5648)  Número mínimo de Puerto para auto-servidores (-minport): 3000. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (5649)  Número máximo de puerto para Auto Servidores (-maxport): 5000. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (8865)  Este broker soporta grupos de servidores de 4GL y SQL. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (9336)  Se crea la memoria compartida con segment_id: 33357824 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12813) Cursores de índice permitidos (-c): 24. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12814) Retraso en grupo (-groupdelay): 10. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12815) Tamaño de tabla de hash para tabla de bloqueo (-lkhash): 1237 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12816) Puerto Máximo (-maxport): 5000 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12817) Puerto Minimo (-minport): 3000 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12818) Tamaño del Buffer de Mensajes (-Mm): 1024 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (12823) Conjuntos de semáforos (-semsets): 3 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (13870) Database Service Manager – Tamaño de la cola de IPC (-pica) : 64.0  KBytes. 
+[2014/07/29@11:48:03.391-0500] P-3332       T-1280  I BROKER  0: (13896) Límite de salto de bloqueo TXE Commit (-TXESkipLimit): 10000. 
+[2014/07/29@11:48:03.392-0500] P-3332       T-1280  I BROKER  0: (10471) Las conexiones de la base de datos han sido habilitadas. 
+[2014/07/29@11:48:17.052-0500] P-2268       T-4212  I SQLSRV2 1: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3000 for address 127.0.0.1, pid 2268 (0x000008dc).
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@11:48:17.059-0500] P-2268       T-4212  I SQLSRV2 1: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@11:48:17.872-0500] P-2268       T-3364  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/29@11:48:17.877-0500] P-2268       T-3364  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/29@11:48:18.018-0500] P-2268       T-3364  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/29@11:49:14.021-0500] P-1132       T-5896  I SRV     2: (5646)  Iniciado en el puerto 3001 usando tcp IPV4 address 127.0.0.1, pid 1132. 
+[2014/07/29@11:49:14.972-0500] P-1132       T-5896  I SRV     2: (742)   Conectando num-usua 9, id-usua Villo client type ABL , en Villo using TCP/IP IPV4 address 127.0.0.1. 
+[2014/07/29@11:49:14.974-0500] P-1132       T-5896  I SRV     2: (708)   Iden. usuario es sysprogress. 
+[2014/07/29@11:49:15.008-0500] P-1132       T-5896  I SRV     2: (14658) El mensaje anterior se envió a nombre del usuario 9, la identificación del proceso del servidor 1132, identificación del proceso del servidor del broker 3332. (5512) 
+[2014/07/29@11:49:15.039-0500] P-1132       T-5896  I SRV     2: (12699) Base de Datos Incidencias Opciones:  
+[2014/07/29@11:49:15.039-0500] P-1132       T-5896  I SRV     2: (14658) El mensaje anterior se envió a nombre del usuario 9, la identificación del proceso del servidor 1132, identificación del proceso del servidor del broker 3332. (5512) 
+[2014/07/29@11:49:58.381-0500] P-5148       T-196   I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
+[2014/07/29@11:49:58.476-0500] P-3332       T-1280  I BROKER  0: (2248)  Inicia Terminación normal 
+[2014/07/29@11:49:58.497-0500] P-1132       T-5896  I SRV     2: (739)   Desconectandose num-usuario 9, id-usuario sysprogress, en Villo 
+[2014/07/29@11:49:58.565-0500] P-1132       T-5896  I SRV     2: (2520)  Detenido. 
+[2014/07/29@11:49:59.523-0500] P-3332       T-1280  I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Tue Jul 29 12:53:51 2014
+[2014/07/29@12:53:51.353-0500] P-5708       T-6840  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/29@12:53:51.356-0500] P-5708       T-6840  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@12:53:51.358-0500] P-5708       T-6840  I ABL      : (7161)  Fase rehacer física completa en bloque 71 desplazamiento 350 actualización 0. 
+[2014/07/29@12:53:51.358-0500] P-5708       T-6840  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@12:53:51.359-0500] P-5708       T-6840  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/29@13:06:38.723-0500] P-5708       T-6840  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Tue Jul 29 13:06:48 2014
+[2014/07/29@13:06:48.076-0500] P-4176       T-5428  I BROKER  0: (333)   Inicio de sesión Multi-usuario. 
+[2014/07/29@13:06:48.079-0500] P-4176       T-5428  I BROKER  0: (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@13:06:48.082-0500] P-4176       T-5428  I BROKER  0: (7161)  Fase rehacer física completa en bloque 71 desplazamiento 410 actualización 0. 
+[2014/07/29@13:06:48.082-0500] P-4176       T-5428  I BROKER  0: (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@13:06:48.084-0500] P-4176       T-5428  I BROKER  0: (4393)  Este servidor tiene licencia para conexiones locales solamente. 
+[2014/07/29@13:06:48.092-0500] P-4176       T-5428  I BROKER  0: (5644)  Iniciado para 30060 usando tcp IPV4 address 127.0.0.1, pid 4176. 
+[2014/07/29@13:06:48.092-0500] P-4176       T-5428  I BROKER  0: (4234)  Versión de Progress OpenEdge 10.2A build 1185 sobre WINNT . 
+[2014/07/29@13:06:48.092-0500] P-4176       T-5428  I BROKER  0: (4281)  Servidor iniciado por Villo en CON:. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (6574)  Arrancado usando pid: 4176. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4235)  Nombre Físico de la Base de Datos (-db): C:\ProgressDB\Incidencias\incidencias. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4236)  Tipo de la base de datos (-dt): PROGRESS. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4237)  Acceso forzado (-F): Not Enabled. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4238)  E/S Directa (-directio): Not Enabled. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (-----) LRU mechanism enabled.
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4239)  Número de buffers de la base de datos (-B): 3000. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (9422)  Número máximo de buffers privados por usuarios (-Bpmax): 64. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4240)  Tamaño de memoria compartida en exceso (-Mxs): 19. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (10014) El segmento de memoria compartida no está bloqueado en memoria. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4241)  Tamaño actual de la tabla de bloqueos (locks) (-L): 8192. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (13953) Número de área máximo (-maxArea): 32000. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4242)  Entradas en la tabla de Hash (-hash): 887. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4243)  Intentos de Spin Lock Actuales (-spin): 0. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (6526)  Número de Conjuntos de Semáforos (-semsets) 3. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (13924) Tamaño máximo del segmento de memoria compartida (-shmsegsize) 128 Mb. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4244)  Recuperación a fallas (-i): Enabled. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (6573)  Database Blocksize (-blocksize): 4096. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4245)  Retraso del limpiado de Before-Image (-Mf): 3. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4247)  Archivo de E/S Before-Image (-r -R): Reliable. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4249)  Intervalo de truncamiento del archivo Before-Image (-G): 0. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4250)  Tamaño del cluster del Before-Image: 524288. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4251)  Tamaño de bloque en Before-Image: 8192. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4252)  Número de buffers del Before-Image (-bibufs): 20. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (-----) Record free chain search depth factor 5 (-recspacesearchdepth)
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (9238)  Tamaño del Umbral del Archivo de BI (-bithold): 0.0   Bytes. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (6552)  Umbral de Estancamiento del archivo de BI (-bistall): Deshabilitado. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4254)  Estancamiento de After-Image (-aistall): Not Enabled. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4255)  Tamaño del bloque del After-Image: 8192. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4256)  Número de buffers de After-Image (-aibufs): 20. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (8527)  Tamaño del cache del objeto de almacenamiento (-omsize): 1024 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4257)  Número Máximo de Clientes por Servidor (-Ma): 1. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4258)  Número Máximo de Servidores (-Mn): 5. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4259)  Número Mínimo de Clientes por Servidor (-Mi): 1. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4260)  Número máximo de usuarios (-n): 6. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4261)  Nombre del Host (-H): Villo. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (4262)  Nombre de Servicio (-S): 30060. 
+[2014/07/29@13:06:48.093-0500] P-4176       T-5428  I BROKER  0: (14268) Versión de TCP/IP (-ipver) : IPV4 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (4263)  Tipo de Red (-N): tcp. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (4264)  Set de caracteres (-cpinternal): ISO8859-1. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (4282)  Archivo de parámetros: Not Enabled. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (5648)  Número mínimo de Puerto para auto-servidores (-minport): 3000. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (5649)  Número máximo de puerto para Auto Servidores (-maxport): 5000. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (8865)  Este broker soporta grupos de servidores de 4GL y SQL. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (9336)  Se crea la memoria compartida con segment_id: 33882112 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12813) Cursores de índice permitidos (-c): 24. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12814) Retraso en grupo (-groupdelay): 10. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12815) Tamaño de tabla de hash para tabla de bloqueo (-lkhash): 1237 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12816) Puerto Máximo (-maxport): 5000 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12817) Puerto Minimo (-minport): 3000 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12818) Tamaño del Buffer de Mensajes (-Mm): 1024 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (12823) Conjuntos de semáforos (-semsets): 3 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (13870) Database Service Manager – Tamaño de la cola de IPC (-pica) : 64.0  KBytes. 
+[2014/07/29@13:06:48.094-0500] P-4176       T-5428  I BROKER  0: (13896) Límite de salto de bloqueo TXE Commit (-TXESkipLimit): 10000. 
+[2014/07/29@13:06:48.095-0500] P-4176       T-5428  I BROKER  0: (10471) Las conexiones de la base de datos han sido habilitadas. 
+[2014/07/29@13:08:38.450-0500] P-376        T-5148  I SQLSRV2 1: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:08:38.456-0500] P-376        T-5148  I SQLSRV2 1: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3000 for address 127.0.0.1, pid 376 (0x00000178).
+[2014/07/29@13:08:38.456-0500] P-376        T-5148  I SQLSRV2 1: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:08:38.456-0500] P-376        T-5148  I SQLSRV2 1: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:08:38.456-0500] P-376        T-5148  I SQLSRV2 1: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:08:38.456-0500] P-376        T-5148  I SQLSRV2 1: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:08:38.457-0500] P-376        T-5148  I SQLSRV2 1: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:08:38.457-0500] P-376        T-5148  I SQLSRV2 1: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:08:38.457-0500] P-376        T-5148  I SQLSRV2 1: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:08:39.133-0500] P-376        T-6344  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/29@13:08:39.136-0500] P-376        T-6344  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/29@13:08:39.702-0500] P-6676       T-3284  I SQLSRV2 2: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3001 for address 127.0.0.1, pid 6676 (0x00001a14).
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:08:39.710-0500] P-6676       T-3284  I SQLSRV2 2: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:08:40.256-0500] P-6676       T-6228  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@13:08:40.257-0500] P-6676       T-6228  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@13:09:48.163-0500] P-376        T-6344  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:09:48.165-0500] P-6676       T-6228  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:12:11.767-0500] P-3888       T-4032  I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
+[2014/07/29@13:12:11.864-0500] P-4176       T-5428  I BROKER  0: (2248)  Inicia Terminación normal 
+[2014/07/29@13:12:12.904-0500] P-4176       T-5428  I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Tue Jul 29 13:12:23 2014
+[2014/07/29@13:12:23.424-0500] P-5708       T-6840  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/29@13:12:23.425-0500] P-5708       T-6840  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@13:12:23.427-0500] P-5708       T-6840  I ABL      : (7161)  Fase rehacer física completa en bloque 71 desplazamiento 470 actualización 0. 
+[2014/07/29@13:12:23.427-0500] P-5708       T-6840  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@13:12:23.429-0500] P-5708       T-6840  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/29@13:49:59.044-0500] P-5708       T-6840  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Tue Jul 29 13:50:02 2014
+[2014/07/29@13:50:02.020-0500] P-5536       T-5712  I BROKER  0: (333)   Inicio de sesión Multi-usuario. 
+[2014/07/29@13:50:02.022-0500] P-5536       T-5712  I BROKER  0: (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@13:50:02.026-0500] P-5536       T-5712  I BROKER  0: (7161)  Fase rehacer física completa en bloque 71 desplazamiento 3318 actualización 0. 
+[2014/07/29@13:50:02.026-0500] P-5536       T-5712  I BROKER  0: (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@13:50:02.028-0500] P-5536       T-5712  I BROKER  0: (4393)  Este servidor tiene licencia para conexiones locales solamente. 
+[2014/07/29@13:50:02.036-0500] P-5536       T-5712  I BROKER  0: (5644)  Iniciado para 30060 usando tcp IPV4 address 127.0.0.1, pid 5536. 
+[2014/07/29@13:50:02.036-0500] P-5536       T-5712  I BROKER  0: (4234)  Versión de Progress OpenEdge 10.2A build 1185 sobre WINNT . 
+[2014/07/29@13:50:02.036-0500] P-5536       T-5712  I BROKER  0: (4281)  Servidor iniciado por Villo en CON:. 
+[2014/07/29@13:50:02.036-0500] P-5536       T-5712  I BROKER  0: (6574)  Arrancado usando pid: 5536. 
+[2014/07/29@13:50:02.036-0500] P-5536       T-5712  I BROKER  0: (4235)  Nombre Físico de la Base de Datos (-db): C:\ProgressDB\Incidencias\incidencias. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4236)  Tipo de la base de datos (-dt): PROGRESS. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4237)  Acceso forzado (-F): Not Enabled. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4238)  E/S Directa (-directio): Not Enabled. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (-----) LRU mechanism enabled.
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4239)  Número de buffers de la base de datos (-B): 3000. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (9422)  Número máximo de buffers privados por usuarios (-Bpmax): 64. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4240)  Tamaño de memoria compartida en exceso (-Mxs): 19. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (10014) El segmento de memoria compartida no está bloqueado en memoria. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4241)  Tamaño actual de la tabla de bloqueos (locks) (-L): 8192. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (13953) Número de área máximo (-maxArea): 32000. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4242)  Entradas en la tabla de Hash (-hash): 887. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4243)  Intentos de Spin Lock Actuales (-spin): 0. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (6526)  Número de Conjuntos de Semáforos (-semsets) 3. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (13924) Tamaño máximo del segmento de memoria compartida (-shmsegsize) 128 Mb. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4244)  Recuperación a fallas (-i): Enabled. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (6573)  Database Blocksize (-blocksize): 4096. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4245)  Retraso del limpiado de Before-Image (-Mf): 3. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4247)  Archivo de E/S Before-Image (-r -R): Reliable. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4249)  Intervalo de truncamiento del archivo Before-Image (-G): 0. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4250)  Tamaño del cluster del Before-Image: 524288. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4251)  Tamaño de bloque en Before-Image: 8192. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4252)  Número de buffers del Before-Image (-bibufs): 20. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (-----) Record free chain search depth factor 5 (-recspacesearchdepth)
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (9238)  Tamaño del Umbral del Archivo de BI (-bithold): 0.0   Bytes. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (6552)  Umbral de Estancamiento del archivo de BI (-bistall): Deshabilitado. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4254)  Estancamiento de After-Image (-aistall): Not Enabled. 
+[2014/07/29@13:50:02.037-0500] P-5536       T-5712  I BROKER  0: (4255)  Tamaño del bloque del After-Image: 8192. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4256)  Número de buffers de After-Image (-aibufs): 20. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (8527)  Tamaño del cache del objeto de almacenamiento (-omsize): 1024 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4257)  Número Máximo de Clientes por Servidor (-Ma): 1. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4258)  Número Máximo de Servidores (-Mn): 5. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4259)  Número Mínimo de Clientes por Servidor (-Mi): 1. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4260)  Número máximo de usuarios (-n): 6. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4261)  Nombre del Host (-H): Villo. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4262)  Nombre de Servicio (-S): 30060. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (14268) Versión de TCP/IP (-ipver) : IPV4 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4263)  Tipo de Red (-N): tcp. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4264)  Set de caracteres (-cpinternal): ISO8859-1. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (4282)  Archivo de parámetros: Not Enabled. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (5648)  Número mínimo de Puerto para auto-servidores (-minport): 3000. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (5649)  Número máximo de puerto para Auto Servidores (-maxport): 5000. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (8865)  Este broker soporta grupos de servidores de 4GL y SQL. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (9336)  Se crea la memoria compartida con segment_id: 32374784 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12813) Cursores de índice permitidos (-c): 24. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12814) Retraso en grupo (-groupdelay): 10. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12815) Tamaño de tabla de hash para tabla de bloqueo (-lkhash): 1237 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12816) Puerto Máximo (-maxport): 5000 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12817) Puerto Minimo (-minport): 3000 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12818) Tamaño del Buffer de Mensajes (-Mm): 1024 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (12823) Conjuntos de semáforos (-semsets): 3 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (13870) Database Service Manager – Tamaño de la cola de IPC (-pica) : 64.0  KBytes. 
+[2014/07/29@13:50:02.038-0500] P-5536       T-5712  I BROKER  0: (13896) Límite de salto de bloqueo TXE Commit (-TXESkipLimit): 10000. 
+[2014/07/29@13:50:02.039-0500] P-5536       T-5712  I BROKER  0: (10471) Las conexiones de la base de datos han sido habilitadas. 
+[2014/07/29@13:50:10.319-0500] P-6428       T-6080  I SQLSRV2 1: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3000 for address 127.0.0.1, pid 6428 (0x0000191c).
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:50:10.326-0500] P-6428       T-6080  I SQLSRV2 1: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:50:11.019-0500] P-6428       T-3872  I SRV     1: (8873)  Login usernum 9, remote SQL client. 
+[2014/07/29@13:50:11.034-0500] P-6428       T-3872  I SRV     1: (7129)  Usr 9 asignó nombre a sysprogress. 
+[2014/07/29@13:50:11.362-0500] P-3452       T-1960  I SQLSRV2 2: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3001 for address 127.0.0.1, pid 3452 (0x00000d7c).
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:50:11.369-0500] P-3452       T-1960  I SQLSRV2 2: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:50:12.141-0500] P-3452       T-5804  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@13:50:12.142-0500] P-3452       T-5804  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@13:51:22.548-0500] P-6796       T-3120  I SQLSRV2 3: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3002 for address 127.0.0.1, pid 6796 (0x00001a8c).
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:51:22.556-0500] P-6796       T-3120  I SQLSRV2 3: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:51:23.268-0500] P-6796       T-6852  I SRV     3: (8873)  Login usernum 7, remote SQL client. 
+[2014/07/29@13:51:23.270-0500] P-6796       T-6852  I SRV     3: (7129)  Usr 7 asignó nombre a sysprogress. 
+[2014/07/29@13:51:23.501-0500] P-6796       T-6852  I SRV     3: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:51:23.541-0500] P-6796       T-5000  I SRV     3: (8873)  Login usernum 7, remote SQL client. 
+[2014/07/29@13:51:23.543-0500] P-6796       T-5000  I SRV     3: (7129)  Usr 7 asignó nombre a sysprogress. 
+[2014/07/29@13:51:23.949-0500] P-5004       T-6504  I SQLSRV2 4: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3003 for address 127.0.0.1, pid 5004 (0x0000138c).
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:51:23.956-0500] P-5004       T-6504  I SQLSRV2 4: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:51:24.572-0500] P-5004       T-6920  I SRV     4: (8873)  Login usernum 6, remote SQL client. 
+[2014/07/29@13:51:24.573-0500] P-5004       T-6920  I SRV     4: (7129)  Usr 6 asignó nombre a sysprogress. 
+[2014/07/29@13:51:38.486-0500] P-6796       T-5000  I SRV     3: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:51:38.486-0500] P-6428       T-3872  I SRV     1: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:51:38.486-0500] P-3452       T-5804  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:51:38.487-0500] P-5004       T-6920  I SRV     4: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:52:28.312-0500] P-5536       T-5712  I BROKER  0: (1154)  No hay servidores disponibles.  Reintentar más tarde. 
+[2014/07/29@13:52:47.090-0500] P-1896       T-5612  I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
+[2014/07/29@13:52:47.169-0500] P-5536       T-5712  I BROKER  0: (2248)  Inicia Terminación normal 
+[2014/07/29@13:52:48.205-0500] P-5536       T-5712  I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Tue Jul 29 13:52:53 2014
+[2014/07/29@13:52:53.606-0500] P-6204       T-6924  I BROKER  0: (333)   Inicio de sesión Multi-usuario. 
+[2014/07/29@13:52:53.608-0500] P-6204       T-6924  I BROKER  0: (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/29@13:52:53.611-0500] P-6204       T-6924  I BROKER  0: (7161)  Fase rehacer física completa en bloque 71 desplazamiento 4428 actualización 0. 
+[2014/07/29@13:52:53.612-0500] P-6204       T-6924  I BROKER  0: (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/29@13:52:53.614-0500] P-6204       T-6924  I BROKER  0: (4393)  Este servidor tiene licencia para conexiones locales solamente. 
+[2014/07/29@13:52:53.621-0500] P-6204       T-6924  I BROKER  0: (5644)  Iniciado para 30060 usando tcp IPV4 address 127.0.0.1, pid 6204. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4234)  Versión de Progress OpenEdge 10.2A build 1185 sobre WINNT . 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4281)  Servidor iniciado por Villo en CON:. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (6574)  Arrancado usando pid: 6204. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4235)  Nombre Físico de la Base de Datos (-db): C:\ProgressDB\Incidencias\incidencias. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4236)  Tipo de la base de datos (-dt): PROGRESS. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4237)  Acceso forzado (-F): Not Enabled. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4238)  E/S Directa (-directio): Not Enabled. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (-----) LRU mechanism enabled.
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4239)  Número de buffers de la base de datos (-B): 3000. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (9422)  Número máximo de buffers privados por usuarios (-Bpmax): 64. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4240)  Tamaño de memoria compartida en exceso (-Mxs): 19. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (10014) El segmento de memoria compartida no está bloqueado en memoria. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4241)  Tamaño actual de la tabla de bloqueos (locks) (-L): 8192. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (13953) Número de área máximo (-maxArea): 32000. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4242)  Entradas en la tabla de Hash (-hash): 887. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4243)  Intentos de Spin Lock Actuales (-spin): 0. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (6526)  Número de Conjuntos de Semáforos (-semsets) 3. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (13924) Tamaño máximo del segmento de memoria compartida (-shmsegsize) 128 Mb. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4244)  Recuperación a fallas (-i): Enabled. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (6573)  Database Blocksize (-blocksize): 4096. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4245)  Retraso del limpiado de Before-Image (-Mf): 3. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4247)  Archivo de E/S Before-Image (-r -R): Reliable. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4249)  Intervalo de truncamiento del archivo Before-Image (-G): 0. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4250)  Tamaño del cluster del Before-Image: 524288. 
+[2014/07/29@13:52:53.622-0500] P-6204       T-6924  I BROKER  0: (4251)  Tamaño de bloque en Before-Image: 8192. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4252)  Número de buffers del Before-Image (-bibufs): 20. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (-----) Record free chain search depth factor 5 (-recspacesearchdepth)
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (9238)  Tamaño del Umbral del Archivo de BI (-bithold): 0.0   Bytes. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (6552)  Umbral de Estancamiento del archivo de BI (-bistall): Deshabilitado. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4254)  Estancamiento de After-Image (-aistall): Not Enabled. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4255)  Tamaño del bloque del After-Image: 8192. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4256)  Número de buffers de After-Image (-aibufs): 20. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (8527)  Tamaño del cache del objeto de almacenamiento (-omsize): 1024 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4257)  Número Máximo de Clientes por Servidor (-Ma): 1. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4258)  Número Máximo de Servidores (-Mn): 5. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4259)  Número Mínimo de Clientes por Servidor (-Mi): 1. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4260)  Número máximo de usuarios (-n): 6. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4261)  Nombre del Host (-H): Villo. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4262)  Nombre de Servicio (-S): 30060. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (14268) Versión de TCP/IP (-ipver) : IPV4 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4263)  Tipo de Red (-N): tcp. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4264)  Set de caracteres (-cpinternal): ISO8859-1. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (4282)  Archivo de parámetros: Not Enabled. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (5648)  Número mínimo de Puerto para auto-servidores (-minport): 3000. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (5649)  Número máximo de puerto para Auto Servidores (-maxport): 5000. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (8865)  Este broker soporta grupos de servidores de 4GL y SQL. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (9336)  Se crea la memoria compartida con segment_id: 33882112 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12813) Cursores de índice permitidos (-c): 24. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12814) Retraso en grupo (-groupdelay): 10. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12815) Tamaño de tabla de hash para tabla de bloqueo (-lkhash): 1237 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12816) Puerto Máximo (-maxport): 5000 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12817) Puerto Minimo (-minport): 3000 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12818) Tamaño del Buffer de Mensajes (-Mm): 1024 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (12823) Conjuntos de semáforos (-semsets): 3 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (13870) Database Service Manager – Tamaño de la cola de IPC (-pica) : 64.0  KBytes. 
+[2014/07/29@13:52:53.623-0500] P-6204       T-6924  I BROKER  0: (13896) Límite de salto de bloqueo TXE Commit (-TXESkipLimit): 10000. 
+[2014/07/29@13:52:53.624-0500] P-6204       T-6924  I BROKER  0: (10471) Las conexiones de la base de datos han sido habilitadas. 
+[2014/07/29@13:52:55.606-0500] P-6176       T-5736  I SRV     1: (5646)  Iniciado en el puerto 3000 usando tcp IPV4 address 127.0.0.1, pid 6176. 
+[2014/07/29@13:52:56.583-0500] P-6176       T-5736  I SRV     1: (742)   Conectando num-usua 9, id-usua Villo client type ABL , en Villo using TCP/IP IPV4 address 127.0.0.1. 
+[2014/07/29@13:52:56.585-0500] P-6176       T-5736  I SRV     1: (708)   Iden. usuario es sysprogress. 
+[2014/07/29@13:52:56.585-0500] P-6176       T-5736  I SRV     1: (14658) El mensaje anterior se envió a nombre del usuario 9, la identificación del proceso del servidor 6176, identificación del proceso del servidor del broker 6204. (5512) 
+[2014/07/29@13:52:56.614-0500] P-6176       T-5736  I SRV     1: (12699) Base de Datos Incidencias Opciones:  
+[2014/07/29@13:52:56.614-0500] P-6176       T-5736  I SRV     1: (14658) El mensaje anterior se envió a nombre del usuario 9, la identificación del proceso del servidor 6176, identificación del proceso del servidor del broker 6204. (5512) 
+[2014/07/29@13:55:19.741-0500] P-3716       T-6108  I SQLSRV2 2: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3001 for address 127.0.0.1, pid 3716 (0x00000e84).
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/29@13:55:19.748-0500] P-3716       T-6108  I SQLSRV2 2: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/29@13:55:20.557-0500] P-3716       T-208   I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@13:55:20.558-0500] P-3716       T-208   I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@13:55:20.728-0500] P-3716       T-208   I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:56:01.885-0500] P-3716       T-376   I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@13:56:01.885-0500] P-3716       T-376   I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@13:56:01.969-0500] P-3716       T-376   I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:56:16.418-0500] P-3716       T-796   I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@13:56:16.419-0500] P-3716       T-796   I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@13:56:16.501-0500] P-3716       T-796   I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@13:57:39.777-0500] P-3716       T-6912  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@13:57:39.777-0500] P-3716       T-6912  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@13:57:39.886-0500] P-3716       T-6912  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@14:04:11.863-0500] P-3716       T-6616  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@14:04:11.864-0500] P-3716       T-6616  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@14:04:11.975-0500] P-3716       T-6616  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@14:04:38.245-0500] P-3716       T-6460  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@14:04:38.246-0500] P-3716       T-6460  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@14:04:38.331-0500] P-3716       T-6460  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@14:05:09.969-0500] P-3716       T-6224  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/29@14:05:09.969-0500] P-3716       T-6224  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/29@14:05:10.053-0500] P-3716       T-6224  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/29@14:05:32.272-0500] P-6272       T-7112  I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
+[2014/07/29@14:05:32.399-0500] P-6176       T-5736  I SRV     1: (2252)  Inicia retroceso de transacción. 
+[2014/07/29@14:05:32.399-0500] P-6176       T-5736  I SRV     1: (2253)  Retroceso de transacción completo. 
+[2014/07/29@14:05:32.399-0500] P-6176       T-5736  I SRV     1: (739)   Desconectandose num-usuario 9, id-usuario sysprogress, en Villo 
+[2014/07/29@14:05:32.402-0500] P-6176       T-5736  I SRV     1: (2520)  Detenido. 
+[2014/07/29@14:05:32.416-0500] P-6204       T-6924  I BROKER  0: (2248)  Inicia Terminación normal 
+[2014/07/29@14:05:33.476-0500] P-6204       T-6924  I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Wed Jul 30 10:45:38 2014
+[2014/07/30@10:45:38.135-0500] P-1144       T-4064  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/30@10:45:38.175-0500] P-1144       T-4064  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/30@10:45:38.198-0500] P-1144       T-4064  I ABL      : (7161)  Fase rehacer física completa en bloque 71 desplazamiento 6089 actualización 0. 
+[2014/07/30@10:45:38.198-0500] P-1144       T-4064  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/30@10:45:38.204-0500] P-1144       T-4064  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/30@10:48:51.846-0500] P-1144       T-4064  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Wed Jul 30 10:49:39 2014
+[2014/07/30@10:49:39.543-0500] P-1144       T-4064  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/30@10:49:39.544-0500] P-1144       T-4064  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/30@10:49:39.546-0500] P-1144       T-4064  I ABL      : (7161)  Fase rehacer física completa en bloque 71 desplazamiento 6149 actualización 0. 
+[2014/07/30@10:49:39.546-0500] P-1144       T-4064  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/30@10:49:39.548-0500] P-1144       T-4064  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/30@10:57:55.083-0500] P-1144       T-4064  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Wed Jul 30 10:58:23 2014
+[2014/07/30@10:58:23.473-0500] P-4272       T-4980  I BROKER  0: (333)   Inicio de sesión Multi-usuario. 
+[2014/07/30@10:58:23.475-0500] P-4272       T-4980  I BROKER  0: (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/30@10:58:23.477-0500] P-4272       T-4980  I BROKER  0: (7161)  Fase rehacer física completa en bloque 71 desplazamiento 6209 actualización 0. 
+[2014/07/30@10:58:23.477-0500] P-4272       T-4980  I BROKER  0: (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/30@10:58:23.479-0500] P-4272       T-4980  I BROKER  0: (4393)  Este servidor tiene licencia para conexiones locales solamente. 
+[2014/07/30@10:58:23.489-0500] P-4272       T-4980  I BROKER  0: (5644)  Iniciado para 30060 usando tcp IPV4 address 127.0.0.1, pid 4272. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4234)  Versión de Progress OpenEdge 10.2A build 1185 sobre WINNT . 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4281)  Servidor iniciado por Villo en CON:. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (6574)  Arrancado usando pid: 4272. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4235)  Nombre Físico de la Base de Datos (-db): C:\ProgressDB\Incidencias\incidencias. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4236)  Tipo de la base de datos (-dt): PROGRESS. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4237)  Acceso forzado (-F): Not Enabled. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4238)  E/S Directa (-directio): Not Enabled. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (-----) LRU mechanism enabled.
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4239)  Número de buffers de la base de datos (-B): 3000. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (9422)  Número máximo de buffers privados por usuarios (-Bpmax): 64. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (4240)  Tamaño de memoria compartida en exceso (-Mxs): 19. 
+[2014/07/30@10:58:23.490-0500] P-4272       T-4980  I BROKER  0: (10014) El segmento de memoria compartida no está bloqueado en memoria. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4241)  Tamaño actual de la tabla de bloqueos (locks) (-L): 8192. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (13953) Número de área máximo (-maxArea): 32000. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4242)  Entradas en la tabla de Hash (-hash): 887. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4243)  Intentos de Spin Lock Actuales (-spin): 0. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (6526)  Número de Conjuntos de Semáforos (-semsets) 3. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (13924) Tamaño máximo del segmento de memoria compartida (-shmsegsize) 128 Mb. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4244)  Recuperación a fallas (-i): Enabled. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (6573)  Database Blocksize (-blocksize): 4096. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4245)  Retraso del limpiado de Before-Image (-Mf): 3. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4247)  Archivo de E/S Before-Image (-r -R): Reliable. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4249)  Intervalo de truncamiento del archivo Before-Image (-G): 0. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4250)  Tamaño del cluster del Before-Image: 524288. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4251)  Tamaño de bloque en Before-Image: 8192. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (4252)  Número de buffers del Before-Image (-bibufs): 20. 
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (-----) Record free chain search depth factor 5 (-recspacesearchdepth)
+[2014/07/30@10:58:23.491-0500] P-4272       T-4980  I BROKER  0: (9238)  Tamaño del Umbral del Archivo de BI (-bithold): 0.0   Bytes. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (6552)  Umbral de Estancamiento del archivo de BI (-bistall): Deshabilitado. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4254)  Estancamiento de After-Image (-aistall): Not Enabled. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4255)  Tamaño del bloque del After-Image: 8192. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4256)  Número de buffers de After-Image (-aibufs): 20. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (8527)  Tamaño del cache del objeto de almacenamiento (-omsize): 1024 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4257)  Número Máximo de Clientes por Servidor (-Ma): 1. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4258)  Número Máximo de Servidores (-Mn): 5. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4259)  Número Mínimo de Clientes por Servidor (-Mi): 1. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4260)  Número máximo de usuarios (-n): 6. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4261)  Nombre del Host (-H): Villo. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4262)  Nombre de Servicio (-S): 30060. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (14268) Versión de TCP/IP (-ipver) : IPV4 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4263)  Tipo de Red (-N): tcp. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4264)  Set de caracteres (-cpinternal): ISO8859-1. 
+[2014/07/30@10:58:23.492-0500] P-4272       T-4980  I BROKER  0: (4282)  Archivo de parámetros: Not Enabled. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (5648)  Número mínimo de Puerto para auto-servidores (-minport): 3000. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (5649)  Número máximo de puerto para Auto Servidores (-maxport): 5000. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (8865)  Este broker soporta grupos de servidores de 4GL y SQL. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (9336)  Se crea la memoria compartida con segment_id: 34865152 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12813) Cursores de índice permitidos (-c): 24. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12814) Retraso en grupo (-groupdelay): 10. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12815) Tamaño de tabla de hash para tabla de bloqueo (-lkhash): 1237 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12816) Puerto Máximo (-maxport): 5000 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12817) Puerto Minimo (-minport): 3000 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12818) Tamaño del Buffer de Mensajes (-Mm): 1024 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (12823) Conjuntos de semáforos (-semsets): 3 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (13870) Database Service Manager – Tamaño de la cola de IPC (-pica) : 64.0  KBytes. 
+[2014/07/30@10:58:23.493-0500] P-4272       T-4980  I BROKER  0: (13896) Límite de salto de bloqueo TXE Commit (-TXESkipLimit): 10000. 
+[2014/07/30@10:58:23.494-0500] P-4272       T-4980  I BROKER  0: (10471) Las conexiones de la base de datos han sido habilitadas. 
+[2014/07/30@10:59:13.117-0500] P-4752       T-5760  I SRV     1: (5646)  Iniciado en el puerto 3000 usando tcp IPV4 address 127.0.0.1, pid 4752. 
+[2014/07/30@10:59:14.066-0500] P-4752       T-5760  I SRV     1: (742)   Conectando num-usua 9, id-usua Villo client type ABL , en Villo using TCP/IP IPV4 address 127.0.0.1. 
+[2014/07/30@10:59:14.068-0500] P-4752       T-5760  I SRV     1: (708)   Iden. usuario es sysprogress. 
+[2014/07/30@10:59:14.068-0500] P-4752       T-5760  I SRV     1: (14658) El mensaje anterior se envió a nombre del usuario 9, la identificación del proceso del servidor 4752, identificación del proceso del servidor del broker 4272. (5512) 
+[2014/07/30@10:59:14.097-0500] P-4752       T-5760  I SRV     1: (12699) Base de Datos Incidencias Opciones:  
+[2014/07/30@10:59:14.097-0500] P-4752       T-5760  I SRV     1: (14658) El mensaje anterior se envió a nombre del usuario 9, la identificación del proceso del servidor 4752, identificación del proceso del servidor del broker 4272. (5512) 
+[2014/07/30@10:59:25.772-0500] P-1484       T-5424  I SQLSRV2 2: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3001 for address 127.0.0.1, pid 1484 (0x000005cc).
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/30@10:59:25.782-0500] P-1484       T-5424  I SQLSRV2 2: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/30@10:59:26.518-0500] P-1484       T-5804  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@10:59:26.562-0500] P-1484       T-5804  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@10:59:26.987-0500] P-1484       T-5804  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:00:41.732-0500] P-1484       T-4940  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@11:00:41.732-0500] P-1484       T-4940  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@11:00:41.820-0500] P-1484       T-4940  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:01:30.204-0500] P-1484       T-4208  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@11:01:30.205-0500] P-1484       T-4208  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@11:01:30.299-0500] P-1484       T-4208  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:01:42.278-0500] P-1484       T-5628  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@11:01:42.278-0500] P-1484       T-5628  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@11:01:42.362-0500] P-1484       T-5628  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:18:06.579-0500] P-1484       T-5932  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@11:18:06.580-0500] P-1484       T-5932  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@11:18:07.396-0500] P-2312       T-5180  I SQLSRV2 3: (-----) SQL Server 10.2A.00 started, configuration: "incidencias.virtualconfig" 
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) "C:\ProgressDB\Incidencias\incidencias" started on IPv4 port 3002 for address 127.0.0.1, pid 2312 (0x00000908).
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) Thread stack size: 1024000 (bytes).
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) DLC from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge 
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) WRKDIR from REGISTRY is: C:\OpenEdge\WRK\ 
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) JDKHOME from REGISTRY is: C:\Progress\OpenEdge\jdk 
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) JREHOME from REGISTRY is: C:\Progress\OpenEdge\jre 
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) CLASSPATH from ENVIRONMENT VARIABLE is: C:\Progress\OpenEdge\java;C:\Program Files\Java\jdk1.7.0_60\bin 
+[2014/07/30@11:18:07.404-0500] P-2312       T-5180  I SQLSRV2 3: (-----) PROSQL_LOCKWAIT_TIMEOUT value is: 5 seconds
+[2014/07/30@11:18:07.912-0500] P-2312       T-3960  I SRV     3: (8873)  Login usernum 7, remote SQL client. 
+[2014/07/30@11:18:07.915-0500] P-2312       T-3960  I SRV     3: (7129)  Usr 7 asignó nombre a sysprogress. 
+[2014/07/30@11:23:21.455-0500] P-1484       T-5932  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:23:21.455-0500] P-2312       T-3960  I SRV     3: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:29:51.123-0500] P-1484       T-5088  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@11:29:51.123-0500] P-1484       T-5088  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@11:29:51.211-0500] P-1484       T-5088  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:40:41.756-0500] P-1484       T-4636  I SRV     2: (8873)  Login usernum 8, remote SQL client. 
+[2014/07/30@11:40:41.757-0500] P-1484       T-4636  I SRV     2: (7129)  Usr 8 asignó nombre a sysprogress. 
+[2014/07/30@11:40:41.829-0500] P-1484       T-4636  I SRV     2: (453)   Logout de sysprogress en  . 
+[2014/07/30@11:41:21.032-0500] P-2552       T-4988  I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
+[2014/07/30@11:41:21.071-0500] P-4752       T-5760  I SRV     1: (739)   Desconectandose num-usuario 9, id-usuario sysprogress, en Villo 
+[2014/07/30@11:41:21.158-0500] P-4272       T-4980  I BROKER  0: (2248)  Inicia Terminación normal 
+[2014/07/30@11:41:22.246-0500] P-4272       T-4980  I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Wed Jul 30 11:43:04 2014
+[2014/07/30@11:43:04.977-0500] P-1144       T-4064  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/30@11:43:04.978-0500] P-1144       T-4064  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/30@11:43:04.980-0500] P-1144       T-4064  I ABL      : (7161)  Fase rehacer física completa en bloque 71 desplazamiento 6834 actualización 0. 
+[2014/07/30@11:43:04.980-0500] P-1144       T-4064  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/30@11:43:04.981-0500] P-1144       T-4064  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/30@12:26:57.647-0500] P-1144       T-4064  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Wed Jul 30 13:00:18 2014
+[2014/07/30@13:00:18.240-0500] P-3356       T-3136  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/30@13:00:18.281-0500] P-3356       T-3136  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/30@13:00:18.314-0500] P-3356       T-3136  I ABL      : (7161)  Fase rehacer física completa en bloque 72 desplazamiento 1624 actualización 0. 
+[2014/07/30@13:00:18.314-0500] P-3356       T-3136  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/30@13:00:18.323-0500] P-3356       T-3136  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/30@13:59:06.932-0500] P-3356       T-3136  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Thu Jul 31 12:39:46 2014
+[2014/07/31@12:39:46.942-0500] P-1448       T-4556  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/07/31@12:39:47.054-0500] P-1448       T-4556  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/07/31@12:39:47.093-0500] P-1448       T-4556  I ABL      : (7161)  Fase rehacer física completa en bloque 75 desplazamiento 6471 actualización 0. 
+[2014/07/31@12:39:47.093-0500] P-1448       T-4556  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/07/31@12:39:47.094-0500] P-1448       T-4556  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/07/31@12:51:57.125-0500] P-1448       T-4556  I ABL      : (334)   Fin de sesión Single-user. 
