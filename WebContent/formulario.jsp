@@ -35,7 +35,7 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84">
 			</div>
-			<center><h1>Formulario</h1></center>
+			<center><h1>Nueva Incidencia</h1></center>
 			<div class="container">
             <center><form method="POST" action="InsertarFormulario">
                 <div id="loginForm">
@@ -89,7 +89,7 @@
 								<%}%>
 					</select><br />
 					
-					<label id="tipoinlabel">Tipo de insidencias:</label>
+					<label id="tipoinlabel">Tipo de insidencia:</label>
 					<select name="tipodeincidencias" id="tipointxt">
 						<% ResultSet rsi = dba.getSt().executeQuery("SELECT CATTipoDeIncidente.ildIncidente,CATTipoDeIncidente.NombreIncidente FROM PUB.CATTipoDeIncidente");
 							while(rsi.next()){%>
@@ -197,7 +197,7 @@
 					<label id="atachylabel">Respuesta:</label>
 					<textarea rows="6" cols="45" name="respuesta" id="atachytxt"></textarea>
                     <input type="submit" value="Guardar" id="submit"/>
-					<input type="submit" value="Cancel" id="cancel"/>
+					<input type="submit" value="Cancelar" id="cancel"/>
                 </div>
             </form></center>
 			</div>

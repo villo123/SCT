@@ -12,7 +12,7 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<center><h1>Catálogo tipo de incidencia</h1></center>
+			<center><h1>Catálogo tipo de Incidencia</h1></center>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
@@ -25,7 +25,7 @@
 	
              <tr>
                  <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Tipo de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Tipo de Incidencia</td>
               	 </tr>
         
              <tr>

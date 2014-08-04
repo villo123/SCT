@@ -22,32 +22,32 @@
 		 <table border="2px" style="border-collapse: collapse;"> 
              <tr>
                  <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Estatus de La Incidencia</td>
-              	 </tr>
+                 <td class="t" style="color:#FFFFFF;">Estatus de la Incidencia</td>
+              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                 
                  
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                
                                
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                
                                  
              </tr>
-              <tr>
+                 <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
+                 
                                  
              </tr>
         </table>
