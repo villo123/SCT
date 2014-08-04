@@ -1,4 +1,5 @@
 package com.sct.incidencias.ibm;
+import org.apache.*;
 
 public class DigitalizarDocumentoServiceSoapBindingStub extends org.apache.axis.client.Stub implements gob.sct.documentos.DigitalizarDocumento {
     private java.util.Vector cachedSerClasses = new java.util.Vector();

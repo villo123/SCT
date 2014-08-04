@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_11">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
@@ -16,11 +16,6 @@
 	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/WebContent/WEB-INF/lib/base.jar"/>
 	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/WebContent/WEB-INF/lib/openedge.jar"/>
 	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/WebContent/WEB-INF/lib/util.jar"/>
-	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-3.7-20101029.jar"/>
-	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-3.8-20120326.jar"/>
-	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-excelant-3.8-20120326.jar"/>
-	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-ooxml-3.8-20120326.jar"/>
-	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-ooxml-schemas-3.8-20120326.jar"/>
-	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-scratchpad-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="C:/Users/7h3n3w3r4cr4ck3r/git/SCT/poi-2.5.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

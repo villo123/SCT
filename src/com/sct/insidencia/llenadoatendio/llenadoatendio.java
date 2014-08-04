@@ -1,6 +1,7 @@
 package com.sct.insidencia.llenadoatendio;
 
 import java.io.IOException;
+import java.sql.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,12 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sct.incidencias.Conexion.Connection;
-import com.sct.incidencias.Conexion.Exception;
-import com.sct.incidencias.Conexion.PreparedStatement;
-import com.sct.incidencias.Conexion.ResultSet;
-import com.sct.incidencias.Conexion.Statement;
-import com.sct.incidencias.Conexion.String;
 import com.sct.incidencias.catalogos.CATAtendio;
 
 /**
@@ -22,6 +17,11 @@ import com.sct.incidencias.catalogos.CATAtendio;
 @WebServlet("/llenadoatendio")
 public class llenadoatendio extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	boolean status = false;
+	private static Connection ct;
+	private static Statement st;
+	static PreparedStatement pst = null;
+	static ResultSet rs = null;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -44,11 +44,7 @@ public class llenadoatendio extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		boolean status = false;
-		private static Connection ct;
-		private static Statement st;
-		static PreparedStatement pst = null;
-		static ResultSet rs = null;
+
 		try{
 			String databaseURL = "jdbc:datadirect:openedge://localhost:30060;"
 									+ "schemaDefault=PUB;"

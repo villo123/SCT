@@ -1,4 +1,5 @@
 package com.sct.incidencias.ibm;
+import org.apache.*;
 
 public interface DigitalizarDocumentoService extends javax.xml.rpc.Service {
     public java.lang.String getDigitalizarDocumentoSoapPortAddress();

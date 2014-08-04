@@ -1,4 +1,5 @@
 package com.sct.incidencias.ibm;
+import org.apache.*;
 
 public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.Service implements gob.sct.documentos.DigitalizarDocumentoService {
 

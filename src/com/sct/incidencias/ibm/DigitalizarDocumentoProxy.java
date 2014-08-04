@@ -1,4 +1,5 @@
 package com.sct.incidencias.ibm;
+import org.apache.*;
 
 public class DigitalizarDocumentoProxy implements gob.sct.documentos.DigitalizarDocumento {
 	  private String _endpoint = null;
