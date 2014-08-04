@@ -34,6 +34,7 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84">
 			</div>
+			<center><h1>Formulario</h1></center>
 			<div class="container">
             <center><form method="POST" action="InsertarFormulario">
                 <div id="loginForm">
