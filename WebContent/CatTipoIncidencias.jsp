@@ -12,6 +12,7 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
+			<center><h1>Catálogo tipo de incidencia</h1></center>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
