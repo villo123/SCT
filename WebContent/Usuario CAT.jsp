@@ -9,7 +9,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!--Style content-->
-		<link rel="stylesheet" type="text/css" href="css/AtendioUTIC.css" />
+		<link rel="stylesheet" type="text/css" href="css/UsuarioCAT.css" />
 		<link rel="stykesheet" type="text/css" href="css/button.css" />
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link rel="stylesheet" type="text/css"href="css/calendario.css" />
@@ -93,16 +93,18 @@
 					</tbody>
 				 </table>
 <br /><br />
-					<label id="idatendiolabel">Id:</label>
-					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
-					<label id="nameatendiolabel">Nombre:</label>
-					<input type="text" value="" id="nameatendiotxt" name="nameatendio" value="" size="30" /><br /><br />
-					<label id="apellidopatatendiolabel">Apellido Paterno:</label>
-					<input type="text" value="" id="apellidopatatendiotxt" name="apellidopatatendio" value="" size="30" /><br /><br />
+					<label id="idusuariocatlabel">Id:</label>
+					<input type="text" value="" id="idusuariocattxt" name="idusuariocat" value="" size="30" /><br /><br />
+					<label id="nameusuariocatlabel">Nombre:</label>
+					<input type="text" value="" id="nameusuariocattxt" name="nameusuariocat" value="" size="30" /><br /><br />
+					<label id="apellidousuariocatlabel">Apellido Paterno:</label>
+					<input type="text" value="" id="apellidousuariocattxt" name="apellidousuariocat" value="" size="30" /><br /><br />
 					<label id="apellidomatatendiolabel">Apellido Materno:</label>
-					<input type="text" value="" id="apellidomatatendiotxt" name="apellidomatatendio" value="" size="30" /><br /><br />
-					<label id="deptoatendiolabel">E-mail:</label>
-					<input type="text" value="" id="e-mailtxt" name="deptoatendio" value="" size="30" /><br /><br />
+					<input type="text" value="" id="apellidousuariocattxt" name="apellidousuariocat" value="" size="30" /><br /><br />
+					<label id="e-mailusuariocatllabel">E-mail:</label>
+					<input type="text" value="" id="e-mailusuariocattxt" name="e-mailusuariocat" value="" size="30" /><br /><br />
+					<label id="ciscousuariocatlabel">Cisco:</label>
+					<input type="text" value="" id=ciscousuariocattxt" name="ciscousuariocat" value="" size="30" /><br /><br />
 			</div>
 		</div>	
 	</body>    

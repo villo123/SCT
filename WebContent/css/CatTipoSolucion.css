@@ -101,9 +101,9 @@ html{
 	background:#CCC;
 }
 
-#idusuariocattxt{
+#idtipodesoluciontxt{
 	position:relative;
-    left:56px;
+    left:87px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -111,7 +111,7 @@ html{
     text-decoration: none;
 }
 
-#idusuariocatlabel{
+#idtipodesolucionlabel{
 	position:relative;
     padding-left:0px;
     padding-top:0px;
@@ -121,9 +121,9 @@ html{
     text-decoration: none;
 }
 
-#nameusuariocattxt{
+#tipodesoluciontxt{
 	position:relative;
-    left:56px;
+    left:100px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -131,7 +131,7 @@ html{
     text-decoration: none;
 }
 
-#nameusuariocatlabel{
+#tipodesolucionlabel{
 	position:relative;
     padding-left:0px;
     padding-top:0px;
@@ -140,86 +140,6 @@ html{
     font-family: verdana, arial, helvetica;
     text-decoration: none;
 }
-
-#apellidopatusuariocattxt{
-	position:relative;
-    left:10px;
-    top:0epx;
-    font-size:11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-}
-
-#apellidopatusuariocatlabel{
-	position:relative;
-    padding-left:0px;
-    padding-top:0px;
-    font-size: 11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-}
-
-#apellidomatusuariocattxt{
-	position:relative;
-    left:8px;
-    top:0epx;
-    font-size:11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-}
-
-#apellidomatusuariocatlabel{
-	position:relative;
-    padding-left:0px;
-    padding-top:0px;
-    font-size: 11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-}
-
-#e-mailusuariocattxt{
-	position:relative;
-    left:0px;
-    top:0epx;
-    font-size:11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-	
-}
-
-#e-mailusuariocatlabel{
-	position:relative;
-    padding-left:0px;
-    padding-top:0px;
-    font-size: 11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-}
-#ciscomailusuariocattxt{
-	position:relative;
-    left:0px;
-    top:0epx;
-    font-size:11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
-	
-}
-
-#ciscousuariocatlabel{
-	position:relative;
-    padding-left:0px;
-    padding-top:0px;
-    font-size: 11px;
-    font-weight: normal;
-    font-family: verdana, arial, helvetica;
-    text-decoration: none;
 
 #btn{
     text-decoration: none;
