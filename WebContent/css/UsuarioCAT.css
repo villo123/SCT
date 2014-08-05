@@ -181,9 +181,9 @@ html{
     text-decoration: none;
 }
 
-#deptoatendiotxt{
+#e-mailtxt{
 	position:relative;
-    left:22px;
+    left:0px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -192,7 +192,7 @@ html{
 	
 }
 
-#deptoatendiolabel{
+#e-maillabel{
 	position:relative;
     padding-left:0px;
     padding-top:0px;

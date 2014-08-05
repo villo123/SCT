@@ -22,7 +22,7 @@
 		 <table border="2px" style="border-collapse: collapse;"> 
              <tr>
                  <td class="t" style="color:#FFFFFF;">Id</td>
-                 <td class="t" style="color:#FFFFFF;">Estatus de la Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Estatus</td>
               </tr>
              <tr>
              	 <td></td>
@@ -51,6 +51,11 @@
                                  
              </tr>
         </table>
+        <br /><br />
+					<label id="idatendiolabel">Id:</label>
+					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
+					<label id="nameatendiolabel">Estatus:</label>
+					<input type="text" value="" id="nameatendiotxt" name="nameatendio" value="" size="30" /><br /><br />
         
         	</div>
       	</div>
