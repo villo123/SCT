@@ -101,8 +101,8 @@
 					<input type="text" value="" id="apellidopatatendiotxt" name="apellidopatatendio" value="" size="30" /><br /><br />
 					<label id="apellidomatatendiolabel">Apellido Materno:</label>
 					<input type="text" value="" id="apellidomatatendiotxt" name="apellidomatatendio" value="" size="30" /><br /><br />
-					<label id="deptoatendiolabel">Departamento:</label>
-					<input type="text" value="" id="deptoatendiotxt" name="deptoatendio" value="" size="30" /><br /><br />
+					<label id="deptoatendiolabel">E-mail:</label>
+					<input type="text" value="" id="e-mailtxt" name="deptoatendio" value="" size="30" /><br /><br />
 			</div>
 		</div>	
 	</body>    
