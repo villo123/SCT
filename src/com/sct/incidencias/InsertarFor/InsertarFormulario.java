@@ -49,25 +49,25 @@ public class InsertarFormulario extends HttpServlet {
 		inc.setFolio(folio);
 
 	
-		CATUnidadResponsable catunr = new CATUnidadResponsable();
+		CATUsuarioUnidadResponsable catusunr = new CATUsuarioUnidadResponsable();
 		
 		String nombreresponsable = request.getParameter("nombreur");
-		catunr.setNombreResponsable(nombreresponsable);
+		catusunr.setNombreResponsable(nombreresponsable);
 		
 		String responsableAPaterno= request.getParameter("APur");
-		catunr.setAPaterno(responsableAPaterno);
+		catusunr.setAPaterno(responsableAPaterno);
 		
 		String responsableAMaterno = request.getParameter("AMur");
-		catunr.setAMaterno(responsableAMaterno);
+		catusunr.setAMaterno(responsableAMaterno);
 		
 		String responsableCisco = request.getParameter("ciscour");
-		catunr.setCiscoUr(Integer.parseInt(responsableCisco));
+		catusunr.setCiscoUr(Integer.parseInt(responsableCisco));
 		
 		String responsableEmail = request.getParameter("emailur");
-		catunr.setEmailUr(responsableEmail);
+		catusunr.setEmailUr(responsableEmail);
 		
 		String unidadrespoildUnidadAdm = request.getParameter("unidadresponsable");
-		catunr.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
+		catusunr.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
 
 		CATDepartamento catdep = new CATDepartamento();
 		String ildDepartamento = request.getParameter("departamento");
