@@ -34,6 +34,7 @@
                  <td class="t">Hora de atención</td>
                  <td class="t">Atendido</td>
                  <td class="t">Centro SCT</td>
+                 <td class="t">E-mail</td>
                  <td class="t">Observaciones</td>
                  <td class="t">Usuario UR</td>
                  <td class="t">Cisco</td>

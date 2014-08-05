@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Catalogo Proceso</title>
+<title>Catálogo Proceso</title>
 <img src="ima/logo.png" alt="SCT"><p>
 <style type="text/css"> 
 	td.t {
@@ -71,7 +71,7 @@
 	 </style>
 </head>
 <body>
-<h1><center>Catalogo De solución</center></h1>
+<h1><center>Catalogo Solución</center></h1>
 <br>
          <input class="btnimageneditar" type="button" name="Editar" value="" /> 
        <input class="btnimagenguardar" type="button" name="Guardar" value="" /> 
@@ -83,8 +83,8 @@
              	
 	
              <tr>
-                 <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Solución de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Id</td>
+                 <td class="t" style="color:#FFFFFF;">Soluciones</td>
               	 </tr>
              <tr>
              	 <td></td>

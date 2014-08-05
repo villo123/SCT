@@ -89,7 +89,7 @@
 								<%}%>
 					</select><br />
 					
-					<label id="tipoinlabel">Tipo de insidencia:</label>
+					<label id="tipoinlabel">Tipo de incidencia:</label>
 					<select name="tipodeincidencias" id="tipointxt">
 						<% ResultSet rsi = dba.getSt().executeQuery("SELECT CATTipoDeIncidente.ildIncidente,CATTipoDeIncidente.NombreIncidente FROM PUB.CATTipoDeIncidente");
 							while(rsi.next()){%>
@@ -98,7 +98,7 @@
 								</option><%}%>
 					</select><br />
 					
-					<label id="tiposollabel">Tipo de solución:</label>
+					<label id="tiposollabel">Tipo de solucion:</label>
 					<select name="tipodesolucion" id="tiposoltxt">
 						<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.ildTipoDeSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
 							while(rss.next()){%>
@@ -108,13 +108,13 @@
 								%>
 					</select><br />
 					
-					<label id="aprovylabel">Aprobación:</label>
+					<label id="aprovylabel">Aprobacion:</label>
 					<select type="text" name="aprobacion" id="aprovytxt">
 						<option value="SI">SI</option>
 						<option value="NO">NO</option>
 					</select><br/>
 					
-				<label id="fechanlabel">Fecha de aprobación:</label>
+				<label id="fechanlabel">Fecha de aprobacion:</label>
 				<input id="aprobacion" type="text" name="fechaaprobacion" value="yyyy-mm-dd" >
 					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Aprobacion" id="lanzadoraprobacion">
                     <script type="text/javascript"> 
@@ -125,7 +125,7 @@
 					}); 
 					</script><br />
 					
-				<label id="insidentlabel">Descripción</label>
+				<label id="insidentlabel">Descripcion</label>
 				<label id="insidentilabel">de</label>	
 				<label id="insidentialabel">insidencia:</label>
 				<textarea id="insidenttxt" rows="6" cols="45" name="descripcionincidencia"></textarea><br/>
@@ -147,7 +147,7 @@
 				</select><br />
 				
 				<label id="fechamlabel">Fecha enviada </label>   
-				<label id="fechamilabel">por la mesa:</label>  		
+				<label id="fechamilabel">por el CAT:</label>  		
 					<input type="text" id="mesa"  name="fechamesa"  value="yyyy-mm-dd" />
 					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Mesa" id="lanzadormesa"/>
                     <script type="text/javascript"> 
@@ -159,7 +159,7 @@
 					</script><br />
 					
 					<label id="tplabel">Hora enviada </label>   
-					<label id="tpilabel">por la mesa:</label>  	
+					<label id="tpilabel">por el CAT:</label>  	
 					<input type="text" value="00:00" id="tptxt" name="timepickermesa" /><br />
 					
 					<label id="catlabel">Usuario CAT:</label>  	
@@ -180,7 +180,7 @@
 								</option><%}%>
 					</select>
 					
-					<label id="fechantlabel">Fecha de atención:</label>
+					<label id="fechantlabel">Fecha de atencion:</label>
 					<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd"/>
 					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion"/>
                     <script type="text/javascript"> 
@@ -191,7 +191,7 @@
 						}); 
 					</script><br />
 					
-					<label id="atenalabel">Hora de atención:</label>  	
+					<label id="atenalabel">Hora de atencion:</label>  	
 					<input type="text" value="00:00" id="atenatxt" name="timepickeratencion" /><br />
 					
 					<label id="atachylabel">Respuesta:</label>
