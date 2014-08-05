@@ -3,57 +3,107 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta charset="ISO-8859-1">
 <title>Usuario CAT</title>
+	<!--Meta content-->
+		<meta charset="ISO-8859-1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Style content-->
+		<link rel="stylesheet" type="text/css" href="css/AtendioUTIC.css" />
+		<link rel="stykesheet" type="text/css" href="css/button.css" />
+		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
+		<link rel="stylesheet" type="text/css"href="css/calendario.css" />
+		<!--Script content-->
+		<script type="text/javascript" src="js/master.js"></script>
+		<script type="text/javascript" src="js/calendar.js"></script>
+		<script type="text/javascript" src="js/calendar-es.js"></script>
+		<script type="text/javascript" src="js/calendar-setup.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.timepicker.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//$("#tp").timepicker({divId: "mytimepicker"});
+				//$("#tp2").timepicker({divId: "mytimepicker"});
+				//$("#tp1").timepicker({divId: "mytimepicker"});
+			//	$("#tp2").timepicker({divId: "mytimepicker"});
+				//$("#tp1").timepickera();
+			});
+		</script>
+
 </head>
 <body>
-<table>
-		 <tr>
-                 <td>ID Usuario CAT</td>
-                 <td>Nombre</td>
-                 <td>Apellido Paterno</td>
-                 <td>Apellido Materno</td>
-                 <td>Departamento</td>
-                 
-         </tr>
-         
- </table>
-<TR>
-	<TD>ID Usuario Cat</TD>
-	<TD>
-	<INPUT type=text name="ID Usiario CAT">
-	</TD>
-</TR>
-<TR>
-	<TD>Nombre</TD>
-	<TD>
-	<INPUT type=text name="Nombre">
-	</TD>
-</TR>
-<TR>
-	<TD>Nombre Paterno</TD>
-	<TD>
-	<INPUT type=text name="Apellido Paterno">
-	</TD>
-</TR>
-<TR>
-
-	<TD>Apellido Paterno</TD>
-	<TD>
-	<INPUT type=text name="Apellido Materno">
-	</TD>
-</TR>
-<TR>
-	<TD>Cisco</TD>
-	<TD>
-	<INPUT type=text name="Cisco">
-	</TD>
-</TR>
-<TR>
-	<TD>E-mail</TD>
-	<TD>
-	<INPUT type=text name="E-mail">
-	</TD>
-</TR>
-</body>
+<div class="panel">
+			<div class="title">
+				<img src="ima/logo.png" width="260" height="84" />
+			</div>
+			<div class="container">
+			<h1><center>Catálogo Usuario CAT</center></h1>
+				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="();">Editar</button>
+				<button id="btn" onclick="();">Guardar</button>
+				<button id="btn" onclick="seacker();">Buscar</button>
+				<button id="btn" onclick="cancelar();">Cancelar</button>
+				<br /> <br />
+				
+				 <form action="FillTable" name="Fill" method="post"/>
+				<table border="2px" style="border-collapse: collapse;"> 
+					<tbody>
+					<tr>
+							<td class="t" style="color:#FFFFFF;">Id </td>
+							<td class="t" style="color:#FFFFFF;">Nombre</td>
+							<td class="t" style="color:#FFFFFF;">Apellido Paterno</td>
+							<td class="t" style="color:#FFFFFF;">Apellido Materno</td>
+							<td class="t" style="color:#FFFFFF;">E-mail</td> 
+							<td class="t" style="color:#FFFFFF;">Cisco</td>   
+		        </tr>
+		        <tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+                                                
+						</tr>
+					</tbody>
+				 </table>
+<br /><br />
+					<label id="idatendiolabel">Id:</label>
+					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
+					<label id="nameatendiolabel">Nombre:</label>
+					<input type="text" value="" id="nameatendiotxt" name="nameatendio" value="" size="30" /><br /><br />
+					<label id="apellidopatatendiolabel">Apellido Paterno:</label>
+					<input type="text" value="" id="apellidopatatendiotxt" name="apellidopatatendio" value="" size="30" /><br /><br />
+					<label id="apellidomatatendiolabel">Apellido Materno:</label>
+					<input type="text" value="" id="apellidomatatendiotxt" name="apellidomatatendio" value="" size="30" /><br /><br />
+					<label id="deptoatendiolabel">Departamento:</label>
+					<input type="text" value="" id="deptoatendiotxt" name="deptoatendio" value="" size="30" /><br /><br />
+			</div>
+		</div>	
+	</body>    
 </html>
