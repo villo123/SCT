@@ -109,7 +109,7 @@
 					</select><br />
 					
 					<label id="aprovylabel">Aprobacion:</label>
-					<select type="text" name="aprobacion" id="aprovytxt">
+					<select name="aprobacion" id="aprovytxt">
 						<option value="SI">SI</option>
 						<option value="NO">NO</option>
 					</select><br/>
