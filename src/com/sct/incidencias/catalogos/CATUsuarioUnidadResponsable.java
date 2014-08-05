@@ -15,6 +15,22 @@ public class CATUsuarioUnidadResponsable implements Serializable{
 	private String EmailUr;
 	private String Puesto;
 	
+	public int getidUsuarioResponsable(){
+		return idUsuarioResponsable;
+	}
+	
+	public void setidUsuarioResponsable(int idUsuarioResponsable){
+		this.idUsuarioResponsable = idUsuarioResponsable;
+	}
+	
+	public int getildUnidadAdm(){
+		return ildUnidadAdm;
+	}
+	
+	public void setildUnidadAdm(int ildUnidadAdm){
+		this.ildUnidadAdm = ildUnidadAdm;
+	}
+	
 	public String getNombreResponsable(){
 		return NombreResponsable;
 	}
