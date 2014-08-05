@@ -12,19 +12,19 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<h1><center>Catalogo Proceso</center></h1>
+			<h1><center>Catálogo Proceso</center></h1>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br /> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
 	
              <tr>
-                 <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Procesos de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Id</td>
+                 <td class="t" style="color:#FFFFFF;">Procesos </td>
               	 </tr>
              <tr>
              	 <td></td>
@@ -49,9 +49,9 @@
                                  
              </tr>
         </table><br /><br />
-			<label>Folio:</label> 
+			<label>Id:</label> 
 			<input type="text" value="" id="FolioPro" name="timepicker" size="30" /><br /><br />
-			<label>Proceso de la Incidencia:</label> 
+			<label>Proceso:</label> 
 			<input type="text" value="" id="ProcesoPro" name="timepicker" size="30" /><br /><br />
 			</div>
     	</div>  

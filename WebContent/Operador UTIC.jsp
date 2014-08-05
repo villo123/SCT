@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Catalogo Estatus</title>
+<title>Catálogo Operador</title>
 		<link rel="stylesheet" type="text/css" href="css/OperadorUTIC.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
@@ -13,17 +13,17 @@
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
 			<div class="container">
-				<h1><center>Catalogo Estatus</center></h1>
+				<h1><center>Catálogo Operador</center></h1>
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button>
 				<br /> <br /> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              <tr>
                  <td class="t" style="color:#FFFFFF;">Usuario</td>
-                 <td class="t" style="color:#FFFFFF;">Numero de Empleado</td>
+                 <td class="t" style="color:#FFFFFF;">Número de Empleado</td>
                  <td class="t" style="color:#FFFFFF;">Nombre</td>
                  <td class="t" style="color:#FFFFFF;">Apellido Materno</td>
                  <td class="t" style="color:#FFFFFF;">Apellido Paterno</td>

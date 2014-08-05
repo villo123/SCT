@@ -15,7 +15,7 @@
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
 			<button id="btn">Editar</button>
-			<button id="btn">Guarda</button>
+			<button id="btn">Guardar</button>
 			<button id="btn">Buscar</button>
 			<button id="btn">Cancelar</button>
 		<div id="close"></div> 
@@ -24,16 +24,16 @@
 	
              <tr>
                  <td class="t">Folio</td>
-                 <td class="t">Estatus de La Incidencia</td>
+                 <td class="t">Estatus de la Incidencia</td>
                  <td class="t">Prioridad</td>
-                 <td class="t">Fecha Envida Por La Mesa</td>
-                 <td class="t">Hora Enviada Por La Mesa</td>
+                 <td class="t">Fecha envida por el CAT</td>
+                 <td class="t">Hora envida por el CAT</td>
                  <td class="t">Usuario CAT</td>
                  <td class="t">CISCO</td>
-                 <td class="t">Fecha de Atención</td>
-                 <td class="t">Hora de Atención</td>
+                 <td class="t">Fecha de atención</td>
+                 <td class="t">Hora de atención</td>
                  <td class="t">Atendido</td>
-                 <td class="t">Centro Sct</td>
+                 <td class="t">Centro SCT</td>
                  <td class="t">Observaciones</td>
                  <td class="t">Usuario UR</td>
                  <td class="t">Cisco</td>

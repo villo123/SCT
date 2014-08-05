@@ -13,19 +13,19 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<h1><center>Catalogo Sistema</center></h1>
+			<h1><center>Catálogo Sistema</center></h1>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br /> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
 	
              <tr>
-                 <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Sistema de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Id</td>
+                 <td class="t" style="color:#FFFFFF;">Sistemas</td>
               	 </tr>
              <tr>
              	 <td></td>
@@ -50,9 +50,9 @@
              </tr>
              
         </table><br />
-			<label>Folio:</label> 
+			<label>Id:</label> 
 			<input type="text" value="" id="FolioSist" name="timepicker" size="30" /><br /><br />
-			<label>Sistema de la Incidencia:</label> 
+			<label>Sistema:</label> 
 			<input type="text" value="" id="SistSist" name="timepicker" size="30" /><br /><br />
         </div>
    </div>

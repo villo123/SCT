@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Catalogo Modulo</title>
+	<title>Catálogo Modulo</title>
 		<link rel="stylesheet" type="text/css" href="css/Modulo.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
@@ -12,42 +12,39 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<h1><center>Catalogo Modulo</center></h1>
+			<h1><center>Catálogo Modulo</center></h1>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br />   
 		 <table border="2px" style="border-collapse: collapse;"> 
              <tr>
-                 <td class="t" style="color:#FFFFFF;">Folio</td>
-                 <td class="t" style="color:#FFFFFF;">Modulo de La Incidencia</td>
+                 <td class="t" style="color:#FFFFFF;">Id</td>
+                 <td class="t" style="color:#FFFFFF;">Modulos</td>
               	 </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
-                 
+                                
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-              	 <td></td>
-              
+              	               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>    
-                             
+                  
+                            
              </tr>
               <tr>
              	 <td></td>
                  <td></td>
-                 <td></td>
-                                 
+                                                  
              </tr>
         </table>
         	</div>

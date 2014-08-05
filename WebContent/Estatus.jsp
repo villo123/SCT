@@ -21,7 +21,7 @@
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br />
 		 <table border="2px" style="border-collapse: collapse;"> 
              <tr>
-                 <td class="t" style="color:#FFFFFF;">Folio</td>
+                 <td class="t" style="color:#FFFFFF;">Id</td>
                  <td class="t" style="color:#FFFFFF;">Estatus de la Incidencia</td>
               </tr>
              <tr>
@@ -51,6 +51,7 @@
                                  
              </tr>
         </table>
+        
         	</div>
       	</div>
 	</body>

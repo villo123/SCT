@@ -12,18 +12,18 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<h1><center>Tipo de Prioridad</center></h1>
+			<h1><center>Catálogo de Tipo de Prioridad</center></h1>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
-				<button id="btn" onclick="();">Guarda</button>
+				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br />
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
 	
              <tr>
-                 <td class="t" style="color:#FFFFFF;">Folio</td>
+                 <td class="t" style="color:#FFFFFF;">Id</td>
                  <td class="t" style="color:#FFFFFF;">Prioridad de La Incidencia</td>
               	 </tr>
              <tr>

@@ -14,7 +14,9 @@
                  <td>Apellido Paterno</td>
                  <td>Apellido Materno</td>
                  <td>Departamento</td>
+                 
          </tr>
+         
  </table>
 <TR>
 	<TD>ID Usuario Cat</TD>
@@ -35,6 +37,7 @@
 	</TD>
 </TR>
 <TR>
+
 	<TD>Apellido Paterno</TD>
 	<TD>
 	<INPUT type=text name="Apellido Materno">
