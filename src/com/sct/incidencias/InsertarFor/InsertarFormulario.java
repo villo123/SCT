@@ -69,11 +69,12 @@ public class InsertarFormulario extends HttpServlet {
 		CATUnidadResponsable catur = new CATUnidadResponsable();
 		String unidadrespoildUnidadAdm = request.getParameter("unidadresponsable");
 		catur.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
-
+		catusunr.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
+		
 		CATDepartamento catdep = new CATDepartamento();
 		String ildDepartamento = request.getParameter("departamento");
 		catdep.setildDepartamento(Integer.parseInt(ildDepartamento));
-		catusunr.setildUnidadAdm(Integer.parseInt(ildDepartamento));
+		
 
 		CATModulo catmod = new CATModulo();
 		String ildModulo = request.getParameter("modulo");
@@ -528,20 +529,20 @@ public class InsertarFormulario extends HttpServlet {
             ps.setString(3, Integer.toString(catate.getildAtendio()));
             ps.setString(4, Integer.toString(catdep.getildDepartamento()));
             ps.setString(5, Integer.toString(cates.getildEstatus()));
-            ps.setString(6,Integer.toString(cattipsol.getildTipoDeSolucion()));
-            ps.setString(7,Integer.toString(catur.getildUnidadAdm()));
+            ps.setString(6, Integer.toString(cattipsol.getildTipoDeSolucion()));
+            ps.setString(7, Integer.toString(catur.getildUnidadAdm()));
             ps.setString(8, Integer.toString(caturcat.getildUsuarioCat()));
-            ps.setString(9,Integer.toString(cattipin.getildIncidente()));
+            ps.setString(9,	Integer.toString(cattipin.getildIncidente()));
             ps.setString(10, "1");
             ps.setString(11, inc.getFolio());
-            ps.setDate(12, (java.sql.Date)inc.getFELab());
-            ps.setTime(13, (java.sql.Time)inc.getHELab());
-            ps.setDate(14, (java.sql.Date)inc.getFAtencion());
-            ps.setTime(15,(java.sql.Time) inc.getHAtencion());
-            ps.setString(16, inc.getAprobado());
-            ps.setDate(17, (java.sql.Date)inc.getFechaAprobacion());
-            ps.setString(18, inc.getDescripcionIncidencia());
-            ps.setString(19,inc.getPrioridad());
+            ps.setString(12, inc.getAprobado());
+            ps.setDate(13, (java.sql.Date)inc.getFechaAprobacion());
+            ps.setString(14, inc.getDescripcionIncidencia());
+            ps.setString(15 ,inc.getPrioridad());
+            ps.setDate(16, (java.sql.Date)inc.getFELab());
+            ps.setTime(17, (java.sql.Time)inc.getHELab());            
+            ps.setDate(18, (java.sql.Date)inc.getFAtencion());
+            ps.setTime(19,(java.sql.Time) inc.getHAtencion());
             ps.setString(20, inc.getRespuestaUtic());
             
            /* ps.setString(12, Integer.toString(catunr.getildUnidadAdm()));
@@ -557,14 +558,14 @@ public class InsertarFormulario extends HttpServlet {
             
             
             PreparedStatement ps2 = ct.prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (idUsuarioResponsable,"
-            													+"ildUnidadAdm"
+            													+"ildUnidadAdm,"
             													+"NombreResponsable,"
             													+"APaterno,"
 													            +"AMaterno,"
 													            +"CiscoUr,"
 													            +"EmailUr) VALUES (?,?,?,?,?,?,?)");// WHERE ildUnidadAdmin = (?)");
             ps2.setString(1, "1");
-            ps2.setString(2,Integer.toString(catusunr.getildUnidadAdm()));
+            ps2.setString(2, Integer.toString(catusunr.getildUnidadAdm()));
             ps2.setString(3, catusunr.getNombreResponsable());
             ps2.setString(4, catusunr.getAPaterno());
             ps2.setString(5, catusunr.getAMaterno());
@@ -575,7 +576,7 @@ public class InsertarFormulario extends HttpServlet {
             //PreparedStatement ps3 = ct.prepareStatement("INSERT INTO PUB.CATEstatus (NombreEstatus)"
             				//								+ " VALUES (?)");//WHERE ildEstatus = (?)");
             
-           // ps3.setString(1,cates.getNombreEstatus());
+           // ps3.setString(1, cates.getNombreEstatus());
            // ps3.setString(2, Integer.toString(cates.getildEstatus()));
             
           /* PreparedStatement ps4 = ct.prepareStatement("INSERT INTO PUB.CATUsuarioCAT (CiscoCat,"
@@ -606,10 +607,11 @@ public class InsertarFormulario extends HttpServlet {
             ps5.setInt(8, caturcat.getildUsuarioCat());
             ps5.setInt(9, catate.getildAtendio());*/
             
-            ps.executeUpdate();ps2.executeUpdate();//ps3.executeUpdate();//ps4.executeUpdate();//ps5.executeQuery();
+            ps.executeUpdate();
+            ps2.executeUpdate();
           //ct.close();
 			System.out.println("Insercion correcta");
-			ct.close();
+			//ct.close();
 		}catch(SQLException e){
 			//System.out.println("No se pudo insertar");
 			e.printStackTrace();
