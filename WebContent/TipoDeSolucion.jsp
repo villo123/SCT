@@ -44,7 +44,7 @@
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button>
 				<br /> <br />
-            <form action="FillTable" name="Fill" method="post"/>
+           
 				<table border="2px" style="border-collapse: collapse;"> 
 					<tbody>
 				<tr>
@@ -76,9 +76,9 @@
 					</tbody>
 				</table>
 				<br /><br />
-					<label id="idtipodesolucionlabel">ID:</label>
+					<label id="idtipodesolucionlabel">Id:</label>
 					<input type="text" value="" id="idtipodesoluciontxt" name="idtipodesolucion" value="" size="30" /><br /><br />
-					<label id="tipodesolucion label">Solución:</label>
+					<label id="tipodesolucionlabel">Solución:</label>
 					<input type="text" value="" id="tipodesoluciontxt" name="tipodesolucion" value="" size="30" /><br /><br />
 					
 			</div>

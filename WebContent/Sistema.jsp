@@ -50,10 +50,11 @@
              </tr>
              
         </table><br />
-			<label>Id:</label> 
-			<input type="text" value="" id="FolioSist" name="timepicker" size="30" /><br /><br />
-			<label>Sistema:</label> 
-			<input type="text" value="" id="SistSist" name="timepicker" size="30" /><br /><br />
+			<br /><br />
+					<label id="idsistemalabel">Id:</label>
+					<input type="text" value="" id="idsistematxt" name="idsistema" value="" size="30" /><br /><br />
+					<label id="sistemalabel">Modulo:</label>
+					<input type="text" value="" id="sistematxt" name="sistema" value="" size="30" /><br /><br />
         </div>
    </div>
         

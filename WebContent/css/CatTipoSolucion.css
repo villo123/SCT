@@ -103,7 +103,7 @@ html{
 
 #idtipodesoluciontxt{
 	position:relative;
-    left:87px;
+    left:32px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -123,7 +123,7 @@ html{
 
 #tipodesoluciontxt{
 	position:relative;
-    left:100px;
+    left:0px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -143,13 +143,13 @@ html{
 
 #btn{
     text-decoration: none;
-    width:60px;
+    width:65px;
     font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;
     background:green;
     color: #FFFFFF;
-    border: 1px inset #6699CC;
+    border: 2px inset #6699CC;
     padding: .1em 1em;
 }
 

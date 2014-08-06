@@ -49,10 +49,11 @@
                                  
              </tr>
         </table><br /><br />
-			<label>Id:</label> 
-			<input type="text" value="" id="FolioPro" name="timepicker" size="30" /><br /><br />
-			<label>Proceso:</label> 
-			<input type="text" value="" id="ProcesoPro" name="timepicker" size="30" /><br /><br />
+			<br /><br />
+					<label id="idprocesolabel">Id:</label>
+					<input type="text" value="" id="idprocesotxt" name="idproceso" value="" size="30" /><br /><br />
+					<label id="procesolabel">Modulo:</label>
+					<input type="text" value="" id="procesotxt" name="proceso" value="" size="30" /><br /><br />
 			</div>
     	</div>  
 	</body>

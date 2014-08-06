@@ -104,7 +104,7 @@
 					<label id="e-mailusuariocatllabel">E-mail:</label>
 					<input type="text" value="" id="e-mailusuariocattxt" name="e-mailusuariocat" value="" size="30" /><br /><br />
 					<label id="ciscousuariocatlabel">Cisco:</label>
-					<input type="text" value="" id=ciscousuariocattxt" name="ciscousuariocat" value="" size="30" /><br /><br />
+					<input type="text" value="" id="ciscousuariocattxt" name="ciscousuariocat" value="" size="30" /><br /><br />
 			</div>
 		</div>	
 	</body>    

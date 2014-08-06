@@ -47,6 +47,11 @@
                                                   
              </tr>
         </table>
+        <br /><br />
+					<label id="idmodulolabel">Id:</label>
+					<input type="text" value="" id="idmodulotxt" name="idmodulo" value="" size="30" /><br /><br />
+					<label id="modulolabel">Modulo:</label>
+					<input type="text" value="" id="modulotxt" name="modulo" value="" size="30" /><br /><br />
         	</div>
 		</div>
 	</body>

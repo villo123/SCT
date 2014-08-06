@@ -52,7 +52,7 @@ td.t {
     margin-right:5px;
     text-decoration: none;
 	width:auto;
-    font-size:normal;
+    font-size:x-small;
     font-weight:bold;
     font-family:verdana, arial, helvetica;
     background:#007a33;
@@ -101,11 +101,61 @@ html{
 	width:100%;
 	background:#CCC;
 }
+#idprocesotxt{
+	position:relative;
+    left:45px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#idprocesolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#procesotxt{
+	position:relative;
+    left:16px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#procesolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
 
 #btn{
     text-decoration: none;
     width:auto;
     font-size:nomarl;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+    background:green;
+    color: #FFFFFF;
+    border: 1px inset #6699CC;
+    padding: .1em 1em;
+}
+#btn{
+text-decoration: none;
+    width:60px;
+    font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;
     background:green;

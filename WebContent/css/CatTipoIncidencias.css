@@ -7,7 +7,7 @@ td.t {
     margin-right:5px;
     text-decoration: none;
 	width:auto;
-    font-size:normal;
+    font-size:x-small;
     font-weight:bold;
     font-family:verdana, arial, helvetica;
     background:#007a33;
@@ -23,7 +23,7 @@ td.t {
 
 td {
 	padding: 10px;
-	font-size:normal;
+	font-size:small;
 	font-family:Arial,Helvetica,sans-serif;
 	background:white;
 }
@@ -108,14 +108,15 @@ html{
 }
 #btn{
     text-decoration: none;
-    width:auto;
-    font-size:nomarl;
+    width:60px;
+    font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;
     background:green;
     color: #FFFFFF;
     border: 1px inset #6699CC;
     padding: .1em 1em;
+}
 }
 
 #btn:hover{

@@ -3,13 +3,13 @@ label{
 	font-size:normal;
 }
 td.t {
-    margin-top:5px;
-    margin-right:5px;
+    margin-top: 5px;
+    margin-right: 5px;
     text-decoration: none;
-	width:auto;
-    font-size:normal;
-    font-weight:bold;
-    font-family:verdana, arial, helvetica;
+	width:60px;
+    font-size:x-small;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
     background:#007a33;
     color: #FFFFFF;
     border: 1px inset #6699CC;
@@ -22,8 +22,8 @@ td.t {
 }
 
 td {
-	padding: 10px;
-	font-size:normal;
+    padding: 10px;
+	font-size:small;
 	font-family:Arial,Helvetica,sans-serif;
 	background:white;
 }
@@ -106,10 +106,49 @@ html{
 	width:100%;
 	background:#CCC;
 }
-#btn{
+#idmodulotxt{
+	position:relative;
+    left:45px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
     text-decoration: none;
-    width:auto;
-    font-size:nomarl;
+}
+
+#idmodulolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#modulotxt{
+	position:relative;
+    left:16px;
+    top:0epx;
+    font-size:11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+
+#modulolabel{
+	position:relative;
+    padding-left:0px;
+    padding-top:0px;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: verdana, arial, helvetica;
+    text-decoration: none;
+}
+#btn{
+text-decoration: none;
+    width:60px;
+    font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;
     background:green;

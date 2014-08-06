@@ -51,8 +51,8 @@ td.t {
     margin-top:5px;
     margin-right:5px;
     text-decoration: none;
-	width:auto;
-    font-size:normal;
+	width:60px;
+    font-size:x-small;
     font-weight:bold;
     font-family:verdana, arial, helvetica;
     background:#007a33;
@@ -68,7 +68,7 @@ td.t {
 
 td {
 	padding: 10px;
-	font-size:normal;
+	font-size:small;
 	font-family:Arial,Helvetica,sans-serif;
 	background:white;
 }
@@ -104,7 +104,7 @@ html{
 
 #idatendiotxt{
 	position:relative;
-    left:87px;
+    left:77px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -124,7 +124,7 @@ html{
 
 #nameatendiotxt{
 	position:relative;
-    left:56px;
+    left:46px;
     top:0epx;
     font-size:11px;
     font-weight: normal;
@@ -205,8 +205,8 @@ html{
 
 #btn{
     text-decoration: none;
-    width:auto;
-    font-size:nomarl;
+    width:60px;
+    font-size:xx-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;
     background:green;
