@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Catalogo Sistema</title>
+<title>Catalogo de Proceso</title>
 	<link rel="stylesheet" type="text/css" href="css/Sistema.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
@@ -25,38 +25,37 @@
 	
              <tr>
                  <td class="t" style="color:#FFFFFF;">Id</td>
-                 <td class="t" style="color:#FFFFFF;">Sistemas</td>
+                 <td class="t" style="color:#FFFFFF;">Sistema </td>
               	 </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                                  
+                 
               
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                                            
+              
+              
              </tr>
              <tr>
              	 <td></td>
                  <td></td>
-                                                 
+                                 
              </tr>
               <tr>
              	 <td></td>
                  <td></td>
-                                                  
+                                 
              </tr>
-             
-        </table><br />
+        </table><br /><br />
 			<br /><br />
 					<label id="idsistemalabel">Id:</label>
 					<input type="text" value="" id="idsistematxt" name="idsistema" value="" size="30" /><br /><br />
-					<label id="sistemalabel">Modulo:</label>
+					<label id="sistemalabel">Sistema:</label>
 					<input type="text" value="" id="sistematxt" name="sistema" value="" size="30" /><br /><br />
-        </div>
-   </div>
-        
-</body>
+			</div>
+    	</div>  
+	</body>
 </html>
