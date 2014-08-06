@@ -4,7 +4,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Catalogo Prioridad</title>
-	<link rel="stylesheet" type="text/css" href="css/Estatus.css" />
+	<link rel="stylesheet" type="text/css" href="css/TipoDePrioridad.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
 <body>
@@ -12,7 +12,7 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<h1><center>Catálogo de Tipo de Prioridad</center></h1>
+			<h1><center>Catálogo Tipo Prioridad</center></h1>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
 				<button id="btn" onclick="();">Editar</button>
@@ -53,6 +53,11 @@
                                  
              </tr>
         </table>
+        <br /><br />
+					<label id="idtipodeprioridadlabel">Id:</label>
+					<input type="text" value="" id="idtipodeprioridadtxt" name="idtipodeprioridad" value="" size="30" /><br /><br />
+					<label id="tipodeprioridadlabel">Tipo de prioridad:</label>
+					<input type="text" value="" id="tipodeprioridadtxt" name="tipodeprioridad" value="" size="30" /><br /><br />
               </div></div> 
 </body>
 </html>
