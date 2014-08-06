@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
 <link rel="shortcut icon" type="image/x-icon" href="ima/favicon.ico">
 <link rel="icon" type="image/x-icon" href="ima/favicon.ico">
+
 <script type="text/javascript" src="js/master.js"></script>
 </head>
 	<body onload="carga();">
@@ -16,6 +17,7 @@
 	<div id="imagen"><img src="ima/logo.png" width="260" height="84"></div>
 	<div class="container">
 	<div id="im"></div>
+	
 	<center><h1>Sistema de Registro de Incidencias del SAOP</h1></center>
 		<form action="Login" method="POST" onsubmit="return valideDatos();">
 			<table align="center" id="tablalogin">
@@ -47,6 +49,7 @@
 			</table>	
 		</form>
 		</div>
+		
 		</div>
 	</body>
 </html>

@@ -46,7 +46,8 @@ background-color:white;
 }
 #im{
 	position:absolute;
-	background:url("../ima/incidencia3.jpg");
+	background:url("marca-de-agua-incidencia3.jpg");
+
 width:250px;
 height:250px;
 top:200px;
@@ -56,6 +57,8 @@ left:100px;
 width:100%;
 height:auto;
 }
+
+
 
 #close{
 	width:100%;
