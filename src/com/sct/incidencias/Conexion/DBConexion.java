@@ -5,8 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-
-
 public class DBConexion {
 
 	private static Connection ct;
@@ -57,9 +55,5 @@ public class DBConexion {
 	
 	public Connection getCt(){
 		return ct;
-	}
-	
-	public static void main(String[] sct){
-		new DBConexion();
 	}
 }
