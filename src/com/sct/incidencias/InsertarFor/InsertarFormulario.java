@@ -524,7 +524,7 @@ public class InsertarFormulario extends HttpServlet {
             		+ "HAtencion,"
             		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");//WHERE ildUnidadAdmin = (?) AND ildDepartamento = (?) AND ildModulo = (?) AND ildProceso = (?) AND ildIncidente = (?) AND ildTipoDeSolucion = (?) AND ildEstatus = (?) AND ildUsuarioCat = (?) AND ildAtendio = (?)");
             
-            ps.setString(1, "1");
+            ps.setString(1, "2");
             ps.setString(2, "1"); 
             ps.setString(3, Integer.toString(catate.getildAtendio()));
             ps.setString(4, Integer.toString(catdep.getildDepartamento()));
@@ -533,7 +533,7 @@ public class InsertarFormulario extends HttpServlet {
             ps.setString(7, Integer.toString(catur.getildUnidadAdm()));
             ps.setString(8, Integer.toString(caturcat.getildUsuarioCat()));
             ps.setString(9,	Integer.toString(cattipin.getildIncidente()));
-            ps.setString(10, "1");
+            ps.setString(10, "2");
             ps.setString(11, inc.getFolio());
             ps.setString(12, inc.getAprobado());
             ps.setDate(13, (java.sql.Date)inc.getFechaAprobacion());
@@ -564,7 +564,7 @@ public class InsertarFormulario extends HttpServlet {
 													            +"AMaterno,"
 													            +"CiscoUr,"
 													            +"EmailUr) VALUES (?,?,?,?,?,?,?)");// WHERE ildUnidadAdmin = (?)");
-            ps2.setString(1, "1");
+            ps2.setString(1, "2");
             ps2.setString(2, Integer.toString(catusunr.getildUnidadAdm()));
             ps2.setString(3, catusunr.getNombreResponsable());
             ps2.setString(4, catusunr.getAPaterno());
