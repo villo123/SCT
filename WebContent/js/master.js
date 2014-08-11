@@ -27,10 +27,24 @@
 			usuario.focus();
 			return false;
 		}else if(password.value == "" || password.value == '' || password.value == null){
-			alert("Ingresa tu contraseña");
+			alert("Ingresa tu contraseï¿½a");
 			password.focus();
 			return false;
 		}else{
 		   	return true;
 		}
 	}
+function habilitaratutic(value){
+	document.getElementsByName("idatendio").disabled = false;
+	document.getElementsByName("nameatendio").disabled = false;
+	document.getElementsByName("apellidopatatendio").disabled = false;
+	document.getElementsByName("apellidomatatendio").disabled = false;
+	document.getElementsByName("deptoatendio").disabled = false;
+}
+function deshabilitaratutic(){
+	document.getElementsByName("idatendio").disabled = true;
+	document.getElementsByName("nameatendio").disabled = true;
+	document.getElementsByName("apellidopatatendio").disabled = true;
+	document.getElementsByName("apellidomatatendio").disabled = true;
+	document.getElementsByName("deptoatendio").disabled = true;
+}
