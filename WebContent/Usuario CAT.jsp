@@ -33,7 +33,7 @@
 
 </head>
 <body onload="deshabilitarucat();">
-<div class="panel">
+<div class="panel"><!--  -->
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
