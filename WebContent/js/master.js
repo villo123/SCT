@@ -43,10 +43,28 @@
 		document.getElementsByName("deptoatendio").style.visibility="hidden";
 	}
 
-	function deshabilitaratutic(){
+	function habilitaratutic(){
 		document.getElementsByName("idatendio").style.visibility="visible";
 		document.getElementsByName("nameatendio").style.visibility="visible";
 		document.getElementsByName("apellidopatatendio").style.visibility="visible";
 		document.getElementsByName("apellidomatatendio").style.visibility="visible";
 		document.getElementsByName("deptoatendio").style.visibility="visible";
+	}
+	
+	function deshabilitarcatin(){
+		document.getElementById("FolioInc").style.visibility="hidden";
+		document.getElementById("TipoInc").style.visibility="hidden";
+	}
+	
+	function habilitarcatin(){
+		document.getElementById("FolioInc").style.visibility="visible";
+		document.getElementById("TipoInc").style.visibility="visible";
+	}
+	
+	function deshabilitarstatus(){
+		
+	}
+	
+	function habilitarstatus(){
+		
 	}
