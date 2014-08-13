@@ -44,9 +44,9 @@
 	}
 
 	function deshabilitaratutic(){
-		document.getElementsByName("idatendio").style.visibility="show";
-		document.getElementsByName("nameatendio").style.visibility="show";
-		document.getElementsByName("apellidopatatendio").style.visibility="show";
-		document.getElementsByName("apellidomatatendio").style.visibility="show";
-		document.getElementsByName("deptoatendio").style.visibility="show";
+		document.getElementsByName("idatendio").style.visibility="visible";
+		document.getElementsByName("nameatendio").style.visibility="visible";
+		document.getElementsByName("apellidopatatendio").style.visibility="visible";
+		document.getElementsByName("apellidomatatendio").style.visibility="visible";
+		document.getElementsByName("deptoatendio").style.visibility="visible";
 	}
