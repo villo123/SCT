@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/OperadorUTIC.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
-<body>
+<body onclick="deshabilitaroperutic();">
 		<div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
@@ -15,7 +15,7 @@
 			<div class="container">
 				<h1><center>Catálogo Operador</center></h1>
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
-				<button id="btn" onclick="();">Editar</button>
+				<button id="btn" onclick="habilitaroperutic();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button>

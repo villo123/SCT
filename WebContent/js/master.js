@@ -62,9 +62,44 @@
 	}
 	
 	function deshabilitarstatus(){
-		
+		document.getElementsByName("idatendio").style.visibility="hidden";
+		document.getElementsByName("nameatendio").style.visibility="hidden";
 	}
 	
 	function habilitarstatus(){
+		document.getElementsByName("idatendio").style.visibility="visible";
+		document.getElementsByName("nameatendio").style.visibility="visible";
 		
+	}
+	
+	function deshabilitarmodulo(){	
+		document.getElementsByName("idmodulo").style.visibility="hidden";
+		document.getElementsByName("modulo").style.visibility="hidden";
+	}
+	
+	function habilitarmodulo(){
+		document.getElementsByName("idmodulo").style.visibility="visible";
+		document.getElementsByName("modulo").style.visibility="visible";
+	}
+	
+	function deshabilitaroperutic(){
+		document.getElementsByName("UsuarioOpt").style.visibility="hidden";
+		document.getElementsByName("NumeroOpt").style.visibility="hidden";
+		document.getElementsByName("NombreOpt").style.visibility="hidden";
+		document.getElementsByName("ApellidoPatOpt").style.visibility="hidden";
+		document.getElementsByName("ApellidoMatOpt").style.visibility="hidden";
+		document.getElementsByName("DeptoOpt").style.visibility="hidden";
+		document.getElementsByName("EmailOpt").style.visibility="hidden";
+		document.getElementsByName("UnidadOpt").style.visibility="hidden";
+	}
+	
+	function habilitaroperutic(){
+		document.getElementsByName("UsuarioOpt").style.visibility="visible";
+		document.getElementsByName("NumeroOpt").style.visibility="visible";
+		document.getElementsByName("NombreOpt").style.visibility="visible";
+		document.getElementsByName("ApellidoPatOpt").style.visibility="visible";
+		document.getElementsByName("ApellidoMatOpt").style.visibility="visible";
+		document.getElementsByName("DeptoOpt").style.visibility="visible";
+		document.getElementsByName("EmailOpt").style.visibility="visible";
+		document.getElementsByName("UnidadOpt").style.visibility="visible";
 	}

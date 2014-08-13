@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/Proceso.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
-<body>
+<body onload="">
 		<div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
