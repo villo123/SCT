@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/TipoDePrioridad.css" />
 	<script type="text/javqqascript" src="js/master.js"></script>
 </head>
-<body>
+<body onload="deshabilitartipoprio();">
 		<div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
@@ -15,7 +15,7 @@
 			<h1><center>Catálogo Tipo Prioridad</center></h1>
 			<div class="container">
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
-				<button id="btn" onclick="();">Editar</button>
+				<button id="btn" onclick="habilitartipoprio();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br />

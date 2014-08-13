@@ -103,3 +103,61 @@
 		document.getElementsByName("EmailOpt").style.visibility="visible";
 		document.getElementsByName("UnidadOpt").style.visibility="visible";
 	}
+	
+	function deshabilitarproceso(){
+		document.getElementsByName("idproceso").style.visibility="hidden";
+		document.getElementsByName("proceso").style.visibility="hidden";
+	}
+	
+	function habilitarproceso(){
+		document.getElementsByName("idproceso").style.visibility="visible";
+		document.getElementsByName("proceso").style.visibility="visible";		
+	}
+	
+	function deshabilitarsistema(){
+		document.getElementsByName("idsistema").style.visibility="hidden";
+		document.getElementsByName("sistema").style.visibility="hidden";
+	}
+	
+	function habilitarsistema(){
+		document.getElementsByName("idsistema").style.visibility="visible";
+		document.getElementsByName("sistema").style.visibility="visible";
+	}
+	
+	function deshabilitartipoprio(){
+		document.getElementsByName("idtipodeprioridad").style.visibility="hidden";
+		document.getElementsByName("tipodeprioridad").style.visibility="hidden";
+	}
+	
+	function habilitartipoprio(){
+		document.getElementsByName("idtipodeprioridad").style.visibility="visible";
+		document.getElementsByName("tipodeprioridad").style.visibility="visible";
+		
+	}
+	function deshabilitartiposol(){
+		document.getElementsByName("idtipodesolucion").style.visibility="hidden";
+	    document.getElementsByName("tipodesolucion").style.visibility="hidden";
+	}
+	
+	function habilitartiposol(){
+		document.getElementsByName("idtipodesolucion").style.visibility="visible";
+	    document.getElementsByName("tipodesolucion").style.visibility="visible";
+	}
+	
+	function deshabilitarucat(){
+		document.getElementsByName("idusuariocat").style.visibility="hidden";
+	    document.getElementsByName("nameusuariocat").style.visibility="hidden";
+		document.getElementsByName("apellidousuariocat").style.visibility="hidden";
+		document.getElementsByName("apellidousuariocat").style.visibility="hidden";
+		document.getElementsByName("e-mailusuariocat").style.visibility="hidden";
+		document.getElementsByName("ciscousuariocat").style.visibility="hidden";
+	}
+	
+	function habilitarucat(){
+		document.getElementsByName("idusuariocat").style.visibility="visible";
+	    document.getElementsByName("nameusuariocat").style.visibility="visible";
+		document.getElementsByName("apellidousuariocat").style.visibility="visible";
+		document.getElementsByName("apellidousuariocat").style.visibility="visible";
+		document.getElementsByName("e-mailusuariocat").style.visibility="visible";
+		document.getElementsByName("ciscousuariocat").style.visibility="visible";
+	}
