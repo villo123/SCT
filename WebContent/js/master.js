@@ -34,17 +34,19 @@
 		   	return true;
 		}
 	}
-function habilitaratutic(value){
-	document.getElementsByName("idatendio").disabled = false;
-	document.getElementsByName("nameatendio").disabled = false;
-	document.getElementsByName("apellidopatatendio").disabled = false;
-	document.getElementsByName("apellidomatatendio").disabled = false;
-	document.getElementsByName("deptoatendio").disabled = false;
-}
-function deshabilitaratutic(){
-	document.getElementsByName("idatendio").disabled = true;
-	document.getElementsByName("nameatendio").disabled = true;
-	document.getElementsByName("apellidopatatendio").disabled = true;
-	document.getElementsByName("apellidomatatendio").disabled = true;
-	document.getElementsByName("deptoatendio").disabled = true;
-}
+	
+	function deshabilitaratutic(){
+		document.getElementsByName("idatendio").style.visibility="hidden";
+		document.getElementsByName("nameatendio").style.visibility="hidden";
+		document.getElementsByName("apellidopatatendio").style.visibility="hidden";
+		document.getElementsByName("apellidomatatendio").style.visibility="hidden";
+		document.getElementsByName("deptoatendio").style.visibility="hidden";
+	}
+
+	function deshabilitaratutic(){
+		document.getElementsByName("idatendio").style.visibility="show";
+		document.getElementsByName("nameatendio").style.visibility="show";
+		document.getElementsByName("apellidopatatendio").style.visibility="show";
+		document.getElementsByName("apellidomatatendio").style.visibility="show";
+		document.getElementsByName("deptoatendio").style.visibility="show";
+	}
