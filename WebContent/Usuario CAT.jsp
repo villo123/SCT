@@ -32,7 +32,7 @@
 		</script>
 
 </head>
-<body>
+<body onload="deshabilitarucat();">
 <div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
@@ -40,7 +40,7 @@
 			<div class="container">
 			<h1><center>Catálogo Usuario CAT</center></h1>
 				<button id="btn" onclick="abrirformulario();">Nuevo</button>
-				<button id="btn" onclick="();">Editar</button>
+				<button id="btn" onclick="habilitarucat();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button>
