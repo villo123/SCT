@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sct.incidencias.Conexion.DBConexion;
 import com.sct.incidencias.catalogos.*;
 
 
@@ -26,7 +27,7 @@ public class InsertarFormulario extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		DBConexion d = new DBConexion();
 		INCIDENCIA inc = new INCIDENCIA();
 		String folio = request.getParameter("folio");
 		inc.setFolio(folio);
@@ -125,7 +126,7 @@ public class InsertarFormulario extends HttpServlet {
 		String RespuestaUtic = request.getParameter("respuesta");
 		inc.setRespuestaUtic(RespuestaUtic);
 		
-		//metodo insertar formulario
+		d.insetarFormulario();
 		
 		RequestDispatcher rd = request.getRequestDispatcher("formulario.jsp");
 		rd.forward(request, response);

@@ -105,7 +105,7 @@ public class DBConexion {
 	        		+ "HELab,"
 	        		+ "FAtencion,"
 	        		+ "HAtencion,"
-	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");//WHERE ildUnidadAdmin = (?) AND ildDepartamento = (?) AND ildModulo = (?) AND ildProceso = (?) AND ildIncidente = (?) AND ildTipoDeSolucion = (?) AND ildEstatus = (?) AND ildUsuarioCat = (?) AND ildAtendio = (?)");
+	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");//WHERE ildUnidadAdmin = (?) AND ildDepartamento = (?) AND ildModulo = (?) AND ildProceso = (?) AND ildIncidente = (?) AND ildTipoDeSolucion = (?) AND ildEstatus = (?) AND ildUsuarioCat = (?) AND ildAtendio = (?)");
 	        
 	        //ps.setString(1, "2");
 	        psi.setString(1, "1"); 
@@ -115,19 +115,20 @@ public class DBConexion {
 	        psi.setString(5, Integer.toString(cattipsol.getildTipoDeSolucion()));
 	        psi.setString(6, Integer.toString(catur.getildUnidadAdm()));
 	        psi.setString(7, Integer.toString(caturcat.getildUsuarioCat()));
-	        psi.setString(8,	Integer.toString(cattipin.getildIncidente()));
-	        psi.setString(9,Integer.toString(catmod.getildModulo()));
+	        psi.setString(8, Integer.toString(cattipin.getildIncidente()));
+	        psi.setString(9, Integer.toString(catmod.getildModulo()));
+	        psi.setString(10,Integer.toString(catpro.getildProceso()));
 	       // ps.setString(10, "2");
-	        psi.setString(9, inc.getFolio());
-	        psi.setString(10, inc.getAprobado());
-	        psi.setDate(11, (java.sql.Date)inc.getFechaAprobacion());
-	        psi.setString(12, inc.getDescripcionIncidencia());
-	        psi.setString(13 ,inc.getPrioridad());
-	        psi.setDate(14, (java.sql.Date)inc.getFELab());
-	        psi.setTime(15, (java.sql.Time)inc.getHELab());            
-	        psi.setDate(16, (java.sql.Date)inc.getFAtencion());
-	        psi.setTime(17,(java.sql.Time) inc.getHAtencion());
-	        psi.setString(18, inc.getRespuestaUtic());
+	        psi.setString(11, inc.getFolio());
+	        psi.setString(12, inc.getAprobado());
+	        psi.setDate(13, (java.sql.Date)inc.getFechaAprobacion());
+	        psi.setString(14, inc.getDescripcionIncidencia());
+	        psi.setString(15 ,inc.getPrioridad());
+	        psi.setDate(16, (java.sql.Date)inc.getFELab());
+	        psi.setTime(17, (java.sql.Time)inc.getHELab());            
+	        psi.setDate(18, (java.sql.Date)inc.getFAtencion());
+	        psi.setTime(19,(java.sql.Time) inc.getHAtencion());
+	        psi.setString(20, inc.getRespuestaUtic());
 	        
 
 	        
@@ -149,7 +150,8 @@ public class DBConexion {
 	        psi.executeUpdate();
 	        psu.executeUpdate();
 			System.out.println("Insercion correcta");
-			//ct.close();
+			liberarConexion(cti);
+			liberarConexion(ctu);
 		}catch(SQLException e){
 			e.printStackTrace();
 			System.out.println();
