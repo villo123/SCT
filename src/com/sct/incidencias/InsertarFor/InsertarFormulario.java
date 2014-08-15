@@ -1,6 +1,8 @@
 package com.sct.incidencias.InsertarFor;
 
 import java.io.IOException;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -122,11 +124,82 @@ public class InsertarFormulario extends HttpServlet {
 		inc.setHAtencion(horatencion);
 
 		//Archivo
-		
+	
 		String RespuestaUtic = request.getParameter("respuesta");
 		inc.setRespuestaUtic(RespuestaUtic);
 		
-		d.insetarFormulario();
+		try{
+			/*String databaseURL = "jdbc:datadirect:openedge://localhost:30060;schemaDefault=PUB;databaseName=incidencias.db;user=sysprogress;password=sysprogress";
+			Class.forName("com.ddtek.jdbc.openedge.OpenEdgeDriver");
+			System.out.println("Controlador cargado dentro de Insertar Formulario");
+			ct = DriverManager.getConnection(databaseURL);
+			//st = ct.createStatement();
+			System.out.println("Conexion exitosa dentro de Insertar Formulario");*/
+	        PreparedStatement psi = d.getCt().prepareStatement("INSERT INTO PUB.Incidencia (ildSistema,"
+	        		+ "ildAtendio,"
+	        		+ "ildDepartamento,"
+	        		+ "ildEstatus,"
+	        		+ "ildTipoDeSolucion,"
+	        		+ "ildUnidadAdmin,"
+	        		+ "ildUsuarioCat,"
+	        		+ "ildIncidente,"
+	        		+ "ildModulo,"
+	        		+ "ildProceso,"
+	        		+ "Folio, "
+	        		+ "Aprobado,"
+	        		+ "FechaAprobacion,"
+	        		+ "DescripcionIncidencia,"
+	        		+ "Prioridad,"
+	        		+ "FELab,"
+	        		+ "HELab,"
+	        		+ "FAtencion,"
+	        		+ "HAtencion,"
+	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");
+	        
+	        //ps.setString(1, "2");
+	        psi.setString(1, "1"); 
+	        psi.setString(2, Integer.toString(catate.getildAtendio()));
+	        psi.setString(3, Integer.toString(catdep.getildDepartamento()));
+	        psi.setString(4, Integer.toString(cates.getildEstatus()));
+	        psi.setString(5, Integer.toString(cattipsol.getildTipoDeSolucion()));
+	        psi.setString(6, Integer.toString(catur.getildUnidadAdm()));
+	        psi.setString(7, Integer.toString(caturcat.getildUsuarioCat()));
+	        psi.setString(8, Integer.toString(cattipin.getildIncidente()));
+	        psi.setString(9, Integer.toString(catmod.getildModulo()));
+	        psi.setString(10,Integer.toString(catpro.getildProceso()));
+	       // ps.setString(10, "2");
+	        psi.setString(11, inc.getFolio());
+	        psi.setString(12, inc.getAprobado());
+	        psi.setDate(13, (java.sql.Date)inc.getFechaAprobacion());
+	        psi.setString(14, inc.getDescripcionIncidencia());
+	        psi.setString(15 ,inc.getPrioridad());
+	        psi.setDate(16, (java.sql.Date)inc.getFELab());
+	        psi.setTime(17, (java.sql.Time)inc.getHELab());            
+	        psi.setDate(18, (java.sql.Date)inc.getFAtencion());
+	        psi.setTime(19,(java.sql.Time) inc.getHAtencion());
+	        psi.setString(20, inc.getRespuestaUtic());
+	        
+	        
+	        PreparedStatement psu = d.getCt().prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (ildUnidadAdm,"
+	        													+"NombreResponsable,"
+	        													+"APaterno,"
+													            +"AMaterno,"
+													            +"CiscoUr,"
+													            +"EmailUr) VALUES (?,?,?,?,?,?)");
+	        psu.setString(1, Integer.toString(catusunr.getildUnidadAdm()));
+	        psu.setString(2, catusunr.getNombreResponsable());
+	        psu.setString(3, catusunr.getAPaterno());
+	        psu.setString(4, catusunr.getAMaterno());
+	        psu.setString(5, Integer.toString(catusunr.getCiscoUr()));
+	        psu.setString(6, catusunr.getEmailUr());      
+	        psi.executeUpdate();
+	        psu.executeUpdate();
+			System.out.println("Insercion correcta");
+			DBConexion.liberarConexion(d.getCt());
+		}catch(SQLException e){
+			e.printStackTrace();
+			System.out.println();
+		}
 		
 		RequestDispatcher rd = request.getRequestDispatcher("formulario.jsp");
 		rd.forward(request, response);
