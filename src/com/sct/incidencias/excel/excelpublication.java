@@ -1,5 +1,10 @@
 package com.sct.incidencias.excel;
 
+import="com.sct.incidencias.catalogos.CATUsuarioUTIC"
+import="com.sct.incidencias.Conexion.DBConexion";
+DBConexion dba = new DBConexion();
+
+import=java.sql.*;
 import org.apache.poi.*;
 
 public class excelpublication {
@@ -11,7 +16,10 @@ public class excelpublication {
 	Row row = sheet.createRow((short)0);
 	//создать 22 клетки 22 записей
 	folio cell = row.createCell(0);
-	folio.setCellValue(new String());
+	folio.setCellValue(new String(ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdm,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
+	while(rsu.next()){
+	value="=rsu.getString(1)"=rsu.getString(2);
+}));
 	folio.setCellStyle(cellStyle);
 	
 	stat cell = row.createCell(1);
