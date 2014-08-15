@@ -1,21 +1,27 @@
 package com.sct.incidencias.excel;
 
-import="com.sct.incidencias.catalogos.CATUsuarioUTIC"
-import="com.sct.incidencias.Conexion.DBConexion";
-DBConexion dba = new DBConexion();
+import com.sct.incidencias.catalogos.CATUsuarioUTIC;
+import com.sct.incidencias.Conexion.DBConexion;
+import com.sun.rowset.internal.Row;
 
-import=java.sql.*;
+import java.sql.*;
+
 import org.apache.poi.*;
+import org.apache.poi.hssf.model.Sheet;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 public class excelpublication {
 	//создание из пример
-	Workbook wb = new HSSFWorkbook();
-	CreationHelper createHelper = wb.getCreationHelper();
+	HSSFWorkbook wb = new HSSFWorkbook();
 	//создать новый лист
-	Sheet sheet = wb.createSheet("Incidencias");
-	Row row = sheet.createRow((short)0);
+	HSSFSheet sheet = wb.createSheet("Incidencias");
+	//создать записей
+	HSSFRow row = sheet.createRow((short)0);
 	//создать 22 клетки 22 записей
-	folio cell = row.createCell(0);
+	HSSFCell cell1 = row.createCell();
 	folio.setCellValue(new String(ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdm,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
 	while(rsu.next()){
 	value="=rsu.getString(1)"=rsu.getString(2);
