@@ -32,8 +32,7 @@ public class DBConexion {
 			System.out.println("Controlador cargado dentro de DBConexion");
 			ct = DriverManager.getConnection(databaseURL);
 			st = ct.createStatement();
-			System.out.println("Conexion exitosa dentro de DBConexcion");
-			liberarConexion(ct);
+			System.out.println("Conexion exitosa dentro de DBConexcion");		
 		}catch(Exception e){
 			System.out.println("No se pudo conectar a la base de datos dentro de DBConexion");
 		}
@@ -48,10 +47,21 @@ public class DBConexion {
             ps.setString(1, CuentaUsuario);
             ps.setString(2, Contrasena);
             rs = ps.executeQuery();
-            status = rs.next();
-            liberarConexion(ct);
+            status = rs.next();          
 		}catch(Exception e){
 			System.out.println(e);
+		}finally{
+			try{
+				if(ct != null){
+					liberarConexion(ct);
+				}else if(rs != null){
+					rs.close();
+				}
+			}catch(SQLException e){
+				System.out.println("SQLException dentro de metodo validar");
+				e.printStackTrace();
+			}
+			
 		}
 		return status;	
 	}
@@ -62,6 +72,7 @@ public class DBConexion {
 				con.close();
 			}
 		}catch(SQLException e){
+			System.out.println("Dentro de liberarConexcion");
 			e.printStackTrace();
 		}
 	}
@@ -74,4 +85,6 @@ public class DBConexion {
 	public Connection getCt(){
 		return ct;
 	}
+	
+	
 }

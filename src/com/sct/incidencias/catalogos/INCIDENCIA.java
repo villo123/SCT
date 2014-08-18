@@ -19,6 +19,33 @@ public class INCIDENCIA implements Serializable{
 	private String DescripcionIncidencia;
 	private String RespuestaUtic;
 	private String Prioridad;
+	private int idUsuarioResponsable;
+	private int ildModulo;
+	private int ildProceso;
+	
+	public int getildProceso(){
+		return ildProceso;
+	}
+	
+	public void setildProceso(int ildProceso){
+		this.ildProceso = ildProceso;
+	}
+	
+	public int getildModulo(){
+		return ildModulo;
+	}
+	
+	public void setildModulo(int ildModulo){
+		this.ildModulo = ildModulo;
+	}
+	
+	public int getidUsuarioResponsable(){
+		return idUsuarioResponsable;
+	}
+	
+	public void setidUsuarioResponsable(int idUsuarioResponsable){
+		this.idUsuarioResponsable = idUsuarioResponsable;
+	}
 	
 	public int getildIncidencia(){
 		return ildIncidencia;
