@@ -2,6 +2,7 @@ package com.sct.incidencias.InsertarFor;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
@@ -18,11 +19,37 @@ import com.sct.incidencias.catalogos.*;
 @WebServlet("/InsertarFormulario")
 public class InsertarFormulario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static int contador = 0;
 	
-	public static int incremento(){
-		contador++;
-		return contador;
+	INCIDENCIA inc = new INCIDENCIA();
+	DBConexion d = new DBConexion();
+	CATUsuarioUnidadResponsable catusunr = new CATUsuarioUnidadResponsable();
+	try{
+		PreparedStatement ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
+		ResultSet rs = ps.executeQuery();
+		while(rs.next()){
+			/*System.out.println("ildIncidencia: " + rs.getString(1));
+			System.out.println("idUsuarioResponsable: " + rs.getString(2));*/
+			inc.setildIncidencia(Integer.parseInt(rs.getString(1)) + 1);
+			inc.setidUsuarioResponsable(Integer.parseInt(rs.getString(2)) + 1);
+		}
+	}catch(SQLException e1){
+		e1.printStackTrace();
+	}finally{
+		DBConexion.liberarConexion(d.getCt());
+	}
+	
+	try{
+		PreparedStatement ps = d.getCt().prepareStatement("SELECT MAX(idUsuarioResponsable) FROM CATUsuarioUnidadResponsable");
+		ResultSet rs = ps.executeQuery();
+		while(rs.next()){
+			/*System.out.println("ildIncidencia: " + rs.getString(1));
+			System.out.println("idUsuarioResponsable: " + rs.getString(2));*/
+			catusunr.setidUsuarioResponsable(Integer.parseInt(rs.getString(1)) + 1);
+		}
+	}catch(SQLException e){
+		e1.printStackTrace();
+	}finally{
+		DBConexion.liberarConexion(d.getCt());
 	}
 	
 
@@ -135,12 +162,7 @@ public class InsertarFormulario extends HttpServlet {
 	
 		String RespuestaUtic = request.getParameter("respuesta");
 		inc.setRespuestaUtic(RespuestaUtic);
-		
-		incremento();
-		inc.setildIncidencia(contador);
-		inc.setidUsuarioResponsable(contador);
-		catusunr.setidUsuarioResponsable(contador);
-		
+	
 		try{
 			/*String databaseURL = "jdbc:datadirect:openedge://localhost:30060;schemaDefault=PUB;databaseName=incidencias.db;user=sysprogress;password=sysprogress";
 			Class.forName("com.ddtek.jdbc.openedge.OpenEdgeDriver");

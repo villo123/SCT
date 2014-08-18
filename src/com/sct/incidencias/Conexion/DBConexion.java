@@ -6,17 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.sct.incidencias.catalogos.CATAtendio;
-import com.sct.incidencias.catalogos.CATDepartamento;
-import com.sct.incidencias.catalogos.CATEstatus;
-import com.sct.incidencias.catalogos.CATModulo;
-import com.sct.incidencias.catalogos.CATProceso;
-import com.sct.incidencias.catalogos.CATTipoDeIncidente;
-import com.sct.incidencias.catalogos.CATTipoDeSolucion;
-import com.sct.incidencias.catalogos.CATUnidadResponsable;
-import com.sct.incidencias.catalogos.CATUsuarioCAT;
-import com.sct.incidencias.catalogos.CATUsuarioUnidadResponsable;
-import com.sct.incidencias.catalogos.INCIDENCIA;
 
 public class DBConexion {
 
