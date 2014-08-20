@@ -23,37 +23,6 @@ public class InsertarFormulario extends HttpServlet {
 	INCIDENCIA inc = new INCIDENCIA();
 	DBConexion d = new DBConexion();
 	CATUsuarioUnidadResponsable catusunr = new CATUsuarioUnidadResponsable();
-	try{
-		PreparedStatement ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
-		ResultSet rs = ps.executeQuery();
-		while(rs.next()){
-			/*System.out.println("ildIncidencia: " + rs.getString(1));
-			System.out.println("idUsuarioResponsable: " + rs.getString(2));*/
-			inc.setildIncidencia(Integer.parseInt(rs.getString(1)) + 1);
-			inc.setidUsuarioResponsable(Integer.parseInt(rs.getString(2)) + 1);
-		}
-	}catch(SQLException e1){
-		e1.printStackTrace();
-	}finally{
-		DBConexion.liberarConexion(d.getCt());
-	}
-	
-	try{
-		PreparedStatement ps = d.getCt().prepareStatement("SELECT MAX(idUsuarioResponsable) FROM CATUsuarioUnidadResponsable");
-		ResultSet rs = ps.executeQuery();
-		while(rs.next()){
-			/*System.out.println("ildIncidencia: " + rs.getString(1));
-			System.out.println("idUsuarioResponsable: " + rs.getString(2));*/
-			catusunr.setidUsuarioResponsable(Integer.parseInt(rs.getString(1)) + 1);
-		}
-	}catch(SQLException e){
-		e1.printStackTrace();
-	}finally{
-		DBConexion.liberarConexion(d.getCt());
-	}
-	
-
-
     public InsertarFormulario() {
         super();
         
@@ -162,7 +131,12 @@ public class InsertarFormulario extends HttpServlet {
 	
 		String RespuestaUtic = request.getParameter("respuesta");
 		inc.setRespuestaUtic(RespuestaUtic);
-	
+		PreparedStatement ps = null;
+		PreparedStatement ps2 = null;
+		PreparedStatement psi = null;
+		PreparedStatement psu = null;
+		ResultSet rs = null;
+		ResultSet rs2 = null;
 		try{
 			/*String databaseURL = "jdbc:datadirect:openedge://localhost:30060;schemaDefault=PUB;databaseName=incidencias.db;user=sysprogress;password=sysprogress";
 			Class.forName("com.ddtek.jdbc.openedge.OpenEdgeDriver");
@@ -170,7 +144,22 @@ public class InsertarFormulario extends HttpServlet {
 			ct = DriverManager.getConnection(databaseURL);
 			//st = ct.createStatement();
 			System.out.println("Conexion exitosa dentro de Insertar Formulario");*/
-	        PreparedStatement psi = d.getCt().prepareStatement("INSERT INTO PUB.Incidencia (ildIncidencia,ildSistema,"
+			ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
+			rs = ps.executeQuery();
+			while(rs.next()){
+				inc.setildIncidencia(Integer.parseInt(rs.getString(1)) + 1);
+				inc.setidUsuarioResponsable(Integer.parseInt(rs.getString(2)) + 1);
+			}
+			
+			ps2 = d.getCt().prepareStatement("SELECT MAX(idUsuarioResponsable) FROM PUB.CATUsuarioUnidadResponsable");
+			rs2 = ps2.executeQuery();
+			while(rs2.next()){
+						catusunr.setidUsuarioResponsable(Integer.parseInt(rs2.getString(1)) + 1);
+			}
+			
+			
+			
+	        psi = d.getCt().prepareStatement("INSERT INTO PUB.Incidencia (ildIncidencia,ildSistema,"
 	        		+ "ildAtendio,"
 	        		+ "ildDepartamento,"
 	        		+ "ildEstatus,"
@@ -216,7 +205,7 @@ public class InsertarFormulario extends HttpServlet {
 	        psi.setString(22, inc.getRespuestaUtic());
 	        
 	        
-	        PreparedStatement psu = d.getCt().prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (idUsuarioResponsable,ildUnidadAdm,"
+	        psu = d.getCt().prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (idUsuarioResponsable,ildUnidadAdm,"
 	        													+"NombreResponsable,"
 	        													+"APaterno,"
 													            +"AMaterno,"
@@ -237,7 +226,25 @@ public class InsertarFormulario extends HttpServlet {
 			e.printStackTrace();
 			System.out.println();
 		}finally{
-			DBConexion.liberarConexion(d.getCt());
+			try{
+				if(d.getCt() != null){
+					DBConexion.liberarConexion(d.getCt());
+				}else if(ps != null){
+					ps.close();
+				}else if(ps2 != null){
+					ps2.close();
+				}else if(psi != null){
+					psi.close();
+				}else if(psu != null){
+					psu.close();
+				}else if(rs != null){
+					rs.close();
+				}else if(rs2 != null){
+					rs2.close();
+				}
+			}catch(SQLException e){
+				e.printStackTrace();
+			}
 		}
 		
 		RequestDispatcher rd = request.getRequestDispatcher("formulario.jsp");
