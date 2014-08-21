@@ -22,6 +22,69 @@ public class INCIDENCIA implements Serializable{
 	private int idUsuarioResponsable;
 	private int ildModulo;
 	private int ildProceso;
+	private int ildUnidadAdmin;
+	private int ildSistema;
+	private int ildUsuarioCat;
+	private int ildTipoDeSolucion;
+	private int ildEstatus;
+	private int ildDepartamento;
+	private int ildAtendio;
+	
+	public int getildAtendio(){
+		return ildAtendio;
+	}
+	
+	public void setildAtendio(int ildAtendio){
+	 this.ildAtendio = ildAtendio;
+	}
+	
+	public int getildDepartamento(){
+		return ildDepartamento;
+	}
+	
+	public void setildDepartamento(int ildDepartamento){
+		this.ildDepartamento = ildDepartamento;
+	}
+	
+	public int getildEstatus(){
+		return ildEstatus;
+	}
+	
+	public void setildEstatus(int ildEstatus){
+		this.ildEstatus = ildEstatus;
+	}
+	
+	public int getildTipoDeSolucion(){
+		return ildTipoDeSolucion;
+	}
+	
+	public void setildTipoDeSolucion(int ildTipoDeSolucion){
+		this.ildTipoDeSolucion = ildTipoDeSolucion;
+	}
+	
+	public int getildUsuarioCat(){
+		return ildUsuarioCat;
+	}
+	
+	public void setildUsuarioCat(int ildUsuarioCat){
+		this.ildUsuarioCat = ildUsuarioCat;
+	}
+	
+	public int getildSistema(){
+		return ildSistema;
+	}
+	
+	public void setildSistema(int ildSistema){
+		this.ildSistema = ildSistema;
+	}
+	
+	public int getildUnidadAdmin(){
+		return ildUnidadAdmin;
+	}
+	
+	public void setildUnidadAdmin(int ildUnidadAdmin){
+		this.ildUnidadAdmin = ildUnidadAdmin;
+	}
 	
 	public int getildProceso(){
 		return ildProceso;

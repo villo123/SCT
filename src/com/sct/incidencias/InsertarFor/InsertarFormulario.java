@@ -144,7 +144,7 @@ public class InsertarFormulario extends HttpServlet {
 			ct = DriverManager.getConnection(databaseURL);
 			//st = ct.createStatement();
 			System.out.println("Conexion exitosa dentro de Insertar Formulario");*/
-			ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
+			/*ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
 			rs = ps.executeQuery();
 			while(rs.next()){
 				inc.setildIncidencia(Integer.parseInt(rs.getString(1)) + 1);
@@ -155,7 +155,7 @@ public class InsertarFormulario extends HttpServlet {
 			rs2 = ps2.executeQuery();
 			while(rs2.next()){
 						catusunr.setidUsuarioResponsable(Integer.parseInt(rs2.getString(1)) + 1);
-			}
+			}*/
 			
 			
 			
@@ -205,7 +205,7 @@ public class InsertarFormulario extends HttpServlet {
 	        psi.setString(22, inc.getRespuestaUtic());
 	        
 	        
-	        psu = d.getCt().prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (idUsuarioResponsable,ildUnidadAdm,"
+	        psu = d.getCt().prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (idUsuarioResponsable,ildUnidadAdmin,"
 	        													+"NombreResponsable,"
 	        													+"APaterno,"
 													            +"AMaterno,"

@@ -57,7 +57,7 @@
                     
                     <label id="maplabel">Unidad Responsable:</label>
                     <select id="maptxt" name="unidadresponsable">
-                    	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdm,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
+                    	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdmin,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
 							while(rsu.next()){%>
 								<option value="<%=rsu.getString(1)%>"><%=rsu.getString(2)%></option>
 							<%}%>
