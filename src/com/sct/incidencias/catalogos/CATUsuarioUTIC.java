@@ -10,7 +10,7 @@ public class CATUsuarioUTIC implements Serializable{
 	private String NomusuarioUtic;
 	private String APaterno;
 	private String AMaterno;
-	private String Email;
+	private String EmailUtic;
 	private int ClaveEmpleado;
 	private String CuentaUsuario;
 	private String Contrasena;
@@ -47,12 +47,12 @@ public class CATUsuarioUTIC implements Serializable{
 		this.AMaterno = AMaterno;
 	}
 	
-	public String getEmail(){
-		return Email;
+	public String getEmailUtic(){
+		return EmailUtic;
 	}
 	
-	public void setEmail(String Email){
-		this.Email = Email;
+	public void setEmailUtic(String EmailUtic){
+		this.EmailUtic = EmailUtic;
 	}
 	
 	public int getClaveEmpleado(){

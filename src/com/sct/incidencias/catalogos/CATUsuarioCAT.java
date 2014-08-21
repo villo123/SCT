@@ -10,8 +10,8 @@ public class CATUsuarioCAT implements Serializable{
 	private String NombreUsuario;
 	private String APaterno;
 	private String AMaterno;
-	private int Cisco;
-	private String Email;
+	private int CiscoCat;
+	private String EmailCat;
 	
 	public int getildUsuarioCat(){
 		return ildUsuarioCat;
@@ -45,19 +45,19 @@ public class CATUsuarioCAT implements Serializable{
 		this.AMaterno = AMaterno;
 	}
 	
-	public int getCisco(){
-		return Cisco;
+	public int getCiscoCat(){
+		return CiscoCat;
 	}
 	
-	public void setCisco(int Cisco){
-		this.Cisco = Cisco;
+	public void setCiscoCat(int CiscoCat){
+		this.CiscoCat = CiscoCat;
 	}
 	
-	public String getEmail(){
-		return Email;
+	public String getEmailCat(){
+		return EmailCat;
 	}
 	
-	public void setEmail(String Email){
-		this.Email = Email;
+	public void setEmailCat(String EmailCat){
+		this.EmailCat = EmailCat;
 	}
 }
