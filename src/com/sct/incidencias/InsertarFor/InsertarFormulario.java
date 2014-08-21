@@ -144,7 +144,7 @@ public class InsertarFormulario extends HttpServlet {
 			ct = DriverManager.getConnection(databaseURL);
 			//st = ct.createStatement();
 			System.out.println("Conexion exitosa dentro de Insertar Formulario");*/
-			/*ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
+			ps = d.getCt().prepareStatement("SELECT MAX(ildIncidencia),MAX(idUsuarioResponsable) FROM PUB.Incidencia");
 			rs = ps.executeQuery();
 			while(rs.next()){
 				inc.setildIncidencia(Integer.parseInt(rs.getString(1)) + 1);
@@ -155,7 +155,7 @@ public class InsertarFormulario extends HttpServlet {
 			rs2 = ps2.executeQuery();
 			while(rs2.next()){
 						catusunr.setidUsuarioResponsable(Integer.parseInt(rs2.getString(1)) + 1);
-			}*/
+			}
 			
 			
 			
@@ -182,6 +182,7 @@ public class InsertarFormulario extends HttpServlet {
 	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");
 	        
 	        psi.setString(1, Integer.toString(inc.getildIncidencia()));
+	       // psi.setString(1, "1");
 	        psi.setString(2, "1"); 
 	        psi.setString(3, Integer.toString(catate.getildAtendio()));
 	        psi.setString(4, Integer.toString(catdep.getildDepartamento()));
@@ -193,6 +194,7 @@ public class InsertarFormulario extends HttpServlet {
 	        psi.setString(10, Integer.toString(catmod.getildModulo()));
 	        psi.setString(11,Integer.toString(catpro.getildProceso()));
 	        psi.setString(12, Integer.toString(catusunr.getidUsuarioResponsable()));
+	       // psi.setString(12, "1");
 	        psi.setString(13, inc.getFolio());
 	        psi.setString(14, inc.getAprobado());
 	        psi.setDate(15, (java.sql.Date)inc.getFechaAprobacion());
@@ -211,7 +213,8 @@ public class InsertarFormulario extends HttpServlet {
 													            +"AMaterno,"
 													            +"CiscoUr,"
 													            +"EmailUr) VALUES (?,?,?,?,?,?,?)");
-	        psu.setString(1, Integer.toString(catusunr.getidUsuarioResponsable()));
+	       psu.setString(1, Integer.toString(catusunr.getidUsuarioResponsable()));
+	        //psu.setString(1, "1");
 	        psu.setString(2, Integer.toString(catusunr.getildUnidadAdmin()));
 	        psu.setString(3, catusunr.getNombreResponsable());
 	        psu.setString(4, catusunr.getAPaterno());
