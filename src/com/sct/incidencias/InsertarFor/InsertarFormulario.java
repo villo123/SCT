@@ -58,8 +58,8 @@ public class InsertarFormulario extends HttpServlet {
 		
 		CATUnidadResponsable catur = new CATUnidadResponsable();
 		String unidadrespoildUnidadAdm = request.getParameter("unidadresponsable");
-		catur.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
-		catusunr.setildUnidadAdm(Integer.parseInt(unidadrespoildUnidadAdm));
+		catur.setildUnidadAdmin(Integer.parseInt(unidadrespoildUnidadAdm));
+		catusunr.setildUnidadAdmin(Integer.parseInt(unidadrespoildUnidadAdm));
 		
 		CATDepartamento catdep = new CATDepartamento();
 		String ildDepartamento = request.getParameter("departamento");
@@ -187,7 +187,7 @@ public class InsertarFormulario extends HttpServlet {
 	        psi.setString(4, Integer.toString(catdep.getildDepartamento()));
 	        psi.setString(5, Integer.toString(cates.getildEstatus()));
 	        psi.setString(6, Integer.toString(cattipsol.getildTipoDeSolucion()));
-	        psi.setString(7, Integer.toString(catur.getildUnidadAdm()));
+	        psi.setString(7, Integer.toString(catur.getildUnidadAdmin()));
 	        psi.setString(8, Integer.toString(caturcat.getildUsuarioCat()));
 	        psi.setString(9, Integer.toString(cattipin.getildIncidente()));
 	        psi.setString(10, Integer.toString(catmod.getildModulo()));
@@ -212,7 +212,7 @@ public class InsertarFormulario extends HttpServlet {
 													            +"CiscoUr,"
 													            +"EmailUr) VALUES (?,?,?,?,?,?,?)");
 	        psu.setString(1, Integer.toString(catusunr.getidUsuarioResponsable()));
-	        psu.setString(2, Integer.toString(catusunr.getildUnidadAdm()));
+	        psu.setString(2, Integer.toString(catusunr.getildUnidadAdmin()));
 	        psu.setString(3, catusunr.getNombreResponsable());
 	        psu.setString(4, catusunr.getAPaterno());
 	        psu.setString(5, catusunr.getAMaterno());

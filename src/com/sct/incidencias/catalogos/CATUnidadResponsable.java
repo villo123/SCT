@@ -6,16 +6,16 @@ public class CATUnidadResponsable implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private int ildUnidadAdm;
+	private int ildUnidadAdmin;
 	private String DescUR;
 
 	
-	public int getildUnidadAdm(){
-		return ildUnidadAdm;
+	public int getildUnidadAdmin(){
+		return ildUnidadAdmin;
 	}
 	
-	public void setildUnidadAdm(int ildUnidadAdm){
-		this.ildUnidadAdm = ildUnidadAdm;
+	public void setildUnidadAdmin(int ildUnidadAdmin){
+		this.ildUnidadAdmin = ildUnidadAdmin;
 	}
 	
 	public String getDescUR(){

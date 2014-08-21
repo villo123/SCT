@@ -7,7 +7,7 @@ public class CATUsuarioUnidadResponsable implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private int idUsuarioResponsable;
-	private int ildUnidadAdm;
+	private int ildUnidadAdmin;
 	private String NombreResponsable;
 	private String APaterno;
 	private String AMaterno;
@@ -23,12 +23,12 @@ public class CATUsuarioUnidadResponsable implements Serializable{
 		this.idUsuarioResponsable = idUsuarioResponsable;
 	}
 	
-	public int getildUnidadAdm(){
-		return ildUnidadAdm;
+	public int getildUnidadAdmin(){
+		return ildUnidadAdmin;
 	}
 	
-	public void setildUnidadAdm(int ildUnidadAdm){
-		this.ildUnidadAdm = ildUnidadAdm;
+	public void setildUnidadAdmin(int ildUnidadAdmin){
+		this.ildUnidadAdmin = ildUnidadAdmin;
 	}
 	
 	public String getNombreResponsable(){
