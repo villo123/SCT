@@ -9,13 +9,13 @@ public class INCIDENCIA implements Serializable{
 	
 	private int ildIncidencia;
 	private String Folio;
-	private Date FELab; //ver con tipo de  dato fecha
-	private Date HELab; //ver tipo de dato hora
-	private Date FAtencion;//ver con tipo de  dato fecha
-	private Date HAtencion;//ver tipo de dato hora
+	private Date FELab;
+	private Date HELab; 
+	private Date FAtencion;
+	private Date HAtencion;
 	private String Observaciones;
 	private String Aprobado;
-	private Date FechaAprobacion;//ver con tipo de  dato fecha
+	private Date FechaAprobacion;
 	private String DescripcionIncidencia;
 	private String RespuestaUtic;
 	private String Prioridad;
