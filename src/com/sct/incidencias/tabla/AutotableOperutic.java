@@ -1,0 +1,54 @@
+package com.sct.incidencias.tabla;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
+import javafx.stage.Stage;
+
+public class AutotableOperutic extends Application{
+	 private final TableView table = new TableView();
+	    public static void main(String[] args) {
+	        launch(args);
+	    }
+	 
+	    @Override
+	    public void start(Stage stage) {
+	        Scene scene = new Scene(new Group());
+	        stage.setTitle("Atendió UTIC");
+	        stage.setWidth(900);
+	        stage.setHeight(500);
+	 
+	        final Label label = new Label("Secretaría de Comunicaciones y Transportes");
+	        label.setFont(new Font("Arial", 20));
+	 
+	        table.setEditable(false);
+	 
+	        TableColumn usr = new TableColumn("Usuario");
+	        TableColumn empleado = new TableColumn("Número de empleado");
+	        TableColumn nombre = new TableColumn("Nombre");
+	        TableColumn apellidop = new TableColumn("Apellido Paterno");
+	        TableColumn apellidom = new TableColumn("Apellido Materno");
+	        TableColumn departamento = new TableColumn("Departamento");
+	        TableColumn mail = new TableColumn("E-mail");
+	        TableColumn unit = new TableColumn("Unidad");
+	        
+	        table.getColumns().addAll(usr, empleado, nombre, apellidop, apellidom, departamento, mail, unit);
+	 
+	        final VBox vbox = new VBox();
+	        vbox.setSpacing(5);
+	        vbox.setPadding(new Insets(10, 0, 0, 10));
+	        vbox.getChildren().addAll(label, table);
+	 
+	        ((Group) scene.getRoot()).getChildren().addAll(vbox);
+	 
+	        stage.setScene(scene);
+	        stage.show();
+	    }
+}
+
