@@ -10217,3 +10217,11 @@
 [2014/08/21@13:30:01.237-0500] P-4044       T-1596  I SHUT    5: (542)   Terminación del servidor por Villo en CON:. 
 [2014/08/21@13:30:01.367-0500] P-156        T-2944  I BROKER  0: (2248)  Inicia Terminación normal 
 [2014/08/21@13:30:02.390-0500] P-156        T-2944  I BROKER   : (334)   Fin de sesión Multi-user. 
+
+                Thu Aug 21 13:34:27 2014
+[2014/08/21@13:34:27.821-0500] P-5548       T-2420  I ABL      : (451)   Single-user comienza sesión Villo en CON:. 
+[2014/08/21@13:34:27.824-0500] P-5548       T-2420  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/08/21@13:34:27.826-0500] P-5548       T-2420  I ABL      : (7161)  Fase rehacer física completa en bloque 111 desplazamiento 5761 actualización 0. 
+[2014/08/21@13:34:27.826-0500] P-5548       T-2420  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/08/21@13:34:27.852-0500] P-5548       T-2420  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/08/21@13:53:30.635-0500] P-5548       T-2420  I ABL      : (334)   Fin de sesión Single-user. 

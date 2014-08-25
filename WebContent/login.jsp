@@ -15,6 +15,7 @@
 	<body onload="carga();">
 	<div class="panel">
 	<div id="imagen"><img src="ima/logo.png" width="260" height="84"></div>
+	<div id="imagen"><img src="ima/incidecnia3" width="84" height="260"></div>
 	<div class="container">
 	<div id="im"></div>
 	
