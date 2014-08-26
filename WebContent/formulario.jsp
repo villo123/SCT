@@ -177,7 +177,7 @@
 									<%=rsa.getString(2)+ " " + rsa.getString(3) + " " + rsa.getString(4)%>
 								</option><%}%>
 					</select>
-					
+					<% dba.liberarConexion(dba.getCt()); %>
 					<label id="fechantlabel">Fecha de atencion:</label>
 					<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd"/>
 					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion"/>

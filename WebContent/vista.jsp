@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="mx.gob.sct.utic.utils.html" %> 
+<%@ page import="java.util.ArrayList" %> 
+<%@ page import="java.util.Iterator" %> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -47,107 +50,25 @@
                  <td class="t">Sistema</td>
                  <td class="t">Formato</td>
              </tr>
-             <tr>
-             	 <td ></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                  <td></td>
-             </tr>
-             <tr>
-             	 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                  <td></td>
-             </tr>
-             <tr>
-             	 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                  <td></td>
-             </tr>
-             <tr>
-             	 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td>
-                 <td></td> 
-                 <td></td>
-             </tr>
-        </table>
+             
+             <% 
+             html utils = new html();
+             ArrayList registros = utils.getIncidencias();
+             Iterator it = registros.iterator();
+
+             while(it.hasNext()){
+            	 String[] columnas = (String[])it.next();
+            	 out.println("<tr>");
+            	 for (int x=0;x<columnas.length;x++ ){
+            		 if(x>=7){
+            			 out.println("<td>"+columnas[x]+"</td>");
+            		 }
+            	 }
+            	 out.println("</tr>");
+             }
+             
+             %>
+  </table>
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   
