@@ -11924,3 +11924,11 @@
 [2014/08/27@12:34:22.525-0500] P-4112       T-9964  I ABL      : (7161)  Fase rehacer física completa en bloque 116 desplazamiento 1835 actualización 5. 
 [2014/08/27@12:34:22.531-0500] P-4112       T-9964  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
 [2014/08/27@12:34:22.697-0500] P-4112       T-9964  I ABL      : (334)   Fin de sesión Single-user. 
+
+                Wed Aug 27 13:22:32 2014
+[2014/08/27@13:22:32.488-0500] P-11508      T-3684  I ABL      : (451)   Single-user comienza sesión 7h3n3w3r4cr4ck3r en CON:. 
+[2014/08/27@13:22:32.539-0500] P-11508      T-3684  I ABL      : (5326)  Comenzar fase rehacer física en 0 . 
+[2014/08/27@13:22:32.837-0500] P-11508      T-3684  I ABL      : (7161)  Fase rehacer física completa en bloque 116 desplazamiento 1835 actualización 0. 
+[2014/08/27@13:22:32.837-0500] P-11508      T-3684  I ABL      : (13547) Al final de Rehacer física, el tamaño de la tabla de transacciones es 8. 
+[2014/08/27@13:22:32.887-0500] P-11508      T-3684  I ABL      : (12699) Base de Datos Incidencias Opciones:  
+[2014/08/27@13:36:01.489-0500] P-11508      T-3684  I ABL      : (334)   Fin de sesión Single-user. 
