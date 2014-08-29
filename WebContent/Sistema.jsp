@@ -6,7 +6,7 @@
 	<meta charset="ISO-8859-1">
 <title>Catalogo de Proceso</title>
 	<link rel="stylesheet" type="text/css" href="css/Sistema.css" />
-	<script type="text/javqqascript" src="js/master.js"></script>
+	<script type="text/javascript" src="js/master.js"></script>
 </head>
 <body onload="deshabilitarsistema();">
 		<div class="panel">
@@ -15,7 +15,7 @@
 			</div>
 			<h1><center>Catálogo Sistema</center></h1>
 			<div class="container">
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="habilitarsistema();">Nuevo</button>
 				<button id="btn" onclick="habilitarsistema();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>

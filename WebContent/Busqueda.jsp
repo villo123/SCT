@@ -1,4 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+   <%@ page import="com.sct.incidencias.catalogos.CATUsuarioUTIC"%>
+   <%@ page import="com.sct.incidencias.Conexion.DBConexion" %>
+   <%DBConexion dba = new DBConexion();%>
+   <%@ page import="java.sql.*;" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -16,31 +20,53 @@
 			<div class="container">
 				<label id="Foliolabel">Folio:</label>
 				<input type="Text" name="camposelector" id="Foliotxt" size="30" />
-				<input type="button" id="btnUnit" value="Seleccionar" />
+				
 				
 				<label id="Unitlabel">Por Unidad Administrativa:</label>
-				<input type="Text" name="camposelector" id="Unittxt" size="30" />
-				<input type="button" id="btnUnit" value="Seleccionar" />
+				<select name="camposelector" id="Unittxt" size="30" >
+                    	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdmin,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
+							while(rsu.next()){%>
+								<option value="<%=rsu.getString(1)%>"><%=rsu.getString(2)%></option>
+							<%}%>
+					</select>
+				
 				
 				<label id="Estatuslabel">Estatus Incidencia:</label>
-				<input type="Text" name="camposelector" id="Estatustxt" size="30" />
-				<input type="button" id="btnEstatus" value="Seleccionar" />
+				<select name="camposelector" id="Estatustxt" size="30">
+					<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
+							while(rse.next()){%>
+								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>
+								<%}
+									%>
+				</select>
 				
 				<label id="Tipolabel">Tipo de Solución:</label>
-		 		<input type="Text" name="camposelector" id="Tipotxt" size="30" />
-				<input type="button" id="btnTipo" value="Seleccionar" />
+		 		<select name="camposelector" id="Tipotxt" size="30">
+						<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.ildTipoDeSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
+							while(rss.next()){%>
+								<option value="<%=rss.getString(1)%>">
+									<%=rss.getString(2)%>
+								</option><%}
+								%>
+					</select>
+				
 				
 				<label id="Modulolabel">Modulo:</label>
-				<input type="Text" name="camposelector" id="Modulotxt" size="30" />
-				<input type="button" id="btnModulo" value="Seleccionar" />
+				<select name="camposelector" id="Modulotxt" size="30" >
+						<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
+							while(rsm.next()){%>
+								<option value="<%=rsm.getString(1)%>"><%=rsm.getString(2)%></option>
+							<%}%>
+					</select>
+				
 				
 				<label id="Sublabel">Submodulo:</label>
 				<input type="Text" name="camposelector" id="Subtxt" size="30" />
-				<input type="button" id="btnSub" value="Seleccionar" />
+				
 				
 				<label id="Sistlabel">Sistema:</label>
 		 		<input type="Text" name="camposelector" id="Sisttxt" size="30" />
-				<input type="button" id="btnSist" value="Seleccionar" />
+				
 				
 				<input type="button" name="enviar" value="Filtrar" id="btnSubmit" />
 				

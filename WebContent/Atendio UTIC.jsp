@@ -36,57 +36,12 @@
 			</div>
 			<div class="container">
 				<h1><center>Catálogo Atendio</center></h1>
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="habilitaratutic();">Nuevo</button>
 				<button id="btn" onclick="habilitaratutic();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
-				<button id="btn" onclick="cancelar();">Cancelar</button>
-				<br /> <br />
-            <form action="FillTable" name="Fill" method="post"/>
-				<table border="2px" style="border-collapse: collapse;"> 
-					<tbody>
-					
-					
-						<tr>
-							<td class="t" style="color:#FFFFFF;">ID</td>
-							<td class="t" style="color:#FFFFFF;">Nombre</td>
-							<td class="t" style="color:#FFFFFF;">Apellido Paterno</td>
-							<td class="t" style="color:#FFFFFF;">Apellido Materno</td>
-							<td class="t" style="color:#FFFFFF;">Departamento</td>            
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-                                                
-						</tr>
-					</tbody>
-				</table>
-				<br /><br />
+				<button id="btn" onclick="cancelar();">Cancelar</button><br/><br/>
+				<applet code="AutotableAtenUTIC.java" width="350" height="350"></applet><br/><br/>
 					<label id="idatendiolabel">ID:</label>
 					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
 					<label id="nameatendiolabel">Nombre:</label>

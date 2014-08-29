@@ -13,7 +13,7 @@
 		<link rel="stykesheet" type="text/css" href="css/button.css" />
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link rel="stylesheet" type="text/css"href="css/calendario.css" />
-		<!--Script content-->
+		<!--Script contentd-->
 		<script type="text/javascript" src="js/master.js"></script>
 		<script type="text/javascript" src="js/calendar.js"></script>
 		<script type="text/javascript" src="js/calendar-es.js"></script>
@@ -39,7 +39,7 @@
 			</div>
 			<div class="container">
 			<h1><center>Catálogo Usuario CAT</center></h1>
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="habilitarucat();">Nuevo</button>
 				<button id="btn" onclick="habilitarucat();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
@@ -100,7 +100,7 @@
 					<label id="apellidousuariocatlabel">Apellido Paterno:</label>
 					<input type="text" value="" id="apellidousuariocattxt" name="apellidousuariocat" value="" size="30" /><br /><br />
 					<label id="apellidomatatendiolabel">Apellido Materno:</label>
-					<input type="text" value="" id="apellidousuariocattxt" name="apellidousuariocat" value="" size="30" /><br /><br />
+					<input type="text" value="" id="apellidomatatendiotxt" name="apellidousuariocat" value="" size="30" /><br /><br />
 					<label id="e-mailusuariocatllabel">E-mail:</label>
 					<input type="text" value="" id="e-mailusuariocattxt" name="e-mailusuariocat" value="" size="30" /><br /><br />
 					<label id="ciscousuariocatlabel">Cisco:</label>

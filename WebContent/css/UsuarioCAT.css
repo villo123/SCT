@@ -161,10 +161,10 @@ html{
     text-decoration: none;
 }
 
-#apellidomatusuariocattxt{
+#apellidomatatendiotxt{
 	position:relative;
     left:20px;
-    top:0epx;
+    top:0px;
     font-size:11px;
     font-weight: normal;
     font-family: verdana, arial, helvetica;

@@ -1,0 +1,3 @@
+proserve -db C:\Users\7h3n3w3r4cr4ck3r\git\SCT\WebContent\DataBases\Incidencias.db -N tcp -S 30060
+
+proshut C:\ProgressDB\Incidencias\incidencias.db

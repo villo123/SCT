@@ -181,7 +181,7 @@ public class InsertarFormulario extends HttpServlet {
 	        		+ "HAtencion,"
 	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");
 	        
-	        psi.setString(1, Integer.toString(inc.getildIncidencia()));
+	       psi.setString(1, Integer.toString(inc.getildIncidencia()));
 	       // psi.setString(1, "1");
 	        psi.setString(2, "1"); 
 	        psi.setString(3, Integer.toString(catate.getildAtendio()));
@@ -194,7 +194,7 @@ public class InsertarFormulario extends HttpServlet {
 	        psi.setString(10, Integer.toString(catmod.getildModulo()));
 	        psi.setString(11,Integer.toString(catpro.getildProceso()));
 	        psi.setString(12, Integer.toString(catusunr.getidUsuarioResponsable()));
-	       // psi.setString(12, "1");
+	        //psi.setString(12, "1");
 	        psi.setString(13, inc.getFolio());
 	        psi.setString(14, inc.getAprobado());
 	        psi.setDate(15, (java.sql.Date)inc.getFechaAprobacion());
@@ -213,7 +213,7 @@ public class InsertarFormulario extends HttpServlet {
 													            +"AMaterno,"
 													            +"CiscoUr,"
 													            +"EmailUr) VALUES (?,?,?,?,?,?,?)");
-	       psu.setString(1, Integer.toString(catusunr.getidUsuarioResponsable()));
+	        psu.setString(1, Integer.toString(catusunr.getidUsuarioResponsable()));
 	        //psu.setString(1, "1");
 	        psu.setString(2, Integer.toString(catusunr.getildUnidadAdmin()));
 	        psu.setString(3, catusunr.getNombreResponsable());
