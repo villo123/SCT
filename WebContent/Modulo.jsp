@@ -4,18 +4,18 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Catálogo Modulo</title>
-		<link rel="stylesheet" type="text/css" href="css/Modulo.css" />
-	<script type="text/javqqascript" src="js/master.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/Modulo.css" />
+	<script type="text/javascript" src="js/master.js"></script>
 </head>
-<body onclick="deshabilitarmodulo();">
+<body onload="deshabilitarmodulo();">
 		<div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
 			<h1><center>Catálogo Modulo</center></h1>
 			<div class="container">
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
-				<button id="btn" onclick="habiliarmodulo();">Editar</button>
+				<button id="btn" onclick="habilitarmodulo();">Nuevo</button>
+				<button id="btn" onclick="habilitarmodulo();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br />  <br />   

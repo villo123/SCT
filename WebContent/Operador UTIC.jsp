@@ -4,17 +4,17 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Catálogo Operador</title>
-		<link rel="stylesheet" type="text/css" href="css/OperadorUTIC.css" />
-	<script type="text/javqqascript" src="js/master.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/OperadorUTIC.css" />
+	<script type="text/javascript" src="js/master.js"></script>
 </head>
-<body onclick="deshabilitaroperutic();">
+<body onload="deshabilitaroperutic();">
 		<div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
 			<div class="container">
 				<h1><center>Catálogo Operador</center></h1>
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="habilitaroperutic();">Nuevo</button>
 				<button id="btn" onclick="habilitaroperutic();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
@@ -78,21 +78,21 @@
              </tr>
         </table>
         	<br />
-			<label>Usuarios:</label>
+			<label id="UsuarioOptlabel">Usuarios:</label>
 			<input type="text" value="" id="UsuarioOpt" name="timepicker" size="30" /><br /><br />
-			<label>Numero de Empleado:</label>
+			<label id="NumeroOptlabel">Numero de Empleado:</label>
 			<input type="text" value="" id="NumeroOpt" name="timepicker" size="30" /><br /><br />
-			<label>Nombre:</label>
+			<label id="NombreOptlabel">Nombre:</label>
 			<input type="text" value="" id="NombreOpt" name="timepicker" size="30" /><br /><br />
-			<label>Apellido Paterno:</label>
+			<label id="ApellidoPatOptlabel">Apellido Paterno:</label>
 			<input type="text" value="" id="ApellidoPatOpt" name="timepicker" size="30" /><br /><br />
-			<label>Apellido Materno:</label>
+			<label id="ApellidoMatOptlabel">Apellido Materno:</label>
 			<input type="text" value="" id="ApellidoMatOpt" name="timepicker" size="30" /><br /><br />
-			<label>Departamento:</label>
+			<label id="DeptoOptlabel">Departamento:</label>
 			<input type="text" value="" id="DeptoOpt" name="timepicker" size="30" /><br /><br />
-			<label>E-mail:</label>
+			<label id="EmailOptlabel">E-mail:</label>
 			<input type="text" value="" id="EmailOpt" name="timepicker" size="30" /><br /><br />
-			<label>Unidad:</label>
+			<label id="UnidadOptlabel">Unidad:</label>
 			<input type="text" value="" id="UnidadOpt" name="timepicker" size="30" /><br /><br />
 
 			</div>

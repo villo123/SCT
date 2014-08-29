@@ -38,7 +38,7 @@
 			</div>
 			<div class="container">
 				<h1><center>Catálogo Solución</center></h1>
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="habilitartiposol();">Nuevo</button>
 				<button id="btn" onclick="habilitartiposol();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>

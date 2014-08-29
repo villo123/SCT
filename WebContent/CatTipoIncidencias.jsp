@@ -5,16 +5,16 @@
 <meta charset="ISO-8859-1">
 	<title>Catalogo Tipo de Inicidencia</title>
 	<link rel="stylesheet" type="text/css" href="css/CatTipoIncidencias.css" />
-	<script type="text/javqqascript" src="js/master.js"></script>
+	<script type="text/javascript" src="js/master.js"></script>
 </head>
-	<body onclick="deshabilitarcatin()">
+	<body onload="deshabilitarcatin();">
 		<div class="panel">
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
 			<center><h1>Catálogo tipo de Incidencia</h1></center>
 			<div class="container">
-				<button id="btn" onclick="abrirformulario();">Nuevo</button>
+				<button id="btn" onclick="habilitarcatin();">Nuevo</button>
 				<button id="btn" onclick="habilitarcatin();">Editar</button>
 				<button id="btn" onclick="();">Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
@@ -48,9 +48,9 @@
                                  
              </tr>
         </table><br /><br />
-			<label>Folio:</label> 
+			<label id="foliolabel">Folio:</label> 
 			<input type="text" value="" id="FolioInc" name="timepicker" size="30"/><br /><br />
-			<label>Tipo de la Incidencia:</label>
+			<label id="incidencialabel">Tipo de la Incidencia:</label>
 			<input type="text" value="" id="TipoInc" name="timepicker" size="30"/>
 			</div>
 		</div>

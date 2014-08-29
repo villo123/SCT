@@ -36,128 +36,195 @@
 	}
 	
 	function deshabilitaratutic(){
-		document.getElementsByName("idatendio").style.visibility="hidden";
-		document.getElementsByName("nameatendio").style.visibility="hidden";
-		document.getElementsByName("apellidopatatendio").style.visibility="hidden";
-		document.getElementsByName("apellidomatatendio").style.visibility="hidden";
-		document.getElementsByName("deptoatendio").style.visibility="hidden";
+		document.getElementById("idatendiotxt").style.visibility="hidden";
+		document.getElementById("nameatendiotxt").style.visibility="hidden";
+		document.getElementById("apellidopatatendiotxt").style.visibility="hidden";
+		document.getElementById("apellidomatatendiotxt").style.visibility="hidden";
+		document.getElementById("deptoatendiotxt").style.visibility="hidden";
+		document.getElementById("idatendiolabel").style.visibility="hidden";
+	    document.getElementById("nameatendiolabel").style.visibility="hidden";
+		document.getElementById("apellidopatatendiolabel").style.visibility="hidden";
+		document.getElementById("apellidomatatendiolabel").style.visibility="hidden";
+		document.getElementById("deptoatendiolabel").style.visibility="hidden";
 	}
 
 	function habilitaratutic(){
-		document.getElementsByName("idatendio").style.visibility="visible";
-		document.getElementsByName("nameatendio").style.visibility="visible";
-		document.getElementsByName("apellidopatatendio").style.visibility="visible";
-		document.getElementsByName("apellidomatatendio").style.visibility="visible";
-		document.getElementsByName("deptoatendio").style.visibility="visible";
+		document.getElementById("idatendiotxt").style.visibility="visible";
+		document.getElementById("nameatendiotxt").style.visibility="visible";
+		document.getElementById("apellidopatatendiotxt").style.visibility="visible";
+		document.getElementById("apellidomatatendiotxt").style.visibility="visible";
+		document.getElementById("deptoatendiotxt").style.visibility="visible";
+		document.getElementById("idatendiolabel").style.visibility="visible";
+	    document.getElementById("nameatendiolabel").style.visibility="visible";
+		document.getElementById("apellidopatatendiolabel").style.visibility="visible";
+		document.getElementById("apellidomatatendiolabel").style.visibility="visible";
+		document.getElementById("deptoatendiolabel").style.visibility="visible";
 	}
 	
 	function deshabilitarcatin(){
 		document.getElementById("FolioInc").style.visibility="hidden";
 		document.getElementById("TipoInc").style.visibility="hidden";
+		document.getElementById("foliolabel").style.visibility="hidden";
+		document.getElementById("incidencialabel").style.visibility="hidden";
 	}
 	
 	function habilitarcatin(){
 		document.getElementById("FolioInc").style.visibility="visible";
 		document.getElementById("TipoInc").style.visibility="visible";
+		document.getElementById("foliolabel").style.visibility="visible";
+		document.getElementById("incidencialabel").style.visibility="visible";
 	}
 	
 	function deshabilitarstatus(){
-		document.getElementsByName("idatendio").style.visibility="hidden";
-		document.getElementsByName("nameatendio").style.visibility="hidden";
+		document.getElementById("idatendiotxt").style.visibility="hidden";
+		document.getElementById("nameatendiotxt").style.visibility="hidden";
+		document.getElementById("idatendiolabel").style.visibility="hidden";
+		document.getElementById("nameatendiolabel").style.visibility="hidden";
+		
 	}
 	
 	function habilitarstatus(){
-		document.getElementsByName("idatendio").style.visibility="visible";
-		document.getElementsByName("nameatendio").style.visibility="visible";
+		document.getElementById("idatendiotxt").style.visibility="visible";
+		document.getElementById("nameatendiotxt").style.visibility="visible";
+		document.getElementById("idatendiolabel").style.visibility="visible";
+		document.getElementById("nameatendiolabel").style.visibility="visible";
 		
 	}
 	
 	function deshabilitarmodulo(){	
-		document.getElementsByName("idmodulo").style.visibility="hidden";
-		document.getElementsByName("modulo").style.visibility="hidden";
+		document.getElementById("idmodulolabel").style.visibility="hidden";
+		document.getElementById("modulolabel").style.visibility="hidden";
+		document.getElementById("idmodulotxt").style.visibility="hidden";
+		document.getElementById("modulotxt").style.visibility="hidden";
 	}
 	
 	function habilitarmodulo(){
-		document.getElementsByName("idmodulo").style.visibility="visible";
-		document.getElementsByName("modulo").style.visibility="visible";
+		document.getElementById("idmodulolabel").style.visibility="visible";
+		document.getElementById("modulolabel").style.visibility="visible";
+		document.getElementById("idmodulotxt").style.visibility="visible";
+		document.getElementById("modulotxt").style.visibility="visible";
 	}
 	
 	function deshabilitaroperutic(){
-		document.getElementsByName("UsuarioOpt").style.visibility="hidden";
-		document.getElementsByName("NumeroOpt").style.visibility="hidden";
-		document.getElementsByName("NombreOpt").style.visibility="hidden";
-		document.getElementsByName("ApellidoPatOpt").style.visibility="hidden";
-		document.getElementsByName("ApellidoMatOpt").style.visibility="hidden";
-		document.getElementsByName("DeptoOpt").style.visibility="hidden";
-		document.getElementsByName("EmailOpt").style.visibility="hidden";
-		document.getElementsByName("UnidadOpt").style.visibility="hidden";
+		document.getElementById("UsuarioOpt").style.visibility="hidden";
+		document.getElementById("NumeroOpt").style.visibility="hidden";
+		document.getElementById("NombreOpt").style.visibility="hidden";
+		document.getElementById("ApellidoPatOpt").style.visibility="hidden";
+		document.getElementById("ApellidoMatOpt").style.visibility="hidden";
+		document.getElementById("DeptoOpt").style.visibility="hidden";
+		document.getElementById("EmailOpt").style.visibility="hidden";
+		document.getElementById("UnidadOpt").style.visibility="hidden";
+		document.getElementById("UsuarioOptlabel").style.visibility="hidden";
+		document.getElementById("NumeroOptlabel").style.visibility="hidden";
+		document.getElementById("NombreOptlabel").style.visibility="hidden";
+		document.getElementById("ApellidoPatOptlabel").style.visibility="hidden";
+		document.getElementById("ApellidoMatOptlabel").style.visibility="hidden";
+		document.getElementById("DeptoOptlabel").style.visibility="hidden";
+		document.getElementById("EmailOptlabel").style.visibility="hidden";
+		document.getElementById("UnidadOptlabel").style.visibility="hidden";
 	}
 	
 	function habilitaroperutic(){
-		document.getElementsByName("UsuarioOpt").style.visibility="visible";
-		document.getElementsByName("NumeroOpt").style.visibility="visible";
-		document.getElementsByName("NombreOpt").style.visibility="visible";
-		document.getElementsByName("ApellidoPatOpt").style.visibility="visible";
-		document.getElementsByName("ApellidoMatOpt").style.visibility="visible";
-		document.getElementsByName("DeptoOpt").style.visibility="visible";
-		document.getElementsByName("EmailOpt").style.visibility="visible";
-		document.getElementsByName("UnidadOpt").style.visibility="visible";
+		document.getElementById("UsuarioOpt").style.visibility="visible";
+		document.getElementById("NumeroOpt").style.visibility="visible";
+		document.getElementById("NombreOpt").style.visibility="visible";
+		document.getElementById("ApellidoPatOpt").style.visibility="visible";
+		document.getElementById("ApellidoMatOpt").style.visibility="visible";
+		document.getElementById("DeptoOpt").style.visibility="visible";
+		document.getElementById("EmailOpt").style.visibility="visible";
+		document.getElementById("UnidadOpt").style.visibility="visible";
+		document.getElementById("UsuarioOptlabel").style.visibility="visible";
+		document.getElementById("NumeroOptlabel").style.visibility="visible";
+		document.getElementById("NombreOptlabel").style.visibility="visible";
+		document.getElementById("ApellidoPatOptlabel").style.visibility="visible";
+		document.getElementById("ApellidoMatOptlabel").style.visibility="visible";
+		document.getElementById("DeptoOptlabel").style.visibility="visible";
+		document.getElementById("EmailOptlabel").style.visibility="visible";
+		document.getElementById("UnidadOptlabel").style.visibility="visible";
 	}
 	
 	function deshabilitarproceso(){
-		document.getElementsByName("idproceso").style.visibility="hidden";
-		document.getElementsByName("proceso").style.visibility="hidden";
+		document.getElementById("idprocesotxt").style.visibility="hidden";
+		document.getElementById("procesotxt").style.visibility="hidden";
+		document.getElementById("idprocesolabel").style.visibility="hidden";
+		document.getElementById("procesolabel").style.visibility="hidden";
 	}
 	
 	function habilitarproceso(){
-		document.getElementsByName("idproceso").style.visibility="visible";
-		document.getElementsByName("proceso").style.visibility="visible";		
+		document.getElementById("idprocesotxt").style.visibility="visible";
+		document.getElementById("procesotxt").style.visibility="visible";
+		document.getElementById("idprocesolabel").style.visibility="visible";
+		document.getElementById("procesolabel").style.visibility="visible";
 	}
 	
 	function deshabilitarsistema(){
-		document.getElementsByName("idsistema").style.visibility="hidden";
-		document.getElementsByName("sistema").style.visibility="hidden";
+		document.getElementById("idsistematxt").style.visibility="hidden";
+		document.getElementById("sistematxt").style.visibility="hidden";
+		document.getElementById("idsistemalabel").style.visibility="hidden";
+		document.getElementById("sistemalabel").style.visibility="hidden";
 	}
 	
 	function habilitarsistema(){
-		document.getElementsByName("idsistema").style.visibility="visible";
-		document.getElementsByName("sistema").style.visibility="visible";
+		document.getElementById("idsistematxt").style.visibility="visible";
+		document.getElementById("sistematxt").style.visibility="visible";
+		document.getElementById("idsistemalabel").style.visibility="visible";
+		document.getElementById("sistemalabel").style.visibility="visible";
 	}
 	
 	function deshabilitartipoprio(){
-		document.getElementsByName("idtipodeprioridad").style.visibility="hidden";
-		document.getElementsByName("tipodeprioridad").style.visibility="hidden";
+		document.getElementById("idtipodeprioridadlabel").style.visibility="hidden";
+		document.getElementById("tipodeprioridadlabel").style.visibility="hidden";
+		document.getElementById("idtipodeprioridadtxt").style.visibility="hidden";
+		document.getElementById("tipodeprioridadtxt").style.visibility="hidden";
 	}
 	
 	function habilitartipoprio(){
-		document.getElementsByName("idtipodeprioridad").style.visibility="visible";
-		document.getElementsByName("tipodeprioridad").style.visibility="visible";
+		document.getElementById("idtipodeprioridadlabel").style.visibility="visible";
+		document.getElementById("tipodeprioridadlabel").style.visibility="visible";
+		document.getElementById("idtipodeprioridadtxt").style.visibility="visible";
+		document.getElementById("tipodeprioridadtxt").style.visibility="visible";
 		
 	}
 	function deshabilitartiposol(){
-		document.getElementsByName("idtipodesolucion").style.visibility="hidden";
-	    document.getElementsByName("tipodesolucion").style.visibility="hidden";
+		document.getElementById("idtipodesolucionlabel").style.visibility="hidden";
+	    document.getElementById("tipodesolucionlabel").style.visibility="hidden";
+		document.getElementById("idtipodesoluciontxt").style.visibility="hidden";
+	    document.getElementById("tipodesoluciontxt").style.visibility="hidden";
 	}
 	
 	function habilitartiposol(){
-		document.getElementsByName("idtipodesolucion").style.visibility="visible";
-	    document.getElementsByName("tipodesolucion").style.visibility="visible";
+		document.getElementById("idtipodesolucionlabel").style.visibility="visible";
+	    document.getElementById("tipodesolucionlabel").style.visibility="visible";
+		document.getElementById("idtipodesoluciontxt").style.visibility="visible";
+	    document.getElementById("tipodesoluciontxt").style.visibility="visible";
 	}
 	
 	function deshabilitarucat(){
-		document.getElementsByName("idusuariocat").style.visibility="hidden";
-	    document.getElementsByName("nameusuariocat").style.visibility="hidden";
-		document.getElementsByName("apellidousuariocat").style.visibility="hidden";
-		document.getElementsByName("apellidousuariocat").style.visibility="hidden";
-		document.getElementsByName("e-mailusuariocat").style.visibility="hidden";
-		document.getElementsByName("ciscousuariocat").style.visibility="hidden";
+		document.getElementById("idusuariocatlabel").style.visibility="hidden";
+	    document.getElementById("nameusuariocatlabel").style.visibility="hidden";
+		document.getElementById("apellidousuariocatlabel").style.visibility="hidden";
+		document.getElementById("apellidomatatendiolabel").style.visibility="hidden";
+		document.getElementById("e-mailusuariocatllabel").style.visibility="hidden";
+		document.getElementById("ciscousuariocatlabel").style.visibility="hidden";
+		document.getElementById("idusuariocattxt").style.visibility="hidden";
+	    document.getElementById("nameusuariocattxt").style.visibility="hidden";
+		document.getElementById("apellidousuariocattxt").style.visibility="hidden";
+		document.getElementById("apellidomatatendiotxt").style.visibility="hidden";
+		document.getElementById("e-mailusuariocattxt").style.visibility="hidden";
+		document.getElementById("ciscousuariocattxt").style.visibility="hidden";
 	}
 	
 	function habilitarucat(){
-		document.getElementsByName("idusuariocat").style.visibility="visible";
-	    document.getElementsByName("nameusuariocat").style.visibility="visible";
-		document.getElementsByName("apellidousuariocat").style.visibility="visible";
-		document.getElementsByName("apellidousuariocat").style.visibility="visible";
-		document.getElementsByName("e-mailusuariocat").style.visibility="visible";
-		document.getElementsByName("ciscousuariocat").style.visibility="visible";
+		document.getElementById("idusuariocatlabel").style.visibility="visible";
+	    document.getElementById("nameusuariocatlabel").style.visibility="visible";
+		document.getElementById("apellidousuariocatlabel").style.visibility="visible";
+		document.getElementById("apellidomatatendiolabel").style.visibility="visible";
+		document.getElementById("e-mailusuariocatllabel").style.visibility="visible";
+		document.getElementById("ciscousuariocatlabel").style.visibility="visible";
+		document.getElementById("idusuariocattxt").style.visibility="visible";
+	    document.getElementById("nameusuariocattxt").style.visibility="visible";
+		document.getElementById("apellidousuariocattxt").style.visibility="visible";
+		document.getElementById("apellidomatatendiotxt").style.visibility="visible";
+		document.getElementById("e-mailusuariocattxt").style.visibility="visible";
+		document.getElementById("ciscousuariocattxt").style.visibility="visible";
 	}
