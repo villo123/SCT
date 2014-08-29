@@ -13,7 +13,7 @@
 		<link rel="stykesheet" type="text/css" href="css/button.css" />
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link rel="stylesheet" type="text/css"href="css/calendario.css" />
-		<!--Script content-->
+		<!--Script contentd-->
 		<script type="text/javascript" src="js/master.js"></script>
 		<script type="text/javascript" src="js/calendar.js"></script>
 		<script type="text/javascript" src="js/calendar-es.js"></script>
