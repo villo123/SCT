@@ -17,10 +17,26 @@
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
-			<button id="btn">Editar</button>
-			<button id="btn">Guardar</button>
+			<button id="btn">Actualizar</button>
 			<button id="btn">Buscar</button>
 			<button id="btn">Cancelar</button>
+			
+			<select id="btn">
+				<option>Catálogos</option>
+				<option>Atendio Utic</option>
+				<option>Tipo de Incidencia</option>
+				<option>Tipo de Solución</option>
+				<option>Estatus</option>
+				<option>Modulo</option>
+				<option>Operador Utic</option>
+				<option>Proceso</option>
+				<option>Sistema</option>
+				<option>Tipo de Prioridad</option>
+				<option>Usuario Cat</option>
+			</select>
+			
+
+			
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	

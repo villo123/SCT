@@ -87,7 +87,7 @@ html{
 
 #btn{
     margin-top: 5px;
-    margin-right: 5px;
+    margin-right: 2px;
     text-decoration: none;
 	width:auto;
     font-size:x-small;
@@ -102,3 +102,18 @@ html{
 #btn:hover{
     background:#66CC33;
 }
+
+#btnn{
+    margin-top: 5px;
+    margin-left: 2px;
+    text-decoration: none;
+	width:auto;
+    font-size:x-small;
+    font-weight: bold;
+    font-family: verdana, arial, helvetica;
+    background:green;
+    color: #FFFFFF;
+    border: 1px inset #6699CC;
+    padding: .1em 1em;
+}
+
