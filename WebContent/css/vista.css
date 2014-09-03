@@ -103,11 +103,11 @@ html{
     background:#66CC33;
 }
 
-#btnn{
+#select{
     margin-top: 5px;
-    margin-left: 2px;
+    margin-left: 700px;
+    width: auto;
     text-decoration: none;
-	width:auto;
     font-size:x-small;
     font-weight: bold;
     font-family: verdana, arial, helvetica;

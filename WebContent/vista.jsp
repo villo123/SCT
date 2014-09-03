@@ -21,7 +21,7 @@
 			<button id="btn">Buscar</button>
 			<button id="btn">Cancelar</button>
 			
-			<select id="btn">
+			<select id="select">
 				<option>Catálogos</option>
 				<option onclick="atenutic();">Atendio Utic</option>
 				<option onclick="catinci();">Tipo de Incidencia</option>
@@ -33,10 +33,7 @@
 				<option onclick="sistema();">Sistema</option>
 				<option onclick="tipoprior();">Tipo de Prioridad</option>
 				<option onclick="uscat();">Usuario Cat</option>
-			</select>
-			
-
-			
+			</select>		
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
