@@ -8,9 +8,45 @@
 	}
 	
 	function seacker(){
-		buscar = open("busqueda.jsp");
+		buscar = open("Busqueda.jsp");
 	}
 	
+	function atenutic(){
+		abriratenutic = open("AtendioUTIC.jsp");
+	} 
+	
+	function catinci(){
+		abriratinci = open("CatTipoincidentias.jsp");
+	}
+	
+	function estatus(){
+		abrirestatus = open("Estatus.jsp");
+	}
+	
+	function modulo(){
+		abrirmodulo = open("Modulo.jsp");
+	}
+	function operutic(){
+		abriroperutic = open("OperadorUTIC.jsp");
+	}
+	function preceso(){
+		abrirproceso = open("Proceso.jsp");
+	}
+	function sistema(){
+		abrirsistema = open("Sistema.jsp");
+	}
+	function tipoprior(){
+		abrirtipoprior = open("TopoDePrioridad.jsp");
+	}
+	function tiposol(){
+		abrirtiposol = open("TipoDeSoluion");
+	}
+	function uscat(){
+		abriruscat = open("UsuarioCAT");
+	}
+	function vista(){
+		abrirvista = open("vista.jsp");
+	}
 //Login Script
 	function carga(){
 		document.getElementById("usuario").focus();
