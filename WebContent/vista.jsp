@@ -23,16 +23,16 @@
 			
 			<select id="btn">
 				<option>Catálogos</option>
-				<option>Atendio Utic</option>
-				<option>Tipo de Incidencia</option>
-				<option>Tipo de Solución</option>
-				<option>Estatus</option>
-				<option>Modulo</option>
-				<option>Operador Utic</option>
-				<option>Proceso</option>
-				<option>Sistema</option>
-				<option>Tipo de Prioridad</option>
-				<option>Usuario Cat</option>
+				<option onclick="atenutic();">Atendio Utic</option>
+				<option onclick="catinci();">Tipo de Incidencia</option>
+				<option onclick="tiposol();">Tipo de Solución</option>
+				<option onclick="estatus();">Estatus</option>
+				<option onclick="modulo();">Modulo</option>
+				<option onclick="operutic();">Operador Utic</option>
+				<option onclick="proceso();">Proceso</option>
+				<option onclick="sistema();">Sistema</option>
+				<option onclick="tipoprior();">Tipo de Prioridad</option>
+				<option onclick="uscat();">Usuario Cat</option>
 			</select>
 			
 

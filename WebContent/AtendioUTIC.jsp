@@ -38,10 +38,10 @@
 				<h1><center>Catálogo Atendio</center></h1>
 				<button id="btn" onclick="habilitaratutic();">Nuevo</button>
 				<button id="btn" onclick="habilitaratutic();">Editar</button>
-				<button id="btn" onclick="();">Guardar</button>
+				<button id="btn" >Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br/><br/>
-				<applet code="AutotableAtenUTIC.java" width="350" height="350"></applet><br/><br/>
+				<applet code="AutotableAtenUTIC.class" width="350" height="350"></applet><br/><br/>
 					<label id="idatendiolabel">ID:</label>
 					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
 					<label id="nameatendiolabel">Nombre:</label>

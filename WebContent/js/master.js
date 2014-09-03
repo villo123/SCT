@@ -12,37 +12,37 @@
 	}
 	
 	function atenutic(){
-		abriratenutic = open("AtendioUTIC.jsp");
+		abriratenutic = window.open("AtendioUTIC.jsp","Atendio Utic","width=auto,height=auto");
 	} 
 	
 	function catinci(){
-		abriratinci = open("CatTipoincidentias.jsp");
+		abriratinci = window.open("CatTipoIncidencias.jsp","Tipo de Incidencias","width=auto,height=auto");
 	}
 	
 	function estatus(){
-		abrirestatus = open("Estatus.jsp");
+		abrirestatus = window.open("Estatus.jsp","Estatus","width=auto,height=auto");
 	}
 	
 	function modulo(){
-		abrirmodulo = open("Modulo.jsp");
+		abrirmodulo = window.open("Modulo.jsp","Modulo","width=auto,height=auto");
 	}
 	function operutic(){
-		abriroperutic = open("OperadorUTIC.jsp");
+		abriroperutic = window.open("OperadorUTIC.jsp","Operador Utic","width=auto,height=auto");
 	}
-	function preceso(){
-		abrirproceso = open("Proceso.jsp");
+	function proceso(){
+		abrirproceso = window.open("Proceso.jsp","Proceso","width=auto,height=auto");
 	}
 	function sistema(){
-		abrirsistema = open("Sistema.jsp");
+		abrirsistema = window.open("Sistema.jsp","Sistema","width=auto,height=auto");
 	}
 	function tipoprior(){
-		abrirtipoprior = open("TopoDePrioridad.jsp");
+		abrirtipoprior = window.open("TipoDePrioridad.jsp","Tipo de Prioridad","width=auto,height=auto");
 	}
 	function tiposol(){
-		abrirtiposol = open("TipoDeSoluion");
+		abrirtiposol = open("TipoDeSolucion.jsp","Tipo de Solucion","width=auto,height=auto");
 	}
 	function uscat(){
-		abriruscat = open("UsuarioCAT");
+		abriruscat = open("UsuarioCAT.jsp","Usuario CAT","width=auto,height=auto");
 	}
 	function vista(){
 		abrirvista = open("vista.jsp");
