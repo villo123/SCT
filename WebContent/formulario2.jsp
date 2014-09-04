@@ -89,23 +89,6 @@
 						<input type="submit" value="Guardar" id="submit2"/>
 						<input type="submit" value="Cancelar" id="cancel2"/>
 						<%dba.liberarConexion(dba.getCt()); %>
-                
-                
-                
-                
-                                                          
-					
-
-					
-					
-
-					
-					
-
-
-				
-					
-
                 </div>
             </form></center>
 			</div>
