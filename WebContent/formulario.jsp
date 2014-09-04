@@ -167,33 +167,8 @@
 								<option value="<%=rsuc.getString(1)%>"><%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%>
 								</option><%}%>
 					</select><br />
-					
-                    
-					<label id="atenlabel">Atendido:</label>
-					<select name="atendio" id="atentxt">
-						<% ResultSet rsa = dba.getSt().executeQuery("SELECT CATAtendio.ildAtendio,CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno FROM PUB.CATAtendio");
-							while(rsa.next()){%>
-								<option value="<%=rsa.getString(1)%>">
-									<%=rsa.getString(2)+ " " + rsa.getString(3) + " " + rsa.getString(4)%>
-								</option><%}%>
-					</select>
 					<%dba.liberarConexion(dba.getCt());%>
-					<label id="fechantlabel">Fecha de atencion:</label>
-					<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd"/>
-					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion"/>
-                    <script type="text/javascript"> 
-						Calendar.setup({ 
-							inputField     :    "atencion",     // id del campo de texto 
-							ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
-							button     :    "lanzadoratencion"     // el id del botón que lanzará el calendario 
-						}); 
-					</script><br />
-					
-					<label id="atenalabel">Hora de atencion:</label>  	
-					<input type="text" value="00:00" id="atenatxt" name="timepickeratencion" /><br />
-					
-					<label id="atachylabel">Respuesta:</label>
-					<textarea rows="6" cols="45" name="respuesta" id="atachytxt"></textarea>
+				
                     <input type="submit" value="Guardar" id="submit"/>
 					<input type="submit" value="Cancelar" id="cancel"/>
                 </div>
