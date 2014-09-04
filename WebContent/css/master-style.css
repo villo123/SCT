@@ -918,6 +918,16 @@ a:hover .grad-button {
 	text-decoration: none;
 }
 
+#atachylabel3 {
+	position: absolute;
+	padding-left: 0px;
+	padding-top: 365px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
 #atachytxt {
 	position: absolute;
 	left: 150px;
@@ -932,6 +942,16 @@ a:hover .grad-button {
 	position: absolute;
 	left: 160px;
 	top: 188px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
+#atachytxt3 {
+	position: absolute;
+	left: 160px;
+	top: 490px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -961,7 +981,7 @@ a:hover .grad-button {
 	margin-top: 5px;
 	margin-right: 5px;
 	left: 100px;
-	top: 525px;
+	top: 590px;
 	position: absolute;
 	float: left;
 	text-decoration: none;
@@ -1005,7 +1025,7 @@ a:hover .grad-button {
 	margin-top: 5px;
 	margin-right: 5px;
 	left: 200px;
-	top: 525px;
+	top: 590px;
 	position: absolute;
 	float: left;
 	text-decoration: none;

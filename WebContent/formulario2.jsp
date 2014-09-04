@@ -89,6 +89,10 @@
 						<input type="submit" value="Guardar" id="submit2"/>
 						<input type="submit" value="Cancelar" id="cancel2"/>
 						<%dba.liberarConexion(dba.getCt()); %>
+						
+						<label id="atachylabel3">Comentario:</label>
+                		<textarea rows="6" cols="50" name="comentario" id="atachytxt3"></textarea>
+                		
                 </div>
             </form></center>
 			</div>
