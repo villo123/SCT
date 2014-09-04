@@ -54,7 +54,7 @@
 									}); 
 								</script><br>
 						<label id="atenalabel2">Hora de atencion:</label>  	
-						<input type="text" value="00:00" id="atenatxt2" name="timepickeratencion" /><br>
+						<input type="text" value="00:00" id="atenatxt2" name="horaatencion" /><br>
                 		<label id="atachylabel2">Respuesta:</label>
                 		<textarea rows="6" cols="50" name="respuesta" id="atachytxt2"></textarea>
                 		<label id="fechallamada">Fecha de la llamada:</label>
@@ -70,6 +70,25 @@
 								</script><br>
 								
 						<label id="horallamada">Hora de la llamada:</label> 
+						<input type="text" value="00:00" id="hllamada" name="horallamda"/><br>
+						
+						<label id="aprovylabel2">Aprobacion:</label>
+							<select name="aprobacion" id="aprovytxt2">
+								<option value="SI">SI</option>
+								<option value="NO">NO</option>
+							</select><br>
+							
+						<label id="estatuslabel2">Estatus:</label>
+							<select id="estatustxt2" name="estatus">
+								<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
+									while(rse.next()){%>
+								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>
+									<%}
+										%>
+							</select><br>
+						<input type="submit" value="Guardar" id="submit2"/>
+						<input type="submit" value="Cancelar" id="cancel2"/>
+						<%dba.liberarConexion(dba.getCt()); %>
                 
                 
                 
@@ -83,11 +102,10 @@
 					
 					
 
-				<%dba.liberarConexion(dba.getCt()); %>
+
 				
 					
-                    <input type="submit" value="Guardar" id="submit"/>
-					<input type="submit" value="Cancelar" id="cancel"/>
+
                 </div>
             </form></center>
 			</div>

@@ -411,10 +411,30 @@ a:hover .grad-button {
 	text-decoration: none;
 }
 
+#aprovytxt2 {
+	position: absolute;
+	left: 160px;
+	top: 405px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
 #aprovylabel {
 	position: absolute;
 	padding-left: 0px;
 	padding-top: 142px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
+#aprovylabel2 {
+	position: absolute;
+	padding-left: 0px;
+	padding-top: 315px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -501,6 +521,16 @@ a:hover .grad-button {
 	text-decoration: none;
 }
 
+#estatuslabel2 {
+	position: absolute;
+	padding-left: 0px;
+	padding-top: 345px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
 #estatustxt {
 	position: absolute;
 	left: 150px;
@@ -511,6 +541,15 @@ a:hover .grad-button {
 	text-decoration: none;
 }
 
+#estatustxt2 {
+	position: absolute;
+	left: 160px;
+	top: 453px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
 #prioridadlabel {
 	position: absolute;
 	padding-left: 0px;
@@ -712,7 +751,7 @@ a:hover .grad-button {
 #horallamada {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 300px;
+	padding-top: 282px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -733,6 +772,16 @@ a:hover .grad-button {
 	position: absolute;
 	left: 160px;
 	top: 140px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
+#hllamada {
+	position: absolute;
+	left: 160px;
+	top: 353px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -907,7 +956,29 @@ a:hover .grad-button {
 	padding: .1em 1em;
 }
 
+#submit2 {
+	margin-top: 5px;
+	margin-right: 5px;
+	left: 100px;
+	top: 525px;
+	position: absolute;
+	float: left;
+	text-decoration: none;
+	width: 60px;
+	font-size: xx-small;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica;
+	background: green;
+	color: #FFFFFF;
+	border: 1px inset #6699CC;
+	padding: .1em 1em;
+}
+
 #submit:hover {
+	background: #66CC33;
+}
+
+#submit2:hover {
 	background: #66CC33;
 }
 
@@ -929,6 +1000,28 @@ a:hover .grad-button {
 	padding: .1em 1em;
 }
 
+#cancel2 {
+	margin-top: 5px;
+	margin-right: 5px;
+	left: 200px;
+	top: 525px;
+	position: absolute;
+	float: left;
+	text-decoration: none;
+	width: 60px;
+	font-size: xx-small;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica;
+	background: green;
+	color: #FFFFFF;
+	border: 1px inset #6699CC;
+	padding: .1em 1em;
+}
+
 #cancel:hover {
+	background: #66CC33;
+}
+
+#cancel2:hover {
 	background: #66CC33;
 }
