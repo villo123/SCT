@@ -24,6 +24,21 @@ Vistas
 			<button id="btn">Guardar</button>
 			<button id="btn">Buscar</button>
 			<button id="btn">Cancelar</button>
+			
+			<select id="select">
+				<option>Catálogos</option>
+				<option onclick="atenutic();">Atendio Utic</option>
+				<option onclick="catinci();">Tipo de Incidencia</option>
+				<option onclick="tiposol();">Tipo de Solución</option>
+				<option onclick="estatus();">Estatus</option>
+				<option onclick="modulo();">Modulo</option>
+				<option onclick="operutic();">Operador Utic</option>
+				<option onclick="proceso();">Proceso</option>
+				<option onclick="sistema();">Sistema</option>
+				<option onclick="tipoprior();">Tipo de Prioridad</option>
+				<option onclick="uscat();">Usuario Cat</option>
+			</select>		
+			
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
