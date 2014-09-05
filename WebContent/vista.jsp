@@ -1,3 +1,6 @@
+Vistas
+
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="mx.gob.sct.utic.utils.html" %> 
@@ -17,23 +20,10 @@
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
-			<button id="btn">Actualizar</button>
+			<button id="btn">Editar</button>
+			<button id="btn">Guardar</button>
 			<button id="btn">Buscar</button>
 			<button id="btn">Cancelar</button>
-			
-			<select id="select">
-				<option>Catálogos</option>
-				<option onclick="atenutic();">Atendio Utic</option>
-				<option onclick="catinci();">Tipo de Incidencia</option>
-				<option onclick="tiposol();">Tipo de Solución</option>
-				<option onclick="estatus();">Estatus</option>
-				<option onclick="modulo();">Modulo</option>
-				<option onclick="operutic();">Operador Utic</option>
-				<option onclick="proceso();">Proceso</option>
-				<option onclick="sistema();">Sistema</option>
-				<option onclick="tipoprior();">Tipo de Prioridad</option>
-				<option onclick="uscat();">Usuario Cat</option>
-			</select>		
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
@@ -54,7 +44,6 @@
                  <td class="t">Observaciones</td>
                  <td class="t">Usuario UR</td>
                  <td class="t">Cisco</td>
-                 <td class="t">Centro SCT</td>
                  <td class="t">Departamento</td>
                  <td class="t">Modulo</td>
                  <td class="t">Proceso</td>
@@ -73,7 +62,7 @@
             	 String[] columnas = (String[])it.next();
             	 out.println("<tr>");
             	 for (int x=0;x<columnas.length;x++ ){
-            		 if(x>=7){
+            		 if(x>=0){
             			 out.println("<td>"+columnas[x]+"</td>");
             		 }
             	 }

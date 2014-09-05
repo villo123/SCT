@@ -143,39 +143,72 @@ public class html {
 			ct = d.getCt();
 			PreparedStatement ps2 = ct
 					.prepareStatement(
-							"SELECT * FROM PUB.Incidencia "
+							"SELECT Incidencia.Folio"
+							+ ", CATEstatus.NombreEstatus"
+							+ ", Incidencia.Prioridad "
+							+ ", Incidencia.FELab "
+							+ ", Incidencia.HELab"
+							+ ", CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAt.AMaterno "
+							+ ", CATUsuarioCAT.CiscoCat"
+							+ ", Incidencia.FAtencion"
+							+ ", Incidencia.HAtencion"
+							+ ", CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno "
+							+ ", CATUnidadResponsable.DescUR"
+							+ ", CATUsuarioUnidadResponsable.EmailUr"
+							//+ ", Comentario"
+						    + ", CATUsuarioUnidadResponsable.NombreResponsable"
+						    + ", CATUsuarioUnidadResponsable.CiscoUr"
+						    + ", CATDepartamento.NombreDepartamento"
+						    + ", CATModulo.NombreModulo "
+						    + ", CATProceso.Proceso"
+						    + ", CATTipoDeIncidente.NombreIncidente"
+						    + ", CATTipoDeSolucion.NombreSolucion"
+						    + ", CATSistema.NombreSistema"
+						   // + ", DocumentosIncidencia.Documento"
+						    
+																				
+							+ " FROM PUB.Incidencia "
+							
+                                    + "INNER JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
+                                  //  + "INNER JOIN PUB.DocumentosIncidencia ON Incidencia.ildDocIncidencia = DocumentosIncidencia.ildDocIncidencia "
+                                    + "INNER JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
+                                    + "INNER JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
+                                    + "INNER JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
+                                    + "INNER JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
 									+ "INNER JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
 									+ "INNER JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
 									+ "INNER JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
 									+ "INNER JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
 									+ "INNER JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
 									+ "INNER JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable");
+			                        
+			                        
 			rs = ps2.executeQuery();
 			while (rs.next()) {
-				String[] campos = new String[42];
+				String[] campos = new String[22];
 				campos[0] = rs.getString(1);
 				campos[1] = rs.getString(2);
 				campos[2] = rs.getString(3);
 				campos[3] = rs.getString(4);
 				campos[4] = rs.getString(5);
-				campos[5] = rs.getString(6);
-				campos[6] = rs.getString(7);
-				campos[7] = rs.getString(8);
-				campos[8] = rs.getString(9);
-				campos[9] = rs.getString(10);
-				campos[10] = rs.getString(11);
-				campos[11] = rs.getString(12);
-				campos[12] = rs.getString(13);
-				campos[13] = rs.getString(14);
-				campos[14] = rs.getString(15);
-				campos[15] = rs.getString(16);
-				campos[16] = rs.getString(17);
-				campos[17] = rs.getString(18);
-				campos[18] = rs.getString(19);
-				campos[19] = rs.getString(20);
-				campos[20] = rs.getString(21);
-				campos[21] = rs.getString(22);
-				campos[22] = rs.getString(23);
+				campos[5] = rs.getString(6)+ " " + rs.getString(7) + " " + rs.getString(8);
+				campos[6] = rs.getString(9);
+				campos[7] = rs.getString(10);
+			    campos[8] = rs.getString(11);
+				campos[9] = rs.getString(12)+ " " + rs.getString(13) + " " + rs.getString(14);
+				campos[10] = rs.getString(15);
+				campos[11] = rs.getString(16);
+				//campos[12] = rs.getString(17);
+				campos[13] = rs.getString(17);
+				campos[14] = rs.getString(18);
+				campos[15] = rs.getString(19);
+				campos[16] = rs.getString(20);
+				campos[17] = rs.getString(21);
+				campos[18] = rs.getString(22);
+				campos[19] = rs.getString(23);
+				campos[20] = rs.getString(24);
+				//campos[21] = rs.getString(25);
+				/*campos[22] = rs.getString(23);
 				campos[23] = rs.getString(24);
 				campos[24] = rs.getString(25);
 				campos[25] = rs.getString(26);
@@ -195,10 +228,10 @@ public class html {
 				campos[39] = rs.getString(40);
 				campos[40] = rs.getString(41);
 				campos[41] = rs.getString(42);
-			
+			*/
 				registros.add(campos);
 				
-				System.out.println(rs.getString(1) + " " + rs.getString(2)
+				/*System.out.println(rs.getString(1) + " " + rs.getString(2)
 						+ " " + rs.getString(3) + " " + rs.getString(4) + " "
 						+ rs.getString(5) + " " + rs.getString(6) + " "
 						+ rs.getString(7) + " " + rs.getString(8) + " "
@@ -218,7 +251,7 @@ public class html {
 						+ rs.getString(35) + " " + rs.getString(36) + " "
 						+ rs.getString(37) + " " + rs.getString(38) + " "
 						+ rs.getString(39) + " " + rs.getString(40) + " "
-						+ rs.getString(41) + " " + rs.getString(42));
+						+ rs.getString(41) + " " + rs.getString(42));*/
 			}
 		} catch (SQLException e) {
 			// System.out.println("No se pudo insertar");
