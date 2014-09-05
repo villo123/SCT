@@ -115,17 +115,17 @@ public class InsertarFormulario extends HttpServlet {
 		String UsuarioCAT = request.getParameter("usuariocat");
 		caturcat.setildUsuarioCat(Integer.parseInt(UsuarioCAT));
 
-		CATAtendio catate = new CATAtendio();
+		/*CATAtendio catate = new CATAtendio();
 		String atendio = request.getParameter("atendio");
-		catate.setildAtendio(Integer.parseInt(atendio));
+		catate.setildAtendio(Integer.parseInt(atendio));*/
 		
-		String FAtencion = request.getParameter("fechaatencion");
+	/*	String FAtencion = request.getParameter("fechaatencion");
 		java.sql.Date fechaatencion =java.sql.Date.valueOf(FAtencion);
-		inc.setFAtencion(fechaatencion);
+		inc.setFAtencion(fechaatencion);*/
 			
-		String HAtencion = request.getParameter("timepickeratencion");
+		/*String HAtencion = request.getParameter("timepickeratencion");
 		java.sql.Time horatencion = java.sql.Time.valueOf(HAtencion+":00");
-		inc.setHAtencion(horatencion);
+		inc.setHAtencion(horatencion);*/
 
 		//Archivo
 	
@@ -160,7 +160,7 @@ public class InsertarFormulario extends HttpServlet {
 			
 			
 	        psi = d.getCt().prepareStatement("INSERT INTO PUB.Incidencia (ildIncidencia,ildSistema,"
-	        		+ "ildAtendio,"
+	        		/*+ "ildAtendio,"*/
 	        		+ "ildDepartamento,"
 	        		+ "ildEstatus,"
 	        		+ "ildTipoDeSolucion,"
@@ -177,34 +177,34 @@ public class InsertarFormulario extends HttpServlet {
 	        		+ "Prioridad,"
 	        		+ "FELab,"
 	        		+ "HELab,"
-	        		+ "FAtencion,"
-	        		+ "HAtencion,"
-	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");
+	        	/*	+ "FAtencion,"*/
+	        	/*	+ "HAtencion,"*/
+	        		+ "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ");
 	        
 	       psi.setString(1, Integer.toString(inc.getildIncidencia()));
 	       // psi.setString(1, "1");
 	        psi.setString(2, "1"); 
-	        psi.setString(3, Integer.toString(catate.getildAtendio()));
-	        psi.setString(4, Integer.toString(catdep.getildDepartamento()));
-	        psi.setString(5, Integer.toString(cates.getildEstatus()));
-	        psi.setString(6, Integer.toString(cattipsol.getildTipoDeSolucion()));
-	        psi.setString(7, Integer.toString(catur.getildUnidadAdmin()));
-	        psi.setString(8, Integer.toString(caturcat.getildUsuarioCat()));
-	        psi.setString(9, Integer.toString(cattipin.getildIncidente()));
-	        psi.setString(10, Integer.toString(catmod.getildModulo()));
-	        psi.setString(11,Integer.toString(catpro.getildProceso()));
-	        psi.setString(12, Integer.toString(catusunr.getidUsuarioResponsable()));
+	        /*psi.setString(3, Integer.toString(catate.getildAtendio()));*/
+	        psi.setString(3, Integer.toString(catdep.getildDepartamento()));
+	        psi.setString(4, Integer.toString(cates.getildEstatus()));
+	        psi.setString(5, Integer.toString(cattipsol.getildTipoDeSolucion()));
+	        psi.setString(6, Integer.toString(catur.getildUnidadAdmin()));
+	        psi.setString(7, Integer.toString(caturcat.getildUsuarioCat()));
+	        psi.setString(8, Integer.toString(cattipin.getildIncidente()));
+	        psi.setString(9, Integer.toString(catmod.getildModulo()));
+	        psi.setString(10,Integer.toString(catpro.getildProceso()));
+	        psi.setString(11, Integer.toString(catusunr.getidUsuarioResponsable()));
 	        //psi.setString(12, "1");
-	        psi.setString(13, inc.getFolio());
-	        psi.setString(14, inc.getAprobado());
-	        psi.setDate(15, (java.sql.Date)inc.getFechaAprobacion());
-	        psi.setString(16, inc.getDescripcionIncidencia());
-	        psi.setString(17 ,inc.getPrioridad());
-	        psi.setDate(18, (java.sql.Date)inc.getFELab());
-	        psi.setTime(19, (java.sql.Time)inc.getHELab());            
-	        psi.setDate(20, (java.sql.Date)inc.getFAtencion());
-	        psi.setTime(21,(java.sql.Time) inc.getHAtencion());
-	        psi.setString(22, inc.getRespuestaUtic());
+	        psi.setString(12, inc.getFolio());
+	        psi.setString(13, inc.getAprobado());
+	        psi.setDate(14, (java.sql.Date)inc.getFechaAprobacion());
+	        psi.setString(15, inc.getDescripcionIncidencia());
+	        psi.setString(16 ,inc.getPrioridad());
+	        psi.setDate(17, (java.sql.Date)inc.getFELab());
+	        psi.setTime(18, (java.sql.Time)inc.getHELab());            
+	       /* psi.setDate(19, (java.sql.Date)inc.getFAtencion());
+	        psi.setTime(20,(java.sql.Time) inc.getHAtencion());*/
+	        psi.setString(19, inc.getRespuestaUtic());
 	        
 	        
 	        psu = d.getCt().prepareStatement("INSERT INTO PUB.CATUsuarioUnidadResponsable (idUsuarioResponsable,ildUnidadAdmin,"
