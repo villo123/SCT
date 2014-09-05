@@ -47,7 +47,7 @@ Vistas
                  <td class="t">Departamento</td>
                  <td class="t">Modulo</td>
                  <td class="t">Proceso</td>
-                 <td class="t">Tipo de Incidente</td>
+                 <td class="t">Tipo d1982e Incidente</td>
                  <td class="t">Tipo de Solución</td>
                  <td class="t">Sistema</td>
                  <td class="t">Formato</td>

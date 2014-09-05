@@ -155,7 +155,7 @@ public class html {
 							+ ", CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno "
 							+ ", CATUnidadResponsable.DescUR"
 							+ ", CATUsuarioUnidadResponsable.EmailUr"
-							//+ ", Comentario"
+							+ ", Incidencia.DescripcionIncidencia"
 						    + ", CATUsuarioUnidadResponsable.NombreResponsable"
 						    + ", CATUsuarioUnidadResponsable.CiscoUr"
 						    + ", CATDepartamento.NombreDepartamento"
@@ -170,7 +170,7 @@ public class html {
 							+ " FROM PUB.Incidencia "
 							
                                     + "INNER JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
-                                  //  + "INNER JOIN PUB.DocumentosIncidencia ON Incidencia.ildDocIncidencia = DocumentosIncidencia.ildDocIncidencia "
+                                    //+ "INNER JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
                                     + "INNER JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
                                     + "INNER JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
                                     + "INNER JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
@@ -198,7 +198,7 @@ public class html {
 				campos[9] = rs.getString(12)+ " " + rs.getString(13) + " " + rs.getString(14);
 				campos[10] = rs.getString(15);
 				campos[11] = rs.getString(16);
-				//campos[12] = rs.getString(17);
+				campos[12] = rs.getString(17);
 				campos[13] = rs.getString(17);
 				campos[14] = rs.getString(18);
 				campos[15] = rs.getString(19);
