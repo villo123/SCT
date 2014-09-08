@@ -167,10 +167,58 @@
 								<option value="<%=rsuc.getString(1)%>"><%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%>
 								</option><%}%>
 					</select><br />
+					<label id="atenlabel">Atendido:</label>
+                		<select name="atendio" id="atentxt">
+						<% ResultSet rsa = dba.getSt().executeQuery("SELECT CATAtendio.ildAtendio,CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno FROM PUB.CATAtendio");
+							while(rsa.next()){%>
+								<option value="<%=rsa.getString(1)%>">
+									<%=rsa.getString(2)+ " " + rsa.getString(3) + " " + rsa.getString(4)%>
+								</option><%}%>
+						</select>
+						<label id="fechantlabel">Fecha de atencion:</label>
+						<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd"/>
+							<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion2"/>
+                   				 <script type="text/javascript"> 
+										Calendar.setup({ 
+										inputField     :    "atencion2",     // id del campo de texto 
+										ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
+										button     :    "lanzadoratencion2"     // el id del botón que lanzará el calendario 
+									}); 
+								</script><br>
+						<label id="atenalabel">Hora de atencion:</label>  	
+						<input type="text" value="00:00" id="atenatxt" name="horaatencion" /><br>
+                		<label id="atachylabel">Respuesta:</label>
+                		<textarea rows="6" cols="50" name="respuesta" id="atachytxt"></textarea>
+                		<label id="fechallamada">Fecha de la llamada:</label>
+                		
+                		<input type="text" name="fechadellamada" id="fellamada" value="yyyy-mm-dd"/>
+							<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha de llamada" id="lanzadorfllamada"/>
+                   				 <script type="text/javascript"> 
+										Calendar.setup({ 
+										inputField     :    "fellamada",     // id del campo de texto 
+										ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
+										button     :    "lanzadorfllamada"     // el id del botón que lanzará el calendario 
+									}); 
+								</script><br>
+								
+						<label id="horallamada">Hora de la llamada:</label> 
+						<input type="text" value="00:00" id="hllamada" name="horallamda"/><br>
+																		
+						<label id="estatuslabel2">Estatus:</label>
+							<select id="estatustxt2" name="estatus">
+								<% ResultSet rse2 = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
+									while(rse2.next()){%>
+								<option value="<%=rse2.getString(1)%>"><%=rse2.getString(2)%></option>
+									<%}
+										%>
+							</select><br>
+							
+							<label id="atachylabel2">Comentario:</label>
+                		<textarea rows="6" cols="50" name="comentario" id="atachytxt3"></textarea>
 					<%dba.liberarConexion(dba.getCt());%>
 				
                     <input type="submit" value="Guardar" id="submit"/>
-					<input type="submit" value="Cancelar" id="cancel"/>
+					<input type="submit" value="Cancelar" id="cancel"/> 
                 </div>
             </form></center>
 			</div>

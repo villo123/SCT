@@ -10,7 +10,7 @@
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link href="css/calendario.css" type="text/css" rel="stylesheet">
 		<script src="js/calendar.js" type="text/javascript"></script>
-		<script src="js/calendar-es.js" type="text/javascript"></script>
+		<script src="js/calendar-es.js" type="text/javascript"></script>c
 		<script src="js/calendar-setup.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
