@@ -42,7 +42,8 @@ h1 {
 	left: 50%;
 	background-color: white;
 	width: 827px;
-	min-height: 100%;
+	/*min-height: 100%;*/
+	height: 1350px;
 	padding: 10px 20px;
 	text-align: left;
 	-moz-box-shadow: 0px 0px 3px #000;
@@ -524,7 +525,7 @@ a:hover .grad-button {
 #estatuslabel2 {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 640px;
+	padding-top: 650px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -543,7 +544,7 @@ a:hover .grad-button {
 
 #estatustxt2 {
 	position: absolute;
-	left: 160px;
+	left: 150px;
 	top: 1105px;
 	font-size: 11px;
 	font-weight: normal;
@@ -780,7 +781,7 @@ a:hover .grad-button {
 
 #hllamada {
 	position: absolute;
-	left: 160px;
+	left: 150px;
 	top: 965px;
 	font-size: 11px;
 	font-weight: normal;
@@ -850,7 +851,7 @@ a:hover .grad-button {
 
 #atencion2 {
 	position: absolute;
-	left: 160px;
+	left: 150px;
 	top: 90px;
 	font-size: 11px;
 	font-weight: normal;
@@ -860,7 +861,7 @@ a:hover .grad-button {
 
 #fellamada {
 	position: absolute;
-	left: 160px;
+	left: 150px;
 	top: 925px;
 	font-size: 11px;
 	font-weight: normal;
@@ -911,7 +912,7 @@ a:hover .grad-button {
 #atachylabel2 {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 505px;
+	padding-top: 555px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -950,7 +951,7 @@ a:hover .grad-button {
 
 #atachytxt3 {
 	position: absolute;
-	left: 160px;
+	left: 150px;
 	top: 1000px;
 	font-size: 11px;
 	font-weight: normal;
@@ -963,7 +964,7 @@ a:hover .grad-button {
 	margin-top: 5px;
 	margin-right: 5px;
 	left: 100px;
-	top: 1140px;
+	top: 1150px;
 	position: absolute;
 	float: left;
 	text-decoration: none;
@@ -1007,7 +1008,7 @@ a:hover .grad-button {
 	margin-top: 5px;
 	margin-right: 5px;
 	left: 200px;
-	top: 1140px;
+	top: 1150px;
 	position: absolute;
 	float: left;
 	text-decoration: none;

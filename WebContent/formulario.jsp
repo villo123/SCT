@@ -212,8 +212,8 @@
 										%>
 							</select><br>
 							
-							<label id="atachylabel2">Comentario:</label>
-                		<textarea rows="6" cols="50" name="comentario" id="atachytxt3"></textarea>
+							<label id="atachylabel2">Comentario Llamada:</label>
+                		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3"></textarea>
 					<%dba.liberarConexion(dba.getCt());%>
 				
                     <input type="submit" value="Guardar" id="submit"/>
