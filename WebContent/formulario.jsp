@@ -128,7 +128,7 @@
 				<textarea id="insidenttxt" rows="6" cols="45" name="descripcionincidencia"></textarea><br/>
 				
 				<label id="estatuslabel">Estatus:</label>
-				<select id="estatustxt" name="estatus">
+				<select id="estatustxt" name="estatus1">
 					<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
 							while(rse.next()){%>
 								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>

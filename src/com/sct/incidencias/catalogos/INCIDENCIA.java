@@ -29,6 +29,33 @@ public class INCIDENCIA implements Serializable{
 	private int ildEstatus;
 	private int ildDepartamento;
 	private int ildAtendio;
+	private Date FLlamada;
+	private Date HLlamada;
+	private String ComLlamada;
+	
+	public String getComLlamada(){
+		return ComLlamada;
+	}
+	
+	public void setComLlamada(String ComLlamada){
+		this.ComLlamada = ComLlamada;
+	}
+	
+	public Date getHLlamada(){
+		return HLlamada;
+	}
+	
+	public void setHLlamada(Date HLlamada){
+		this.HLlamada = HLlamada;
+	}
+	public Date getFLlamada(){
+		return FLlamada;
+	}
+	
+	public void setFLlamada(Date FLlamada){
+		this.FLlamada = FLlamada;
+	}
+	
 	
 	public int getildAtendio(){
 		return ildAtendio;
