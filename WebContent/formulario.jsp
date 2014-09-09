@@ -6,7 +6,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-	
+	<!-- HOLA -->
 		<link rel="stylesheet" type="text/css" href="css/master-style.css"/> 
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
