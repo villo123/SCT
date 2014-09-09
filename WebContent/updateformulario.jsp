@@ -37,16 +37,19 @@
             <center><form method="POST" action="InsertarFormulario">
                 <div id="loginForm">
                     <label id="foliolabel">Folio:</label>
-                    <input id="foliotxt" type="text" name="folio" value="" size="30"/><br/>
+                    <%String valor = request.getParameter("foliolabel"); %>
+                    <input disabled="true" id="foliotxt" type="text" name="folio" size="30" value="<%=valor%>"/><br/>
                     
                     <label id="nombrelabel">Nombre:</label>
-                    <input id="nombretxt" type="text" name="nombreur" value="" size="30"/><br/>
+                    <input disabled="true" id="nombretxt" type="text" name="nombreur" value="" size="30"/><br/>
                     
                     <label id="passwdconflabel">Apellido Paterno:</label>
-                    <input id="passwdconftxt" type="text" name="APur" value="" size="30"/><br/>
+                    <input disabled="true"id="passwdconftxt" type="text" name="APur" value="" size="30"/><br/>
                     
                     <label id="pnomlabel">Apellido Materno:</label>
-                    <input id="pnomtxt" type="text" name="AMur" value="" size="30"/><br/>
+                    <input disabled="true" id="pnomtxt" type="text" name="AMur" value="" size="30"/><br/>
+                    
+                    
                     
                     <label id="snomlabel">CISCO:</label>
                     <input id="snomtxt" type=text name="ciscour" value="" size="30"/><br/>
@@ -213,7 +216,7 @@
 							</select><br>
 							
 							<label id="atachylabel2">Comentario Llamada:</label>
-                		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3" disabled="true"></textarea>
+                		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3" ></textarea>
 					<%dba.liberarConexion(dba.getCt());%>
 				
                     <input type="submit" value="Guardar" id="submit"/>

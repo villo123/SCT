@@ -78,8 +78,13 @@
             	 out.println("<tr>");
             	 for (int x=0;x<columnas.length;x++ ){
             		 if(x>=0){
-            			 out.println("<td>"+columnas[x]+"</td>");
+            			 if(x==0){
+            				 out.println("<td><a href=\"./updateformulario.jsp?foliolabel="+columnas[x]+"\">"+columnas[x]+"</a></td>");
+            			 }else{
+            				 out.println("<td>"+columnas[x]+"</td>");
+            			 } 
             		 }
+            		 
             	 }
             	 out.println("</tr>");
              }
