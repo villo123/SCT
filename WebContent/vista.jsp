@@ -63,6 +63,9 @@
                  <td class="t">Tipo de Solución</td>
                  <td class="t">Sistema</td>
                  <td class="t">Formato</td>
+                 <td class="t">Fecha de la llamada</td>
+                 <td class="t">Hora de la llamada</td>
+                 <td class="t">Comentario llamda</td>
              </tr>
              
              <% 

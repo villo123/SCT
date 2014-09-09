@@ -185,7 +185,7 @@ public class html {
 			                        
 			rs = ps2.executeQuery();
 			while (rs.next()) {
-				String[] campos = new String[22];
+				String[] campos = new String[25];
 				campos[0] = rs.getString(1);
 				campos[1] = rs.getString(2);
 				campos[2] = rs.getString(3);
