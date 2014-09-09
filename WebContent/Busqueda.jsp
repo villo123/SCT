@@ -21,51 +21,53 @@
 				<label id="Foliolabel">Folio:</label>
 				<input type="Text" name="camposelector" id="Foliotxt" size="30" />
 				
-				
-				<label id="Unitlabel">Por Unidad Administrativa:</label>
-				<select name="camposelector" id="Unittxt" size="30" >
+				<label id="Unitlabel">Unidad Administrativa:</label>
+                    <select id="Unittxt" name="unidadresponsable">
                     	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdmin,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
 							while(rsu.next()){%>
 								<option value="<%=rsu.getString(1)%>"><%=rsu.getString(2)%></option>
 							<%}%>
-					</select>
+					</select><br />
 				
 				
-				<label id="Estatuslabel">Estatus Incidencia:</label>
-				<select name="camposelector" id="Estatustxt" size="30">
+				<label id="Estatuslabel">Estatus:</label>
+				<select id="Estatustxt" name="estatus">
 					<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
 							while(rse.next()){%>
 								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>
 								<%}
 									%>
-				</select>
+				</select><br />
 				
-				<label id="Tipolabel">Tipo de Solución:</label>
-		 		<select name="camposelector" id="Tipotxt" size="30">
+				<label id="Tipolabel">Tipo de solucion:</label>
+					<select name="camposelector" id="Tipotxt">
 						<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.ildTipoDeSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
 							while(rss.next()){%>
 								<option value="<%=rss.getString(1)%>">
 									<%=rss.getString(2)%>
 								</option><%}
 								%>
-					</select>
+					</select><br />
 				
 				
 				<label id="Modulolabel">Modulo:</label>
-				<select name="camposelector" id="Modulotxt" size="30" >
+					<select id="Modulotxt" class="nactxt" name="camposelector">
 						<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
 							while(rsm.next()){%>
 								<option value="<%=rsm.getString(1)%>"><%=rsm.getString(2)%></option>
 							<%}%>
-					</select>
+					</select><br />
 				
 				
-				<label id="Sublabel">Submodulo:</label>
-				<input type="Text" name="camposelector" id="Subtxt" size="30" />
-				
-				
-				<label id="Sistlabel">Sistema:</label>
-		 		<input type="Text" name="camposelector" id="Sisttxt" size="30" />
+				<label id="Sublabe">Proceso:</label>
+					<select name="camposelector" id="Subtxt">
+						<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.ildProceso,CATProceso.Proceso FROM PUB.CATProceso");
+							while(rsp.next()){%>
+								<option value="<%=rsp.getString(1)%>"><%=rsp.getString(2)%></option>
+								<%}%>
+					</select><br />
+					
+					
 				
 				
 				<input type="button" name="enviar" value="Filtrar" id="btnSubmit" />
