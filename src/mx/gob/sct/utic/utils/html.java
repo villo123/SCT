@@ -165,6 +165,9 @@ public class html {
 						    + ", CATTipoDeSolucion.NombreSolucion"
 						    + ", CATSistema.NombreSistema"
 						   // + ", DocumentosIncidencia.Documento"
+						    + ", Incidencia.FLlamada"
+						    + ", Incidencia.HLlamada"
+						    + ", Incidencia.ComLlamada"
 						    
 																				
 							+ " FROM PUB.Incidencia "
@@ -207,11 +210,11 @@ public class html {
 				campos[18] = rs.getString(23);
 				campos[19] = rs.getString(24);
 				campos[20] = rs.getString(25);
-				//campos[21] = rs.getString(25);
-				/*campos[22] = rs.getString(23);
-				campos[23] = rs.getString(24);
-				campos[24] = rs.getString(25);
-				campos[25] = rs.getString(26);
+				//campos[21] = rs.getString(26);
+				campos[22] = rs.getString(26);
+				campos[23] = rs.getString(27);
+				campos[24] = rs.getString(28);
+				/*campos[25] = rs.getString(26);
 				campos[26] = rs.getString(27);
 				campos[27] = rs.getString(28);
 				campos[28] = rs.getString(29);
