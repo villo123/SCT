@@ -156,7 +156,7 @@ public class html {
 							+ ", CATUnidadResponsable.DescUR"
 							+ ", CATUsuarioUnidadResponsable.EmailUr"
 							+ ", Incidencia.DescripcionIncidencia"
-						    + ", CATUsuarioUnidadResponsable.NombreResponsable"
+						    + ", CATUsuarioUnidadResponsable.NombreResponsable,CATUsuarioUnidadResponsable.APaterno,CATUsuarioUnidadResponsable.AMaterno"
 						    + ", CATUsuarioUnidadResponsable.CiscoUr"
 						    + ", CATDepartamento.NombreDepartamento"
 						    + ", CATModulo.NombreModulo "
@@ -202,18 +202,18 @@ public class html {
 				campos[10] = rs.getString(15);
 				campos[11] = rs.getString(16);
 				campos[12] = rs.getString(17);
-				campos[13] = rs.getString(18);
-				campos[14] = rs.getString(19);
-				campos[15] = rs.getString(20);
-				campos[16] = rs.getString(21);
-				campos[17] = rs.getString(22);
-				campos[18] = rs.getString(23);
-				campos[19] = rs.getString(24);
-				campos[20] = rs.getString(25);
-				//campos[21] = rs.getString(26);
-				campos[22] = rs.getString(26);
-				campos[23] = rs.getString(27);
-				campos[24] = rs.getString(28);
+				campos[13] = rs.getString(18)+ " " + rs.getString(19) + " " + rs.getString(20);
+				campos[14] = rs.getString(21);
+				campos[15] = rs.getString(22);
+				campos[16] = rs.getString(23);
+				campos[17] = rs.getString(24);
+				campos[18] = rs.getString(25);
+				campos[19] = rs.getString(26);
+				campos[20] = rs.getString(27);
+				//campos[21] = rs.getString(28);
+				campos[22] = rs.getString(28);
+				campos[23] = rs.getString(29);
+				campos[24] = rs.getString(30);
 				/*campos[25] = rs.getString(26);
 				campos[26] = rs.getString(27);
 				campos[27] = rs.getString(28);
