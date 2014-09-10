@@ -76,18 +76,18 @@
 																					
 								+ " FROM PUB.Incidencia "
 								
-	                                    + "INNER JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
-	                                    //+ "INNER JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
-	                                    + "INNER JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
-	                                    + "INNER JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
-	                                    + "INNER JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
-	                                    + "INNER JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
-										+ "INNER JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
-										+ "INNER JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
-										+ "INNER JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
-										+ "INNER JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
-										+ "INNER JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
-										+ "INNER JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable"  
+	                                    + "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
+	                                    //+ "LEFT JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
+	                                    + "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
+	                                    + "LEFT JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
+	                                    + "LEFT JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
+	                                    + "LEFT JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
+										+ "LEFT JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
+										+ "LEFT JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
+										+ "LEFT JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
+										+ "LEFT JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
+										+ "LEFT JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
+										+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable"  
 										+ " WHERE Incidencia.Folio = '"+valor+"'");
 							while(rset.next()){
 								 nombre = rset.getString("NombreResponsable");
@@ -131,7 +131,7 @@
                     <label id="esplabel">Departamento:</label>
                     <select name="departamento" id="esptxt">
 						<%
-						String SQL1 = "SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento where  CATDepartamento.ildDepartamento= "+ildDepartamento; 
+						String SQL1 = "SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento where  CATDepartamento.ildDepartamento = "+ildDepartamento; 
 						ResultSet rsd = dba.getSt().executeQuery(SQL1);
 							while(rsd.next()){%>
 								<option value="<%=rsd.getString(1)%>"><%=rsd.getString(2)%></option>

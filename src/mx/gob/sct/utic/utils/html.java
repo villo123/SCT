@@ -152,7 +152,7 @@ public class html {
 							+ ", CATUsuarioCAT.CiscoCat"
 							+ ", Incidencia.FAtencion"
 							+ ", Incidencia.HAtencion"
-							+ ", CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno "
+							//+ ", CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno "
 							+ ", CATUnidadResponsable.DescUR"
 							+ ", CATUsuarioUnidadResponsable.EmailUr"
 							+ ", Incidencia.DescripcionIncidencia"
@@ -162,7 +162,7 @@ public class html {
 						    + ", CATModulo.NombreModulo "
 						    + ", CATProceso.Proceso"
 						    + ", CATTipoDeIncidente.NombreIncidente"
-						    + ", CATTipoDeSolucion.NombreSolucion"
+						   // + ", CATTipoDeSolucion.NombreSolucion"
 						    + ", CATSistema.NombreSistema"
 						   // + ", DocumentosIncidencia.Documento"
 						    + ", Incidencia.FLlamada"
@@ -172,18 +172,18 @@ public class html {
 																				
 							+ " FROM PUB.Incidencia "
 							
-                                    + "INNER JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
-                                    //+ "INNER JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
-                                    + "INNER JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
-                                    + "INNER JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
-                                    + "INNER JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
-                                    + "INNER JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
-									+ "INNER JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
-									+ "INNER JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
-									+ "INNER JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
-									+ "INNER JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
-									+ "INNER JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
-									+ "INNER JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable");
+                                    + "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
+                                    //+ "LEFT JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
+                                   // + "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
+                                    + "LEFT JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
+                                    + "LEFT JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
+                                    //+ "LEFT JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
+									+ "LEFT JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
+									+ "LEFT JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
+									+ "LEFT JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
+									+ "LEFT JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
+									+ "LEFT JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
+									+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable");
 			                        
 			                        
 			rs = ps2.executeQuery();
@@ -198,22 +198,22 @@ public class html {
 				campos[6] = rs.getString(9);
 				campos[7] = rs.getString(10);
 			    campos[8] = rs.getString(11);
-				campos[9] = rs.getString(12)+ " " + rs.getString(13) + " " + rs.getString(14);
-				campos[10] = rs.getString(15);
-				campos[11] = rs.getString(16);
-				campos[12] = rs.getString(17);
-				campos[13] = rs.getString(18)+ " " + rs.getString(19) + " " + rs.getString(20);
-				campos[14] = rs.getString(21);
-				campos[15] = rs.getString(22);
-				campos[16] = rs.getString(23);
-				campos[17] = rs.getString(24);
-				campos[18] = rs.getString(25);
-				campos[19] = rs.getString(26);
-				campos[20] = rs.getString(27);
+				//campos[9] = rs.getString(12)+ " " + rs.getString(13) + " " + rs.getString(14);
+				campos[10] = rs.getString(12);
+				campos[11] = rs.getString(13);
+				campos[12] = rs.getString(14);
+				campos[13] = rs.getString(15)+ " " + rs.getString(16) + " " + rs.getString(17);
+				campos[14] = rs.getString(18);
+				campos[15] = rs.getString(19);
+				campos[16] = rs.getString(20);
+				campos[17] = rs.getString(21);
+				campos[18] = rs.getString(22);
+				//campos[19] = rs.getString(23);
+				campos[20] = rs.getString(23);
 				//campos[21] = rs.getString(28);
-				campos[22] = rs.getString(28);
-				campos[23] = rs.getString(29);
-				campos[24] = rs.getString(30);
+				campos[22] = rs.getString(24);
+				campos[23] = rs.getString(25);
+				campos[24] = rs.getString(26);
 				/*campos[25] = rs.getString(26);
 				campos[26] = rs.getString(27);
 				campos[27] = rs.getString(28);
