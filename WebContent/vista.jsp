@@ -17,7 +17,7 @@
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
-			<button id="btn">Editar</button>
+			<button id="btn" onclick="abrirformulario();">Editar</button>
 			<button id="btn">Guardar</button>
 			<button id="btn">Buscar</button>
 			<button id="btn">Cancelar</button>
@@ -63,6 +63,9 @@
                  <td class="t">Tipo de Solución</td>
                  <td class="t">Sistema</td>
                  <td class="t">Formato</td>
+                 <td class="t">Fecha de la llamada</td>
+                 <td class="t">Hora de la llamada</td>
+                 <td class="t">Comentario llamda</td>
              </tr>
              
              <% 
@@ -75,8 +78,13 @@
             	 out.println("<tr>");
             	 for (int x=0;x<columnas.length;x++ ){
             		 if(x>=0){
-            			 out.println("<td>"+columnas[x]+"</td>");
+            			 if(x==0){
+            				 out.println("<td><a href=\"./updateformulario.jsp?foliolabel="+columnas[x]+"\">"+columnas[x]+"</a></td>");
+            			 }else{
+            				 out.println("<td>"+columnas[x]+"</td>");
+            			 } 
             		 }
+            		 
             	 }
             	 out.println("</tr>");
              }

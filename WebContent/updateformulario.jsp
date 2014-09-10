@@ -37,46 +37,115 @@
             <center><form method="POST" action="InsertarFormulario">
                 <div id="loginForm">
                     <label id="foliolabel">Folio:</label>
-                    <input id="foliotxt" type="text" name="folio" value="" size="30"/><br/>
+                    <%String valor = request.getParameter("foliolabel"); 
+                    String nombre ="";
+                    String ap ="";
+                    String am ="";
+                    String cisco ="";
+                    String email ="";
+                    String ildUnidadAdmin ="";
+                    String ildDepartamento ="";
                     
-                    <label id="nombrelabel">Nombre:</label>
-                    <input id="nombretxt" type="text" name="nombreur" value="" size="30"/><br/>
+						ResultSet rset = dba.getSt().executeQuery("SELECT Incidencia.Folio"
+								+ ", CATEstatus.NombreEstatus"
+								+ ", Incidencia.Prioridad "
+								+ ", Incidencia.FELab "
+								+ ", Incidencia.HELab"
+								+ ", CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAt.AMaterno "
+								+ ", CATUsuarioCAT.CiscoCat"
+								+ ", Incidencia.FAtencion"
+								+ ", Incidencia.HAtencion"
+								+ ", CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno "
+								+ ", CATUnidadResponsable.ildUnidadAdmin"
+								+ ", CATUsuarioUnidadResponsable.EmailUr"
+								+ ", Incidencia.DescripcionIncidencia"
+							    + ", CATUsuarioUnidadResponsable.NombreResponsable,CATUsuarioUnidadResponsable.APaterno as AP,CATUsuarioUnidadResponsable.AMaterno as AM"
+							    + ", CATUsuarioUnidadResponsable.CiscoUr"
+							    + ", CATDepartamento.NombreDepartamento"
+							    + ", CATModulo.NombreModulo "
+							    + ", CATProceso.Proceso"
+							    + ", CATTipoDeIncidente.NombreIncidente"
+							    + ", CATTipoDeSolucion.NombreSolucion"
+							    + ", CATSistema.NombreSistema"
+							   // + ", DocumentosIncidencia.Documento"
+							    + ", Incidencia.FLlamada"
+							    + ", Incidencia.HLlamada"
+							    + ", Incidencia.ComLlamada"
+							    + ", CATDepartamento.ildDepartamento"
+							    
+																					
+								+ " FROM PUB.Incidencia "
+								
+	                                    + "INNER JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
+	                                    //+ "INNER JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
+	                                    + "INNER JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
+	                                    + "INNER JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
+	                                    + "INNER JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
+	                                    + "INNER JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
+										+ "INNER JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
+										+ "INNER JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
+										+ "INNER JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
+										+ "INNER JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
+										+ "INNER JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
+										+ "INNER JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable"  
+										+ " WHERE Incidencia.Folio = '"+valor+"'");
+							while(rset.next()){
+								 nombre = rset.getString("NombreResponsable");
+			                     ap = rset.getString("AP");
+			                     am = rset.getString("AM");
+			                     cisco = rset.getString("CiscoUr");
+			                     email = rset.getString("EmailUr");
+			                     ildUnidadAdmin = rset.getString("ildUnidadAdmin");
+			                     ildDepartamento= rset.getString("ildDepartamento");
+							}%>
+                    <input disabled="true" id="foliotxt" type="text" name="folio" size="30" value="<%=valor%>"/><br/>
+                    
+                    <label id="nombrelabel">Nombre:</label>                     
+                    <input disabled="true" id="nombretxt" type="text" name="nombreur" value="<%=nombre%>" size="30"/><br/>
                     
                     <label id="passwdconflabel">Apellido Paterno:</label>
-                    <input id="passwdconftxt" type="text" name="APur" value="" size="30"/><br/>
+                    <input disabled="true"id="passwdconftxt" type="text" name="APur" value="<%=ap%>" size="30"/><br/>
                     
                     <label id="pnomlabel">Apellido Materno:</label>
-                    <input id="pnomtxt" type="text" name="AMur" value="" size="30"/><br/>
+                    <input disabled="true" id="pnomtxt" type="text" name="AMur" value=" <%=am%>" size="30"/><br/>
                     
-                    <label id="snomlabel">CISCO:</label>
-                    <input id="snomtxt" type=text name="ciscour" value="" size="30"/><br/>
-                    
+                     <label id="snomlabel">CISCO:</label>
+                     <input disabled="true" id="snomtxt" type=text name="ciscour" value=" <%=cisco%>" size="30"/><br/>
+                     
+                                                                                                                     
                     <label id="paplabel">E-mail:</label>
-                    <input id="paptxt" type=text name="emailur" value="" size="30"/><br/>
+                    <input disabled="true" id="paptxt" type=text name="emailur" value="<%=email%> " size="30"/><br/>
+                    
                     
                     <label id="maplabel">Unidad Responsable:</label>
                     <select id="maptxt" name="unidadresponsable">
-                    	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdmin,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable");
-							while(rsu.next()){%>
+                    	<% 
+                    	String SQL = "SELECT CATUnidadResponsable.ildUnidadAdmin,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable where CATUnidadResponsable.ildUnidadAdmin = "+ildUnidadAdmin;
+                    	ResultSet rsu = dba.getSt().executeQuery(SQL);
+							while(rsu.next()){ 
+						%>
 								<option value="<%=rsu.getString(1)%>"><%=rsu.getString(2)%></option>
 							<%}%>
 					</select><br />
 
                     <label id="esplabel">Departamento:</label>
                     <select name="departamento" id="esptxt">
-						<% ResultSet rsd = dba.getSt().executeQuery("SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento");
+						<%
+						String SQL1 = "SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento where  CATDepartamento.ildDepartamento= "+ildDepartamento; 
+						ResultSet rsd = dba.getSt().executeQuery(SQL1);
 							while(rsd.next()){%>
 								<option value="<%=rsd.getString(1)%>"><%=rsd.getString(2)%></option>
 							<%}%>
 					</select><br/>
-                    
-                    <label id="naclabel">Modulo:</label>
+					
+                       <label id="naclabel">Modulo:</label>
 					<select id="dateString" class="nactxt" name="modulo">
 						<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
 							while(rsm.next()){%>
 								<option value="<%=rsm.getString(1)%>"><%=rsm.getString(2)%></option>
-							<%}%>
-					</select><br />
+							<%}%> 
+					</select><br /> 
+                   
                     
 					<label id="processlabel">Proceso:</label>
 					<select name="proceso" id="processtxt">
@@ -213,7 +282,7 @@
 							</select><br>
 							
 							<label id="atachylabel2">Comentario Llamada:</label>
-                		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3" disabled="true"></textarea>
+                		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3" ></textarea>
 					<%dba.liberarConexion(dba.getCt());%>
 				
                     <input type="submit" value="Guardar" id="submit"/>
