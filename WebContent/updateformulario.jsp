@@ -71,6 +71,7 @@
 							    + ", Incidencia.FLlamada"
 							    + ", Incidencia.HLlamada"
 							    + ", Incidencia.ComLlamada"
+							    + ", CATDepartamento.ildDepartamento"
 							    
 																					
 								+ " FROM PUB.Incidencia "
@@ -136,14 +137,15 @@
 								<option value="<%=rsd.getString(1)%>"><%=rsd.getString(2)%></option>
 							<%}%>
 					</select><br/>
-                    
-                    <label id="naclabel">Modulo:</label>
+					
+                       <label id="naclabel">Modulo:</label>
 					<select id="dateString" class="nactxt" name="modulo">
 						<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo");
 							while(rsm.next()){%>
 								<option value="<%=rsm.getString(1)%>"><%=rsm.getString(2)%></option>
-							<%}%>
-					</select><br />
+							<%}%> 
+					</select><br /> 
+                   
                     
 					<label id="processlabel">Proceso:</label>
 					<select name="proceso" id="processtxt">
