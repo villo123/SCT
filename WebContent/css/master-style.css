@@ -156,7 +156,7 @@ a:hover .grad-button {
 #naclabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 95px;
+	padding-top: 106px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -166,7 +166,7 @@ a:hover .grad-button {
 .nactxt {
 	position: absolute;
 	left: 150px;
-	top: 260px;
+	top: 285px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -325,7 +325,7 @@ a:hover .grad-button {
 #processlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 105px;
+	padding-top: 114px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -335,7 +335,7 @@ a:hover .grad-button {
 #processtxt {
 	position: absolute;
 	left: 150px;
-	top: 290px;
+	top: 314px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -345,7 +345,7 @@ a:hover .grad-button {
 #tipoinlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 120px;
+	padding-top: 90px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -355,7 +355,7 @@ a:hover .grad-button {
 #tipointxt {
 	position: absolute;
 	left: 150px;
-	top: 320px;
+	top: 736px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -365,7 +365,7 @@ a:hover .grad-button {
 #tiposoltxt {
 	position: absolute;
 	left: 150px;
-	top: 350px;
+	top: 768px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -375,7 +375,7 @@ a:hover .grad-button {
 #tiposollabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 130px;
+	padding-top: 104px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -405,7 +405,7 @@ a:hover .grad-button {
 #aprovytxt {
 	position: absolute;
 	left: 150px;
-	top: 890px;
+	top: 900px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -425,17 +425,7 @@ a:hover .grad-button {
 #aprovylabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 655px;
-	font-size: 11px;
-	font-weight: normal;
-	font-family: verdana, arial, helvetica;
-	text-decoration: none;
-}
-
-#aprovylabel2 {
-	position: absolute;
-	padding-left: 0px;
-	padding-top: 315px;
+	padding-top: 217px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -445,7 +435,7 @@ a:hover .grad-button {
 #fechanlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 155px;
+	padding-top: 231px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -455,7 +445,7 @@ a:hover .grad-button {
 #aprobacion {
 	position: absolute;
 	left: 150px;
-	top: 410px;
+	top: 930px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -465,7 +455,7 @@ a:hover .grad-button {
 #lanzadoraprobacion {
 	position: absolute;
 	left: 300px;
-	top: 410px;
+	top: 933px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -475,7 +465,7 @@ a:hover .grad-button {
 #insidentlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 170px;
+	padding-top: 135px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -485,7 +475,7 @@ a:hover .grad-button {
 #insidentilabel {
 	position: absolute;
 	padding-left: 22px;
-	padding-top: 196px;
+	padding-top: 155px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -495,7 +485,7 @@ a:hover .grad-button {
 #insidentialabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 220px;
+	padding-top: 175px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -505,7 +495,7 @@ a:hover .grad-button {
 #insidenttxt {
 	position: absolute;
 	left: 150px;
-	top: 440px;
+	top: 344px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -515,7 +505,7 @@ a:hover .grad-button {
 #estatuslabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 235px;
+	padding-top: 96px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -525,7 +515,7 @@ a:hover .grad-button {
 #estatuslabel2 {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 650px;
+	padding-top: 10px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -535,7 +525,7 @@ a:hover .grad-button {
 #estatustxt {
 	position: absolute;
 	left: 150px;
-	top: 535px;
+	top: 258px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -545,7 +535,7 @@ a:hover .grad-button {
 #estatustxt2 {
 	position: absolute;
 	left: 150px;
-	top: 1105px;
+	top: 600px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -554,7 +544,7 @@ a:hover .grad-button {
 #prioridadlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 250px;
+	padding-top: 206px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -564,7 +554,7 @@ a:hover .grad-button {
 #prioridadtxt {
 	position: absolute;
 	left: 150px;
-	top: 560px;
+	top: 445px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -574,7 +564,7 @@ a:hover .grad-button {
 #fechamlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 260px;
+	padding-top: 215px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -584,7 +574,7 @@ a:hover .grad-button {
 #fechamilabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 270px;
+	padding-top: 225px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -603,7 +593,7 @@ a:hover .grad-button {
 #lanzadormesa {
 	position: absolute;
 	left: 300px;
-	top: 590px;
+	top: 478px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -613,7 +603,7 @@ a:hover .grad-button {
 #mesa {
 	position: absolute;
 	left: 150px;
-	top: 590px;
+	top: 476px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -623,7 +613,7 @@ a:hover .grad-button {
 #tplabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 270px;
+	padding-top: 230px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -633,7 +623,7 @@ a:hover .grad-button {
 #tpilabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 280px;
+	padding-top: 240px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -643,7 +633,7 @@ a:hover .grad-button {
 #tptxt {
 	position: absolute;
 	left: 150px;
-	top: 620px;
+	top: 509px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -653,17 +643,22 @@ a:hover .grad-button {
 #catlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 283px;
+	padding-top: 248px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
 
+#sep{
+	margin-top:268px;
+	width: 450px
+}
+
 #catxt {
 	position: absolute;
 	left: 150px;
-	top: 650px;
+	top: 542px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -712,7 +707,7 @@ a:hover .grad-button {
 #atenlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 296px;
+	padding-top: 28px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -732,27 +727,19 @@ a:hover .grad-button {
 #atenalabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 346px;
+	padding-top: 76px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
 
-#atenalabel2 {
-	position: absolute;
-	padding-left: 0px;
-	padding-top: 105px;
-	font-size: 11px;
-	font-weight: normal;
-	font-family: verdana, arial, helvetica;
-	text-decoration: none;
-}
+
 
 #horallamada {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 523px;
+	padding-top: 258px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -762,27 +749,18 @@ a:hover .grad-button {
 #atenatxt {
 	position: absolute;
 	left: 150px;
-	top: 748px;
+	top: 703px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
 
-#atenatxt2 {
-	position: absolute;
-	left: 160px;
-	top: 140px;
-	font-size: 11px;
-	font-weight: normal;
-	font-family: verdana, arial, helvetica;
-	text-decoration: none;
-}
 
 #hllamada {
 	position: absolute;
 	left: 150px;
-	top: 965px;
+	top: 994px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -792,7 +770,7 @@ a:hover .grad-button {
 #atentxt {
 	position: absolute;
 	left: 150px;
-	top: 680px;
+	top: 634px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -812,27 +790,18 @@ a:hover .grad-button {
 #fechantlabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 328px;
+	padding-top: 60px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
 
-#fechantlabel2 {
-	position: absolute;
-	padding-left: 0px;
-	padding-top: 75px;
-	font-size: 11px;
-	font-weight: normal;
-	font-family: verdana, arial, helvetica;
-	text-decoration: none;
-}
 
 #fechallamada {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 505px;
+	padding-top: 245px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -842,27 +811,19 @@ a:hover .grad-button {
 #atencion {
 	position: absolute;
 	left: 150px;
-	top: 710px;
+	top: 668px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
 
-#atencion2 {
-	position: absolute;
-	left: 150px;
-	top: 90px;
-	font-size: 11px;
-	font-weight: normal;
-	font-family: verdana, arial, helvetica;
-	text-decoration: none;
-}
+
 
 #fellamada {
 	position: absolute;
 	left: 150px;
-	top: 925px;
+	top: 963px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -872,17 +833,7 @@ a:hover .grad-button {
 #lanzadoratencion {
 	position: absolute;
 	left: 300px;
-	top: 810px;
-	font-size: 11px;
-	font-weight: normal;
-	font-family: verdana, arial, helvetica;
-	text-decoration: none;
-}
-
-#lanzadoratencion2 {
-	position: absolute;
-	left: 315px;
-	top: 710px; 
+	top: 670px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -891,8 +842,8 @@ a:hover .grad-button {
 
 #lanzadorfllamada {
 	position: absolute;
-	left: 315px;
-	top: 928px;
+	left: 300px;
+	top: 963px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -902,17 +853,17 @@ a:hover .grad-button {
 #atachylabel {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 363px;
+	padding-top: 145px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
 
-#atachylabel2 {
+#lblcomllamada {
 	position: absolute;
 	padding-left: 0px;
-	padding-top: 555px;
+	padding-top: 300px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -932,7 +883,7 @@ a:hover .grad-button {
 #atachytxt {
 	position: absolute;
 	left: 150px;
-	top: 790px;
+	top: 800px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;
@@ -949,10 +900,10 @@ a:hover .grad-button {
 	text-decoration: none;
 }
 
-#atachytxt3 {
+#comllamada {
 	position: absolute;
 	left: 150px;
-	top: 1000px;
+	top: 1028px;
 	font-size: 11px;
 	font-weight: normal;
 	font-family: verdana, arial, helvetica;

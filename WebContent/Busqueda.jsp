@@ -16,7 +16,7 @@
 			<div class="title">
 				<img src="ima/logo.png" width="260" height="84" />
 			</div>
-			<center><h1>F Incidencia</h1></center>
+			<center><h1>Filtrar Incidencia</h1></center>
 			<div class="container">
 				<label id="Foliolabel">Folio:</label>
 				<input type="Text" name="camposelector" id="Foliotxt" size="30" />
@@ -59,7 +59,7 @@
 					</select><br />
 				
 				
-				<label id="Sublabe">Proceso:</label>
+				<label id="Sublabel">Proceso:</label>
 					<select name="camposelector" id="Subtxt">
 						<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.ildProceso,CATProceso.Proceso FROM PUB.CATProceso");
 							while(rsp.next()){%>
@@ -67,8 +67,15 @@
 								<%}%>
 					</select><br />
 					
+					<label id="Sistlabel">Sistema:</label>
+					<select name="camposelector" id="Sisttxt">
+						<% ResultSet rsx = dba.getSt().executeQuery("SELECT CATSistema.ildSistema,CATSistema.NombreSistema FROM PUB.CATSistema");
+							while(rsx.next()){%>
+								<option value="<%=rsx.getString(1)%>"><%=rsx.getString(2)%></option>
+								<%}%>
+					</select><br />
 					
-				
+				<%dba.liberarConexion(dba.getCt());%>
 				
 				<input type="button" name="enviar" value="Filtrar" id="btnSubmit" />
 				
