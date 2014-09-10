@@ -69,6 +69,15 @@
 								<option value="<%=rsd.getString(1)%>"><%=rsd.getString(2)%></option>
 							<%}%>
 					</select><br/>
+					
+				<label id="estatuslabel">Estatus:</label>
+				<select id="estatustxt" name="estatus1">
+					<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
+							while(rse.next()){%>
+								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>
+								<%}
+									%>
+				</select><br />
                     
                     <label id="naclabel">Modulo:</label>
 					<select id="dateString" class="nactxt" name="modulo">
@@ -78,7 +87,7 @@
 							<%}%>
 					</select><br />
                     
-					<label id="processlabel">Proceso:</label>
+				<label id="processlabel">Proceso:</label>
 					<select name="proceso" id="processtxt">
 						<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.ildProceso,CATProceso.Proceso FROM PUB.CATProceso");
 							while(rsp.next()){%>
@@ -86,55 +95,10 @@
 								<%}%>
 					</select><br />
 					
-					<label id="tipoinlabel">Tipo de incidencia:</label>
-					<select name="tipodeincidencias" id="tipointxt">
-						<% ResultSet rsi = dba.getSt().executeQuery("SELECT CATTipoDeIncidente.ildIncidente,CATTipoDeIncidente.NombreIncidente FROM PUB.CATTipoDeIncidente");
-							while(rsi.next()){%>
-								<option value="<%=rsi.getString(1)%>">
-									<%=rsi.getString(2)%>
-								</option><%}%>
-					</select><br />
-					
-					<label id="tiposollabel">Tipo de solucion:</label>
-					<select name="tipodesolucion" id="tiposoltxt">
-						<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.ildTipoDeSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
-							while(rss.next()){%>
-								<option value="<%=rss.getString(1)%>">
-									<%=rss.getString(2)%>
-								</option><%}
-								%>
-					</select><br />
-					
-					<label id="aprovylabel">Aprobacion:</label>
-					<select name="aprobacion" id="aprovytxt">
-						<option value="SI">SI</option>
-						<option value="NO">NO</option>
-					</select><br/>
-					
-				<label id="fechanlabel">Fecha de aprobacion:</label>
-				<input id="aprobacion" type="text" name="fechaaprobacion" value="yyyy-mm-dd" >
-					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Aprobacion" id="lanzadoraprobacion">
-                    <script type="text/javascript"> 
-						Calendar.setup({ 
-						inputField     :    "aprobacion",     // id del campo de texto 
-						ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
-						button     :    "lanzadoraprobacion"     // el id del botón que lanzará el calendario 
-					}); 
-					</script><br />
-					
 				<label id="insidentlabel">Descripcion</label>
 				<label id="insidentilabel">de</label>	
-				<label id="insidentialabel">insidencia:</label>
+				<label id="insidentialabel">incidencia:</label>
 				<textarea id="insidenttxt" rows="6" cols="45" name="descripcionincidencia"></textarea><br/>
-				
-				<label id="estatuslabel">Estatus:</label>
-				<select id="estatustxt" name="estatus1">
-					<% ResultSet rse = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
-							while(rse.next()){%>
-								<option value="<%=rse.getString(1)%>"><%=rse.getString(2)%></option>
-								<%}
-									%>
-				</select><br />
 				
 				<label id="prioridadlabel">Prioridad:</label>	
 				<select id="prioridadtxt" name="prioridad">
@@ -145,7 +109,7 @@
 				
 				<label id="fechamlabel">Fecha enviada </label>   
 				<label id="fechamilabel">por el CAT:</label>  		
-					<input type="text" id="mesa"  name="fechamesa"  value="yyyy-mm-dd" />
+				<input type="text" id="mesa"  name="fechamesa"  value="yyyy-mm-dd" />
 					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Mesa" id="lanzadormesa"/>
                     <script type="text/javascript"> 
 						Calendar.setup({ 
@@ -156,7 +120,7 @@
 					</script><br />
 					
 					<label id="tplabel">Hora enviada </label>   
-					<label id="tpilabel">por el CAT:</label>  	
+					<label id="tpilabel">por el CAT:</label>
 					<input type="text" value="00:00" id="tptxt" name="timepickermesa" /><br />
 					
 					<label id="catlabel">Usuario CAT:</label>  	
@@ -166,31 +130,83 @@
 								<option value="<%=rsuc.getString(1)%>"><%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%>
 								</option><%}%>
 					</select><br />
-					<label id="atenlabel">Atendido:</label>
-                		<select name="atendio" id="atentxt">
+					<hr id="sep"></hr>
+					
+					<label id="estatuslabel2">Estatus:</label>
+					<select id="estatustxt2" name="estatus2" disabled="true">
+						<% ResultSet rse2 = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
+								while(rse2.next()){%>
+						<option value="<%=rse2.getString(1)%>"><%=rse2.getString(2)%></option>
+						<%}
+							%>
+					</select><br>
+					
+					
+					<label id="atenlabel">Atendio:</label>
+					 <select name="atendio" id="atentxt" disabled="true">
 						<% ResultSet rsa = dba.getSt().executeQuery("SELECT CATAtendio.ildAtendio,CATAtendio.NombreAtendio,CATAtendio.APaterno,CATAtendio.AMaterno FROM PUB.CATAtendio");
 							while(rsa.next()){%>
 								<option value="<%=rsa.getString(1)%>">
 									<%=rsa.getString(2)+ " " + rsa.getString(3) + " " + rsa.getString(4)%>
 								</option><%}%>
-						</select>
-						<label id="fechantlabel">Fecha de atencion:</label>
-						<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd"/>
-							<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion2"/>
+					</select>
+					
+					<label id="fechantlabel">Fecha de atencion:</label>
+					<input type="text" name="fechaatencion" id="atencion" value="yyyy-mm-dd" disabled="true"/>
+							<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Atencion" id="lanzadoratencion"/>
                    				 <script type="text/javascript"> 
 										Calendar.setup({ 
-										inputField     :    "atencion2",     // id del campo de texto 
+										inputField     :    "atencion",     // id del campo de texto 
 										ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
-										button     :    "lanzadoratencion2"     // el id del botón que lanzará el calendario 
+										button     :    "lanzadoratencion"     // el id del botón que lanzará el calendario 
 									}); 
-								</script><br>
-						<label id="atenalabel">Hora de atencion:</label>  	
-						<input type="text" value="00:00" id="atenatxt" name="horaatencion" /><br>
-                		<label id="atachylabel">Respuesta:</label>
-                		<textarea rows="6" cols="50" name="respuesta" id="atachytxt"></textarea>
-                		<label id="fechallamada">Fecha de la llamada:</label>
-                		
-                		<input type="text" name="fechadellamada" id="fellamada" value="yyyy-mm-dd"/>
+					</script><br>
+					
+					<label id="atenalabel">Hora de atencion:</label> 
+					<input type="text" value="00:00" id="atenatxt" name="horaatencion" disabled="true"/><br>
+					
+					<label id="tipoinlabel">Tipo de incidencia:</label>
+					<select name="tipodeincidencias" id="tipointxt" disabled="true">
+						<% ResultSet rsi = dba.getSt().executeQuery("SELECT CATTipoDeIncidente.ildIncidente,CATTipoDeIncidente.NombreIncidente FROM PUB.CATTipoDeIncidente");
+							while(rsi.next()){%>
+								<option value="<%=rsi.getString(1)%>">
+									<%=rsi.getString(2)%>
+								</option><%}%>
+					</select><br />
+					
+					<label id="tiposollabel">Tipo de solucion:</label>
+					<select name="tipodesolucion" id="tiposoltxt" disabled="true">
+						<% ResultSet rss = dba.getSt().executeQuery("SELECT CATTipoDeSolucion.ildTipoDeSolucion,CATTipoDeSolucion.NombreSolucion FROM PUB.CATTipoDeSolucion");
+							while(rss.next()){%>
+								<option value="<%=rss.getString(1)%>">
+									<%=rss.getString(2)%>
+								</option><%}
+								%>
+					</select><br />
+					
+					<label id="atachylabel">Respuesta:</label>
+					<textarea rows="6" cols="50" name="respuesta" id="atachytxt" disabled="true"></textarea>
+					
+					<label id="aprovylabel">Aprobacion:</label>
+					<select name="aprobacion" id="aprovytxt" disabled="true">
+						<option value="SI">SI</option>
+						<option value="NO">NO</option>
+					</select><br/>
+					
+					
+					<label id="fechanlabel">Fecha de aprobacion:</label>
+					<input id="aprobacion" type="text" name="fechaaprobacion" value="yyyy-mm-dd" disabled="true">
+					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Aprobacion" id="lanzadoraprobacion">
+                    <script type="text/javascript"> 
+						Calendar.setup({ 
+						inputField     :    "aprobacion",     // id del campo de texto 
+						ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
+						button     :    "lanzadoraprobacion"     // el id del botón que lanzará el calendario 
+					}); 
+					</script><br />
+					
+					<label id="fechallamada">Fecha de la llamada:</label>
+					<input type="text" name="fechadellamada" id="fellamada" value="yyyy-mm-dd" disabled="true"/>
 							<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha de llamada" id="lanzadorfllamada"/>
                    				 <script type="text/javascript"> 
 										Calendar.setup({ 
@@ -198,24 +214,15 @@
 										ifFormat     :     "%Y-%m-%d",     // formato de la fecha que se escriba en el campo de texto 
 										button     :    "lanzadorfllamada"     // el id del botón que lanzará el calendario 
 									}); 
-								</script><br>
-								
-						<label id="horallamada">Hora de la llamada:</label> 
-						<input type="text" value="00:00" id="hllamada" name="horallamda"/><br>
-																		
-						<label id="estatuslabel2">Estatus:</label>
-							<select id="estatustxt2" name="estatus">
-								<% ResultSet rse2 = dba.getSt().executeQuery("SELECT CATEstatus.ildEstatus,CATEstatus.NombreEstatus FROM PUB.CATEstatus");
-									while(rse2.next()){%>
-								<option value="<%=rse2.getString(1)%>"><%=rse2.getString(2)%></option>
-									<%}
-										%>
-							</select><br>
-							
-							<label id="atachylabel2">Comentario Llamada:</label>
-                		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3" disabled="true"></textarea>
+					</script><br>
+					
+					<label id="horallamada">Hora de la llamada:</label> 
+					<input type="text" value="00:00" id="hllamada" name="hrllamda" disabled="true"/><br>
+					
+					<label id="lblcomllamada">Comentario Llamada:</label>
+					<textarea rows="6" cols="50" name="comentariollamada" id="comllamada" disabled="true"></textarea>
+					
 					<%dba.liberarConexion(dba.getCt());%>
-				
                     <input type="submit" value="Guardar" id="submit"/>
 					<input type="submit" value="Cancelar" id="cancel"/> 
                 </div>

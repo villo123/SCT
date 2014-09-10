@@ -75,7 +75,7 @@
 								<%}%>
 					</select><br />
 					
-				
+				<%dba.liberarConexion(dba.getCt());%>
 				
 				<input type="button" name="enviar" value="Filtrar" id="btnSubmit" />
 				
