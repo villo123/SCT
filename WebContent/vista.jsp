@@ -42,9 +42,7 @@
 	
              <tr>
                  <td class="t">Folio</td>
-                 <td class="t">Nombre</td>
-                 <td class="t">Apellido Paterno</td>
-                 <td class="t">Apellido Materno</td>
+                 <td class="t">Usuario UR</td>
                  <td class="t">Cisco</td>
                  <td class="t">E-mail</td>
                  <td class="t">Unidad Respondable</td>
