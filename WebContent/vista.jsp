@@ -48,7 +48,7 @@
                  <td class="t">Cisco</td>
                  <td class="t">E-mail</td>
                  <td class="t">Unidad Respondable</td>
-                 <td class="t">Departamente</td>
+                 <td class="t">Departamento</td>
                  <td class="t">Estatus</td>
                  <td class="t">Modulo</td>
                  <td class="t">Proceso</td>
@@ -68,6 +68,7 @@
                  <td class="t">Fecha de Llamada</td>
                  <td class="t">Hora de Llamada </td>
                  <td class="t">Comentario Llamada</td>
+                 <td class="t">Sistema</td>
              </tr>
              
              <% 
