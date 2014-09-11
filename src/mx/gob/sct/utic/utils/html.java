@@ -4,7 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 import com.sct.incidencias.Conexion.DBConexion;
 import com.sct.incidencias.catalogos.CATUnidadResponsable;
@@ -16,7 +19,7 @@ public class html {
 	}
 
 	@SuppressWarnings("static-access")
-	public ArrayList<String[]> getIncidencias() {
+	public ArrayList<String[]> getIncidencias() throws ParseException {
 		ArrayList<String[]> registros = new ArrayList<String[]>();
 		Connection ct = null;
 		ResultSet rs = null;
@@ -197,10 +200,13 @@ public class html {
 				campos[6] = rs.getString(9);
 				campos[7] = rs.getString(10);
 			    campos[8] = rs.getString(11);
-				campos[9] = rs.getString(12);
+				campos[9] = rs.getString(12);		
 				campos[10] = rs.getString(13);
 				campos[11] = rs.getString(14);
-				campos[12] = rs.getString(15);
+				Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(15));
+				String HELab = new SimpleDateFormat("H:mm").format(date); // 9:00
+				campos[12] = HELab;
+				
 				campos[13] = rs.getString(16);
 				campos[14] = rs.getString(17);
 				

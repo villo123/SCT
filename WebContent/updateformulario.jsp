@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
    <%@ page import="com.sct.incidencias.catalogos.CATUsuarioUTIC"%>
    <%@ page import="com.sct.incidencias.Conexion.DBConexion" %>
+   <%@ page import="java.text.SimpleDateFormat" %>
    <%DBConexion dba = new DBConexion();%>
-   <%@ page import="java.sql.*;" %>
+   <%@ page import="java.sql.ResultSet" %>
+   <%@ page import="java.util.Date;" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -119,6 +122,9 @@
 			                     HELab = rset.getString("HELab");
 			                     ildUsuarioCat =  rset.getString("ildUsuarioCat");
 							}%>
+							
+							<%Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(HELab);
+								String HELabf = new SimpleDateFormat("H:mm").format(date); // 9:00 %>
                     <input disabled="true" id="foliotxt" type="text" name="folio" size="30" value="<%=valor%>"/><br/>
                     
                     <label id="nombrelabel">Nombre:</label>                     
@@ -205,7 +211,7 @@
 					
 					<label id="tplabel" >Hora enviada </label>   
 					<label id="tpilabel">por el CAT:</label>
-					<input type="text" value="<%=HELab %>" id="tptxt" name="timepickermesa" disabled="true"/><br />
+					<input type="text" value="<%=HELabf %>" id="tptxt" name="timepickermesa" disabled="true"/><br />
 					
 					<label id="catlabel" >Usuario CAT:</label>  	
 					<select id="catxt" name="usuariocat" disabled="true">
