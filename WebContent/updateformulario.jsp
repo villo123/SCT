@@ -25,7 +25,7 @@
 				//$("#tp1").timepickera();
 			});
 		</script>
-		<title>FORMULARIO</title>
+		<title>ACTUALIZAR FORMULARIO</title>
 	</head>
 	<body>
 		<div class="panel">
@@ -269,7 +269,7 @@
 									}); 
 								</script><br>
 								
-						<label id="horallamada">Hora de la llamada:</label> 
+						<label id="horallamada">Hora de la llamadas:</label> 
 						<input type="text" value="00:00" id="hllamada" name="horallamda"/><br>
 																		
 						<label id="estatuslabel2">Estatus:</label>
@@ -281,7 +281,7 @@
 										%>
 							</select><br>
 							
-							<label id="atachylabel2">Comentario Llamada:</label>
+							<label id="atachylabel2">Comentario Llamadas:</label>
                 		<textarea rows="6" cols="50" name="comentariollamada" id="atachytxt3" ></textarea>
 					<%dba.liberarConexion(dba.getCt());%>
 				
