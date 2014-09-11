@@ -57,15 +57,15 @@
                  <td class="t">Fech enviada por el CAT</td>
                  <td class="t">Hora enviada por el CAT</td>
                  <td class="t">Usuario CAT</td>
-                 <td class="t">Estatus</td>
                  <td class="t">Atendio</td>
                  <td class="t">Fecha de atención</td>
                  <td class="t">Hora de atencion</td>
+                 <td class="t">Tipo de Incidencia</td>
                  <td class="t">Tipo de Solucion</td>
                  <td class="t">Respuesta</td>
                  <td class="t">Aprobación</td>
                  <td class="t">Fecha de Aprobación</td>
-                 <td class="t">Fehca de Llamada</td>
+                 <td class="t">Fecha de Llamada</td>
                  <td class="t">Hora de Llamada </td>
                  <td class="t">Comentario Llamada</td>
              </tr>
