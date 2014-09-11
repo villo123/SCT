@@ -34,7 +34,7 @@
 			</div>
 			<center><h1>Nueva Incidencia</h1></center>
 			<div class="container">
-            <center><form method="POST" action="InsertarFormulario">
+            <center><form method="POST" action="UpdateFormulario">
                 <div id="loginForm">
                     <label id="foliolabel">Folio:</label>
                     <%String valor = request.getParameter("foliolabel"); 
