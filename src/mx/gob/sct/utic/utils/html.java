@@ -144,9 +144,7 @@ public class html {
 			PreparedStatement ps2 = ct
 					.prepareStatement(
 							"SELECT Incidencia.Folio"
-							+ ", CATUsuarioUnidadResponsable.NombreResponsable"
-							+ ",CATUsuarioUnidadResponsable.APaterno"
-							+ ",CATUsuarioUnidadResponsable.AMaterno"
+							+ ", CATUsuarioUnidadResponsable.NombreResponsable,CATUsuarioUnidadResponsable.APaterno,CATUsuarioUnidadResponsable.AMaterno "
 							+ ", CATUsuarioUnidadResponsable.CiscoUr"	
 							+ ", CATUsuarioUnidadResponsable.EmailUr"
 							+ ", CATUnidadResponsable.DescUR"
@@ -189,40 +187,40 @@ public class html {
 			                        
 			rs = ps2.executeQuery();
 			while (rs.next()) {
-				String[] campos = new String[28];
+				String[] campos = new String[26];
 				campos[0] = rs.getString(1);
-				campos[1] = rs.getString(2);
-				campos[2] = rs.getString(3);
-				campos[3] = rs.getString(4);
-				campos[4] = rs.getString(5);
-				campos[5] = rs.getString(6);
-				campos[6] = rs.getString(7);
-				campos[7] = rs.getString(8);
-			    campos[8] = rs.getString(9);
-				campos[9] = rs.getString(10);
-				campos[10] = rs.getString(11);
-				campos[11] = rs.getString(12);
-				campos[12] = rs.getString(13);
-				campos[13] = rs.getString(14);
-				campos[14] = rs.getString(15);
+				campos[1] = rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4);
+				campos[2] = rs.getString(5);
+				campos[3] = rs.getString(6);
+				campos[4] = rs.getString(7);
+				campos[5] = rs.getString(8);
+				campos[6] = rs.getString(9);
+				campos[7] = rs.getString(10);
+			    campos[8] = rs.getString(11);
+				campos[9] = rs.getString(12);
+				campos[10] = rs.getString(13);
+				campos[11] = rs.getString(14);
+				campos[12] = rs.getString(15);
+				campos[13] = rs.getString(16);
+				campos[14] = rs.getString(17);
 				
-				campos[15] = rs.getString(16) + " " + rs.getString(17) + " " + rs.getString(18);
-				
-				
-				campos[16] = rs.getString(19) + " " + rs.getString(20) + " " + rs.getString(21);
+				campos[15] = rs.getString(18) + " " + rs.getString(19) + " " + rs.getString(20);
 				
 				
-				campos[17] = rs.getString(22);
-				campos[18] = rs.getString(23);
-				campos[19] = rs.getString(24);
-				campos[20] = rs.getString(25);
-				campos[21] = rs.getString(26);
-				campos[22] = rs.getString(27);
-				campos[23] = rs.getString(28);
-				campos[24] = rs.getString(29);
-				campos[25] = rs.getString(30);
-				campos[26] = rs.getString(31);
-				campos[27] = rs.getString(32);
+				campos[16] = rs.getString(21) + " " + rs.getString(22) + " " + rs.getString(23);
+				
+				
+				campos[17] = rs.getString(24);
+				campos[18] = rs.getString(25);
+				campos[19] = rs.getString(26);
+				campos[20] = rs.getString(27);
+				campos[21] = rs.getString(28);
+				campos[22] = rs.getString(29);
+				campos[23] = rs.getString(30);
+				campos[24] = rs.getString(31);
+				campos[25] = rs.getString(32);
+				//campos[26] = rs.getString(3);
+				//campos[27] = rs.getString(32);
 				registros.add(campos);
 				
 				/*System.out.println(rs.getString(1) + " " + rs.getString(2)
