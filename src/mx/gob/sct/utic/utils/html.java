@@ -144,7 +144,9 @@ public class html {
 			PreparedStatement ps2 = ct
 					.prepareStatement(
 							"SELECT Incidencia.Folio"
-							+ ", CATUsuarioUnidadResponsable.NombreResponsable,CATUsuarioUnidadResponsable.APaterno,CATUsuarioUnidadResponsable.AMaterno"
+							+ ", CATUsuarioUnidadResponsable.NombreResponsable"
+							+ ",CATUsuarioUnidadResponsable.APaterno"
+							+ ",CATUsuarioUnidadResponsable.AMaterno"
 							+ ", CATUsuarioUnidadResponsable.CiscoUr"	
 							+ ", CATUsuarioUnidadResponsable.EmailUr"
 							+ ", CATUnidadResponsable.DescUR"
@@ -197,7 +199,7 @@ public class html {
 				campos[6] = rs.getString(9);
 				campos[7] = rs.getString(10);
 			    campos[8] = rs.getString(11);
-				//campos[9] = rs.getString(12)+ " " + rs.getString(13) + " " + rs.getString(14);
+				campos[9] = rs.getString(12)+ " " + rs.getString(13) + " " + rs.getString(14);
 				campos[10] = rs.getString(12);
 				campos[11] = rs.getString(13);
 				campos[12] = rs.getString(14);
@@ -207,17 +209,17 @@ public class html {
 				campos[16] = rs.getString(20);
 				campos[17] = rs.getString(21);
 				campos[18] = rs.getString(22);
-				//campos[19] = rs.getString(23);
+				campos[19] = rs.getString(23);
 				campos[20] = rs.getString(23);
-				//campos[21] = rs.getString(28);
+				campos[21] = rs.getString(28);
 				campos[22] = rs.getString(24);
 				campos[23] = rs.getString(25);
 				campos[24] = rs.getString(26);
-				/*campos[25] = rs.getString(26);
+				campos[25] = rs.getString(26);
 				campos[26] = rs.getString(27);
 				campos[27] = rs.getString(28);
 				campos[28] = rs.getString(29);
-				campos[29] = rs.getString(30);
+				/*campos[29] = rs.getString(30);
 				campos[30] = rs.getString(31);
 				campos[31] = rs.getString(32);
 				campos[32] = rs.getString(33);
