@@ -42,30 +42,32 @@
 	
              <tr>
                  <td class="t">Folio</td>
-                 <td class="t">Estatus de la Incidencia</td>
-                 <td class="t">Prioridad</td>
-                 <td class="t">Fecha envida por el CAT</td>
-                 <td class="t">Hora envida por el CAT</td>
-                 <td class="t">Usuario CAT</td>
-                 <td class="t">CISCO</td>
-                 <td class="t">Fecha de atención</td>
-                 <td class="t">Hora de atención</td>
-                 <td class="t">Atendido</td>
-                 <td class="t">Centro SCT</td>
-                 <td class="t">E-mail</td>
-                 <td class="t">Observaciones</td>
-                 <td class="t">Usuario UR</td>
+                 <td class="t">Nombre</td>
+                 <td class="t">Apellido Paterno</td>
+                 <td class="t">Apellido Materno</td>
                  <td class="t">Cisco</td>
-                 <td class="t">Departamento</td>
+                 <td class="t">E-mail</td>
+                 <td class="t">Unidad Respondable</td>
+                 <td class="t">Departamente</td>
+                 <td class="t">Estatus</td>
                  <td class="t">Modulo</td>
                  <td class="t">Proceso</td>
-                 <td class="t">Tipo d1982e Incidente</td>
-                 <td class="t">Tipo de Solución</td>
-                 <td class="t">Sistema</td>
-                 <td class="t">Formato</td>
-                 <td class="t">Fecha de la llamada</td>
-                 <td class="t">Hora de la llamada</td>
-                 <td class="t">Comentario llamda</td>
+                 <td class="t">Descripción de la Incidencia </td>
+                 <td class="t">Prioridad</td>
+                 <td class="t">Fech enviada por el CAT</td>
+                 <td class="t">Hora enviada por el CAT</td>
+                 <td class="t">Usuario CAT</td>
+                 <td class="t">Estatus</td>
+                 <td class="t">Atendio</td>
+                 <td class="t">Fecha de atención</td>
+                 <td class="t">Hora de atencion</td>
+                 <td class="t">Tipo de Solucion</td>
+                 <td class="t">Respuesta</td>
+                 <td class="t">Aprobación</td>
+                 <td class="t">Fecha de Aprobación</td>
+                 <td class="t">Fehca de Llamada</td>
+                 <td class="t">Hora de Llamada </td>
+                 <td class="t">Comentario Llamada</td>
              </tr>
              
              <% 
