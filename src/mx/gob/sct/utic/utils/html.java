@@ -205,8 +205,13 @@ public class html {
 				campos[12] = rs.getString(13);
 				campos[13] = rs.getString(14);
 				campos[14] = rs.getString(15);
+				
 				campos[15] = rs.getString(16) + " " + rs.getString(17) + " " + rs.getString(18);
+				
+				
 				campos[16] = rs.getString(19) + " " + rs.getString(20) + " " + rs.getString(21);
+				
+				
 				campos[17] = rs.getString(22);
 				campos[18] = rs.getString(23);
 				campos[19] = rs.getString(24);
@@ -218,7 +223,6 @@ public class html {
 				campos[25] = rs.getString(30);
 				campos[26] = rs.getString(31);
 				campos[27] = rs.getString(32);
-				campos[28] = rs.getString(33);
 				registros.add(campos);
 				
 				/*System.out.println(rs.getString(1) + " " + rs.getString(2)
