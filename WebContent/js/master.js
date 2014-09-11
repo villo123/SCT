@@ -63,7 +63,7 @@
 			usuario.focus();
 			return false;
 		}else if(password.value == "" || password.value == '' || password.value == null){
-			alert("Ingresa tu contraseï¿½a");
+			alert("Ingresa tu contraseña");
 			password.focus();
 			return false;
 		}else{
