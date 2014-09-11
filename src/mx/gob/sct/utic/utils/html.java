@@ -207,15 +207,10 @@ public class html {
 				String HELab = new SimpleDateFormat("H:mm").format(date); // 9:00
 				campos[12] = HELab;
 				
-				campos[13] = rs.getString(16);
-				campos[14] = rs.getString(17);
-				
-				campos[15] = rs.getString(18) + " " + rs.getString(19) + " " + rs.getString(20);
-				
-				
-				campos[16] = rs.getString(21) + " " + rs.getString(22) + " " + rs.getString(23);
-				
-				
+				campos[13] = rs.getString(16)+ " " + rs.getString(17) + " " + rs.getString(18);
+				campos[14] = rs.getString(19)+ " " + rs.getString(20) + " " + rs.getString(21);
+				campos[15] = rs.getString(22);
+				campos[16] = rs.getString(23);	
 				campos[17] = rs.getString(24);
 				campos[18] = rs.getString(25);
 				campos[19] = rs.getString(26);
