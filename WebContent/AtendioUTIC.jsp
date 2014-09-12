@@ -41,7 +41,7 @@
 				<button id="btn" >Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br/><br/>
-				
+				<!--  -->
 			 	<table border="2px" style="border-collapse: collapse;">
  					<tr>
 						 <td class="t" style="color:#FFFFFF;">ID</td>
