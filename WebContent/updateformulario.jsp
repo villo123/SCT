@@ -9,6 +9,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
+	<!--  -->
 		<link rel="stylesheet" type="text/css" href="css/master-style.css"/> 
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
@@ -125,26 +126,26 @@
 							
 							<%Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(HELab);
 								String HELabf = new SimpleDateFormat("H:mm").format(date); // 9:00 %>
-                    <input disabled="true" id="foliotxt" type="text" name="folio" size="30" value="<%=valor%>"/><br/>
+                    <input  id="foliotxt" type="text" name="folio" size="30" value="<%=valor%>"/><br/>
                     
                     <label id="nombrelabel">Nombre:</label>                     
-                    <input disabled="true" id="nombretxt" type="text" name="nombreur" value="<%=nombre%>" size="30"/><br/>
+                    <input  id="nombretxt" type="text" name="nombreur" value="<%=nombre%>" size="30"/><br/>
                     
                     <label id="passwdconflabel">Apellido Paterno:</label>
-                    <input disabled="true"id="passwdconftxt" type="text" name="APur" value="<%=ap%>" size="30"/><br/>
+                    <input  id="passwdconftxt" type="text" name="APur" value="<%=ap%>" size="30"/><br/>
                     
                     <label id="pnomlabel">Apellido Materno:</label>
-                    <input disabled="true" id="pnomtxt" type="text" name="AMur" value=" <%=am%>" size="30"/><br/>
+                    <input  id="pnomtxt" type="text" name="AMur" value="<%=am%>" size="30"/><br/>
                     
                      <label id="snomlabel">CISCO:</label>
-                     <input disabled="true" id="snomtxt" type=text name="ciscour" value=" <%=cisco%>" size="30"/><br/>
+                     <input  id="snomtxt" type=text name="ciscour" value="<%=cisco%>" size="30"/><br/>
                      
                                                                                                                      
                     <label id="paplabel">E-mail:</label>
-                    <input disabled="true" id="paptxt" type=text name="emailur" value="<%=email%> " size="30"/><br/>
+                    <input  id="paptxt" type=text name="emailur" value="<%=email%>" size="30"/><br/>
                     
                     <label id="maplabel">Unidad Responsable:</label>
-                    <select id="maptxt" name="unidadresponsable" disabled="true">
+                    <select id="maptxt" name="unidadresponsable">
                     	<% ResultSet rsu = dba.getSt().executeQuery("SELECT CATUnidadResponsable.ildUnidadAdmin,CATUnidadResponsable.DescUR FROM PUB.CATUnidadResponsable WHERE ildUnidadAdmin = "+ ildUnidadAdmin);
 							while(rsu.next()){%>
 								<option value="<%=rsu.getString(1)%>"><%=rsu.getString(2)%></option>
@@ -152,7 +153,7 @@
 					</select><br />
 
                     <label id="esplabel">Departamento:</label>
-                    <select name="departamento" id="esptxt" disabled="true">
+                    <select name="departamento" id="esptxt">
 						<% ResultSet rsd = dba.getSt().executeQuery("SELECT CATDepartamento.ildDepartamento,CATDepartamento.NombreDepartamento FROM PUB.CATDepartamento WHERE ildDepartamento = "+ ildDepartamento);
 							while(rsd.next()){%>
 								<option value="<%=rsd.getString(1)%>"><%=rsd.getString(2)%></option>
@@ -169,7 +170,7 @@
 				</select><br />
                     
                     <label id="naclabel">Modulo:</label>
-					<select id="dateString" class="nactxt" name="modulo" disabled="true">
+					<select id="dateString" class="nactxt" name="modulo" >
 						<% ResultSet rsm = dba.getSt().executeQuery("SELECT CATModulo.ildModulo,CATModulo.NombreModulo FROM PUB.CATModulo WHERE ildModulo = "+ ildModulo);
 							while(rsm.next()){%>
 								<option value="<%=rsm.getString(1)%>"><%=rsm.getString(2)%></option>
@@ -177,7 +178,7 @@
 					</select><br />
                     
 				<label id="processlabel">Proceso:</label>
-					<select name="proceso" id="processtxt" disabled="true">
+					<select name="proceso" id="processtxt" >
 						<% ResultSet rsp = dba.getSt().executeQuery("SELECT CATProceso.ildProceso,CATProceso.Proceso FROM PUB.CATProceso WHERE ildProceso = "+ ildProceso);
 							while(rsp.next()){%>
 								<option value="<%=rsp.getString(1)%>"><%=rsp.getString(2)%></option>
@@ -187,10 +188,10 @@
 				<label id="insidentlabel">Descripcion</label>
 				<label id="insidentilabel">de</label>	
 				<label id="insidentialabel">incidencia:</label>
-				<textarea id="insidenttxt" rows="6" cols="45" name="descripcionincidencia" disabled="true"><%=DescripcionIncidencia%></textarea><br/>
+				<textarea id="insidenttxt" rows="6" cols="45" name="descripcionincidencia" ><%=DescripcionIncidencia%></textarea><br/>
 				
 				<label id="prioridadlabel">Prioridad:</label>	
-				<select id="prioridadtxt" name="prioridad" disabled="true">
+				<select id="prioridadtxt" name="prioridad" >
 					<option value="<%=Prioridad%>"><%=Prioridad%></option>
 					<!-- <option value="Alta">Alta</option>
 					<option value="Media">Media</option>
@@ -199,7 +200,7 @@
 				
 				<label id="fechamlabel">Fecha enviada </label>   
 				<label id="fechamilabel">por el CAT:</label>  		
-				<input type="text" id="mesa"  name="fechamesa"  disabled="true" value="<%=FELab%>"/>
+				<input type="text" id="mesa"  name="fechamesa"  value="<%=FELab%>"/>
 					<img src="ima/calendario.png" width="16" height="16" border="0" title="Fecha Mesa" id="lanzadormesa"/>
                     <script type="text/javascript"> 
 						Calendar.setup({ 
@@ -211,10 +212,10 @@
 					
 					<label id="tplabel" >Hora enviada </label>   
 					<label id="tpilabel">por el CAT:</label>
-					<input type="text" value="<%=HELabf %>" id="tptxt" name="timepickermesa" disabled="true"/><br />
+					<input type="text" value="<%=HELabf %>" id="tptxt" name="timepickermesa"/><br />
 					
 					<label id="catlabel" >Usuario CAT:</label>  	
-					<select id="catxt" name="usuariocat" disabled="true">
+					<select id="catxt" name="usuariocat" >
 						<% ResultSet rsuc = dba.getSt().executeQuery("SELECT CATUsuarioCAT.ildUsuarioCat,CATUsuarioCAT.NombreUsuario,CATUsuarioCAT.APaterno,CATUsuarioCAT.AMaterno FROM PUB.CATUsuarioCAT WHERE ildUsuarioCat = "+ildUsuarioCat);
 							while(rsuc.next()){%>
 								<option value="<%=rsuc.getString(1)%>"><%=rsuc.getString(2)+ " " + rsuc.getString(3) + " " + rsuc.getString(4)%>
@@ -322,3 +323,8 @@
 		</div>	
 	</body>    
 </html>
+
+							
+							
+                		
+					
