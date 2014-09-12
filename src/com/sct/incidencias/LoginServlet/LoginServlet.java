@@ -43,10 +43,23 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("login",usuario);
 		}
 		
-		if(DBConexion.validar(usuario, pass)){
+		if(DBConexion.validar(usuario, pass)&&(usuario=="gustavo-gvega")&&(pass=="123g456")){
 			RequestDispatcher rd = request.getRequestDispatcher("vista.jsp");
 			rd.forward(request, response);
-		}else{
+		}
+		else if(DBConexion.validar(usuario, pass)&&(usuario=="Ramiro-rbernabe")&&(pass=="123b456")){
+			RequestDispatcher rd = request.getRequestDispatcher("vista.jsp");
+			rd.forward(request, response);
+		}
+		else if(DBConexion.validar(usuario, pass)&&(usuario=="ext.71301")&&(pass=="123a456")){
+			RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
+			rd.forward(request, response);
+		}
+		else if(DBConexion.validar(usuario, pass)&&(usuario=="ddt.utic.09")&&(pass=="123m456")){
+			RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
+			rd.forward(request, response);
+		}
+		else{
 			out.print("<center><p style=\"color:red\">Usuario o Contraseña incorrecto</p></center>");
 			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 			rd.include(request, response);
