@@ -41,7 +41,45 @@
 				<button id="btn" >Guardar</button>
 				<button id="btn" onclick="seacker();">Buscar</button>
 				<button id="btn" onclick="cancelar();">Cancelar</button><br/><br/>
-				<applet code="AutotableAtenUTIC.class" width="350" height="350"></applet><br/><br/>
+				
+			 	<table border="2px" style="border-collapse: collapse;">
+ 					<tr>
+						 <td class="t" style="color:#FFFFFF;">ID</td>
+						 <td class="t" style="color:#FFFFFF;">Nombre</td>
+						 <td class="t" style="color:#FFFFFF;">Apellido Paterno</td>
+						 <td class="t" style="color:#FFFFFF;">Apellido Materno</td>
+						 <td class="t" style="color:#FFFFFF;">Departamento</td>
+					 </tr>
+					 <tr>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+					 </tr>
+					 <tr>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+					 </tr>
+					 <tr>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+					 </tr>
+					 <tr>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+						 <td></td>
+					
+					 </tr>
+					 </table>
 					<label id="idatendiolabel">ID:</label>
 					<input type="text" value="" id="idatendiotxt" name="idatendio" value="" size="30" /><br /><br />
 					<label id="nameatendiolabel">Nombre:</label>
