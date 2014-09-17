@@ -150,18 +150,44 @@ public class UpdateForm extends HttpServlet {
 		
 		PreparedStatement pu = null;
 		try{
-			pu = d.getCt().prepareStatement("UPDATE PUB.Incidencia,"
-					+ "PUB.CATUsuarioUnidadResponsable,PUB.CATUnidadResponsable SET Incidencia.Folio = ?,"
-					+ "CATUsuarioUnidadResponsable.NombreResponsable = ?, CATUsuarioUnidadResponsable.APaterno = ?,"
-					+ "CATUsuarioUnidadResponsable.AMaterno = ?, CATUsuarioUnidadResponsable.CiscoUr = ?,"
-					+ "CATUsuarioUnidadResponsable.EmailUr = ?,Incidencia.ildUnidadAdmin = ?,"
-					+ "Incidencia.ildDepartamento = ?, Incidencia.ildModulo = ?, Incidencia.ildProceso = ?,"
+			/*pu = d.getCt().prepareStatement("UPDATE PUB.Incidencia,"
+					+ "PUB.CATUsuarioUnidadResponsable SET PUB.Incidencia.Folio = ?,"
+					+ "PUB.CATUsuarioUnidadResponsable.NombreResponsable = ?,PUB.CATUsuarioUnidadResponsable.APaterno = ?,"
+					+ "PUB.CATUsuarioUnidadResponsable.AMaterno = ?,PUB.CATUsuarioUnidadResponsable.CiscoUr = ?,"
+					+ "PUB.CATUsuarioUnidadResponsable.EmailUr = ?,PUB.Incidencia.ildUnidadAdmin = ?,"
+					+ "PUB.Incidencia.ildDepartamento = ?,PUB.Incidencia.ildModulo = ?,PUB.Incidencia.ildProceso = ?,"
+					+ "PUB.Incidencia.DescripcionIncidencia = ?,PUB.Incidencia.Prioridad = ?,PUB.Incidencia.FELab = ?,"
+					+ "PUB.Incidencia.HELab = ?,PUB.Incidencia.ildUsuarioCat = ?,PUB.Incidencia.ildEstatus = ?,"
+					+ "PUB.Incidencia.ildAtendio = ?,PUB.Incidencia.FAtencion = ?,PUB.Incidencia.HAtencion = ?,"
+					+ "PUB.Incidencia.ildIncidente = ?,PUB.Incidencia.ildTipoDeSolucion = ?,PUB.Incidencia.RespuestaUtic = ?,"
+					+ "PUB.Incidencia.Aprobado = ?,PUB.Incidencia.FechaAprobacion = ?,PUB.Incidencia.FLlamada = ?,PUB.Incidencia.HLlamada=?,"
+					+ "PUB.Incidencia.ComLlamada = ?,PUB.Incidencia.ildSistema = ? FROM PUB.Incidencia "
+					+ "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
+					+ "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
+					+ "LEFT JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "
+					+ "LEFT JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat "
+					+ "LEFT JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
+					+ "LEFT JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
+					+ "LEFT JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
+					+ "LEFT JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
+					+ "LEFT JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
+					+ "LEFT JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
+					+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable "
+					+ "WHERE Folio = "+folio);*/
+			
+			pu = d.getCt().prepareStatement("UPDATE Incidencia,"
+					+ "CATUsuarioUnidadResponsable "
+					+ "SET Incidencia.Folio = ?,Incidencia.ildUnidadAdmin = ?,"
+					+ "Incidencia.ildDepartamento = ?,Incidencia.ildModulo = ?,Incidencia.ildProceso = ?,"
 					+ "Incidencia.DescripcionIncidencia = ?,Incidencia.Prioridad = ?,Incidencia.FELab = ?,"
-					+ "Incidencia.HELab = ?,Incidencia.ildUsuarioCat = ?, Incidencia.ildEstatus = ?,"
-					+ "Incidencia.ildAtendio = ?,Incidencia.FAtencion = ?, Incidencia.HAtencion = ?,"
-					+ "Incidencia.ildIncidente = ?,Incidencia.ildTipoDeSolucion = ?, Incidencia.RespuestaUtic = ?,"
-					+ "Incidencia.Aprobado = ?,Incidencia.FechaAprobacion = ?, Incidencia.FLlamada = ?,Incidencia.HLlamada=?,"
+					+ "Incidencia.HELab = ?,Incidencia.ildUsuarioCat = ?,Incidencia.ildEstatus = ?,"
+					+ "Incidencia.ildAtendio = ?,Incidencia.FAtencion = ?,Incidencia.HAtencion = ?,"
+					+ "Incidencia.ildIncidente = ?,Incidencia.ildTipoDeSolucion = ?,Incidencia.RespuestaUtic = ?,"
+					+ "Incidencia.Aprobado = ?,Incidencia.FechaAprobacion = ?,Incidencia.FLlamada = ?,Incidencia.HLlamada=?,"
 					+ "Incidencia.ComLlamada = ?,Incidencia.ildSistema = ?"
+					+ ",CATUsuarioUnidadResponsable.NombreResponsable = ?,CATUsuarioUnidadResponsable.APaterno = ?,"
+					+ "CATUsuarioUnidadResponsable.AMaterno = ?,CATUsuarioUnidadResponsable.CiscoUr = ?,"
+					+ "CATUsuarioUnidadResponsable.EmailUr = ? FROM PUB.Incidencia "
 					+ "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
 					+ "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
 					+ "LEFT JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "
@@ -175,6 +201,12 @@ public class UpdateForm extends HttpServlet {
 					+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable "
 					+ "WHERE Folio = "+folio);
 			
+			/*UPDATE Table1, Table2
+				SET Table1.LastName = 'DR. XXXXXX' 
+				,Table2.WAprrs = 'start,stop'
+				FROM Table1 T1, Table2 T2
+				WHERE T1.id = T2.id
+				and T1.id = '010008'*/
 			
 	        pu.setString(1, inc.getFolio());
 	        pu.setString(2, catusunr.getNombreResponsable());
@@ -204,7 +236,8 @@ public class UpdateForm extends HttpServlet {
 		    pu.setTime(26, (java.sql.Time)inc.getHLlamada());
 		    pu.setString(27, inc.getComLlamada());
 	        pu.setString(28, "1"); //ildSistema
-	        pu.executeUpdate();
+	       // pu.executeUpdate();
+	        pu.executeLargeUpdate();
 	        System.out.println("Update correcto");
 			}catch(SQLException e){
 			e.printStackTrace();

@@ -309,7 +309,7 @@
 					</script><br>
 					
 					<label id="horallamada">Hora de la llamada:</label> 
-					<input type="text" value="00:00" id="hllamada" name="hrllamda"/><br>
+					<input type="text" value="00:00" id="hllamada" name="hrllamada"/><br>
 					
 					<label id="lblcomllamada">Comentario Llamada:</label>
 					<textarea rows="6" cols="50" name="comentariollamada" id="comllamada" ></textarea>
