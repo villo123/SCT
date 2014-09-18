@@ -149,6 +149,7 @@ public class UpdateForm extends HttpServlet {
 
 		
 		PreparedStatement pu = null;
+		PreparedStatement pu2 = null;
 		try{
 			/*pu = d.getCt().prepareStatement("UPDATE PUB.Incidencia,"
 					+ "PUB.CATUsuarioUnidadResponsable SET PUB.Incidencia.Folio = ?,"
@@ -174,70 +175,66 @@ public class UpdateForm extends HttpServlet {
 					+ "LEFT JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
 					+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable "
 					+ "WHERE Folio = "+folio);*/
-			
-			pu = d.getCt().prepareStatement("UPDATE Incidencia,"
-					+ "CATUsuarioUnidadResponsable "
-					+ "SET Incidencia.Folio = ?,Incidencia.ildUnidadAdmin = ?,"
-					+ "Incidencia.ildDepartamento = ?,Incidencia.ildModulo = ?,Incidencia.ildProceso = ?,"
-					+ "Incidencia.DescripcionIncidencia = ?,Incidencia.Prioridad = ?,Incidencia.FELab = ?,"
-					+ "Incidencia.HELab = ?,Incidencia.ildUsuarioCat = ?,Incidencia.ildEstatus = ?,"
-					+ "Incidencia.ildAtendio = ?,Incidencia.FAtencion = ?,Incidencia.HAtencion = ?,"
-					+ "Incidencia.ildIncidente = ?,Incidencia.ildTipoDeSolucion = ?,Incidencia.RespuestaUtic = ?,"
-					+ "Incidencia.Aprobado = ?,Incidencia.FechaAprobacion = ?,Incidencia.FLlamada = ?,Incidencia.HLlamada=?,"
-					+ "Incidencia.ComLlamada = ?,Incidencia.ildSistema = ?"
-					+ ",CATUsuarioUnidadResponsable.NombreResponsable = ?,CATUsuarioUnidadResponsable.APaterno = ?,"
-					+ "CATUsuarioUnidadResponsable.AMaterno = ?,CATUsuarioUnidadResponsable.CiscoUr = ?,"
-					+ "CATUsuarioUnidadResponsable.EmailUr = ? FROM PUB.Incidencia "
-					+ "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
-					+ "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
-					+ "LEFT JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "
-					+ "LEFT JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat "
-					+ "LEFT JOIN PUB.CATAtendio ON Incidencia.ildAtendio = CATAtendio.ildAtendio "
-					+ "LEFT JOIN PUB.CATUnidadResponsable ON Incidencia.ildUnidadAdmin = CATUnidadResponsable.ildUnidadAdmin "
-					+ "LEFT JOIN PUB.CATDepartamento ON Incidencia.ildDepartamento = CATDepartamento.ildDepartamento "
-					+ "LEFT JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
-					+ "LEFT JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
-					+ "LEFT JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
-					+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable "
-					+ "WHERE Folio = "+folio);
-			
-			/*UPDATE Table1, Table2
-				SET Table1.LastName = 'DR. XXXXXX' 
-				,Table2.WAprrs = 'start,stop'
-				FROM Table1 T1, Table2 T2
-				WHERE T1.id = T2.id
-				and T1.id = '010008'*/
+			System.out.println(inc.getFolio());
+			pu = d.getCt().prepareStatement("UPDATE PUB.Incidencia "
+					+ "SET Folio = ?,ildUnidadAdmin = ?,"
+					+ "ildDepartamento = ?,ildModulo = ?,ildProceso = ?,"
+					+ "DescripcionIncidencia = ?,Prioridad = ?,FELab = ?,"
+					+ "HELab = ?,ildUsuarioCat = ?,ildEstatus = ?,"
+					+ "ildAtendio = ?,FAtencion = ?,HAtencion = ?,"
+					+ "ildIncidente = ?,ildTipoDeSolucion = ?,RespuestaUtic = ?,"
+					+ "Aprobado = ?,FechaAprobacion = ?,FLlamada = ?,HLlamada=?,"
+					+ "ComLlamada = ?,ildSistema = ? "
+					+ "WHERE Folio = ?");
 			
 	        pu.setString(1, inc.getFolio());
-	        pu.setString(2, catusunr.getNombreResponsable());
-	        pu.setString(3, catusunr.getAPaterno());
-	        pu.setString(4, catusunr.getAMaterno());
-	        pu.setString(5, responsableCisco);
-	        pu.setString(6, catusunr.getEmailUr());   
-	        pu.setString(7, Integer.toString(catur.getildUnidadAdmin()));
-	        pu.setString(8, Integer.toString(catdep.getildDepartamento()));
-	        pu.setString(9, Integer.toString(catmod.getildModulo()));
-	        pu.setString(10,Integer.toString(catpro.getildProceso()));
-	        pu.setString(11, inc.getDescripcionIncidencia());
-	        pu.setString(12 ,inc.getPrioridad());
-	        pu.setDate(13, (java.sql.Date)inc.getFELab());
-	        pu.setTime(14, (java.sql.Time)inc.getHELab());   
-	        pu.setString(15, Integer.toString(caturcat.getildUsuarioCat()));
-	        pu.setString(16, Integer.toString(cates.getildEstatus()));
-	        pu.setString(17, Integer.toString(catate.getildAtendio()));
-	        pu.setDate(18, (java.sql.Date)inc.getFAtencion());
-	        pu.setTime(19,(java.sql.Time) inc.getHAtencion());
-	        pu.setString(20, Integer.toString(cattipin.getildIncidente()));
-	        pu.setString(21, Integer.toString(cattipsol.getildTipoDeSolucion()));
-	        pu.setString(22, inc.getRespuestaUtic());
-	        pu.setString(23, inc.getAprobado());
-	        pu.setDate(24, (java.sql.Date)inc.getFechaAprobacion());
-		    pu.setDate(25, (java.sql.Date)inc.getFLlamada());
-		    pu.setTime(26, (java.sql.Time)inc.getHLlamada());
-		    pu.setString(27, inc.getComLlamada());
-	        pu.setString(28, "1"); //ildSistema
+	        pu.setString(2, Integer.toString(catur.getildUnidadAdmin()));
+	        pu.setString(3, Integer.toString(catdep.getildDepartamento()));
+	        pu.setString(4, Integer.toString(catmod.getildModulo()));
+	        pu.setString(5,Integer.toString(catpro.getildProceso()));
+	        pu.setString(6, inc.getDescripcionIncidencia());
+	        pu.setString(7 ,inc.getPrioridad());
+	        pu.setDate(8, (java.sql.Date)inc.getFELab());
+	        pu.setTime(9, (java.sql.Time)inc.getHELab());  
+	        pu.setString(10, Integer.toString(caturcat.getildUsuarioCat()));
+	        pu.setString(11, Integer.toString(cates.getildEstatus()));
+	        pu.setString(12, Integer.toString(catate.getildAtendio()));
+	        pu.setDate(13, (java.sql.Date)inc.getFAtencion());
+	        pu.setTime(14,(java.sql.Time) inc.getHAtencion());
+	        pu.setString(15, Integer.toString(cattipin.getildIncidente()));
+	        pu.setString(16, Integer.toString(cattipsol.getildTipoDeSolucion()));
+	        pu.setString(17, inc.getRespuestaUtic());
+	        pu.setString(18, inc.getAprobado());
+	        pu.setDate(19, (java.sql.Date)inc.getFechaAprobacion());
+		    pu.setDate(20, (java.sql.Date)inc.getFLlamada());
+		    pu.setTime(21, (java.sql.Time)inc.getHLlamada());
+		    pu.setString(22, inc.getComLlamada());
+	        pu.setString(23, "1"); //ildSistema
+	        pu.setString(24, inc.getFolio());
+			
+			pu2 = d.getCt().prepareStatement("UPDATE PUB.CATUsuarioUnidadResponsable "
+					+ "SET NombreResponsable = ?,APaterno = ?,"
+					+ "AMaterno = ?,CiscoUr = ?,"
+					+ "EmailUr = ? "
+					+ "");
+			
+			//idUsuarioResponsable
+			
+
+	        
+	        
+	        pu2.setString(1, catusunr.getNombreResponsable());
+	        pu2.setString(2, catusunr.getAPaterno());
+	        pu2.setString(3, catusunr.getAMaterno());
+	        pu2.setString(4, responsableCisco);
+	        pu2.setString(5, catusunr.getEmailUr());   
+	        
+
+ 
+
 	       // pu.executeUpdate();
-	        pu.executeLargeUpdate();
+	        pu.executeUpdate();
+	        pu2.executeUpdate();
 	        System.out.println("Update correcto");
 			}catch(SQLException e){
 			e.printStackTrace();
