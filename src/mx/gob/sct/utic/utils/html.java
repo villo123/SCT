@@ -172,8 +172,8 @@ public class html {
 						    + ", Incidencia.HLlamada"
 						    + ", Incidencia.ComLlamada"
 						    + ", CATSistema.NombreSistema"
-						    + " FROM PUB.Incidencia "
-							
+						    //+ ", CATUsuarioUnidadResponsable.idUsuarioResponsable"
+						    + " FROM PUB.Incidencia "							
                                     + "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
                                     //+ "LEFT JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
                                     + "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
@@ -210,16 +210,24 @@ public class html {
 				campos[13] = rs.getString(16)+ " " + rs.getString(17) + " " + rs.getString(18);
 				campos[14] = rs.getString(19)+ " " + rs.getString(20) + " " + rs.getString(21);
 				campos[15] = rs.getString(22);
-				campos[16] = rs.getString(23);	
+				
+				/*Date date2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(23));
+				String HAtencion = new SimpleDateFormat("H:mm").format(date2); // 9:00*/
+				campos[16] = rs.getString(23);
 				campos[17] = rs.getString(24);
 				campos[18] = rs.getString(25);
 				campos[19] = rs.getString(26);
 				campos[20] = rs.getString(27);
 				campos[21] = rs.getString(28);
 				campos[22] = rs.getString(29);
+				
+				//Date date3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(30));
+				//String HLlamada = new SimpleDateFormat("H:mm").format(date3); // 9:00
 				campos[23] = rs.getString(30);
+				
 				campos[24] = rs.getString(31);
 				campos[25] = rs.getString(32);
+				//campos[26] = rs.getString(33);
 				//campos[26] = rs.getString(3);
 				//campos[27] = rs.getString(32);
 				registros.add(campos);

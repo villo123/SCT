@@ -57,6 +57,7 @@
                     String FELab = "";
                     String HELab = "";
                     String ildUsuarioCat = "";
+                    String idUsuarioResponsable = "";
                     
 						ResultSet rset = dba.getSt().executeQuery("SELECT Incidencia.Folio"
 								+ ", CATEstatus.NombreEstatus"
@@ -88,6 +89,7 @@
 							    + ", CATModulo.ildModulo"
 							    + ", CATProceso.ildProceso"
 							    + ", CATUsuarioCAT.ildUsuarioCat"
+							    + ", CATUsuarioUnidadResponsable.idUsuarioResponsable"
 							    
 							    
 																					
@@ -122,10 +124,12 @@
 			                     FELab = rset.getString("FELab");
 			                     HELab = rset.getString("HELab");
 			                     ildUsuarioCat =  rset.getString("ildUsuarioCat");
+			                     idUsuarioResponsable = rset.getString("idUsuarioResponsable");
 							}%>
 							
 							<%Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(HELab);
 								String HELabf = new SimpleDateFormat("H:mm").format(date); // 9:00 %>
+					
                     <input  id="foliotxt" type="text" name="folio" size="30" value="<%=valor%>"/><br/>
                     
                     <label id="nombrelabel">Nombre:</label>                     
@@ -313,6 +317,8 @@
 					
 					<label id="lblcomllamada">Comentario Llamada:</label>
 					<textarea rows="6" cols="50" name="comentariollamada" id="comllamada" ></textarea>
+					
+					<input style="visibility:hidden;" id="iduser" type="text" name="iduseresp" value="<%=idUsuarioResponsable%>"/>
 					<%dba.liberarConexion(dba.getCt());%>
 				
                     <input type="submit" value="Guardar" id="submit"/>

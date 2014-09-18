@@ -146,10 +146,14 @@ public class UpdateForm extends HttpServlet {
 		String ComLlamada = request.getParameter("comentariollamada");
 		inc.setComLlamada(ComLlamada);
 		
-
+		String idusuarioresp = request.getParameter("iduseresp");
+		catusunr.setidUsuarioResponsable(Integer.parseInt(idusuarioresp));
+		
+		
 		
 		PreparedStatement pu = null;
 		PreparedStatement pu2 = null;
+		
 		try{
 			/*pu = d.getCt().prepareStatement("UPDATE PUB.Incidencia,"
 					+ "PUB.CATUsuarioUnidadResponsable SET PUB.Incidencia.Folio = ?,"
@@ -211,12 +215,12 @@ public class UpdateForm extends HttpServlet {
 		    pu.setString(22, inc.getComLlamada());
 	        pu.setString(23, "1"); //ildSistema
 	        pu.setString(24, inc.getFolio());
-			
+	        
 			pu2 = d.getCt().prepareStatement("UPDATE PUB.CATUsuarioUnidadResponsable "
 					+ "SET NombreResponsable = ?,APaterno = ?,"
 					+ "AMaterno = ?,CiscoUr = ?,"
 					+ "EmailUr = ? "
-					+ "");
+					+ "WHERE idUsuarioResponsable = ?");
 			
 			//idUsuarioResponsable
 			
@@ -228,11 +232,8 @@ public class UpdateForm extends HttpServlet {
 	        pu2.setString(3, catusunr.getAMaterno());
 	        pu2.setString(4, responsableCisco);
 	        pu2.setString(5, catusunr.getEmailUr());   
+	        pu2.setString(6, Integer.toString(catusunr.getidUsuarioResponsable()));
 	        
-
- 
-
-	       // pu.executeUpdate();
 	        pu.executeUpdate();
 	        pu2.executeUpdate();
 	        System.out.println("Update correcto");
@@ -244,6 +245,9 @@ public class UpdateForm extends HttpServlet {
 					DBConexion.liberarConexion(d.getCt());
 				}else if(pu != null){
 					pu.close();
+				}
+				else if(pu2 !=null){
+					pu2.close();
 				}
 			}catch(SQLException e){
 				e.printStackTrace();

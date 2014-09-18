@@ -767,6 +767,16 @@ a:hover .grad-button {
 	text-decoration: none;
 }
 
+#iduser {
+	position: absolute;
+	left: 150px;
+	top: 1180px;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica;
+	text-decoration: none;
+}
+
 #atentxt {
 	position: absolute;
 	left: 150px;
@@ -869,6 +879,8 @@ a:hover .grad-button {
 	font-family: verdana, arial, helvetica;
 	text-decoration: none;
 }
+
+
 
 #atachylabel3 {
 	position: absolute;

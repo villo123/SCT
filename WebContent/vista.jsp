@@ -81,11 +81,14 @@
             		 if(x>=0){
             			 if(x==0){
             				 out.println("<td><a href=\"./updateformulario.jsp?foliolabel="+columnas[x]+"\">"+columnas[x]+"</a></td>");
-            			 }else{
+            			 }
+            			 else{
             				 out.println("<td>"+columnas[x]+"</td>");
             			 } 
             		 }
-            		 
+            		 /*else if(x == 26){
+    				 out.println("<td style=\"visibility:hidden;\">"+columnas[x]+"</td>");
+    			 }*/
             	 }
             	 out.println("</tr>");
              }

@@ -1,0 +1,46 @@
+10
+
+dir
+52
+http://10.33.169.124/svn/sct/trunk/ingresos/WebContent/wwwroot/funciones/DataTables_1_8_1/media/unit_testing/tests_onhold
+http://10.33.169.124/svn/sct
+
+
+
+2013-05-27T20:00:58.494926Z
+13
+croblesm
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+be77f6e4-fe85-e34d-8dc1-e1a555a50808
+
+1_dom
+dir
+
+2_js
+dir
+
+3_ajax
+dir
+
+4_server-side
+dir
+
+5_ajax_objects
+dir
+
+6_delayed_rendering
+dir
+
