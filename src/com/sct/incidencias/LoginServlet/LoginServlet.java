@@ -59,7 +59,7 @@ public class LoginServlet extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
 				rd.forward(request, response);
 			}
-			else if(usuario.equals("andresv")){
+			else if(usuario.equals("andres")){
 				RequestDispatcher rd = request.getRequestDispatcher("vistasusuario.jsp");
 				rd.forward(request, response);	
 			}
