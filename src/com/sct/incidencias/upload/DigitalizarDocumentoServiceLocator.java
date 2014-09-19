@@ -6,6 +6,10 @@
  */
 
 package com.sct.incidencias.upload;
+import org.apache.commons.fileupload.*;
+import org.apache.commons.fileupload.disk.*;
+import org.apache.commons.fileupload.portlet.*;
+import org.apache.commons.fileupload.servlet.*;
 
 public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.Service implements com.sct.incidencias.upload.DigitalizarDocumentoService {
 
