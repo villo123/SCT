@@ -7,6 +7,15 @@
 
 package com.sct.incidencias.upload;
 
+import org.apache.commons.fileupload.*;
+import org.apache.commons.fileupload.disk.*;
+import org.apache.commons.fileupload.portlet.*;
+import org.apache.commons.fileupload.servlet.*;
+import org.apache.commons.io.*;
+import org.apache.commons.io.filefilter.*;
+import org.apache.commons.io.input.*;
+import org.apache.commons.io.output.*;
+
 public interface DigitalizarDocumentoService extends javax.xml.rpc.Service {
     public java.lang.String getDigitalizarDocumentoSoapPortAddress();
 

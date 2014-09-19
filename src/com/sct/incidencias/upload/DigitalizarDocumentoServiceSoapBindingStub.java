@@ -7,6 +7,15 @@
 
 package com.sct.incidencias.upload;
 
+import org.apache.commons.fileupload.*;
+import org.apache.commons.fileupload.disk.*;
+import org.apache.commons.fileupload.portlet.*;
+import org.apache.commons.fileupload.servlet.*;
+import org.apache.commons.io.*;
+import org.apache.commons.io.filefilter.*;
+import org.apache.commons.io.input.*;
+import org.apache.commons.io.output.*;
+
 public class DigitalizarDocumentoServiceSoapBindingStub extends org.apache.axis.client.Stub implements gob.sct.documentos.DigitalizarDocumento {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();

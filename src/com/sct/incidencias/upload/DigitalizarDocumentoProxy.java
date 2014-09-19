@@ -1,5 +1,14 @@
 package com.sct.incidencias.upload;
-import
+
+import org.apache.commons.fileupload.*;
+import org.apache.commons.fileupload.disk.*;
+import org.apache.commons.fileupload.portlet.*;
+import org.apache.commons.fileupload.servlet.*;
+import org.apache.commons.io.*;
+import org.apache.commons.io.filefilter.*;
+import org.apache.commons.io.input.*;
+import org.apache.commons.io.output.*;
+
 public class DigitalizarDocumentoProxy implements com.sct.incidencias.upload.DigitalizarDocumento {
   private String _endpoint = null;
   private com.sct.incidencias.upload.DigitalizarDocumento digitalizarDocumento = null;
