@@ -47,7 +47,7 @@ public class DigitalizarDocumentoProxy implements com.sct.incidencias.upload.Dig
     
   }
   
-  public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumento() {
+  public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumento() {
     if (digitalizarDocumento == null)
       _initDigitalizarDocumentoProxy();
     return digitalizarDocumento;

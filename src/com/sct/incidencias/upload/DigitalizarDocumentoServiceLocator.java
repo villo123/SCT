@@ -15,6 +15,7 @@ import org.apache.commons.io.*;
 import org.apache.commons.io.filefilter.*;
 import org.apache.commons.io.input.*;
 import org.apache.commons.io.output.*;
+import javax.xml.*;
 
 public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.Service implements com.sct.incidencias.upload.DigitalizarDocumentoService {
 
@@ -59,9 +60,9 @@ public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.S
         return getDigitalizarDocumentoSoapPort(endpoint);
     }
 
-    public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumentoSoapPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumentoSoapPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub _stub = new gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub(portAddress, this);
+        	com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub _stub = new com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub(portAddress, this);
             _stub.setPortName(getDigitalizarDocumentoSoapPortWSDDServiceName());
             return _stub;
         }
