@@ -1,6 +1,5 @@
 package com.sct.incidencias.upload;
-import 
-
+import
 public class DigitalizarDocumentoProxy implements com.sct.incidencias.upload.DigitalizarDocumento {
   private String _endpoint = null;
   private com.sct.incidencias.upload.DigitalizarDocumento digitalizarDocumento = null;
