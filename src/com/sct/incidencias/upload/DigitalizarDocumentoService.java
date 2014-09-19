@@ -10,7 +10,7 @@ package com.sct.incidencias.upload;
 public interface DigitalizarDocumentoService extends javax.xml.rpc.Service {
     public java.lang.String getDigitalizarDocumentoSoapPortAddress();
 
-    public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumentoSoapPort() throws javax.xml.rpc.ServiceException;
+    public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumentoSoapPort() throws javax.xml.rpc.ServiceException;
 
-    public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumentoSoapPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
+    public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumentoSoapPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
 }

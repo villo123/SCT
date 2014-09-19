@@ -6,10 +6,6 @@
  */
 
 package com.sct.incidencias.upload;
-import org.apache.commons.fileupload.*;
-import org.apache.commons.fileupload.disk.*;
-import org.apache.commons.fileupload.portlet.*;
-import org.apache.commons.fileupload.servlet.*;
 
 public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.Service implements com.sct.incidencias.upload.DigitalizarDocumentoService {
 
@@ -43,7 +39,7 @@ public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.S
         DigitalizarDocumentoSoapPortWSDDServiceName = name;
     }
 
-    public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumentoSoapPort() throws javax.xml.rpc.ServiceException {
+    public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumentoSoapPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(DigitalizarDocumentoSoapPort_address);
@@ -54,9 +50,9 @@ public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.S
         return getDigitalizarDocumentoSoapPort(endpoint);
     }
 
-    public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumentoSoapPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumentoSoapPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub _stub = new gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub(portAddress, this);
+        	com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub _stub = new com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub(portAddress, this);
             _stub.setPortName(getDigitalizarDocumentoSoapPortWSDDServiceName());
             return _stub;
         }
@@ -76,8 +72,8 @@ public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.S
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (gob.sct.documentos.DigitalizarDocumento.class.isAssignableFrom(serviceEndpointInterface)) {
-                gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub _stub = new gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub(new java.net.URL(DigitalizarDocumentoSoapPort_address), this);
+            if (com.sct.incidencias.upload.DigitalizarDocumento.class.isAssignableFrom(serviceEndpointInterface)) {
+            	com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub _stub = new com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub(new java.net.URL(DigitalizarDocumentoSoapPort_address), this);
                 _stub.setPortName(getDigitalizarDocumentoSoapPortWSDDServiceName());
                 return _stub;
             }

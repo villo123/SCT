@@ -7,7 +7,7 @@
 
 package com.sct.incidencias.upload;
 
-public class DigitalizarDocumentoServiceSoapBindingStub extends org.apache.axis.client.Stub implements gob.sct.documentos.DigitalizarDocumento {
+public class DigitalizarDocumentoServiceSoapBindingStub extends org.apache.axis.client.Stub implements com.sct.incidencias.upload.DigitalizarDocumento {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
