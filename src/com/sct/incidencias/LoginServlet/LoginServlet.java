@@ -59,6 +59,10 @@ public class LoginServlet extends HttpServlet {
 				RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
 				rd.forward(request, response);
 			}
+			else if(usuario.equals("andresv")){
+				RequestDispatcher rd = request.getRequestDispatcher("vistasusuario.jsp");
+				rd.forward(request, response);	
+			}
 		}
 		else{
 			out.print("<center><p style=\"color:red\">Usuario o Contraseña incorrecto</p></center>");
