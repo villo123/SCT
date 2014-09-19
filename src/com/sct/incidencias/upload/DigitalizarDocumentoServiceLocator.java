@@ -7,7 +7,7 @@
 
 package com.sct.incidencias.upload;
 
-public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.Service implements gob.sct.documentos.DigitalizarDocumentoService {
+public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.Service implements com.sct.incidencias.upload.DigitalizarDocumentoService {
 
     public DigitalizarDocumentoServiceLocator() {
     }

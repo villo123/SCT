@@ -1,5 +1,5 @@
 package com.sct.incidencias.upload;
-import commons-fileupload-1.1.jar;
+import 
 
 public class DigitalizarDocumentoProxy implements com.sct.incidencias.upload.DigitalizarDocumento {
   private String _endpoint = null;
