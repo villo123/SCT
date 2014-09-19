@@ -49,7 +49,7 @@ public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.S
         DigitalizarDocumentoSoapPortWSDDServiceName = name;
     }
 
-    public gob.sct.documentos.DigitalizarDocumento getDigitalizarDocumentoSoapPort() throws javax.xml.rpc.ServiceException {
+    public com.sct.incidencias.upload.DigitalizarDocumento getDigitalizarDocumentoSoapPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(DigitalizarDocumentoSoapPort_address);
@@ -82,8 +82,8 @@ public class DigitalizarDocumentoServiceLocator extends org.apache.axis.client.S
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (gob.sct.documentos.DigitalizarDocumento.class.isAssignableFrom(serviceEndpointInterface)) {
-                gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub _stub = new gob.sct.documentos.DigitalizarDocumentoServiceSoapBindingStub(new java.net.URL(DigitalizarDocumentoSoapPort_address), this);
+            if (com.sct.incidencias.upload.DigitalizarDocumento.class.isAssignableFrom(serviceEndpointInterface)) {
+            	com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub _stub = new com.sct.incidencias.upload.DigitalizarDocumentoServiceSoapBindingStub(new java.net.URL(DigitalizarDocumentoSoapPort_address), this);
                 _stub.setPortName(getDigitalizarDocumentoSoapPortWSDDServiceName());
                 return _stub;
             }
