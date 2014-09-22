@@ -9,7 +9,20 @@
 		<meta charset="ISO-8859-1">
 		<title>Buscar Incidencia</title>
 		<link rel="stylesheet" type="text/css" href="css/Busqueda.css" />
+		<style type="text/css" title="currentStyle">
+			@import "css/demo_page.css";
+			@import "css/demo_table.css";
+		</style>
+		
 		<script type="text/javqqascript" src="js/master.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').dataTable();
+			} );
+		</script>
+
 	</head>
 	<body>
 		<div class="panel">
@@ -18,8 +31,9 @@
 			</div>
 			<center><h1>Filtrar Incidencia</h1></center>
 			<div class="container">
+			<form method="POST" action="busqueda">
 				<label id="Foliolabel">Folio:</label>
-				<input type="Text" name="folio" id="Foliotxt" size="30" />
+				<input type="Text" name="foliobusqueda" id="Foliotxt" size="30" />
 				
 				<label id="Unitlabel">Unidad Administrativa:</label>
                     <select id="Unittxt" name="unidadresponsable">
@@ -73,9 +87,10 @@
 							while(rsx.next()){%>
 								<option value="<%=rsx.getString(1)%>"><%=rsx.getString(2)%></option>
 								<%}%>
-					</select><br />		
-				<input type="submit" name="enviar" value="Filtrar" id="btnSubmit" />
-				
+					</select><br />	
+					<%dba.liberarConexion(dba.getCt());%>	
+				<input type="submit" name="enviar" value="Filtrar" id="btnSubmit" onclick="return validarDatos();"/>
+				</form>				
 			</div>
 		</div>
 	</body>
