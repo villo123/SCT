@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("login",usuario);
 		}
 		if(DBConexion.validar(usuario, pass)){
-			if(usuario.equals("gvega")){
+			if(usuario.equals("gvega1")){
 				RequestDispatcher rd = request.getRequestDispatcher("vista.jsp");
 				rd.forward(request, response);
 			}
