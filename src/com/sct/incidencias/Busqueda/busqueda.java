@@ -52,7 +52,7 @@ public class busqueda extends HttpServlet {
 		if(folio == "Foliotxt"){
 			@SuppressWarnings("unchecked")
 			ArrayList<String[]> registros = new ArrayList<String[]>();
-			registros = (ArrayList<String[]>) request.getSession().getAttribute("busqueda");
+			registros = (ArrayList<String[]>) request.getAttribute("busqueda");
 			try {
 				psbf = d.getCt().prepareStatement(
 						"SELECT Incidencia.Folio"
@@ -152,9 +152,9 @@ public class busqueda extends HttpServlet {
 			}
 		}//fin del if
 		
-		response.sendRedirect("vistaBusqueda.jsp");
-		//RequestDispatcher rd = request.getRequestDispatcher("vistaBusqueda.jsp");
-		//rd.forward(request, response);
+	
+		RequestDispatcher rd = request.getRequestDispatcher("vistaBusqueda.jsp");
+		rd.forward(request, response);
 		
 	}
 
