@@ -43,7 +43,7 @@
 				<option onclick="tipoprior();">Tipo de Prioridad</option>
 				<option onclick="uscat();">Usuario Cat</option>
 			</select>		
-			
+			<!--  -->
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;" cellpadding="0" cellspacing="0" border="0" class="display" id="tabla"> 
              	<thead>
