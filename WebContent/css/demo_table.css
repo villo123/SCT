@@ -130,6 +130,7 @@ table.display thead th {
 	border-bottom: 1px solid black;
 	font-weight: bold;
 	cursor: pointer;
+	background: #007a33;
 	* cursor: hand;
 }
 
@@ -137,6 +138,7 @@ table.display tfoot th {
 	padding: 3px 18px 3px 10px;
 	border-top: 1px solid black;
 	font-weight: bold;
+	background: #007a33;
 }
 
 table.display tr.heading2 td {
