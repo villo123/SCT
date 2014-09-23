@@ -7,10 +7,6 @@
 		volver = open("login.jsp");
 	}
 	
-	function seacker(){
-		buscar = open("Busqueda.jsp");
-	}
-	
 	function atenutic(){
 		abriratenutic = window.open("AtendioUTIC.jsp","Atendio Utic","width=auto,height=auto");
 	} 
