@@ -10,6 +10,17 @@
 		<title>Registro de Insidencia</title>
 		<link rel="stylesheet" type="text/css" href="css/vista.css"/>
 		<script type="text/javascript" src="js/master.js"></script>
+		<style type="text/css" title="currentStyle">
+			@import "./css/demo_page.css";
+			@import "./css/demo_table.css";
+		</style>
+		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#tabla').dataTable();
+			} );
+		</script>
 	</head>
 <body>
 		<div id="contentvista"></div>
@@ -36,9 +47,39 @@
 			</select>		
 			
 		<div id="close"></div> 
-		 <table border="2px" style="border-collapse: collapse;"> 
-             	
-	
+		 <table border="2px" style="border-collapse: collapse;" cellpadding="0" cellspacing="0" border="0" class="display" id="tabla"> 
+             	<thead>
+		<tr>
+                 <th>Folio</th>
+                 <th>Usuario UR</th>
+                 <th>Cisco</th>
+                 <th>E-mail</th>
+                 <th>Unidad Respondable</th>
+                 <th>Departamento</th>
+                 <th>Estatus</th>
+                 <th>Modulo</th>
+                 <th>Proceso</th>
+                 <th>Descripción de la Incidencia </th>
+                 <th>Prioridad</th>
+                 <th>Fech enviada por el CAT</th>
+                 <th>Hora enviada por el CAT</th>
+                 <th>Usuario CAT</th>
+                 <th>Atendio</th>
+                 <th>Fecha de atención</th>
+                 <th>Hora de atencion</th>
+                 <th>Tipo de Incidencia</th>
+                 <th>Tipo de Solucion</th>
+                 <th>Respuesta</th>
+                 <th>Aprobación</th>
+                 <th>Fecha de Aprobación</th>
+                 <th>Fecha de Llamada</th>
+                 <th>Hora de Llamada </th>
+                 <th>Comentario Llamada</th>
+                 <th>Sistema</th>
+		</tr>
+	</thead>
+		
+	<!--
              <tr>
                  <td class="t">Folio</td>
                  <td class="t">Usuario UR</td>
@@ -67,16 +108,20 @@
                  <td class="t">Comentario Llamada</td>
                  <td class="t">Sistema</td>
              </tr>
-             
+               -->
+               <tbody>
              <% 
              html utils = new html();
              ArrayList registros = utils.getIncidencias();
              Iterator it = registros.iterator();
-
+				int c = 0;
              while(it.hasNext()){
+            	 c++;
             	 String[] columnas = (String[])it.next();
             	 out.println("<tr>");
+            	
             	 for (int x=0;x<columnas.length;x++ ){
+            		 
             		 if(x>=0){
             			 if(x==0){
             				 out.println("<td><a href=\"./updateformulario.jsp?foliolabel="+columnas[x]+"\">"+columnas[x]+"</a></td>");
@@ -93,7 +138,9 @@
              }
              
              %>
-  </table>
+             </tbody>
+
+	  </table>
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   
