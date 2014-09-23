@@ -15,7 +15,6 @@
 			@import "./css/demo_table.css";
 		</style>
 		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
-
 		<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
