@@ -10,6 +10,7 @@
 		<title>Registro de Insidencia</title>
 		<link rel="stylesheet" type="text/css" href="css/vista.css"/>
 		<script type="text/javascript" src="js/master.js"></script>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<style type="text/css" title="currentStyle">
 			@import "./css/demo_page.css";
 			@import "./css/demo_table.css";
@@ -23,6 +24,7 @@
 		</script>
 	</head>
 <body>
+
 		<div id="contentvista"></div>
 		<div id="middlevista">
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
@@ -45,6 +47,7 @@
 			</select>		
 			<!--  -->
 		<div id="close"></div> 
+		<div id="dvData">
 		 <table border="2px" style="border-collapse: collapse;" cellpadding="0" cellspacing="0" border="0" class="display" id="tabla"> 
              	<thead>
 		<tr>
@@ -139,9 +142,8 @@
              </tbody>
 
 	  </table>
-	  <div>
-                <button id="btnExport">Export to excel</button>
-            </div>
+	  </div>
+
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   
