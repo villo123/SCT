@@ -4,13 +4,11 @@ import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Iterator;
+import java.util.*;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Cookie;
@@ -18,29 +16,28 @@ import javax.servlet.http.Cookie;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
-import org.apache.tomcat.jni.File;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
-
-
+@SuppressWarnings("serial")
 public class uploadfile extends HttpServlet {
+	
 	public void init(ServletConfig config) throws ServletException{
+		super.init(config);
 	}		
-	super.init(config);
-}
-
-protected void processRequest (HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{   
+protected void processRequest(HttpServletRequest request,
+        HttpServletResponse response) throws ServletException,IOException{
 	// Validación de documentos menores a 4MB
 	DiskFileItemFactory factory = new DiskFileItemFactory();
 	factory.setSizeThreshold(4 * 1024 * 1024);
 	factory.setRepository(new File("."));
 	ServletFileUpload upload = new ServletFileUpload(factory);
 	upload.setSizeMax(4 * 1024 * 1024);
+	@SuppressWarnings("rawtypes")
 	List items = upload.parseRequest(request);
 	// Procesamiento de los archivos de carga
 	boolean lSuccess = true;
 	try{
-	   Iterator iter = items.iterator();
+	   @SuppressWarnings("rawtypes")
+	Iterator iter = items.iterator();
 	           while(iter.hasNext()){
 	             FileItem item = (FileItem) iter.next();
 	             if(item.isFormField()){
