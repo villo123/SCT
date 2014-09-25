@@ -143,7 +143,7 @@
 
 	  </table>
 	  </div>
-
+			<a href="ExcelReport.jsp">Excel</a>
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   
