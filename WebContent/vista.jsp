@@ -17,6 +17,7 @@
 		</style>
 		<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+		<script type="text/javascript" src="js/vista.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
 				$('#tabla').dataTable();
@@ -143,7 +144,10 @@
 
 	  </table>
 	  </div>
+			<!---->
+			<button id="btn" onclick="desaparecer_select();desaparecer_botones();">Antes de exportar presione aquí</button>
 			<a href="ExcelReport.jsp">Excel</a>
+	        <button id="btn" onclick="aparecer_select();aparecer_botones();">Despues de exportar presione aquí</button>
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   
