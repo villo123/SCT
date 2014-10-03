@@ -30,12 +30,6 @@
 	<%	
       
 	try{
-		//html utils = new html();
-    	//ArrayList registros = utils.getIncidencias();
-    	//Iterator it = registros.iterator();
-			
-        //formato fuente para el contenido contenido
-         //File file = new File("C:\\Users\\Brayan\\output.xls");
         WritableFont wf = new WritableFont( WritableFont.ARIAL, 13, WritableFont.NO_BOLD);
         WritableCellFormat cf = new WritableCellFormat(wf);  
         WritableCellFormat fc = new WritableCellFormat(wf);
@@ -312,10 +306,8 @@
 	        
 	        try {
 	        	response.setContentType("application/vnd.ms-excel");
-	        	response.setHeader("Content-Disposition","attachment;filename=\"Hola.xls\"");
-	        	//ervletOutputStream outst = response.getOutputStream();
-	        	workbook.write();
-	            
+	        	response.setHeader("Content-Disposition","attachment;filename=\"ReporteIncidencia.xls\"");
+	        	workbook.write();	            
 	            workbook.close();
 	            out.clear();
 	            out = pageContext.pushBody();
@@ -328,8 +320,9 @@
 	        }
 
 	        System.out.println(  "Proceso completado...."  );
+			RequestDispatcher rd = request.getRequestDispatcher("vista.jsp");
+			rd.forward(request, response);
 				
-			//out.println("Data is saved in excel file.");
 	}catch ( Exception ex ){
 	}%>
 </body>
