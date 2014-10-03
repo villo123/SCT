@@ -1,3 +1,4 @@
+<%@page import="com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory.Woodstox"%>
 <%@page import="jxl.format.CellFormat"%>
 
 <%@page import="jxl.write.Number"%>
@@ -24,7 +25,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-		Excel Report
+
 	
 	<%	
       
@@ -34,7 +35,7 @@
     	//Iterator it = registros.iterator();
 			
         //formato fuente para el contenido contenido
-         File file = new File("C:\\Users\\Brayan\\output.xls");
+         //File file = new File("C:\\Users\\Brayan\\output.xls");
         WritableFont wf = new WritableFont( WritableFont.ARIAL, 13, WritableFont.NO_BOLD);
         WritableCellFormat cf = new WritableCellFormat(wf);  
         WritableCellFormat fc = new WritableCellFormat(wf);
@@ -44,22 +45,18 @@
         }catch(WriteException e1){
         	e1.printStackTrace();
         }
-        
-        
-        
-       
-
         //Interfaz para una hoja de cálculo
         WritableSheet excelSheet = null;
         WritableWorkbook workbook = null;
         
         
-			DBConexion dba = new DBConexion();
+		DBConexion dba = new DBConexion();
 			
 
             
             try {
-                workbook = Workbook.createWorkbook(file);
+            	ServletOutputStream outputStream = response.getOutputStream();
+                workbook = Workbook.createWorkbook(outputStream);
                 //hoja con nombre de la tabla
                 workbook.createSheet( "persona", 0 );
                 excelSheet = workbook.getSheet(0);               
@@ -245,7 +242,6 @@
 		            Label FELab = new Label(11,row,rset.getString("FELab"),cf);
 		            Label HELab = new Label(12,row,rset.getString("HELab"),cf);
 		           
- 
 		            String nomcat = rset.getString("NombreUsuario");
 		            String apcat = rset.getString("APaterno");
 		            String amcat = rset.getString("AMaterno");
@@ -315,8 +311,14 @@
 	        }
 	        
 	        try {
-	            workbook.write();
+	        	response.setContentType("application/vnd.ms-excel");
+	        	response.setHeader("Content-Disposition","attachment;filename=\"Hola.xls\"");
+	        	//ervletOutputStream outst = response.getOutputStream();
+	        	workbook.write();
+	            
 	            workbook.close();
+	            out.clear();
+	            out = pageContext.pushBody();
 	            System.out.println(  "Escribiendo en disco....Listo"  );         
 	        } catch (IOException ex) {
 	            System.err.println(  ex.getMessage() );
@@ -327,28 +329,7 @@
 
 	        System.out.println(  "Proceso completado...."  );
 				
-
-			/* ;*/
-			
-				
-			
-			/**/
-
-			/*int c = 0;
-			while(it.hasNext()){
-           	 c++;
-           	 String[] columnas = (String[])it.next();
-           	 	for(int x = 0; x <= columnas.length;x++){
-           	 	}
-			}	*/	
-			/*row.createCell((short)0).setCellValue(value1);
-			row.createCell((short)1).setCellValue(value2);
-			row.createCell((short)2).setCellValue(value3);
-			row.createCell((short)3).setCellValue(value4);
-			row.createCell((short)4).setCellValue(value5);
-			row.createCell((short)5).setCellValue(value6);*/
-
-			out.println("Data is saved in excel file.");
+			//out.println("Data is saved in excel file.");
 	}catch ( Exception ex ){
 	}%>
 </body>
