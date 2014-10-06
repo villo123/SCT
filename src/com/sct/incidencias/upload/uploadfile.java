@@ -44,7 +44,7 @@ protected void processRequest(HttpServletRequest request,
 	               System.out.println("Campo:" + item.getFieldName() + " Valor:" + item.getString());
 	             } else{
 	              
-	               bytes [] bArchivo = item.get();
+	               Bytes [] bArchivo = item.get();
 	              
 	               String[] keys = {"userid","password","entity","mimeType","lintiCveDocumen"};
 	               String[] values = {"USR","PWD","ITEM-TYPE","application/octet-stream","IDENTIFICADOR UNICO DE DOCUMENTO"};

@@ -6,7 +6,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Registro SAOP</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/index.css"/>
 <link rel="shortcut icon" type="image/x-icon" href="ima/favicon.ico">
@@ -17,7 +17,6 @@
 	<body onload="carga();">
 	<div class="panel">
 	<div id="imagen"><img src="ima/logo.png" width="260" height="84"></div>
-	<div id="imagen"><img src="ima/incidecnia3" width="84" height="260"></div>
 	<div class="container">
 	<div id="im"></div>
 	
