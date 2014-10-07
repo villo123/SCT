@@ -40,3 +40,7 @@ function validarDatos(){
 		return true;
 	}
 }
+
+function cerrarForm(){
+	window.close();
+}

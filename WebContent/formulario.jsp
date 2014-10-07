@@ -225,7 +225,7 @@
 					
 					<%dba.liberarConexion(dba.getCt());%>
                     <input type="submit" value="Guardar" name="guardar" id="submit"/>
-					 <input type="button" value="Cancelar" id="cancel"/>
+					 <input type="button" value="Cancelar" id="cancel"  onclick="cerrarForm();"/>
                 </div>
             </form></center>
 			</div>

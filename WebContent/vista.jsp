@@ -32,7 +32,7 @@
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
-			<button id="btn">Cancelar</button>
+			<button id="btn" onclick="window.open('ExcelReport.jsp')">Excel</button>
 			
 			<select id="select">
 				<option>Catálogos</option>
@@ -145,7 +145,6 @@
 
 	  </table>
 	  </div>
-			<a href="ExcelReport.jsp">Excel</a>
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   
