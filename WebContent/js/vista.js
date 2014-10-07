@@ -1,4 +1,4 @@
-	function desaparecer_select(){
+	/*function desaparecer_select(){
 		document.getElementById("select").style.visibility="hidden";
 	}
 	function desaparecer_botones(){
@@ -9,7 +9,7 @@
 	}
 	function aparecer_botones(){
 		document.getElementById("btn").style.visibility="hidden";
-	}
+	}*/
 	/*
 	 * Introduzca la siguiente linea en el archivo que desea (vista, vistas, vistausuario)
 	 * <head>

@@ -10,6 +10,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link href="css/calendario.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="js/formulario.js"></script>
 		<script src="js/calendar.js" type="text/javascript"></script>
 		<script src="js/calendar-es.js" type="text/javascript"></script>
 		<script src="js/calendar-setup.js" type="text/javascript"></script>
@@ -34,7 +35,7 @@
 			</div>
 			<center><h1>Nueva Incidencia</h1></center>
 			<div class="container">
-            <center><form method="POST" action="InsertarFormulario">
+            <center><form method="POST" action="InsertarFormulario" onsubmit="return validarDatos();">
                 <div id="loginForm">
                     <label id="foliolabel">Folio:</label>
                     <input id="foliotxt" type="text" name="folio" value="" size="30"/><br/>

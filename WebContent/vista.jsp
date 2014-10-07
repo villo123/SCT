@@ -144,10 +144,7 @@
 
 	  </table>
 	  </div>
-			<!---->
-			<button id="btn" onclick="desaparecer_select();desaparecer_botones();">Antes de exportar presione aquí</button>
 			<a href="ExcelReport.jsp">Excel</a>
-	        <button id="btn" onclick="aparecer_select();aparecer_botones();">Despues de exportar presione aquí</button>
     HOLA, <%=session.getAttribute("login") %>  
     </div>
 		<div id="downvista"></div>   

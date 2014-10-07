@@ -44,7 +44,7 @@
 		abrirvista = open("vista.jsp");
 	}
 //Login Script
-	function carga(){
+	function r(){
 		document.getElementById("usuario").focus();
 	}
 	function valideDatos(){
