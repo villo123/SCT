@@ -35,7 +35,7 @@
 			</div>
 			<center><h1>Nueva Incidencia</h1></center>
 			<div class="container">
-            <center><form method="POST" action="InsertarFormulario" onsubmit="return validarDatos();">
+    <center><form method="POST" action="InsertarFormulario" onsubmit="return validarDatos();">
                 <div id="loginForm">
                     <label id="foliolabel">Folio:</label>
                     <input id="foliotxt" type="text" name="folio" value="" size="30"/><br/>
@@ -224,8 +224,8 @@
 					<textarea rows="6" cols="50" name="comentariollamada" id="comllamada" disabled="true"></textarea>
 					
 					<%dba.liberarConexion(dba.getCt());%>
-                    <input type="submit" value="Guardar" id="submit"/>
-					<input type="submit" value="Cancelar" id="cancel"/> 
+                    <input type="submit" value="Guardar" name="guardar" id="submit"/>
+					 <input type="button" value="Cancelar" id="cancel"/>
                 </div>
             </form></center>
 			</div>
