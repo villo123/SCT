@@ -23,6 +23,7 @@
 				$('#tabla').dataTable();
 			} );
 		</script>
+		<!--  -->
 	</head>
 <body>
 
