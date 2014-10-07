@@ -1,4 +1,4 @@
-%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import="mx.gob.sct.utic.utils.html" %> 
 <%@ page import="java.util.ArrayList" %> 
@@ -28,8 +28,7 @@
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
-			<button id="btn" onclick="abrirformulario();">Editar</button>
-			<button id="btn">Cancelar</button>	
+			<button id="btn" onclick="window.open('ExcelReport.jsp')">Exportar a Excel</button>
 			
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 

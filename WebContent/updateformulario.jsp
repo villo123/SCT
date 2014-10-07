@@ -15,6 +15,7 @@
 		<link rel="stylesheet" media="screen" href="css/timepicker.css" type="text/css" />
 		<link href="css/calendario.css" type="text/css" rel="stylesheet">
 		<script src="js/calendar.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/updateform.js"></script>
 		<script src="js/calendar-es.js" type="text/javascript"></script>
 		<script src="js/calendar-setup.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
@@ -38,7 +39,7 @@
 			</div>
 			<center><h1>Nueva Incidencia</h1></center>
 			<div class="container">
-            <center><form method="POST" action="UpdateFormulario">
+            <center><form method="POST" action="UpdateFormulario" onsubmit="return validarDatosUp();">
                 <div id="loginForm">
                     <label id="foliolabel">Folio:</label>
                     <%String valor = request.getParameter("foliolabel"); 
@@ -322,7 +323,7 @@
 					<%dba.liberarConexion(dba.getCt());%>
 				
                     <input type="submit" value="Guardar" id="submit"/>
-					<input type="submit" value="Cancelar" id="cancel"/> 
+					<input type="button" value="Cancelar" id="cancel" onclick="cerrarUpForm();"/> 
                 </div>
             </form></center>
 			</div>

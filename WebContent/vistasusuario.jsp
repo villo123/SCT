@@ -27,6 +27,7 @@
 		<div id="middlevista">
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
+			<button id="btn" onclick="window.open('ExcelReport.jsp')">Exportar a Excel</button>
 		<div id="close"></div> 
 		 <table border="2px" style="border-collapse: collapse;"> 
              	
@@ -128,8 +129,8 @@
              </tbody>
 
 	  </table>
-	  <div>
-                <button id="btnExport">Export to excel</button>
+	  </div>
+
             </div>
     HOLA, <%=session.getAttribute("login") %>  
     </div>

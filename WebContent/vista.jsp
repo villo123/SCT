@@ -32,7 +32,7 @@
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
-			<button id="btn" onclick="window.open('ExcelReport.jsp')">Excel</button>
+			<button id="btn" onclick="window.open('ExcelReport.jsp')">Exportar a Excel</button>
 			
 			<select id="select">
 				<option>Catálogos</option>
@@ -80,6 +80,7 @@
                  <th>Comentario Llamada</th>
                  <th>Sistema</th>
 		</tr>
+
 	</thead>
 		
 	<!--
@@ -127,7 +128,7 @@
             		 
             		 if(x>=0){
             			 if(x==0){
-            				 out.println("<td><a href=\"./updateformulario.jsp?foliolabel="+columnas[x]+"\">"+columnas[x]+"</a></td>");
+            				 out.println("<td><a target=\"_blank\" href=\"./updateformulario.jsp?foliolabel="+columnas[x]+"\">"+columnas[x]+"</a></td>");
             			 }
             			 else{
             				 out.println("<td>"+columnas[x]+"</td>");
