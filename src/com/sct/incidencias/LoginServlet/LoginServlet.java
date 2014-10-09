@@ -38,6 +38,7 @@ public class LoginServlet extends HttpServlet {
 		String pass = request.getParameter("passwordutic");
 		
 		HttpSession sessionad = request.getSession(false);
+		HttpSession sessionop = request.getSession(false);
 		HttpSession session = request.getSession(false);
 		/*if(sessionad != null){
 			sessionad.setAttribute("login",usuario);
@@ -60,14 +61,14 @@ public class LoginServlet extends HttpServlet {
 			}
 			else if(usuario.equals("ext.71301")){
 				usuario = "Dulce Jaret Vargas Pelaez";
-				session.setAttribute("usuarioop",usuario);
+				sessionop.setAttribute("usuarioop",usuario);
 				RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
 				rd.forward(request, response);
 			}
 
 			else if(usuario.equals("ddt.utic.09")){
 				usuario = "Jose Angel Maya Quevedo";
-				session.setAttribute("usuarioop",usuario);
+				sessionop.setAttribute("usuarioop",usuario);
 				RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
 				rd.forward(request, response);
 			}

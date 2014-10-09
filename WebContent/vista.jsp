@@ -26,11 +26,15 @@
 		<!--  -->
 	</head>
 <body>
+
 		<%
-			HttpSession sessionv = request.getSession();
+			/*HttpSession sessionv = request.getSession(false);
 			if(sessionv == null){
-			response.sendRedirect("login.jsp");
-		}
+				response.setHeader("Cache-Control", "no-cache");
+				response.setHeader("Pragma", "no-cache");
+				response.setDateHeader("Expires", 0);
+				response.sendRedirect("login.jsp");
+		}*/
 	%>
 		<div id="contentvista"></div>
 		<div id="middlevista">

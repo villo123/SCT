@@ -29,8 +29,8 @@
 			<h1 align="center">Registro de Incidencia</h1>
 						    <%
    				 String usuarioop = "";
-   				 HttpSession sessionad = request.getSession();
-  				 usuarioop = (String)sessionad.getAttribute("usuarioop");
+   				 HttpSession sessionop = request.getSession();
+  				 usuarioop = (String)session.getAttribute("usuarioop");
     %>  
      Bienvenido <%=usuarioop%>
      <a href="logout.jsp">Cerrar Sesión</a>
