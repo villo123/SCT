@@ -27,6 +27,13 @@
 		<div id="middlevista">
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
+						    <%
+   				 String usuarioop = "";
+   				 HttpSession sessionad = request.getSession();
+  				 usuarioop = (String)sessionad.getAttribute("usuarioop");
+    %>  
+     Bienvenido <%=usuarioop%>
+     <a href="logout.jsp">Cerrar Sesión</a>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
 			<button id="btn" onclick="window.open('ExcelReport.jsp')">Exportar a Excel</button>
 			
@@ -131,9 +138,8 @@
 
 	  </table>
 	  <div>
-                <button id="btnExport">Export to excel</button>
             </div>
-    HOLA, <%=session.getAttribute("login") %>  
+ 
     </div>
 		<div id="downvista"></div>   
 </body>

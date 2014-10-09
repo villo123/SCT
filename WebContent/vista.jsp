@@ -26,11 +26,23 @@
 		<!--  -->
 	</head>
 <body>
-
+		<%
+			HttpSession sessionv = request.getSession();
+			if(sessionv == null){
+			response.sendRedirect("login.jsp");
+		}
+	%>
 		<div id="contentvista"></div>
 		<div id="middlevista">
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
+			    <%
+   				 String usuarioad = "";
+   				 HttpSession sessionad = request.getSession();
+  				 usuarioad = (String)sessionad.getAttribute("usuarioad");
+    %>  
+     Bienvenido <%=usuarioad%>
+     <a href="logout.jsp">Cerrar Sesión</a>
 			<button id="btn" onclick="abrirformulario();">Nuevo</button>
 			<button id="btn" onclick="window.open('ExcelReport.jsp')">Exportar a Excel</button>
 			
@@ -146,7 +158,7 @@
 
 	  </table>
 	  </div>
-    HOLA, <%=session.getAttribute("login") %>  
+
     </div>
 		<div id="downvista"></div>   
 </body>
