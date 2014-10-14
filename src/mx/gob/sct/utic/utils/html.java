@@ -55,94 +55,6 @@ public class html {
 		DBConexion d = new DBConexion();
 
 		try {
-			// PreparedStatement ps =
-			// d.getCt().prepareStatement("SELECT ildIncidencia FROM PUB.Incidencia");//,MAX(idUsuarioResponsable)
-			// PreparedStatement ps =
-			// d.getCt().prepareStatement("SELECT MAX(idUsuarioResponsable) FROM PUB.CATUsuarioUnidadResponsable");
-			// ResultSet rs = ps.executeQuery();
-			// while(rs.next()){
-			// System.out.println("ildIncidencia: " + rs.getString(1));
-			// inc.setildIncidencia(Integer.parseInt(rs.getString(1))+1);
-			// System.out.println("idUsuarioResponsable: " + rs.getString(2));
-			// }
-
-			/*
-			 * PreparedStatement ps2 = d.getCt().prepareStatement(
-			 * "INSERT INTO PUB.Incidencia (ildIncidencia) VALUES (?)");
-			 * ps2.setString(1, Integer.toString(inc.getildIncidencia()));
-			 * ps2.executeUpdate(); System.out.println("insertcion correcta");
-			 */
-
-			/*
-			 * String databaseURL =
-			 * "jdbc:datadirect:openedge://localhost:30060;schemaDefault=PUB;databaseName=incidencias.db;user=sysprogress;password=sysprogress"
-			 * ; Class.forName("com.ddtek.jdbc.openedge.OpenEdgeDriver");
-			 * System.out.println("Controlador cargado"); ct =
-			 * DriverManager.getConnection(databaseURL); st =
-			 * ct.createStatement();
-			 */
-			// System.out.println("Conexion exitosa");
-			/*
-			 * PreparedStatement ps =
-			 * ct.prepareStatement("INSERT INTO PUB.Incidencia (ildIncidencia, "
-			 * + "Folio, " + "Aprobado," + "FechaAprobacion," +
-			 * "DescripcionIncidencia," + "Prioridad," + "FELab," + "HELab," +
-			 * "FAtencion," + "HAtencion," +
-			 * "RespuestaUtic) VALUES (?,?,?,?,?,?,?,?,?,?,?)");// AND
-			 * ildDepartamento = (?) AND ildModulo = (?) AND ildProceso = (?)
-			 * AND ildIncidente = (?) AND ildTipoDeSolucion = (?) AND ildEstatus
-			 * = (?) AND ildUsuarioCat = (?) AND ildAtendio = (?)");
-			 * 
-			 * ps.setString(1, Integer.toString(catunr.getildUnidadAdm()));
-			 * ps.setString(2, inc.getFolio()); ps.setString(3,
-			 * inc.getAprobado()); ps.setDate(4,
-			 * (java.sql.Date)inc.getFechaAprobacion()); ps.setString(5,
-			 * inc.getDescripcionIncidencia());
-			 * ps.setString(6,inc.getPrioridad()); ps.setDate(7,
-			 * (java.sql.Date)inc.getFELab()); ps.setTime(8,
-			 * (java.sql.Time)inc.getHELab()); ps.setDate(9,
-			 * (java.sql.Date)inc.getFAtencion()); ps.setTime(10,(java.sql.Time)
-			 * inc.getHAtencion()); ps.setString(11, inc.getRespuestaUtic());
-			 * 
-			 * ps.executeUpdate();
-			 */
-			/*
-			 * PreparedStatement ps2 =
-			 * d.getCt().prepareStatement("SELECT * FROM PUB.Incidencia ");
-			 * //PreparedStatement ps2 = ct.prepareStatement(
-			 * "SELECT * FROM PUB.CATUsuarioUnidadResponsable INNER JOIN PUB.CATUnidadResponsable ON CATUsuarioUnidadResponsable.ildUnidadAdm = CATUnidadResponsable.ildUnidadAdm "
-			 * ); rs = ps2.executeQuery();
-			 * 
-			 * while(rs.next()){ //System.out.println(rs.getString(1) + " " +
-			 * rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4) +
-			 * " " + rs.getString(5) + " " + rs.getString(6) + " " +
-			 * rs.getString(7) + " " + rs.getString(8) + " " + rs.getString(9) +
-			 * " " + rs.getString(10) + " ");
-			 * System.out.println("ildIncidencia: " +rs.getString(1) + " " );
-			 * //inc.setHELab(rs.getTime(3)); System.out.println("ildSistema: "
-			 * + rs.getString(2) + " " ); System.out.println("ildAtendio: " +
-			 * rs.getString(3) + " " ); System.out.println("ildDepartamento:" +
-			 * rs.getString(4) + " " ); System.out.println("ildEstatus: " +
-			 * rs.getString(5) + " " ); System.out.println("ildTipoDeSolucion: "
-			 * + rs.getString(6) + " " ); System.out.println("ildUnidadAdmin: "
-			 * + rs.getString(7) + " " ); System.out.println("ildUsuarioCat: " +
-			 * rs.getString(8) + " " ); System.out.println("FELab:" +
-			 * rs.getString(9) + " " ); System.out.println("HELab: " +
-			 * rs.getString(10) + " " ); System.out.println("FAtencion:" +
-			 * rs.getString(11) + " " ); System.out.println("HAtencion:" +
-			 * rs.getString(12) + " " ); System.out.println("Aprobado:" +
-			 * rs.getString(13) + " " ); System.out.println("FechaAprobacion: "
-			 * + rs.getString(14) + " " );
-			 * System.out.println("DescripcionIncidencia: " + rs.getString(15) +
-			 * " " ); System.out.println("RespuestaUtic:" + rs.getString(16) +
-			 * " " ); System.out.println("Prioridad:" + rs.getString(17) + " "
-			 * ); System.out.println("Folio:" + rs.getString(18) + " " );
-			 * System.out.println("ildIncidente: " + rs.getString(19));
-			 * System.out.println("idUsuarioResponsable:" + rs.getString(20) +
-			 * " " ); System.out.println("ildModulo:" + rs.getString(21) + " "
-			 * ); System.out.println("ildProceso:" + rs.getString(22) + " " );
-			 * System.out.println(); }
-			 */
 			ct = d.getCt();
 			PreparedStatement ps2 = ct
 					.prepareStatement(
@@ -185,7 +97,8 @@ public class html {
 									+ "LEFT JOIN PUB.CATModulo ON Incidencia.ildModulo = CATModulo.ildModulo "
 									+ "LEFT JOIN PUB.CATProceso ON Incidencia.ildProceso = CATProceso.ildProceso "
 									+ "LEFT JOIN PUB.CATEstatus ON Incidencia.ildEstatus = CATEstatus.ildEstatus "
-									+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable");
+									+ "LEFT JOIN PUB.CATUsuarioUnidadResponsable ON Incidencia.idUsuarioResponsable = CATUsuarioUnidadResponsable.idUsuarioResponsable "
+									+ "ORDER BY CATEstatus.NombreEstatus DESC");
 			                        
 			                        
 			rs = ps2.executeQuery();
@@ -198,6 +111,7 @@ public class html {
 				campos[4] = rs.getString(7);
 				campos[5] = rs.getString(8);
 				campos[6] = rs.getString(9);
+				System.out.println(campos[6] = rs.getString(9));
 				campos[7] = rs.getString(10);
 			    campos[8] = rs.getString(11);
 				campos[9] = rs.getString(12);		

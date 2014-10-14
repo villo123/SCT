@@ -150,9 +150,6 @@
             				 out.println("<td>"+columnas[x]+"</td>");
             			 } 
             		 }
-            		 /*else if(x == 26){
-    				 out.println("<td style=\"visibility:hidden;\">"+columnas[x]+"</td>");
-    			 }*/
             	 }
             	 out.println("</tr>");
              }
