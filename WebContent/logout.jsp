@@ -8,11 +8,11 @@
 </head>
 <body>
 	<%
-	      HttpSession sessionad = request.getSession(true);
+	     /* HttpSession sessionad = request.getSession(true);
 	      sessionad.getAttribute("usuarioad");
 		  sessionad.removeAttribute("usuarioad");
 		  sessionad.invalidate();	
-		  response.sendRedirect("login.jsp");
+		  response.sendRedirect("login.jsp");*/
 		  
 		 /* HttpSession sessionop = request.getSession(true);
 		  sessionop.getAttribute("usuarioop");
@@ -25,6 +25,8 @@
 		  sessionusr.removeAttribute("usuario");
 		  sessionusr.invalidate();
 		  response.sendRedirect("login.jsp");*/
+		  
+		  
 		  
 
 
