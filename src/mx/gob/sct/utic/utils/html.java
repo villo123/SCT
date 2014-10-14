@@ -111,7 +111,6 @@ public class html {
 				campos[4] = rs.getString(7);
 				campos[5] = rs.getString(8);
 				campos[6] = rs.getString(9);
-				System.out.println(campos[6] = rs.getString(9));
 				campos[7] = rs.getString(10);
 			    campos[8] = rs.getString(11);
 				campos[9] = rs.getString(12);		
@@ -132,12 +131,33 @@ public class html {
 				campos[18] = rs.getString(25);
 				campos[19] = rs.getString(26);
 				campos[20] = rs.getString(27);
-				campos[21] = rs.getString(28);
-				campos[22] = rs.getString(29);
 				
-				//Date date3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(30));
-				//String HLlamada = new SimpleDateFormat("H:mm").format(date3); // 9:00
+				campos[21] = rs.getString(28);
+				if(campos[21] == null){
+					campos[21] = "";
+				}else{
+					campos[21] = rs.getString(28);
+				}
+				
+				
+				campos[22] = rs.getString(29);
+				if(campos[22] == null){
+					campos[22] = "";
+				}else{
+					campos[22] = rs.getString(29);
+				}
+				
+				
+				
 				campos[23] = rs.getString(30);
+				if(campos[23] == null){
+					campos[23] = "";
+				}else{
+					Date date3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(30));
+					String HLlamada = new SimpleDateFormat("H:mm").format(date3); // 9:00
+					campos[23] = HLlamada;
+				}
+				
 				
 				campos[24] = rs.getString(31);
 				campos[25] = rs.getString(32);
