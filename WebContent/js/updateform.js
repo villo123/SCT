@@ -13,7 +13,7 @@ function validarDatosUp(){
 	}else if((horaaten.value == "" || horaaten.value == '' || horaaten.value == null) || (horaaten.value == "00:00")){
 		alert("Campo(s) vacio(s) o incorrecto(s). Verifique =)");
 		return false;
-	}else if(respuesta.valur == "" || respuesta.value == '' || respuesta.vaue == null){
+	}else if(respuesta.valur == "" || respuesta.value == '' || respuesta.value == null){
 		alert("Campo(s) vacio(s) o incorrecto(s). Verifique =)");
 		return false;
 	}else if((fechaapro.value == "" || fechaapro.value == '' || fechaapro.value == null) || (fechaapro.value == "yyyy-mm-dd")){
