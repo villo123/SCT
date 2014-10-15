@@ -15,6 +15,10 @@
 <%@ page import="com.sct.incidencias.Conexion.DBConexion" %>
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.SQLException" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+
+
 
 
 
@@ -235,7 +239,10 @@
 		            Label DescripcionIncidencia = new Label(9,row,rset.getString("DescripcionIncidencia"),cf);
 		            Label Prioridad = new Label(10,row,rset.getString("Prioridad"),cf);
 		            Label FELab = new Label(11,row,rset.getString("FELab"),cf);
-		            Label HELab = new Label(12,row,rset.getString("HELab"),cf);
+		            
+		            Date date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rset.getString("HELab"));
+					String HELabs = new SimpleDateFormat("H:mm").format(date); // 9:00
+		            Label HELab = new Label(12,row,HELabs,cf);
 		           
 		            String nomcat = rset.getString("NombreUsuario");
 		            String apcat = rset.getString("APaterno");
@@ -249,14 +256,35 @@
 					String nombaten = nomaten + " " + apaten + " " + amaten;
 					Label nombreatendio = new Label(14,row,nombaten,cf);
 					Label FAtencion = new Label(15,row,rset.getString("FAtencion"),cf);
-					Label HAtencion = new Label(16,row,rset.getString("HAtencion"),cf);
+					
+					Label HAtencion = null;
+					if(rset.getString("HAtencion") == null){
+						HAtencion = new Label(16,row,"",cf);
+					}else{
+						Date date2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rset.getString("HAtencion"));
+						String HAtencions = new SimpleDateFormat("H:mm").format(date2); // 9:00			
+						HAtencion = new Label(16,row,HAtencions,cf);
+					}
+					
+					
 					Label NombreIncidente = new Label(17,row,rset.getString("NombreIncidente"),cf);
 					Label NombreSolucion = new Label(18,row,rset.getString("NombreSolucion"),cf);
 					Label RespuestaUtic = new Label(19,row,rset.getString("RespuestaUtic"),cf);
 					Label Aprobado = new Label(20,row,rset.getString("Aprobado"),cf);
 					Label FechaAprobacion = new Label(21,row,rset.getString("FechaAprobacion"),cf);
 					Label FLlamada = new Label(22,row,rset.getString("FLlamada"),cf);
-					Label HLlamada = new Label(23,row,rset.getString("HLlamada"),cf);
+					
+					Label HLlamada = null;
+					if(rset.getString("HLlamada") == null){
+						HLlamada = new Label(23,row,"",cf);
+					}else{
+						Date date3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rset.getString("HLlamada"));
+						String HLlamadas = new SimpleDateFormat("H:mm").format(date3); // 9:00
+						HLlamada = new Label(23,row,HLlamadas,cf);
+					}
+					
+					
+					
 					Label ComLlamada = new Label(24,row,rset.getString("ComLlamada"),cf);
 					Label NombreSistema = new Label(25,row,rset.getString("NombreSistema"),cf);
 

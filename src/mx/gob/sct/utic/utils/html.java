@@ -101,15 +101,15 @@ public class html {
 					campos[14] = rs.getString(19)+ " " + rs.getString(20) + " " + rs.getString(21);
 				}
 				
-				campos[15] = rs.getString(22);
-				if(campos[15] == null){
+				//campos[15] = rs.getString(22);
+				if(rs.getString(22) == null){
 					campos[15] = "";
 				}else{
 					campos[15] = rs.getString(22);
 				}
 				
-				campos[16] = rs.getString(23);
-				if(campos[16] == null){
+				//campos[16] = rs.getString(23);
+				if(rs.getString(23) == null){
 					campos[16] = "";
 				}else{
 					Date date2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(23));
@@ -117,15 +117,15 @@ public class html {
 					campos[16] = HAtencion;
 				}
 				
-				campos[17] = rs.getString(24);
-				if(campos[17] == null){
+				//campos[17] = rs.getString(24);
+				if(rs.getString(24) == null){
 					campos[17] = "";
 				}else{
 					campos[17] = rs.getString(24);
 				}
 				
-				campos[18] = rs.getString(25);
-				if(campos[18] == null){
+				//campos[18] = rs.getString(25);
+				if(rs.getString(25) == null){
 					campos[18] = "";
 				}else{
 					campos[18] = rs.getString(25);
@@ -134,16 +134,16 @@ public class html {
 				campos[19] = rs.getString(26);
 				campos[20] = rs.getString(27);
 				
-				campos[21] = rs.getString(28);
-				if(campos[21] == null){
+				//campos[21] = rs.getString(28);
+				if(rs.getString(28) == null){
 					campos[21] = "";
 				}else{
 					campos[21] = rs.getString(28);
 				}
 				
 				
-				campos[22] = rs.getString(29);
-				if(campos[22] == null){
+				//campos[22] = rs.getString(29);
+				if(rs.getString(29) == null){
 					campos[22] = "";
 				}else{
 					campos[22] = rs.getString(29);
@@ -151,8 +151,8 @@ public class html {
 				
 				
 				
-				campos[23] = rs.getString(30);
-				if(campos[23] == null){
+				//campos[23] = rs.getString(30);
+				if(rs.getString(30) == null){
 					campos[23] = "";
 				}else{
 					Date date3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(rs.getString(30));
