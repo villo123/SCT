@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="java.util.*"%>
+<%@ page import="javax.servlet.*" %>
+<%@ page import="javax.servlet.http.*" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,7 +11,7 @@
 </head>
 <body>
 	<%
-	     /* HttpSession sessionad = request.getSession(true);
+	      /*HttpSession sessionad = request.getSession(true);
 	      sessionad.getAttribute("usuarioad");
 		  sessionad.removeAttribute("usuarioad");
 		  sessionad.invalidate();	
@@ -26,10 +29,13 @@
 		  sessionusr.invalidate();
 		  response.sendRedirect("login.jsp");*/
 		  
-		  
-		  
+		      HttpSession s = request.getSession(false);
+		      s.invalidate();
+		     %>
+		     <h1>Logout
 
-
-	%>
+		     <p>You are now logged out.
+		   
+		     <a href="login.jsp"/>Login
 </body>
 </html>
