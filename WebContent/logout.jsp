@@ -11,31 +11,25 @@
 </head>
 <body>
 	<%
-	      /*HttpSession sessionad = request.getSession(true);
-	      sessionad.getAttribute("usuarioad");
-		  sessionad.removeAttribute("usuarioad");
-		  sessionad.invalidate();	
-		  response.sendRedirect("login.jsp");*/
-		  
-		 /* HttpSession sessionop = request.getSession(true);
-		  sessionop.getAttribute("usuarioop");
-		  sessionop.removeAttribute("usuarioop");
-		  sessionop.invalidate();
-		  response.sendRedirect("login.jsp");
-		  
-		  HttpSession sessionusr = request.getSession(true);
-		  sessionusr.getAttribute("usuario");
-		  sessionusr.removeAttribute("usuario");
-		  sessionusr.invalidate();
-		  response.sendRedirect("login.jsp");*/
-		  
-		      HttpSession s = request.getSession(false);
-		      s.invalidate();
-		     %>
-		     <h1>Logout
+		//HttpSession s = request.getSession(false);
+		String usuarioad = "";
+		 HttpSession sessionad = request.getSession();
+		 usuarioad = (String)sessionad.getAttribute("usuarioad");
+	if (sessionad != null) {
+		sessionad.invalidate();
+		response.sendRedirect("login.jsp");
+	}
 
-		     <p>You are now logged out.
-		   
-		     <a href="login.jsp"/>Login
+	Cookie[] cookies = request.getCookies();
+	if (cookies != null && cookies.length > 0) {
+		for (Cookie cookie : cookies) {
+			cookie.setValue("-");
+			cookie.setMaxAge(0);
+			response.addCookie(cookie);
+			response.sendRedirect("login.jsp");
+		}
+	}
+	%>
+
 </body>
 </html>
