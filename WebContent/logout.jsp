@@ -11,24 +11,13 @@
 </head>
 <body>
 	<%
-		//HttpSession s = request.getSession(false);
-		String usuarioad = "";
-		 HttpSession sessionad = request.getSession();
-		 usuarioad = (String)sessionad.getAttribute("usuarioad");
-	if (sessionad != null) {
-		sessionad.invalidate();
+		HttpSession s = request.getSession(false);
+		
+	if (s != null) {
+		s.invalidate();
 		response.sendRedirect("login.jsp");
 	}
 
-	Cookie[] cookies = request.getCookies();
-	if (cookies != null && cookies.length > 0) {
-		for (Cookie cookie : cookies) {
-			cookie.setValue("-");
-			cookie.setMaxAge(0);
-			response.addCookie(cookie);
-			response.sendRedirect("login.jsp");
-		}
-	}
 	%>
 
 </body>
