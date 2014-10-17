@@ -72,6 +72,7 @@
                  <th>Hora de Llamada </th>
                  <th>Comentario Llamada</th>
                  <th>Sistema</th>
+                 <th>Documento</th>
 		</tr>
 	</thead>
 		
@@ -103,6 +104,7 @@
                  <td class="t">Hora de Llamada </td>
                  <td class="t">Comentario Llamada</td>
                  <td class="t">Sistema</td>
+                 <td class="t">Documento</td>
              </tr>
                -->
                <tbody>

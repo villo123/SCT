@@ -56,10 +56,10 @@ public class html {
 						    + ", Incidencia.HLlamada"
 						    + ", Incidencia.ComLlamada"
 						    + ", CATSistema.NombreSistema"
-						    //+ ", CATUsuarioUnidadResponsable.idUsuarioResponsable"
+						   // + ", DocumentosIncidencia.Documento"
 						    + " FROM PUB.Incidencia "							
                                     + "LEFT JOIN PUB.CATSistema ON Incidencia.ildSistema = CATSistema.ildSistema "
-                                    //+ "LEFT JOIN PUB.Incidencia ON Incidencia.ildIncidencia = Incidencia.ildIncidencia "
+                                   // + "LEFT JOIN PUB.DocumentosIncidencia ON Incidencia.ildDocIncidencia = DocumentosIncidencia.ildDocIncidencia "
                                     + "LEFT JOIN PUB.CATTipoDeSolucion ON Incidencia.ildTipoDeSolucion = CATTipoDeSolucion.ildTipoDeSolucion "
                                     + "LEFT JOIN PUB.CATTipoDeIncidente ON Incidencia.ildIncidente = CATTipoDeIncidente.ildIncidente "  
                                     + "LEFT JOIN PUB.CATUsuarioCAT ON Incidencia.ildUsuarioCat = CATUsuarioCAT.ildUsuarioCat " 
@@ -75,7 +75,7 @@ public class html {
 			                        
 			rs = ps2.executeQuery();
 			while (rs.next()) {
-				String[] campos = new String[26];
+				String[] campos = new String[27];
 				campos[0] = rs.getString(1);
 				campos[1] = rs.getString(2) + " " + rs.getString(3) + " " + rs.getString(4);
 				campos[2] = rs.getString(5);
@@ -163,6 +163,7 @@ public class html {
 				
 				campos[24] = rs.getString(31);
 				campos[25] = rs.getString(32);
+				//campos[26] = rs.getString(33);
 				registros.add(campos);
 			}
 		} catch (SQLException e) {
