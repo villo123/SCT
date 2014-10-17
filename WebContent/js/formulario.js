@@ -30,10 +30,10 @@ function validarDatos(){
 	}else if(descripcionin.value == "" || descripcionin.value == '' || descripcionin.value == null){
 		alert("Campo(s) vacio(s) o incorrecto(s). Verifique =)");
 		return false;
-	}else if((fechacat.value == "" || fechacat.value == '' || fechacat.value == null) || (fechacat.value="yyyy-mm-dd")){
+	}else if((fechacat.value == "" || fechacat.value == '' || fechacat.value == null) && (fechacat.value="yyyy-mm-dd")){
 		alert("Campo(s) vacio(s) o incorrecto(s). Verifique =)");
 		return false;
-	}else if((horacat.value == "" || horacat.value == '' || horacat.value == null) || (horacat.value == "00:00")){
+	}else if(horacat.value == "" || horacat.value == '' || horacat.value == null){
 		alert("Campo(s) vacio(s) o incorrecto(s). Verifique =)");
 		return false;
 	}else{
