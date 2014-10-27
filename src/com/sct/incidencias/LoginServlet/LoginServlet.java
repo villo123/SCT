@@ -13,6 +13,7 @@ import javax.servlet.http.HttpSession;
 
 //import com.sct.incidencias.catalogos.CATUsuarioUTIC;
 
+
 import com.sct.incidencias.Conexion.DBConexion;
 
 @WebServlet("/LoginServlet")
@@ -29,6 +30,7 @@ public class LoginServlet extends HttpServlet {
 	}
 
 
+	@SuppressWarnings("null")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
@@ -37,9 +39,9 @@ public class LoginServlet extends HttpServlet {
 		String usuario = request.getParameter("usuarioutic");
 		String pass = request.getParameter("passwordutic");
 		
-		HttpSession sessionad = request.getSession(false);
-		HttpSession sessionop = request.getSession(false);
-		HttpSession session = request.getSession(false);
+		//HttpSession sessionad = request.getSession(false);
+		//HttpSession sessionop = request.getSession(false);
+		//HttpSession session = request.getSession(false);
 		/*if(sessionad != null){
 			sessionad.setAttribute("login",usuario);
 		}
@@ -49,32 +51,35 @@ public class LoginServlet extends HttpServlet {
 		if(DBConexion.validar(usuario, pass)){
 			if(usuario.equals("gvega1")){
 				 usuario = "Gustavo Vega Vivas";
+				 HttpSession sessionad = request.getSession();
+				 //HttpServletRequest ServletRequest = null;
+				// ServletRequest.setAttribute("usuarioad",usuario);
 				 sessionad.setAttribute("usuarioad",usuario);
 				 RequestDispatcher rd = request.getRequestDispatcher("vista.jsp");
 				 rd.forward(request, response);
 			}
 			else if(usuario.equals("rbernabe")){
 				usuario = "Ramiro Bernabe Martinez";
-				sessionad.setAttribute("usuarioad",usuario);
+				//sessionad.setAttribute("usuarioad",usuario);
 				RequestDispatcher rd = request.getRequestDispatcher("vista.jsp");
 				rd.forward(request, response);
 			}
 			else if(usuario.equals("ext.71301")){
 				usuario = "Dulce Jaret Vargas Pelaez";
-				sessionop.setAttribute("usuarioop",usuario);
+				//sessionop.setAttribute("usuarioop",usuario);
 				RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
 				rd.forward(request, response);
 			}
 
 			else if(usuario.equals("ddt.utic.09")){
 				usuario = "Jose Angel Maya Quevedo";
-				sessionop.setAttribute("usuarioop",usuario);
+				//sessionop.setAttribute("usuarioop",usuario);
 				RequestDispatcher rd = request.getRequestDispatcher("vistas.jsp");
 				rd.forward(request, response);
 			}
 			else if(usuario.equals("andres")){
 				usuario = "Andres Villagomez";
-				session.setAttribute("usuario",usuario);
+				//session.setAttribute("usuario",usuario);
 				RequestDispatcher rd = request.getRequestDispatcher("vistasusuario.jsp");
 				rd.forward(request, response);	
 			}

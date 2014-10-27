@@ -3,6 +3,7 @@
 <%@ page import="mx.gob.sct.utic.utils.html" %> 
 <%@ page import="java.util.ArrayList" %> 
 <%@ page import="java.util.Iterator" %> 
+<%@ page import="javax.servlet.http.HttpServletRequest;" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
@@ -26,21 +27,15 @@
 		<!--  -->
 	</head>
 <body>
-
-		<%
-			HttpSession sessionv = request.getSession(false);
-			if(sessionv == null){
-				response.sendRedirect("login.jsp");
-		}
-	%>
 		<div id="contentvista"></div>
 		<div id="middlevista">
 			<img src="ima/logo.png" alt="SCT" width="260" height="84">
 			<h1 align="center">Registro de Incidencia</h1>
 			    <%
-   				 String usuarioad = "";
-   				 HttpSession sessionad = request.getSession();
-  				 usuarioad = (String)sessionad.getAttribute("usuarioad");
+   					//HttpServletRequest ServletRequest = null;
+			   // String usuarioad = ServletRequest.getAttribute("usuarioad").toString();
+			     HttpSession susuarioad = request.getSession();
+			     String usuarioad = susuarioad.getAttribute("usuarioad").toString();
     %>  
      Bienvenido <%=usuarioad%>
      <a href="logout.jsp">Cerrar Sesión</a>
