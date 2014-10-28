@@ -1,5 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%
+    	response.setHeader("Content-Type","text/html; charset=windows-1252");
+	    response.setHeader("Pragma","no-cache");
+	    //response.setHeader("Expires","Mon 01 Jan 2015 00:00:01 GMT");
+	    response.setHeader("Cache-Control","no-store");
+	    response.setHeader("Cache-Control","must-revalidate");
+	    response.setHeader("Cache-Control","no-cache");
+	    
+	    HttpSession actual = request.getSession(true);
+	    String id = actual.getId();
+	    String nombre = (String)actual.getAttribute("usuarioad");
+	    
+	    if(actual.isNew()){
+	    	response.sendRedirect("login.jsp");
+	    	return;
+	    }
+
+	    if(actual.getAttribute("usuarioad") == null){
+	    		response.sendRedirect("login.jsp");
+	    	}
+	
+    %>
 <%@ page import="mx.gob.sct.utic.utils.html" %> 
 <%@ page import="java.util.ArrayList" %> 
 <%@ page import="java.util.Iterator" %> 
@@ -34,7 +56,7 @@
 			    <%
    					//HttpServletRequest ServletRequest = null;
 			   // String usuarioad = ServletRequest.getAttribute("usuarioad").toString();
-			     HttpSession susuarioad = request.getSession();
+			     HttpSession susuarioad = request.getSession(true);
 			     String usuarioad = susuarioad.getAttribute("usuarioad").toString();
     %>  
      Bienvenido <%=usuarioad%>

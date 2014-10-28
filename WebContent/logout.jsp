@@ -11,7 +11,20 @@
 </head>
 <body>
 	<%
-		
+		response.setContentType("text/html");
+		response.setHeader("Cache-Control", "no-cache");
+		response.setHeader("Cache-Control", "no-store");
+		response.setDateHeader("Expires", 0);
+		response.setHeader("Pragma","no-cache");
+	
+		 //HttpSession susuarioad = request.getSession(false);
+		 //susuarioad.removeAttribute("usuarioad");
+		 //susuarioad.invalidate();
+		 
+		 request.getSession().removeAttribute("usuarioad");
+		 session.invalidate();
+		 response.sendRedirect("login.jsp");
+	
 	%>
 
 </body>

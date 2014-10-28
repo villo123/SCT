@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet {
 		if(DBConexion.validar(usuario, pass)){
 			if(usuario.equals("gvega1")){
 				 usuario = "Gustavo Vega Vivas";
-				 HttpSession sessionad = request.getSession();
+				 HttpSession sessionad = request.getSession(true);
 				 //HttpServletRequest ServletRequest = null;
 				// ServletRequest.setAttribute("usuarioad",usuario);
 				 sessionad.setAttribute("usuarioad",usuario);
